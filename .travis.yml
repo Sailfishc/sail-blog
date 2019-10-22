@@ -5,7 +5,7 @@ git:
 install: go get -v github.com/gohugoio/hugo
 script:
   ‐ hugo
-  - echo "$CNAME_URL" > public/CNAME
+#  - echo "$CNAME_URL" > public/CNAME
 
 deploy:
   provider: pages
