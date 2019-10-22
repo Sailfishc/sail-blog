@@ -1,59 +1,61 @@
-#sudo: false
-#language: go
-#git:
-#  depth: 1
-#install: go get -v github.com/gohugoio/hugo
-#script:
-#  ‐ hugo
-#deploy:
-#  provider: pages
-#  skip_cleanup: true
-#  github_token: $GITHUB_TOKEN
-#  on:
-#    branch: master
-#  local_dir: public
-#  repo: sailfishc/sailfishc.github.io
-#  fqdn: https://code.sailfishc.cn
-#  target_branch: master
-#  email: mr.cheng94@foxmail.com
-#  name: sailfishc
+sudo: false
+language: go
+git:
+  depth: 1
+install: go get -v github.com/gohugoio/hugo
+script:
+  ‐ hugo
+  - echo "$CNAME_URL" > public/CNAME
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: public
+  repo: sailfishc/sailfishc.github.io
+  fqdn: https://code.sailfishc.cn
+  target_branch: master
+  email: $GITHUB_EMAIL
+  name: $GITHUB_USERNAME
 
 # https://docs.travis-ci.com/user/deployment/pages/
 # https://docs.travis-ci.com/user/reference/xenial/
 # https://docs.travis-ci.com/user/languages/go/
 # https://docs.travis-ci.com/user/customizing-the-build/
 
-dist: xenial
-language: go
-go:
-  - master
-
-# before_install:
-
-# install - install any dependencies required
-install:
-  - go get github.com/gohugoio/hugo   # consume time 70.85s
-
-before_script:
-  - rm -rf public 2> /dev/null
-
-# script - run the build script
-script:
-  - hugo
-  - echo "$CNAME_URL" > public/CNAME
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  email: $GITHUB_EMAIL
-  name: $GITHUB_USERNAME
-  verbose: true
-  keep-history: true
-  local-dir: public
-#  target_branch: master  # branch contains blog content
-  on:
-    branch: master  # branch contains Hugo generator code
+#dist: xenial
+#language: go
+#go:
+#  - master
+#
+## before_install:
+#
+## install - install any dependencies required
+#install:
+#  - go get github.com/gohugoio/hugo   # consume time 70.85s
+#
+#before_script:
+#  - rm -rf public 2> /dev/null
+#
+## script - run the build script
+#script:
+#  - hugo
+#  - echo "$CNAME_URL" > public/CNAME
+#
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+#  email: $GITHUB_EMAIL
+#  name: $GITHUB_USERNAME
+#  verbose: true
+#  keep-history: true
+#  local-dir: public
+##  target_branch: master  # branch contains blog content
+#  on:
+#    branch: master  # branch contains Hugo generator code
 
 #notifications:
 #  email: false    # default notification method
