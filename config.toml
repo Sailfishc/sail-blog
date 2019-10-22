@@ -1,4 +1,4 @@
-baseurl = "https://sailfishc.github.io"
+baseurl = "https://code.sailfishc.cn"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
