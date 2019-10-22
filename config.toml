@@ -1,0 +1,57 @@
+baseurl = "https://code.sailfishc.cn/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Djordje Atlialp"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    title = "橙小张的博客"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$ cd /home/"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+	# You can create a language based menu
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name       = "Articles"
+        url        = "posts/"
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
