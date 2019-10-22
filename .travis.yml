@@ -53,7 +53,7 @@ deploy:
   verbose: true
   keep-history: true
   local-dir: public
-  fqdn: https://code.sailfishc.cn
+  fqdn: https://blog.sailfishc.cn
   repo: sailfishc/sailfishccc.github.io
   #  target_branch: master  # branch contains blog content
   on:
