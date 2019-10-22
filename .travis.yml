@@ -1,0 +1,19 @@
+sudo: false
+language: go
+git:
+  depth: 1
+install: go get -v github.com/gohugoio/hugo
+script:
+  ‐ hugo
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: public
+  repo: sailfishc/sailfishc.github.io
+  fqdn: https://code.sailfishc.cn
+  target_branch: master
+  email: mr.cheng94@foxmail.com
+  name: sailfishc
