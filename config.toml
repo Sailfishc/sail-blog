@@ -1,5 +1,5 @@
-#baseurl = "/sail-blog/"
-baseurl = "/"
+baseurl = "/sail-blog/"
+#baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
