@@ -18,6 +18,27 @@ theme = "hello-friend-ng"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
 
+  [params.logo]
+      logoText     = "$ cd /home/"
+      logoHomeLink = "/"
+
+    # Social icons
+    [[params.social]]
+      name = "twitter"
+      url  = "https://twitter.com/sailfishc/"
+
+    [[params.social]]
+      name = "email"
+      url  = "mailto:sailfishcc@gmail.com"
+
+    [[params.social]]
+      name = "github"
+      url  = "https://github.com/sailfishc/"
+
+    [[params.social]]
+      name = "linkedin"
+      url  = "https://www.linkedin.com/in/sailfishc/"
+
 [languages]
   [languages.en]
     title = "橙小张的博客"
