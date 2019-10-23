@@ -1,6 +1,6 @@
 ---
 title: 以练代学，学习算法和数据结构
-date: 2019-10-23T16:22:04+08:00
+date: 2019-10-23 16:22:04
 draft: false
 toc: false
 images:
