@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author"
-    content="Jane Doe ">
+    content="Sailfishc ">
 <meta name="description"
     content="MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。
  一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息
@@ -20,7 +20,7 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
 
 <title>
     
-    消息队列之RabbitMQ基础 :: 橙小张的博客  — Hello Friend NG Theme
+    消息队列之RabbitMQ基础 :: 橙小张的博客  — 讨论技术，聊聊生活
     
 </title>
 
@@ -77,7 +77,7 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="https://code.sailfishc.cn/sail-blog/sail-blog/" style="text-decoration: none;">
+        <a href="https://code.sailfishc.cn/sail-blog/" style="text-decoration: none;">
     <div class="logo">
         
             <span class="logo__mark">></span>
@@ -388,7 +388,7 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
         <div class="footer__content">
             <span>&copy; 2019</span>
             
-                <span><a href="https://code.sailfishc.cn/sail-blog">Jane Doe</a></span>
+                <span><a href="https://code.sailfishc.cn/sail-blog">Sailfishc</a></span>
             
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
             <span> <a href="https://code.sailfishc.cn/sail-blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
