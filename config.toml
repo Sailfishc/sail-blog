@@ -60,7 +60,7 @@ theme = "hello-friend-ng"
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = "about/"
       [[languages.en.menu.main]]
         identifier = "posts"
         name       = "Articles"
