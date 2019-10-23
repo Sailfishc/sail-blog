@@ -5,8 +5,163 @@
         <description>Recent content in Posts on 橙小张的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 13 Jan 2019 17:37:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 23 Oct 2019 16:24:20 +0800</lastBuildDate>
         <atom:link href="/sail-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>以练代学，学习算法和数据结构</title>
+            <link>/sail-blog/posts/learn-leetcode/</link>
+            <pubDate>Wed, 23 Oct 2019 16:24:20 +0800</pubDate>
+            
+            <guid>/sail-blog/posts/learn-leetcode/</guid>
+            <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
+首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：
+ 算法导论 数据结构与算法分析 配合LeetCode或者OJ来练习   我的学习计划是这样的（以练代学）：
+  寻找LeetCode的Java版最优解实现（至少400题） 将数据结构和算法进行分类（目录见后文） 寻找可以快速熟悉的视频资源（极客时间的算法面试40讲就挺好） 按分类将LeetCode的题目归类，附上题号，LeetCode题目链接，题目难度分类，最优解地址（Github地址），自己的解法地址   具体是这样做的（第一遍）
+  先跟着视频学习（例如数组，链表作为一个阶段，去了解理论基础，及几道经典题型解读） 从分类中找出要练习的LeetCode题目 深度思考10分钟去寻找思路 有思路的话写代码，对比最优解 没有思路直接看答案（最好有视频讲解），理解题目解题思路 自己重新做一遍   第二遍刷题（基本同第一遍步骤）
+数据结构和算法分类
+  数据结构  栈 队列 表  数组 单链表 双链表 循环链表 散列表  二叉树  平衡二叉树 红黑树 哈弗曼树 堆  多叉树  B，B+Tree 字典树  图  有向图 无向图 权图   算法  算法思想  分治 动态规划 贪心 回溯 分支界定  复杂度  时间复杂度 空间复杂度  字符串匹配  BF算法 BM算法 Sunday算法 KMP算法 Tire树  排序  插入排序  希尔 直插  交换排序  冒泡 快排（重点）  选择排序  简单排序 堆排序（重点）  归并排序 基数排序  查找  二分查找 二叉排序树 B数 Hash BloomFilter    </description>
+            <content type="html"><![CDATA[<p>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。</p>
+
+<p>首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：</p>
+
+<ul>
+<li>算法导论</li>
+<li>数据结构与算法分析</li>
+<li>配合LeetCode或者OJ来练习</li>
+</ul>
+
+<blockquote>
+<p>我的学习计划是这样的（以练代学）：</p>
+</blockquote>
+
+<ul>
+<li>寻找LeetCode的Java版最优解实现（至少400题）</li>
+<li>将数据结构和算法进行分类（目录见后文）</li>
+<li>寻找可以快速熟悉的视频资源（极客时间的算法面试40讲就挺好）</li>
+<li>按分类将LeetCode的题目归类，附上题号，LeetCode题目链接，题目难度分类，最优解地址（Github地址），自己的解法地址</li>
+</ul>
+
+<blockquote>
+<p>具体是这样做的（第一遍）</p>
+</blockquote>
+
+<ul>
+<li>先跟着视频学习（例如数组，链表作为一个阶段，去了解理论基础，及几道经典题型解读）</li>
+<li>从分类中找出要练习的LeetCode题目</li>
+<li>深度思考10分钟去寻找思路</li>
+<li>有思路的话写代码，对比最优解</li>
+<li>没有思路直接看答案（最好有视频讲解），理解题目解题思路</li>
+<li>自己重新做一遍</li>
+</ul>
+
+<blockquote>
+<p>第二遍刷题（基本同第一遍步骤）</p>
+
+<p>数据结构和算法分类</p>
+</blockquote>
+
+<ul>
+<li>数据结构
+
+<ul>
+<li>栈</li>
+<li>队列</li>
+<li>表
+
+<ul>
+<li>数组</li>
+<li>单链表</li>
+<li>双链表</li>
+<li>循环链表</li>
+<li>散列表</li>
+</ul></li>
+<li>二叉树
+
+<ul>
+<li>平衡二叉树</li>
+<li>红黑树</li>
+<li>哈弗曼树</li>
+<li>堆</li>
+</ul></li>
+<li>多叉树
+
+<ul>
+<li>B，B+Tree</li>
+<li>字典树</li>
+</ul></li>
+<li>图
+
+<ul>
+<li>有向图</li>
+<li>无向图</li>
+<li>权图</li>
+</ul></li>
+</ul></li>
+<li>算法
+
+<ul>
+<li>算法思想
+
+<ul>
+<li>分治</li>
+<li>动态规划</li>
+<li>贪心</li>
+<li>回溯</li>
+<li>分支界定</li>
+</ul></li>
+<li>复杂度
+
+<ul>
+<li>时间复杂度</li>
+<li>空间复杂度</li>
+</ul></li>
+<li>字符串匹配
+
+<ul>
+<li>BF算法</li>
+<li>BM算法</li>
+<li>Sunday算法</li>
+<li>KMP算法</li>
+<li>Tire树</li>
+</ul></li>
+<li>排序
+
+<ul>
+<li>插入排序
+
+<ul>
+<li>希尔</li>
+<li>直插</li>
+</ul></li>
+<li>交换排序
+
+<ul>
+<li>冒泡</li>
+<li>快排（重点）</li>
+</ul></li>
+<li>选择排序
+
+<ul>
+<li>简单排序</li>
+<li>堆排序（重点）</li>
+</ul></li>
+<li>归并排序</li>
+<li>基数排序</li>
+</ul></li>
+<li>查找
+
+<ul>
+<li>二分查找</li>
+<li>二叉排序树</li>
+<li>B数</li>
+<li>Hash</li>
+<li>BloomFilter</li>
+</ul></li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>2018年总结</title>
