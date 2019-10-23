@@ -3,37 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/sail-blog/tags/leetcode/</loc>
-    <lastmod>2019-10-23T16:24:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/posts/</loc>
-    <lastmod>2019-10-23T16:24:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/tags/</loc>
-    <lastmod>2019-10-23T16:24:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/posts/learn-leetcode/</loc>
-    <lastmod>2019-10-23T16:24:20+08:00</lastmod>
+    <loc>/sail-blog/about/</loc>
+    <lastmod>2019-01-19T02:42:30+01:00</lastmod>
   </url>
   
   <url>
     <loc>/sail-blog/</loc>
-    <lastmod>2019-10-23T16:24:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/about/</loc>
     <lastmod>2019-01-19T02:42:30+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -43,6 +20,18 @@
   
   <url>
     <loc>/sail-blog/categories/</loc>
+    <lastmod>2019-01-13T17:37:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/posts/</loc>
+    <lastmod>2019-01-13T17:37:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/tags/</loc>
     <lastmod>2019-01-13T17:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -198,6 +187,17 @@
   </url>
   
   <url>
+    <loc>/sail-blog/posts/learn_es_mind/</loc>
+    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/tags/emoji/</loc>
+    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/sail-blog/categories/elasticsearch/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
@@ -205,17 +205,6 @@
   
   <url>
     <loc>/sail-blog/tags/elasticsearch/</loc>
-    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/posts/learn_es_mind/</loc>
-    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/tags/emoji/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
