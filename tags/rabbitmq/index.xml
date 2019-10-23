@@ -5,7 +5,7 @@
     <link>https://code.sailfishc.cn/sail-blog/tags/rabbitmq/</link>
     <description>Recent content in RabbitMQ on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 23 Apr 2017 14:37:00 +0000</lastBuildDate>
     
 	<atom:link href="https://code.sailfishc.cn/sail-blog/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>消息队列之RabbitMQ基础</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_rabbitmq/</link>
+      <link>https://code.sailfishc.cn/sail-blog/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 23 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_rabbitmq/</guid>
+      <guid>https://code.sailfishc.cn/sail-blog/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</guid>
       <description>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。
  一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息
  主体流程：  队列类似一个broker角色，生产者将内容（消息）发送到队列 队列进行存储，消费者将消息消费 消费者确认消费消息（ack）  生产者和消费者都可以通过来创建队列：

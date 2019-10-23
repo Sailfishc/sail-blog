@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://code.sailfishc.cn/sail-blog/fr/index.html</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://code.sailfishc.cn/sail-blog/index.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://code.sailfishc.cn/sail-blog/fr/index.html"
+                />
+  </url>
+  
+  <url>
+    <loc>https://code.sailfishc.cn/sail-blog/fr/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://code.sailfishc.cn/sail-blog/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://code.sailfishc.cn/sail-blog/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://code.sailfishc.cn/sail-blog/fr/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://code.sailfishc.cn/sail-blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://code.sailfishc.cn/sail-blog/fr/"
+                />
+  </url>
+  
+</urlset>
