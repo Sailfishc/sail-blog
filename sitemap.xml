@@ -37,25 +37,25 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2019-01-13T17:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/sail-blog/tags/%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2019-01-13T17:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/categories/mybatis/</loc>
-    <lastmod>2019-01-07T21:37:00+00:00</lastmod>
+    <loc>/sail-blog/categories/%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-01-13T17:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/sail-blog/tags/mybatis/</loc>
+    <lastmod>2019-01-07T21:37:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/categories/mybatis/</loc>
     <lastmod>2019-01-07T21:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -89,13 +89,13 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/java/</loc>
+    <loc>/sail-blog/tags/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/tags/java/</loc>
+    <loc>/sail-blog/categories/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -106,13 +106,13 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/rpc/</loc>
+    <loc>/sail-blog/tags/rpc/</loc>
     <lastmod>2017-04-29T14:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/tags/rpc/</loc>
+    <loc>/sail-blog/categories/rpc/</loc>
     <lastmod>2017-04-29T14:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -129,13 +129,13 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/mq/</loc>
+    <loc>/sail-blog/tags/mq/</loc>
     <lastmod>2017-04-23T14:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/tags/mq/</loc>
+    <loc>/sail-blog/categories/mq/</loc>
     <lastmod>2017-04-23T14:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -175,25 +175,25 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/elk/</loc>
-    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/sail-blog/tags/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/categories/elasticsearch/</loc>
+    <loc>/sail-blog/categories/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/sail-blog/tags/elasticsearch/</loc>
+    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/categories/elasticsearch/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -254,13 +254,13 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>/sail-blog/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-03-22T22:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>/sail-blog/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-03-22T22:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -295,25 +295,25 @@
   </url>
   
   <url>
-    <loc>/sail-blog/categories/hexo/</loc>
-    <lastmod>2016-02-28T17:58:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/sail-blog/tags/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/sail-blog/categories/intellij-idea/</loc>
+    <loc>/sail-blog/categories/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/sail-blog/tags/intellij-idea/</loc>
+    <lastmod>2016-02-28T17:58:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/categories/intellij-idea/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
