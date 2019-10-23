@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>elasticsearch on 橙小张的博客</title>
+    <title>Elasticsearch on 橙小张的博客</title>
     <link>/sail-blog/tags/elasticsearch/</link>
-    <description>Recent content in elasticsearch on 橙小张的博客</description>
+    <description>Recent content in Elasticsearch on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Mar 2017 17:58:27 +0000</lastBuildDate>
