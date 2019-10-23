@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Node.js on 橙小张的博客</title>
-    <link>/tags/node.js/</link>
+    <link>https://code.sailfishc.cn/sail-blog/tags/node.js/</link>
     <description>Recent content in Node.js on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Feb 2016 17:58:27 +0000</lastBuildDate>
     
-	<atom:link href="/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://code.sailfishc.cn/sail-blog/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</title>
-      <link>/posts/hexo/</link>
+      <link>https://code.sailfishc.cn/sail-blog/posts/hexo/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>/posts/hexo/</guid>
+      <guid>https://code.sailfishc.cn/sail-blog/posts/hexo/</guid>
       <description>部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
  为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）  软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable  账号：  Github：https://github.</description>
     </item>
