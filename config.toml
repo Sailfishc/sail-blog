@@ -1,8 +1,6 @@
 baseURL = "https://code.sailfishc.cn/sail-blog"
 title   = "橙小张的博客"
-
 DefaultContentLanguage = "en"
-
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
