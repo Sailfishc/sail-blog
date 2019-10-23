@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Head on 橙小张的博客</title>
-    <link>https://blog.sailfishc.cn/tags/head/</link>
+    <link>/tags/head/</link>
     <description>Recent content in Head on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Mar 2017 14:37:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.sailfishc.cn/tags/head/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/head/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac下Elasticsearch5.X和Head插件的安装</title>
-      <link>https://blog.sailfishc.cn/posts/es_head_install/</link>
+      <link>/posts/es_head_install/</link>
       <pubDate>Sat, 25 Mar 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://blog.sailfishc.cn/posts/es_head_install/</guid>
+      <guid>/posts/es_head_install/</guid>
       <description>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。
  一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动 &amp;gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
  进入es的conf目录修改配置文件

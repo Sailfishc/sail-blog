@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ELK on 橙小张的博客</title>
-    <link>https://blog.sailfishc.cn/tags/elk/</link>
+    <link>/tags/elk/</link>
     <description>Recent content in ELK on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Mar 2017 17:58:27 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.sailfishc.cn/tags/elk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/elk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Elasticsearch学习记录</title>
-      <link>https://blog.sailfishc.cn/posts/learn_es_mind/</link>
+      <link>/posts/learn_es_mind/</link>
       <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>https://blog.sailfishc.cn/posts/learn_es_mind/</guid>
+      <guid>/posts/learn_es_mind/</guid>
       <description></description>
     </item>
     

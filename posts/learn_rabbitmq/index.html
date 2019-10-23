@@ -15,7 +15,7 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
 1、fanout  生产者（P）发送到Exchange（X）的所有消息都会路由到图中的两个Queue，并最终被两个消费者（C1与C2）消费。  2、direct  routingKey=”error”发送消息，则会同时路由到Queue1（amqp.gen-S9b…）和Queue2（amqp.gen-Agl…） routingKey=”info”或routingKey=”warning”发送消息，则只会路由到Queue2 以其他routingKey发送消息，则不会路由到这两个Queue中  3、topic  routingKey=”quick." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://blog.sailfishc.cn/posts/learn_rabbitmq/" />
+<link rel="canonical" href="/posts/learn_rabbitmq/" />
 
 
 <title>
@@ -54,7 +54,7 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
 
 <meta itemprop="keywords" content="Java,MQ,RabbitMQ," />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://blog.sailfishc.cn"/>
+<meta name="twitter:image" content="/"/>
 
 <meta name="twitter:title" content="消息队列之RabbitMQ基础"/>
 <meta name="twitter:description" content="消息队列之RabbitMQ基础"/>
@@ -91,7 +91,7 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Articles</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts/">Articles</a></li>
     </ul>
 </nav>
 
@@ -127,7 +127,7 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/learn_rabbitmq/">消息队列之RabbitMQ基础</a></h1>
+            <h1 class="post-title"><a href="/posts/learn_rabbitmq/">消息队列之RabbitMQ基础</a></h1>
 
             
 
@@ -340,7 +340,7 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
 
         <div class="post-info">
                 <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/java">Java</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/mq">MQ</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/rabbitmq">RabbitMQ</a></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/java">Java</a></span><span class="tag"><a href="/tags/mq">MQ</a></span><span class="tag"><a href="/tags/rabbitmq">RabbitMQ</a></span>
                 </p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>187 Words</p>
@@ -358,7 +358,7 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="https://blog.sailfishc.cn/posts/learn_rpc/">
+                            <a href="/posts/learn_rpc/">
                                 <span class="button__icon">←</span>
                                 <span class="button__text">浅析RPC</span>
                             </a>
@@ -367,7 +367,7 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
 
                     
                         <span class="button next">
-                            <a href="https://blog.sailfishc.cn/posts/liangbo/">
+                            <a href="/posts/liangbo/">
                                 <span class="button__text">38年（转载）</span>
                                 <span class="button__icon">→</span>
                             </a>
@@ -389,7 +389,7 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
             <span>&copy; 2019</span>
             
             <span></span>
-            <span> <a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
     <div class="footer__inner">

@@ -15,7 +15,7 @@
 1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://blog.sailfishc.cn/posts/emoji_demo/" />
+<link rel="canonical" href="/posts/emoji_demo/" />
 
 
 <title>
@@ -54,7 +54,7 @@
 
 <meta itemprop="keywords" content="Java,Emoji," />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://blog.sailfishc.cn"/>
+<meta name="twitter:image" content="/"/>
 
 <meta name="twitter:title" content="解决Mysql存储Emoji乱码问题"/>
 <meta name="twitter:description" content="本文主要解决Emoji表情存储在MySql中乱码的问题"/>
@@ -91,7 +91,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Articles</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts/">Articles</a></li>
     </ul>
 </nav>
 
@@ -127,7 +127,7 @@
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/emoji_demo/">解决Mysql存储Emoji乱码问题</a></h1>
+            <h1 class="post-title"><a href="/posts/emoji_demo/">解决Mysql存储Emoji乱码问题</a></h1>
 
             
 
@@ -225,7 +225,7 @@
 
         <div class="post-info">
                 <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/java">Java</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/emoji">Emoji</a></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/java">Java</a></span><span class="tag"><a href="/tags/emoji">Emoji</a></span>
                 </p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>90 Words</p>
@@ -243,7 +243,7 @@
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="https://blog.sailfishc.cn/posts/learn_es_mind/">
+                            <a href="/posts/learn_es_mind/">
                                 <span class="button__icon">←</span>
                                 <span class="button__text">Elasticsearch学习记录</span>
                             </a>
@@ -252,7 +252,7 @@
 
                     
                         <span class="button next">
-                            <a href="https://blog.sailfishc.cn/posts/es_head_install/">
+                            <a href="/posts/es_head_install/">
                                 <span class="button__text">Mac下Elasticsearch5.X和Head插件的安装</span>
                                 <span class="button__icon">→</span>
                             </a>
@@ -274,7 +274,7 @@
             <span>&copy; 2019</span>
             
             <span></span>
-            <span> <a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
     <div class="footer__inner">

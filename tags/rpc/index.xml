@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RPC on 橙小张的博客</title>
-    <link>https://blog.sailfishc.cn/tags/rpc/</link>
+    <link>/tags/rpc/</link>
     <description>Recent content in RPC on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Apr 2017 14:37:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.sailfishc.cn/tags/rpc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/rpc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>浅析RPC</title>
-      <link>https://blog.sailfishc.cn/posts/learn_rpc/</link>
+      <link>/posts/learn_rpc/</link>
       <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://blog.sailfishc.cn/posts/learn_rpc/</guid>
+      <guid>/posts/learn_rpc/</guid>
       <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
 之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
