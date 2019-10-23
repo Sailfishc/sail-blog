@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>成长 on 橙小张的博客</title>
-    <link>/sail-blog/tags/%E6%88%90%E9%95%BF/</link>
+    <link>/tags/%E6%88%90%E9%95%BF/</link>
     <description>Recent content in 成长 on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Mar 2017 17:58:27 +0000</lastBuildDate>
     
-	<atom:link href="/sail-blog/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Java程序员学习路线</title>
-      <link>/sail-blog/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+      <link>/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
       <pubDate>Wed, 01 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+      <guid>/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
       <description>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。 感觉有点跑题了，说回来，还是怎么学习：
 1、你得对你所在行业的知识框架要有一个基本的了解  比如我所在的JavaEE的学习路线：
  Java基础 - 基础语法 - 逻辑控制流 - 面向对象的知识 - 常用的类，如String - IO - 集合 - 多线程 - 异常 - 网络编程
