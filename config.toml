@@ -1,4 +1,5 @@
 baseurl = "/sail-blog/"
+#baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -6,7 +7,7 @@ theme = "hello-friend-ng"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  dateformNumTime = "2006-01-02 15:04:00"
 
   # Metadata mostly used in document's head
   description = "讨论技术，聊聊生活"
