@@ -28,7 +28,7 @@ theme = "hello-friend-ng"
 
     [languages.en.params.logo]
       logoText = "$ cd /home/"
-      logoHomeLink = "/"
+      logoHomeLink = "/sail-blog/"
     # or
     #
     # path = "/img/your-example-logo.svg"
