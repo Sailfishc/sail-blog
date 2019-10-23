@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MyBatis on 橙小张的博客</title>
-    <link>/categories/mybatis/</link>
+    <link>/sail-blog/categories/mybatis/</link>
     <description>Recent content in MyBatis on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jan 2019 21:37:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/mybatis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/sail-blog/categories/mybatis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>那些书本中没告诉你的MyBatis</title>
-      <link>/posts/mybatis/</link>
+      <link>/sail-blog/posts/mybatis/</link>
       <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
       
-      <guid>/posts/mybatis/</guid>
+      <guid>/sail-blog/posts/mybatis/</guid>
       <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
 &amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
