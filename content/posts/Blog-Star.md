@@ -1,8 +1,6 @@
 ---
 title: 长期关注的一些博客
-date: 2019-10-23 16:51:04
-draft: false
-toc: false
+date: 2019-10-22 16:51:04
 images:
 tags:
   - Blog
