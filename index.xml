@@ -6,24 +6,15 @@
     <description>Recent content on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 16:51:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 17:37:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>长期关注的一些博客</title>
-      <link>/posts/blog-star/</link>
-      <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
-      
-      <guid>/posts/blog-star/</guid>
-      <description> 酷壳 – CoolShell.cn  </description>
-    </item>
-    
-    <item>
       <title>以练代学，学习算法和数据结构</title>
       <link>/posts/learn_leetcode/</link>
-      <pubDate>Tue, 22 Oct 2019 16:22:04 +0000</pubDate>
+      <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
       
       <guid>/posts/learn_leetcode/</guid>
       <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
@@ -33,6 +24,15 @@
   先跟着视频学习（例如数组，链表作为一个阶段，去了解理论基础，及几道经典题型解读） 从分类中找出要练习的LeetCode题目 深度思考10分钟去寻找思路 有思路的话写代码，对比最优解 没有思路直接看答案（最好有视频讲解），理解题目解题思路 自己重新做一遍   第二遍刷题（基本同第一遍步骤）
 数据结构和算法分类
   数据结构  栈 队列 表  数组 单链表 双链表 循环链表 散列表  二叉树  平衡二叉树 红黑树 哈弗曼树 堆  多叉树  B，B+Tree 字典树  图  有向图 无向图 权图   算法  算法思想  分治 动态规划 贪心 回溯 分支界定  复杂度  时间复杂度 空间复杂度  字符串匹配  BF算法 BM算法 Sunday算法 KMP算法 Tire树  排序  插入排序  希尔 直插  交换排序  冒泡 快排（重点）  选择排序  简单排序 堆排序（重点）  归并排序 基数排序  查找  二分查找 二叉排序树 B数 Hash BloomFilter    </description>
+    </item>
+    
+    <item>
+      <title>长期关注的一些博客</title>
+      <link>/posts/blog-star/</link>
+      <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
+      
+      <guid>/posts/blog-star/</guid>
+      <description> 酷壳 – CoolShell.cn  </description>
     </item>
     
     <item>

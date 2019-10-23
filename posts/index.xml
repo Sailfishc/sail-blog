@@ -5,26 +5,13 @@
         <description>Recent content in Posts on 橙小张的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 22 Oct 2019 16:51:04 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 22 Oct 2019 17:37:00 +0000</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>长期关注的一些博客</title>
-            <link>/posts/blog-star/</link>
-            <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
-            
-            <guid>/posts/blog-star/</guid>
-            <description> 酷壳 – CoolShell.cn  </description>
-            <content type="html"><![CDATA[<ul>
-<li><a href="https://coolshell.cn/">酷壳 – CoolShell.cn</a></li>
-</ul>
-]]></content>
-        </item>
         
         <item>
             <title>以练代学，学习算法和数据结构</title>
             <link>/posts/learn_leetcode/</link>
-            <pubDate>Tue, 22 Oct 2019 16:22:04 +0000</pubDate>
+            <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
             
             <guid>/posts/learn_leetcode/</guid>
             <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
@@ -172,6 +159,19 @@
 <li>BloomFilter</li>
 </ul></li>
 </ul></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>长期关注的一些博客</title>
+            <link>/posts/blog-star/</link>
+            <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
+            
+            <guid>/posts/blog-star/</guid>
+            <description> 酷壳 – CoolShell.cn  </description>
+            <content type="html"><![CDATA[<ul>
+<li><a href="https://coolshell.cn/">酷壳 – CoolShell.cn</a></li>
 </ul>
 ]]></content>
         </item>
