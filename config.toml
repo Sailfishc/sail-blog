@@ -1,5 +1,4 @@
-#baseurl = "/sail-blog/"
-baseurl = "/"
+baseurl = "https://code.sailfishc.cn/sail-blog/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
