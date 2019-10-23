@@ -28,4 +28,5 @@ echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 
 #echo "Pushing to github"
-git push --all origin git@github.com:sailfishc/sailfishc.github.io.git gh-pages
+#git push --all origin git@github.com:sailfishc/sailfishc.github.io.git gh-pages
+git push origin git@github.com:sailfishc/sailfishc.github.io.git gh-pages
