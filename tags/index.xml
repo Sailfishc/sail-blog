@@ -236,5 +236,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>LeetCode</title>
+      <link>/sail-blog/tags/leetcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/sail-blog/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>/sail-blog/tags/algorithm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/sail-blog/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

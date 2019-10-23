@@ -329,4 +329,23 @@
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
   </url>
   
+  <url>
+    <loc>/sail-blog/categories/leetcode/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/tags/leetcode/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/tags/algorithm/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/posts/leetcode_practice/</loc>
+  </url>
+  
 </urlset>
