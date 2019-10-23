@@ -22,22 +22,22 @@ theme = "hello-friend-ng"
       logoText     = "$ cd /home/"
       logoHomeLink = "/"
 
-    # Social icons
-    [[params.social]]
-      name = "twitter"
-      url  = "https://twitter.com/sailfishc/"
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/sailfishc/"
 
-    [[params.social]]
-      name = "email"
-      url  = "mailto:sailfishcc@gmail.com"
+  [[params.social]]
+    name = "email"
+    url  = "mailto:sailfishcc@gmail.com"
 
-    [[params.social]]
-      name = "github"
-      url  = "https://github.com/sailfishc/"
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/sailfishc/"
 
-    [[params.social]]
-      name = "linkedin"
-      url  = "https://www.linkedin.com/in/sailfishc/"
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/sailfishc/"
 
 [languages]
   [languages.en]
