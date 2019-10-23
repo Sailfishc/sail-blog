@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习方法 on 橙小张的博客</title>
-    <link>/sail-blog/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+    <link>/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
     <description>Recent content in 学习方法 on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Mar 2017 22:37:00 +0000</lastBuildDate>
     
-	<atom:link href="/sail-blog/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何高效学习，总结自己的学习方法</title>
-      <link>/sail-blog/posts/learn_good/</link>
+      <link>/posts/learn_good/</link>
       <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/posts/learn_good/</guid>
+      <guid>/posts/learn_good/</guid>
       <description>在工作之后一段时间一直会有这么一种感觉：一天浑浑噩噩不知道干了什么，或者整天被他人打断而不能专注，又或者从早到晚的忙导致下班头脑发胀。
  自己也在寻找适合自己的学习方法，可能是学习能力比较差，一直没找到合适的，很多人推荐的番茄工作法自己尝试了几次也放弃了，但是现在工作每天都很忙，但是不知道自己干嘛了，这促使我又开始寻找一个适合自己的工具和学习方法。
 这次的主题分两部分： - 工具 - 学习方法

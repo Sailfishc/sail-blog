@@ -2,255 +2,255 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 橙小张的博客</title>
-    <link>/sail-blog/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Oct 2019 17:37:00 +0000</lastBuildDate>
     
-	<atom:link href="/sail-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LeetCode</title>
-      <link>/sail-blog/tags/leetcode/</link>
+      <link>/tags/leetcode/</link>
       <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/leetcode/</guid>
+      <guid>/tags/leetcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>/sail-blog/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
       
-      <guid>/sail-blog/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>总结</title>
-      <link>/sail-blog/tags/%E6%80%BB%E7%BB%93/</link>
+      <link>/tags/%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E6%80%BB%E7%BB%93/</guid>
+      <guid>/tags/%E6%80%BB%E7%BB%93/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MyBatis</title>
-      <link>/sail-blog/tags/mybatis/</link>
+      <link>/tags/mybatis/</link>
       <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/mybatis/</guid>
+      <guid>/tags/mybatis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>生活， 爸妈</title>
-      <link>/sail-blog/tags/%E7%94%9F%E6%B4%BB-%E7%88%B8%E5%A6%88/</link>
+      <link>/tags/%E7%94%9F%E6%B4%BB-%E7%88%B8%E5%A6%88/</link>
       <pubDate>Sun, 02 Sep 2018 11:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E7%94%9F%E6%B4%BB-%E7%88%B8%E5%A6%88/</guid>
+      <guid>/tags/%E7%94%9F%E6%B4%BB-%E7%88%B8%E5%A6%88/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design Patterns</title>
-      <link>/sail-blog/tags/design-patterns/</link>
+      <link>/tags/design-patterns/</link>
       <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/design-patterns/</guid>
+      <guid>/tags/design-patterns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>/sail-blog/tags/java/</link>
+      <link>/tags/java/</link>
       <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/java/</guid>
+      <guid>/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RPC</title>
-      <link>/sail-blog/tags/rpc/</link>
+      <link>/tags/rpc/</link>
       <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/rpc/</guid>
+      <guid>/tags/rpc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SOA</title>
-      <link>/sail-blog/tags/soa/</link>
+      <link>/tags/soa/</link>
       <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/soa/</guid>
+      <guid>/tags/soa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MQ</title>
-      <link>/sail-blog/tags/mq/</link>
+      <link>/tags/mq/</link>
       <pubDate>Sun, 23 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/mq/</guid>
+      <guid>/tags/mq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RabbitMQ</title>
-      <link>/sail-blog/tags/rabbitmq/</link>
+      <link>/tags/rabbitmq/</link>
       <pubDate>Sun, 23 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/rabbitmq/</guid>
+      <guid>/tags/rabbitmq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>学习</title>
-      <link>/sail-blog/tags/%E5%AD%A6%E4%B9%A0/</link>
+      <link>/tags/%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Fri, 07 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>/tags/%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>梁博</title>
-      <link>/sail-blog/tags/%E6%A2%81%E5%8D%9A/</link>
+      <link>/tags/%E6%A2%81%E5%8D%9A/</link>
       <pubDate>Fri, 07 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E6%A2%81%E5%8D%9A/</guid>
+      <guid>/tags/%E6%A2%81%E5%8D%9A/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ELK</title>
-      <link>/sail-blog/tags/elk/</link>
+      <link>/tags/elk/</link>
       <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/elk/</guid>
+      <guid>/tags/elk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>/tags/elasticsearch/</link>
+      <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
+      
+      <guid>/tags/elasticsearch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emoji</title>
-      <link>/sail-blog/tags/emoji/</link>
+      <link>/tags/emoji/</link>
       <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/emoji/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elasticsearch</title>
-      <link>/sail-blog/tags/elasticsearch/</link>
-      <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
-      
-      <guid>/sail-blog/tags/elasticsearch/</guid>
+      <guid>/tags/emoji/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Head</title>
-      <link>/sail-blog/tags/head/</link>
+      <link>/tags/head/</link>
       <pubDate>Sat, 25 Mar 2017 14:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/head/</guid>
+      <guid>/tags/head/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SpringBoot</title>
-      <link>/sail-blog/tags/springboot/</link>
+      <link>/tags/springboot/</link>
       <pubDate>Fri, 24 Mar 2017 15:12:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/springboot/</guid>
+      <guid>/tags/springboot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>后端学习，Jenkins</title>
-      <link>/sail-blog/tags/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0jenkins/</link>
+      <link>/tags/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0jenkins/</link>
       <pubDate>Fri, 24 Mar 2017 15:12:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0jenkins/</guid>
+      <guid>/tags/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0jenkins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>学习方法</title>
-      <link>/sail-blog/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+      <link>/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
+      <guid>/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>番茄工作法</title>
-      <link>/sail-blog/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/</link>
+      <link>/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/</link>
       <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/</guid>
+      <guid>/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>成长</title>
-      <link>/sail-blog/tags/%E6%88%90%E9%95%BF/</link>
+      <link>/tags/%E6%88%90%E9%95%BF/</link>
       <pubDate>Wed, 01 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/%E6%88%90%E9%95%BF/</guid>
+      <guid>/tags/%E6%88%90%E9%95%BF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>/sail-blog/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>/sail-blog/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/github/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hexo</title>
-      <link>/sail-blog/tags/hexo/</link>
+      <link>/tags/hexo/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/hexo/</guid>
+      <guid>/tags/hexo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IntelliJ IDEA</title>
-      <link>/sail-blog/tags/intellij-idea/</link>
+      <link>/tags/intellij-idea/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/intellij-idea/</guid>
+      <guid>/tags/intellij-idea/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Node.js</title>
-      <link>/sail-blog/tags/node.js/</link>
+      <link>/tags/node.js/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>/sail-blog/tags/node.js/</guid>
+      <guid>/tags/node.js/</guid>
       <description></description>
     </item>
     
