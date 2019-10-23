@@ -9,7 +9,7 @@ theme = "hello-friend-ng"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Homepage and blog by Djordje Atlialp"
+  description = "讨论技术，聊聊生活"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
@@ -28,7 +28,7 @@ theme = "hello-friend-ng"
 
     [languages.en.params.logo]
       logoText = "$ cd /home/"
-      logoHomeLink = "/"
+      logoHomeLink = "/sail-blog/"
     # or
     #
     # path = "/img/your-example-logo.svg"
