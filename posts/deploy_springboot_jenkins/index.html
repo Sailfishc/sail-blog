@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="">
+<meta name="description"
+    content="一、前言 公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。
+Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使用Maven/Ant/Gradle等构件工具进行Build - 构建成功之后会进行部署（deploy）
+二、安装  Jenkins官网 下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）   安装（略过） 安装条件  JDK MAVEN  插件安装  - 必备插件 - Git plugin - Maven Integration plugin - publish over ssh插件（用于上传打包好的项目到远程Linux） - 插件列表（太多不一一列出）
+三、配置  此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装
+ 1、系统配置 在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置
+注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置
+三、新建项目 这里我们选择创建Maven项目：
+如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权
+这里使用了Git作为源码管理工具，先配置SSH Key，在Jenkins的证书管理中添加SSH。在Jenkins管理页面，选择“Credentials”，然后选择“Global credentials (unrestricted)”，点击“Add Credentials”，如下图所示，我们填写自己的SSH信息，然后点击“Save”，这样就把SSH添加到Jenkins的全局域中去了。
+ 备注：Passphrase这里不用填值，这是自动生成的。 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接 http://www.linuxidc.com/Linux/2014-10&amp;frasl;108080.htm
+ 配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了 1、构建  备注：这里的Root Pom指的是根目录下的Pom文件" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/sail-blog/posts/deploy_springboot_jenkins/" />
+
+
+<title>
+    
+    Jenkins Maven Git SpringBoot Jar War Linux持续集成 :: 橙小张的博客  — 讨论技术，聊聊生活
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/sail-blog/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/sail-blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/sail-blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/sail-blog/favicon-16x16.png">
+<link rel="manifest" href="/sail-blog/site.webmanifest">
+<link rel="mask-icon" href="/sail-blog/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/sail-blog/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Jenkins Maven Git SpringBoot Jar War Linux持续集成">
+<meta itemprop="description" content="本文主要讲解使用Jenkins发布SrpringBoot项目，包括Jar包和War包">
+
+
+<meta itemprop="datePublished" content="2017-03-24T15:12:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-03-24T15:12:00&#43;00:00" />
+<meta itemprop="wordCount" content="172">
+
+
+
+<meta itemprop="keywords" content="后端学习，Jenkins,SpringBoot," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/sail-blog/"/>
+
+<meta name="twitter:title" content="Jenkins Maven Git SpringBoot Jar War Linux持续集成"/>
+<meta name="twitter:description" content="本文主要讲解使用Jenkins发布SrpringBoot项目，包括Jar包和War包"/>
+
+
+
+<meta property="article:section" content="后端学习" />
+
+<meta property="article:published_time" content="2017-03-24 15:12:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/sail-blog/about">About</a></li><li><a href="/sail-blog/posts/">Articles</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="/sail-blog/posts/deploy_springboot_jenkins/">Jenkins Maven Git SpringBoot Jar War Linux持续集成</a></h1>
+
+            
+
+            <div class="post-content">
+                
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-9d9aa000a2176fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h2 id="一-前言">一、前言</h2>
+
+<p>公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-727fcd1dd174863b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>Jenkins大概就这么工作：
+- 拉取GIT/SVN 等仓库的文件
+- 然后使用Maven/Ant/Gradle等构件工具进行Build
+- 构建成功之后会进行部署（deploy）</p>
+
+<h2 id="二-安装">二、安装</h2>
+
+<ul>
+<li><a href="https://jenkins.io/index.html">Jenkins官网</a></li>
+<li>下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-6ed5afc220bcf971.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>安装（略过）</li>
+<li>安装条件
+
+<ul>
+<li>JDK</li>
+<li>MAVEN</li>
+</ul></li>
+<li>插件安装</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-31a2db10f939d233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" />
+- 必备插件
+    - Git plugin
+    - <a href="http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin">Maven Integration plugin</a>
+    - publish over ssh插件（用于上传打包好的项目到远程Linux）
+- 插件列表（太多不一一列出）</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-ba5e79a14fc8f11f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h2 id="三-配置">三、配置</h2>
+
+<blockquote>
+<p>此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装</p>
+</blockquote>
+
+<h3 id="1-系统配置">1、系统配置</h3>
+
+<p>在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-6b6ad974687749b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-e6630d187141a908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-c442bc89ef0430d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置</p>
+
+<h2 id="三-新建项目">三、新建项目</h2>
+
+<p>这里我们选择创建Maven项目：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-f1f3c101baba2e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-a3ff81beed0bd601.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>这里使用了Git作为源码管理工具，先配置SSH Key，在Jenkins的证书管理中添加SSH。在Jenkins管理页面，选择“Credentials”，然后选择“Global credentials (unrestricted)”，点击“Add Credentials”，如下图所示，我们填写自己的SSH信息，然后点击“Save”，这样就把SSH添加到Jenkins的全局域中去了。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-d4812fcccba017d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>备注：Passphrase这里不用填值，这是自动生成的。
+如何配置Git ssh解决上述ssh key问题，可参考以下教程链接
+<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm">http://www.linuxidc.com/Linux/2014-<sup>10</sup>&frasl;<sub>108080</sub>.htm</a></p>
+</blockquote>
+
+<p>配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了
+<img src="http://upload-images.jianshu.io/upload_images/734456-9aca3e863f2438bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="1-构建">1、构建</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-f8aad83a9637aca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>备注：这里的Root Pom指的是根目录下的Pom文件</p>
+</blockquote>
+
+<p>如果是图一结构，Root Pom为：pom.xml</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-5d60696a8822d328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>如果为图二结构，Root Pom为：project_A/pom.xml</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-1fc8d3ad36650808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="2-授权服务器">2、授权服务器</h3>
+
+<p>打开jenkins首页，点击系统管理&ndash;系统设置，下拉找到找到publish over ssh,进行以下设置（请确保前面的步骤中publish over ssh插件已经安装成功，如果没有发现，那就是还没有安装成功，请返回去安装）。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-91e845ed76874d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="3-部署jar包">3、部署Jar包</h3>
+
+<p>进入上面的已经创建好的jenkinsWeb项目，点击配置，下拉找到Post Steps进行配置。</p>
+
+<p>１、点击</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-a4f2907d49e74db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" />
+如果没找到这项，证明publish over ssh没有安装成功。</p>
+
+<p>2、接着进行下图配置</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-b95732df59e48d68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>参数说明：</p>
+
+<p>Transfer SetSource files：表示要上传的本地的jar包及路径，可到工作空间去看。</p>
+
+<p>Remove prefix:表示要上传时要去除的文件夹，即只上传jar包。</p>
+
+<p>remote driectory:即表示执行时的路径，相当于把jar包上传到这里了。</p>
+
+<p>exec commad:要执行的命令脚本。</p>
+
+<blockquote>
+<p>构建脚本</p>
+</blockquote>
+
+<pre><code># 将应用停止
+#stop.sh
+#!/bin/bash
+echo &quot;Stopping SpringBoot Application&quot;
+pid=`ps -ef | grep search-1.0-SNAPSHOT.jar | grep -v grep | awk '{print $2}'`
+if [ -n &quot;$pid&quot; ]
+then
+   kill -9 $pid
+fi
+</code></pre>
+
+<pre><code>#replace.sh 用于将上次构建的结果备份，然后将新的构建结果移动到合适的位置
+#!/bin/bash
+# 先判断文件是否存在，如果存在，则备份
+file=&quot;/home/app/mall-search/search-1.0-SNAPSHOT.jar&quot;
+if [ -f &quot;$file&quot; ]
+then
+   mv /home/app/mall-search/search-1.0-SNAPSHOT.jar /home/app/mall-search/backup/search-1.0-SNAPSHOT.jar.`date +%Y%m%d%H%M%S`
+fi
+mv /home/app/deploy/search-1.0-SNAPSHOT.jar /home/app/mall-search/search-1.0-SNAPSHOT.jar
+</code></pre>
+
+<pre><code># startup.sh 启动项目
+#!/bin/sh
+export JAVA_HOME=/home/shopin/jdk1.8.0_121
+echo ${JAVA_HOME}
+echo &quot;授予当前用户权限&quot;
+chmod 777 /home/shopin/mall-search/search-1.0-SNAPSHOT.jar
+echo &quot;执行.....&quot;
+cd /home/shopin/mall-search/
+nohup ${JAVA_HOME}/bin/java -jar search-1.0-SNAPSHOT.jar &gt; /dev/null &amp;
+echo &quot;启动成功...&quot;
+</code></pre>
+
+<p>这样就可以将jar包打到远程服务器了</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-7bee1d38208a4082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="4-部署war包容器-tomcat-中">4、部署War包容器（tomcat）中</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-c0f207c324028f18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>如果容器是tomcat，就需要在tomcat配置相应的用户名和密码：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-63057a4157bef0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>以上就是Jenkins for SpringBoot，同样也可以发布到tomcat</p>
+</blockquote>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/sail-blog/tags/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0jenkins">后端学习，Jenkins</a></span><span class="tag"><a href="/sail-blog/tags/springboot">SpringBoot</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>172 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2017-03-24 23:12 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/sail-blog/posts/es_head_install/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Mac下Elasticsearch5.X和Head插件的安装</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/sail-blog/posts/learn_good/">
+                                <span class="button__text">如何高效学习，总结自己的学习方法</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+            <span></span>
+            <span> <a href="/sail-blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/sail-blog/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

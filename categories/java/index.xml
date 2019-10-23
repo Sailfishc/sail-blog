@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 橙小张的博客</title>
+    <link>/sail-blog/categories/java/</link>
+    <description>Recent content in Java on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 May 2017 11:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="/sail-blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>设计模式总结</title>
+      <link>/sail-blog/posts/learn_design_patterns/</link>
+      <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
+      
+      <guid>/sail-blog/posts/learn_design_patterns/</guid>
+      <description>一、创建型模式(五种)  工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源） 抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy） 单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制） 建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能） 原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）  二、结构型模式(七种)  适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系） 装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx） 代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池） 外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数） 桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动） 组合模式(Composite)：部分与整体，常用于表示树形结构 享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）  三、行为型模式(十一种)  策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口） 模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件） 观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ） 迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器） 责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve） 命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2） 备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据 状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象） 访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象） 中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者 解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐  四、学习资源  调停者模式 解释器模式 访问者模式 状态模式 备忘录模式 命令模式 责任链模式 迭代子模式 观察者模式 模板方法模式 策略模式 不变模式 桥梁模式 门面模式 享元模式 代理模式 装饰模式 合成模式 适配器模式 原型模式 建造模式 单例模式 抽象工厂模式 工厂方法模式 简单工厂模式  五、总结   内容部分引用自http://smallbug-vip.</description>
+    </item>
+    
+    <item>
+      <title>解决Mysql存储Emoji乱码问题</title>
+      <link>/sail-blog/posts/emoji_demo/</link>
+      <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
+      
+      <guid>/sail-blog/posts/emoji_demo/</guid>
+      <description>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
+ 在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
+总的就一句话，UTF-8是Unicode的一种实现。
+一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路： - 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 - 读取的时候可以将😄这个字符转为😁
+例如： 😁 我可以存储为:smile:，😭存储为:cry:，等等，可以这样映射起来。
+1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper.</description>
+    </item>
+    
+    <item>
+      <title>Java程序员学习路线</title>
+      <link>/sail-blog/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+      <pubDate>Wed, 01 Mar 2017 17:58:27 +0000</pubDate>
+      
+      <guid>/sail-blog/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+      <description>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。 感觉有点跑题了，说回来，还是怎么学习：
+1、你得对你所在行业的知识框架要有一个基本的了解  比如我所在的JavaEE的学习路线：
+ Java基础 - 基础语法 - 逻辑控制流 - 面向对象的知识 - 常用的类，如String - IO - 集合 - 多线程 - 异常 - 网络编程
+JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Servlet/JSP - 数据库相关知识 - 过滤器，监听器 - ajax - session/cookie - jdbc
+框架相关(会用即可) - spring - springmvc - myBatis
+这是最基础的知识，这个层面就是先会用，可以在网上找一个网上商城的例子用来练习，把整体的代码思路看看，就算是OK了。 在实习工作期间，主要是适应公司的代码环境，这时候要会用一定的工具，类似版本控制，项目管理工具等： - GIT - SVN - Maven
+这些工具的基本操作学习用不了多久，但是会给你带动很高的效率，在这之后，就是真正开始自己学习的过程，这才是提高的过程，你得根据自己的实际情况开始自己学习，不再依赖于视频教程，更多的是来源于书籍和自己实际项目的思考，首先要将业务需求转化为自己的代码实现，这是最关键的，其次是思考，怎么写更好，这是一个模仿+思考的过程，你要了解系统的整体结构是什么，用到了哪些技术，日志是怎么处理的，异常是怎么处理的，最关键的是要有自己的代码风格。
+2、一次项目交接的思考 前几天有个同事要离职了，他的项目需要进行交接，我最近工作量比较少，就由我进行交接，这几天我觉得是我好几个月来成长最快的几天，我和他单独交流，因为项目是新建的一个项目，项目中业务信息不多，所以好理解，两天时间，基本上就可以上手了，之后的一天里我就一直和他在聊系统的设计思路和编码风格以及如何提高自己的编码水平。 很多人在做项目的时候思考的是如何做出来，也包括我，但是没有思考怎么做更好，他说他在做这个项目中删除了很多代码，想了好几套方法去解决，最终是保留了一套觉得自己好的，在这里，它借鉴了两个框架的设计思路，他没有深入了解过一个框架，但是大体了解一些，通过在写项目的过程中它看了些框架的源码，借鉴了一些它的思路，慢慢的也就有了一个从需求很不明确，没有的项目到现在也算是一个产品的项目，这其中花费了自己很大的心思。 我一直觉得自己的代码写的很烂，也一直想提高，但是苦于不知道如何提高，听了他的这些话，我就在想，目前我有基本的编码基础，我应该怎样提高，做项目？目前没有太多的时间去完整的做一个项目，最好的开端就是借鉴，从一个开源框架中借鉴它的思路，学习它的设计模式，编码风格，对工具类的封装，对功能的实现，这就像是你刚来公司的时候，要学习公司项目一样，但是这种开源框架会比较大，也比较难，不会像公司项目那样相对容易的让你去学习，但是坚持下去，总会有改变。</description>
+    </item>
+    
+  </channel>
+</rss>
