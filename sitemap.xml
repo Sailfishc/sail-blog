@@ -187,6 +187,17 @@
   </url>
   
   <url>
+    <loc>/sail-blog/posts/learn_es_mind/</loc>
+    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/sail-blog/tags/emoji/</loc>
+    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/sail-blog/categories/elasticsearch/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
@@ -194,17 +205,6 @@
   
   <url>
     <loc>/sail-blog/tags/elasticsearch/</loc>
-    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/posts/learn_es_mind/</loc>
-    <lastmod>2017-03-31T17:58:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/sail-blog/tags/emoji/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <priority>0</priority>
   </url>
