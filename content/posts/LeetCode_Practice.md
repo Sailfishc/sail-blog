@@ -1,6 +1,6 @@
 ---
 title: 算法和数据结构学习路线-LeetCode刷题
-date: 209-10-23 14:7:00
+date: 209-10-23 14:07:00
 categories: [LeetCode]
 tags: [LeetCode, algorithm]
 ---
