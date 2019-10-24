@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>橙小张的博客</title>
-    <link>https://code.sailfishc.cn/sail-blog/</link>
+    <link>https://blog.sailfishc.cn/</link>
     <description>Recent content on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Oct 2019 17:37:00 +0000</lastBuildDate>
     
-	<atom:link href="https://code.sailfishc.cn/sail-blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>以练代学，学习算法和数据结构</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_leetcode/</link>
+      <link>https://blog.sailfishc.cn/posts/learn_leetcode/</link>
       <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_leetcode/</guid>
+      <guid>https://blog.sailfishc.cn/posts/learn_leetcode/</guid>
       <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
 首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：
  算法导论 数据结构与算法分析 配合LeetCode或者OJ来练习   我的学习计划是这样的（以练代学）：
@@ -28,29 +28,29 @@
     
     <item>
       <title>长期关注的一些博客</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/blog-star/</link>
+      <link>https://blog.sailfishc.cn/posts/blog-star/</link>
       <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/blog-star/</guid>
+      <guid>https://blog.sailfishc.cn/posts/blog-star/</guid>
       <description> 酷壳 – CoolShell.cn  </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://code.sailfishc.cn/sail-blog/about/</link>
+      <link>https://blog.sailfishc.cn/about/</link>
       <pubDate>Sat, 19 Jan 2019 02:42:30 +0100</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/about/</guid>
+      <guid>https://blog.sailfishc.cn/about/</guid>
       <description> 橙子
  </description>
     </item>
     
     <item>
       <title>2018年总结</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+      <link>https://blog.sailfishc.cn/posts/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://blog.sailfishc.cn/posts/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
       <description> 2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
 工作  2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司
  虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。
@@ -69,10 +69,10 @@
     
     <item>
       <title>那些书本中没告诉你的MyBatis</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/mybatis/</link>
+      <link>https://blog.sailfishc.cn/posts/mybatis/</link>
       <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/mybatis/</guid>
+      <guid>https://blog.sailfishc.cn/posts/mybatis/</guid>
       <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
 &amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
@@ -87,10 +87,10 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
     
     <item>
       <title>致生活</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/to_liive/</link>
+      <link>https://blog.sailfishc.cn/posts/to_liive/</link>
       <pubDate>Sun, 02 Sep 2018 11:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/to_liive/</guid>
+      <guid>https://blog.sailfishc.cn/posts/to_liive/</guid>
       <description> 少年真正成人的那一刻，大概就是，对于你的家人，你会时不时惦记，想念，渴望从他们那里得到抚慰，害怕他们哪天离开人世——他们成为你梦境的常客，内心最柔软的部分；你却无比清楚：纵然爱他们，却再无法同他们心无芥蒂地谈论，或长久地生活在一起。 — 一个
  今天送妈妈去火车站回家了，过来的时间不长不短，来去10天，期间工作比较忙，只有周末有时间出去逛，没去几个地方，只去了故宫、颐和园、森林公园、鸟巢、前门、天安门，这是过年回家之后第一次见我妈，来北京以后基本每年就回一趟家，这次我妈在我的坚持下过来，我就规划着带她吃点好的，买几件衣服，带她逛逛。
 去车站接她的时候，她穿着一件橘色的衣服，在人群中显得很突兀，在家的时候还没怎么注意，来北京了，突然发现妈妈已经老了，白头发多了些，她在人群中提着一个箱子，面对人群，有一点慌乱，我想着她做了一天火车了，回来休息一下，第二天再出去，她坚持说自己不累，下午就去周边的森林公园逛了逛，晚上在外面吃了点鱼，吃完就说太贵了。
@@ -104,19 +104,19 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
     
     <item>
       <title>设计模式总结</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_design_patterns/</link>
+      <link>https://blog.sailfishc.cn/posts/learn_design_patterns/</link>
       <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_design_patterns/</guid>
+      <guid>https://blog.sailfishc.cn/posts/learn_design_patterns/</guid>
       <description>一、创建型模式(五种)  工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源） 抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy） 单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制） 建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能） 原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）  二、结构型模式(七种)  适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系） 装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx） 代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池） 外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数） 桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动） 组合模式(Composite)：部分与整体，常用于表示树形结构 享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）  三、行为型模式(十一种)  策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口） 模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件） 观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ） 迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器） 责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve） 命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2） 备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据 状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象） 访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象） 中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者 解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐  四、学习资源  调停者模式 解释器模式 访问者模式 状态模式 备忘录模式 命令模式 责任链模式 迭代子模式 观察者模式 模板方法模式 策略模式 不变模式 桥梁模式 门面模式 享元模式 代理模式 装饰模式 合成模式 适配器模式 原型模式 建造模式 单例模式 抽象工厂模式 工厂方法模式 简单工厂模式  五、总结   内容部分引用自http://smallbug-vip.</description>
     </item>
     
     <item>
       <title>浅析RPC</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_rpc/</link>
+      <link>https://blog.sailfishc.cn/posts/learn_rpc/</link>
       <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_rpc/</guid>
+      <guid>https://blog.sailfishc.cn/posts/learn_rpc/</guid>
       <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
 之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
@@ -131,10 +131,10 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
     
     <item>
       <title>消息队列之RabbitMQ基础</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_rabbitmq/</link>
+      <link>https://blog.sailfishc.cn/posts/learn_rabbitmq/</link>
       <pubDate>Sun, 23 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_rabbitmq/</guid>
+      <guid>https://blog.sailfishc.cn/posts/learn_rabbitmq/</guid>
       <description>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。
  一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息
  主体流程：  队列类似一个broker角色，生产者将内容（消息）发送到队列 队列进行存储，消费者将消息消费 消费者确认消费消息（ack）  生产者和消费者都可以通过来创建队列：
@@ -145,10 +145,10 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
     
     <item>
       <title>38年（转载）</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/liangbo/</link>
+      <link>https://blog.sailfishc.cn/posts/liangbo/</link>
       <pubDate>Fri, 07 Apr 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/liangbo/</guid>
+      <guid>https://blog.sailfishc.cn/posts/liangbo/</guid>
       <description>1979年4月7日的夜里3点，一个卑微的生命诞生了，这个小生命就是我。和当时大多数家庭一样，生活一直非常艰苦。从小开始穿哥哥留下的衣服，终于有一天，我希望买一件新羽绒服，父母推辞了很多次，闹了很多次，终于有一次妈妈下班回家，我堵住大门，不买羽绒服不让进门，但这一次终于迎来了一件新羽绒服，然而这一次仿佛是人生重大的洗礼，我一下子就长大了，从此再也没有闹过什么新衣服，默默穿起来哥哥的旧衣服，背起了旧书包，人生迎来了新的境界，一定要靠自己努力，一定一定要靠自己努力。当时我把所有的玩具赠送给了一个好友，他很奇怪，为什么这些之前珍重的宝贝都不要了，我说我想多看点书，多明白一些道理。
 当时家里很小很小，哥哥回到家要学英语，需要一个安静的环境，关起了门，我也无处去，就到处玩，很晚才回家。加上天资平庸，学习成绩并不突出，但也不坏。考大学的时候，亲戚都劝我父母，供两个孩子上大学太辛苦了，不如让我当兵算了，能考上专科的话就读个专科，我就是这样一个不被看好的丑小鸭。
 那时我也没什么梦想，也做好了当兵的打算，并填补了材料进行了体检。不想分数还够读专科。直到上了大学，我在内心深处还一直瞧不起自己，什么都不如别人，什么都不敢争取，有喜欢的姑娘，连说话的勇气都没有，也没穿过什么漂亮衣服，长相又傻，可以说自己就把自己当烂仔了。
@@ -165,19 +165,19 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
     
     <item>
       <title>Elasticsearch学习记录</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_es_mind/</link>
+      <link>https://blog.sailfishc.cn/posts/learn_es_mind/</link>
       <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_es_mind/</guid>
+      <guid>https://blog.sailfishc.cn/posts/learn_es_mind/</guid>
       <description></description>
     </item>
     
     <item>
       <title>解决Mysql存储Emoji乱码问题</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/emoji_demo/</link>
+      <link>https://blog.sailfishc.cn/posts/emoji_demo/</link>
       <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/emoji_demo/</guid>
+      <guid>https://blog.sailfishc.cn/posts/emoji_demo/</guid>
       <description>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
  在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
 总的就一句话，UTF-8是Unicode的一种实现。
@@ -188,10 +188,10 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
     
     <item>
       <title>Mac下Elasticsearch5.X和Head插件的安装</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/es_head_install/</link>
+      <link>https://blog.sailfishc.cn/posts/es_head_install/</link>
       <pubDate>Sat, 25 Mar 2017 14:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/es_head_install/</guid>
+      <guid>https://blog.sailfishc.cn/posts/es_head_install/</guid>
       <description>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。
  一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动 &amp;gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
  进入es的conf目录修改配置文件
@@ -202,10 +202,10 @@ cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200
     
     <item>
       <title>Jenkins Maven Git SpringBoot Jar War Linux持续集成</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/deploy_springboot_jenkins/</link>
+      <link>https://blog.sailfishc.cn/posts/deploy_springboot_jenkins/</link>
       <pubDate>Fri, 24 Mar 2017 15:12:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/deploy_springboot_jenkins/</guid>
+      <guid>https://blog.sailfishc.cn/posts/deploy_springboot_jenkins/</guid>
       <description>一、前言 公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。
 Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使用Maven/Ant/Gradle等构件工具进行Build - 构建成功之后会进行部署（deploy）
 二、安装  Jenkins官网 下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）   安装（略过） 安装条件  JDK MAVEN  插件安装  - 必备插件 - Git plugin - Maven Integration plugin - publish over ssh插件（用于上传打包好的项目到远程Linux） - 插件列表（太多不一一列出）
@@ -221,10 +221,10 @@ Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使�
     
     <item>
       <title>如何高效学习，总结自己的学习方法</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/learn_good/</link>
+      <link>https://blog.sailfishc.cn/posts/learn_good/</link>
       <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/learn_good/</guid>
+      <guid>https://blog.sailfishc.cn/posts/learn_good/</guid>
       <description>在工作之后一段时间一直会有这么一种感觉：一天浑浑噩噩不知道干了什么，或者整天被他人打断而不能专注，又或者从早到晚的忙导致下班头脑发胀。
  自己也在寻找适合自己的学习方法，可能是学习能力比较差，一直没找到合适的，很多人推荐的番茄工作法自己尝试了几次也放弃了，但是现在工作每天都很忙，但是不知道自己干嘛了，这促使我又开始寻找一个适合自己的工具和学习方法。
 这次的主题分两部分： - 工具 - 学习方法
@@ -246,10 +246,10 @@ Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使�
     
     <item>
       <title>Java程序员学习路线</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+      <link>https://blog.sailfishc.cn/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
       <pubDate>Wed, 01 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+      <guid>https://blog.sailfishc.cn/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
       <description>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。 感觉有点跑题了，说回来，还是怎么学习：
 1、你得对你所在行业的知识框架要有一个基本的了解  比如我所在的JavaEE的学习路线：
  Java基础 - 基础语法 - 逻辑控制流 - 面向对象的知识 - 常用的类，如String - IO - 集合 - 多线程 - 异常 - 网络编程
@@ -262,10 +262,10 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
     
     <item>
       <title>使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</title>
-      <link>https://code.sailfishc.cn/sail-blog/posts/hexo/</link>
+      <link>https://blog.sailfishc.cn/posts/hexo/</link>
       <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
       
-      <guid>https://code.sailfishc.cn/sail-blog/posts/hexo/</guid>
+      <guid>https://blog.sailfishc.cn/posts/hexo/</guid>
       <description>部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
  为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）  软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable  账号：  Github：https://github.</description>
     </item>
