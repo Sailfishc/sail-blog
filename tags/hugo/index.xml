@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 橙小张的博客</title>
+    <link>https://blog.sailfishc.cn/tags/hugo/</link>
+    <description>Recent content in Hugo on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Oct 2019 15:05:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.sailfishc.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过Hugo&#43;Github快速搭建博客</title>
+      <link>https://blog.sailfishc.cn/posts/deploy_blog_to_hugo/</link>
+      <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/deploy_blog_to_hugo/</guid>
+      <description>写在前面
+ 程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
+先罗列下常见的博客网站：
+ Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
+ node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
+快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
+ 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &amp;gt;&amp;gt; config.toml  新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：</description>
+    </item>
+    
+  </channel>
+</rss>
