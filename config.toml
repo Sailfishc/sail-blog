@@ -1,4 +1,4 @@
-baseurl = "https://code.sailfishc.cn/sail-blog/"
+baseurl = "https://blog.sailfishc.cn/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -49,7 +49,7 @@ theme = "hello-friend-ng"
 
     [languages.en.params.logo]
       logoText = "$ cd /home/"
-      logoHomeLink = "/sail-blog/"
+      logoHomeLink = "/"
     # or
     #
     # path = "/img/your-example-logo.svg"
