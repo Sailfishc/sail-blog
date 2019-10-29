@@ -3,11 +3,6 @@ languageCode = "en-us"
 theme = "hello-friend-ng"
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04:00"
-
   # Metadata mostly used in document's head
   description = "讨论技术，聊聊生活"
   keywords = "homepage, blog, science, informatics, development, programming"
@@ -25,7 +20,7 @@ theme = "hello-friend-ng"
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/sailfishc/"
+    url  = "https://twitter.com/sailfishcc/"
 
   [[params.social]]
     name = "email"
@@ -38,6 +33,11 @@ theme = "hello-friend-ng"
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/in/sailfishc/"
+
+  [params.utter]
+      repo = "https://github.com/Sailfishc/blog-comments"
+      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+      theme = "github-dark"
 
 [languages]
   [languages.en]
