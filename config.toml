@@ -1,20 +1,23 @@
-baseurl = "https://blog.sailfishc.cn/"
-languageCode = "en-us"
-theme = "hello-friend-ng"
+baseURL = "https://blog.sailfishc.cn/"
+title="橙小张的博客"
 
-googleAnalytics = "UA-124900585-1"
 defaultContentLanguage = "en"           # Default language to use
 
-title="橙小张的博客"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+googleAnalytics = "UA-124900585-1"
 
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-#archetypeDir = "archetypes"
-#contentDir   = "content"
-#dataDir      = "data"
-#layoutDir    = "layouts"
-#publishDir   = "public"
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
 
 buildDrafts  = false
 buildFuture  = false
@@ -56,13 +59,14 @@ disableHugoGeneratorInject = false
 
   since = "2017"            # Site creation time          # 站点建立时间
 
-  homeSubtitle = "讨论技术，聊聊生活"
-
-
   # Metadata mostly used in document's head
   description = "讨论技术，聊聊生活"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
+
+
+  homeSubtitle = "讨论技术，聊聊生活"
+
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
