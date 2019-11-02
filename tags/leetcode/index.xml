@@ -6,6 +6,7 @@
     <description>Recent content in LeetCode on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 22 Oct 2019 17:37:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>以练代学，学习算法和数据结构</title>
-      <link>https://blog.sailfishc.cn/posts/learn_leetcode/</link>
+      <link>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
       <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
       
-      <guid>https://blog.sailfishc.cn/posts/learn_leetcode/</guid>
+      <guid>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
       <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
 首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：
  算法导论 数据结构与算法分析 配合LeetCode或者OJ来练习   我的学习计划是这样的（以练代学）：

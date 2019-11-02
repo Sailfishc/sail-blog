@@ -5,15 +5,16 @@
         <description>Recent content in Posts on 橙小张的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Fri, 01 Nov 2019 09:56:18 +0800</lastBuildDate>
         <atom:link href="https://blog.sailfishc.cn/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>科学上网</title>
-            <link>https://blog.sailfishc.cn/posts/good-internet/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
             <pubDate>Fri, 01 Nov 2019 09:56:18 +0800</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/good-internet/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
             <description>本文转自左耳朵耗子
  作者：左耳朵 http://coolshell.cn 更新时间：2019-11-01
 这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新
@@ -24,10 +25,10 @@
 <p>本文转自左耳朵耗子</p>
 </blockquote>
 
-<p>作者：左耳朵 <a href="http://coolshell.cn">http://coolshell.cn</a>
+<p>作者：左耳朵 <a href="http://coolshell.cn" target="_blank">http://coolshell.cn</a>
 更新时间：2019-11-01</p>
 
-<p>这篇文章可以写的更好，欢迎到 <a href="https://github.com/haoel/haoel.github.io">https://github.com/haoel/haoel.github.io</a> 更新</p>
+<p>这篇文章可以写的更好，欢迎到 <a href="https://github.com/haoel/haoel.github.io" target="_blank">https://github.com/haoel/haoel.github.io</a> 更新</p>
 
 <ul>
 <li><a href="#科学上网">科学上网</a>
@@ -107,13 +108,13 @@
 <p>对于VPS，下面是一些常规选项。</p>
 
 <ul>
-<li><a href="https://lightsail.aws.amazon.com/">AWS LightSail</a> 是一个非常便宜好用的服务，最低配置一个月 $3.5 美金，目前的Zone不多，推荐使用日本或新加坡（支持银联卡）</li>
-<li><a href="https://aws.amazon.com/cn/">AWS EC2</a>香港、日本或韩国申请个免费试用一年的EC2 VPS （支持银联卡）</li>
-<li><a href="https://cloud.google.com/">Google Cloud Platform</a>提供免费试用，赠送300刀赠金（需要国际信用卡）</li>
-<li><a href="https://www.linode.com">Linode</a>买个一月USD10刀的VPS</li>
-<li><a href="https://www.conoha.jp/zh/">Conoha</a>上买一个日本的VPS，一个月900日元 （可以支付宝）</li>
-<li><a href="https://www.vultr.com">Vultr</a>上买一个日本的VPS，一个月5刀 （可以支付宝）</li>
-<li><a href="https://www.oracle.com/cloud/free/">Oracle Cloud</a>两台VPS无限期使用，可选美日韩等地（需要国际信用卡）</li>
+<li><a href="https://lightsail.aws.amazon.com/" target="_blank">AWS LightSail</a> 是一个非常便宜好用的服务，最低配置一个月 $3.5 美金，目前的Zone不多，推荐使用日本或新加坡（支持银联卡）</li>
+<li><a href="https://aws.amazon.com/cn/" target="_blank">AWS EC2</a>香港、日本或韩国申请个免费试用一年的EC2 VPS （支持银联卡）</li>
+<li><a href="https://cloud.google.com/" target="_blank">Google Cloud Platform</a>提供免费试用，赠送300刀赠金（需要国际信用卡）</li>
+<li><a href="https://www.linode.com" target="_blank">Linode</a>买个一月USD10刀的VPS</li>
+<li><a href="https://www.conoha.jp/zh/" target="_blank">Conoha</a>上买一个日本的VPS，一个月900日元 （可以支付宝）</li>
+<li><a href="https://www.vultr.com" target="_blank">Vultr</a>上买一个日本的VPS，一个月5刀 （可以支付宝）</li>
+<li><a href="https://www.oracle.com/cloud/free/" target="_blank">Oracle Cloud</a>两台VPS无限期使用，可选美日韩等地（需要国际信用卡）</li>
 </ul>
 
 <blockquote>
@@ -146,13 +147,13 @@
 <p>关于 <code>CN2</code> 线路的主机提供商，下面罗列几个</p>
 
 <ul>
-<li><a href="https://bwh8.net/aff.php?aff=39384">搬瓦工</a>  这应该是美区最好的一个用来科学上网的VPS提供商了，实测飞快。购买时你需要注意VPS规格上的 <code>CN2</code> 和 <code>GIA</code> 的描述。（注：点击主页右上角的 <code>regisiter</code> 以后，你可以看到页面上方有两个导航条，在下面的导航条上点 <code>Services</code> -&gt; <code>Order New Services</code> 就可以看到所有的列表了。买完后，你可能需要重装一下操作系统，装成64位带BBR的 ）</li>
-<li><a href="https://clientarea.gigsgigscloud.com/index.php?/cart/cloudlet-v-hk/&amp;step=0">Gigsgigscloud</a> CN2 GIA 在香港的结点是很不错的，当然，价格也很不错（建议几个人一起平摊费用）</li>
-<li><a href="https://www.kvmla.com/">Kvmla</a> 香港地区的CN2 GIA提供商 每月80元</li>
-<li><a href="https://manage.hostdare.com/index.php">Hostdare</a> 的CN2 GIA产品也是三网直连，KVM和OpenVZ两种架构，KVM产品长期缺货</li>
+<li><a href="https://bwh8.net/aff.php?aff=39384" target="_blank">搬瓦工</a>  这应该是美区最好的一个用来科学上网的VPS提供商了，实测飞快。购买时你需要注意VPS规格上的 <code>CN2</code> 和 <code>GIA</code> 的描述。（注：点击主页右上角的 <code>regisiter</code> 以后，你可以看到页面上方有两个导航条，在下面的导航条上点 <code>Services</code> -&gt; <code>Order New Services</code> 就可以看到所有的列表了。买完后，你可能需要重装一下操作系统，装成64位带BBR的 ）</li>
+<li><a href="https://clientarea.gigsgigscloud.com/index.php?/cart/cloudlet-v-hk/&amp;step=0" target="_blank">Gigsgigscloud</a> CN2 GIA 在香港的结点是很不错的，当然，价格也很不错（建议几个人一起平摊费用）</li>
+<li><a href="https://www.kvmla.com/" target="_blank">Kvmla</a> 香港地区的CN2 GIA提供商 每月80元</li>
+<li><a href="https://manage.hostdare.com/index.php" target="_blank">Hostdare</a> 的CN2 GIA产品也是三网直连，KVM和OpenVZ两种架构，KVM产品长期缺货</li>
 </ul>
 
-<p>更多的可以参考这篇文章《<a href="https://wzfou.com/cn2-gia-vps/">CN2 GIA VPS主机收集整理汇总-电信,联通,移动三网CN2 GIA线路VPS主机</a>》（注：随时间推移，这篇文章的内容可能会失效）</p>
+<p>更多的可以参考这篇文章《<a href="https://wzfou.com/cn2-gia-vps/" target="_blank">CN2 GIA VPS主机收集整理汇总-电信,联通,移动三网CN2 GIA线路VPS主机</a>》（注：随时间推移，这篇文章的内容可能会失效）</p>
 
 <p>重点说一下，<strong>CN2 GIA + 香港机房</strong>，你会得到巨快无比的上网速度，然而，香港地区的VPS的确是有点贵了。在Youtube.com上看1080p的视频毫无压力。虽然阿里云和腾讯的也有，但是被查到的风险基本上是100%，不建议使用，被抓了别怪我没警告过你。</p>
 
@@ -168,8 +169,8 @@
 <p>关于 <code>NCP</code> 线路的主机提供商，下面罗列两个</p>
 
 <ul>
-<li><a href="https://www.50kvm.com">50KVM VPS</a> 截止2018年12月2日KVM 产品最低价格￥81.60/月。</li>
-<li><a href="https://t667.com/">OLVPS</a> 截止2018年12月2日KVM 产品最低价格¥22/月。</li>
+<li><a href="https://www.50kvm.com" target="_blank">50KVM VPS</a> 截止2018年12月2日KVM 产品最低价格￥81.60/月。</li>
+<li><a href="https://t667.com/" target="_blank">OLVPS</a> 截止2018年12月2日KVM 产品最低价格¥22/月。</li>
 </ul>
 
 <h2 id="3-搭建-shadowsocks-和-vpn-服务">3. 搭建 Shadowsocks 和 VPN 服务</h2>
@@ -179,8 +180,8 @@
 <p>首先，你要安装一个Docker CE 服务，这里你要去看一下docker官方的安装文档：</p>
 
 <ul>
-<li><a href="https://docs.docker.com/install/linux/docker-ce/centos/">CentOS 上的 Docker CE 安装</a></li>
-<li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Ubuntu 上的 Docker CE 安装</a></li>
+<li><a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank">CentOS 上的 Docker CE 安装</a></li>
+<li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">Ubuntu 上的 Docker CE 安装</a></li>
 </ul>
 
 <p>然后开始设置你的VPN/SS服务</p>
@@ -191,7 +192,7 @@
 
 <p>BBR之后移植入Linux内核4.9版本，并且对于QUIC可用。</p>
 
-<p>如果开启，请参看 《<a href="https://github.com/iMeiji/shadowsocks_install/wiki/开启TCP-BBR拥塞控制算法">开启TCP BBR拥塞控制算法</a> 》</p>
+<p>如果开启，请参看 《<a href="https://github.com/iMeiji/shadowsocks_install/wiki/开启TCP-BBR拥塞控制算法" target="_blank">开启TCP BBR拥塞控制算法</a> 》</p>
 
 <h3 id="3-3-设置shadowsocks服务">3.3 设置Shadowsocks服务</h3>
 
@@ -247,12 +248,12 @@ sudo docker run -d  --privileged \
 
 <h3 id="4-1-shadowsocks-客户端">4.1 Shadowsocks 客户端</h3>
 
-<p>对于 Shadowsocks 客户端，可以到这里查看 <a href="https://shadowsocks.org/en/download/clients.html">Shadowsocks Clients</a></p>
+<p>对于 Shadowsocks 客户端，可以到这里查看 <a href="https://shadowsocks.org/en/download/clients.html" target="_blank">Shadowsocks Clients</a></p>
 
 <ul>
-<li>MacOS 上你可以下载 <a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases">ShadowsocksX-NG</a></li>
-<li>Windows上你可以下载 <a href="https://github.com/shadowsocks/shadowsocks-windows/releases">Shadowsocks-Windows</a>，需要先安装 <a href="https://dotnet.microsoft.com/download/dotnet-framework-runtime">.NET Framework</a></li>
-<li>Android的客户端，你可以用手机访问并下载 <a href="https://github.com/shadowsocks/shadowsocks-android/releases">Shadowsocks-Android</a></li>
+<li>MacOS 上你可以下载 <a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank">ShadowsocksX-NG</a></li>
+<li>Windows上你可以下载 <a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank">Shadowsocks-Windows</a>，需要先安装 <a href="https://dotnet.microsoft.com/download/dotnet-framework-runtime" target="_blank">.NET Framework</a></li>
+<li>Android的客户端，你可以用手机访问并下载 <a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank">Shadowsocks-Android</a></li>
 <li>iPhone 端就比较麻烦了。因为国内全都被下架了。
 
 <ol>
@@ -269,9 +270,9 @@ sudo docker run -d  --privileged \
 <li>关于如何注册美区Apple ID账号，你可以参看如下的这几篇文章（我不保证这些文章可不可用，但是你可以自行Google）。
 
 <ul>
-<li><a href="https://zhuanlan.zhihu.com/p/36574047">5分钟注册美国区Apple ID（18年亲测有效）</a></li>
-<li><a href="https://www.jianshu.com/p/b32da641e849">2018年6月亲测：注册美国地区苹果apple ID帐号终极教程</a></li>
-<li><a href="https://blog.csdn.net/ziyuzhiye/article/details/82769129">iOS开发之注册美国Apple Id不需要绑定信用卡，亲测可用</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/36574047" target="_blank">5分钟注册美国区Apple ID（18年亲测有效）</a></li>
+<li><a href="https://www.jianshu.com/p/b32da641e849" target="_blank">2018年6月亲测：注册美国地区苹果apple ID帐号终极教程</a></li>
+<li><a href="https://blog.csdn.net/ziyuzhiye/article/details/82769129" target="_blank">iOS开发之注册美国Apple Id不需要绑定信用卡，亲测可用</a></li>
 </ul></li>
 </ul>
 </blockquote>
@@ -281,15 +282,15 @@ sudo docker run -d  --privileged \
 <p>对于L2TP/IPSec，几乎所有的客户端操作系统（无论是Windows/Mac/Linux的电脑，还是iPhone/Android）都支持，你可以自行Google。</p>
 
 <ul>
-<li><a href="https://www.jianshu.com/p/24e48cfb574f">Mac OS X PPTP/L2TP设置教程</a></li>
-<li><a href="http://nic.upc.edu.cn/2016/0928/c7809a132077/page.htm">Windows 7操作系统配置L2TP VPN方法</a></li>
+<li><a href="https://www.jianshu.com/p/24e48cfb574f" target="_blank">Mac OS X PPTP/L2TP设置教程</a></li>
+<li><a href="http://nic.upc.edu.cn/2016/0928/c7809a132077/page.htm" target="_blank">Windows 7操作系统配置L2TP VPN方法</a></li>
 </ul>
 
 <h2 id="5-流量伪装和其它方式">5. 流量伪装和其它方式</h2>
 
 <p>我们知道，你翻墙的行为，其实都是在被探测中的，因为无论你的手机还是宽带都是有需要到运营商那里开通上网账户的，所以，各大电信运营商有你的所有的上网的记录。</p>
 
-<p>在Youtube上有个视频，你可以看一下 《<a href="https://www.youtube.com/watch?v=G-P8eyltc5E&amp;feature=youtu.be">哪种翻墙软件更隐蔽？</a>》，这个播主实测过，SS也好，SSR也好，无论你怎么混淆，都是没用的，都是可以被抓出来的。只有V2Ray 和 Brook 可以伪装得很好。</p>
+<p>在Youtube上有个视频，你可以看一下 《<a href="https://www.youtube.com/watch?v=G-P8eyltc5E&amp;feature=youtu.be" target="_blank">哪种翻墙软件更隐蔽？</a>》，这个播主实测过，SS也好，SSR也好，无论你怎么混淆，都是没用的，都是可以被抓出来的。只有V2Ray 和 Brook 可以伪装得很好。</p>
 
 <blockquote>
 <p><strong>注：</strong> 说句老实话，我其时并不想害怕别人知道自己的上什么样的网站，因为我觉得我访问的都是合法的网站，但是就今天这个局势我也没办法——为什么要让像我这样的光明正大的良民搞得跟偷鸡摸狗之徒一样……</p>
@@ -300,9 +301,9 @@ sudo docker run -d  --privileged \
 <p>V2Ray 是一个与 Shadowsocks 类似的代理软件。</p>
 
 <ul>
-<li>V2Ray 用户手册：<a href="https://www.v2ray.com">https://www.v2ray.com</a></li>
-<li>V2Ray 项目地址：<a href="https://github.com/v2ray/v2ray-core">https://github.com/v2ray/v2ray-core</a></li>
-<li>V2Ray Telegram 使用群链接：<a href="https://t.me/projectv2ray">https://t.me/projectv2ray</a></li>
+<li>V2Ray 用户手册：<a href="https://www.v2ray.com" target="_blank">https://www.v2ray.com</a></li>
+<li>V2Ray 项目地址：<a href="https://github.com/v2ray/v2ray-core" target="_blank">https://github.com/v2ray/v2ray-core</a></li>
+<li>V2Ray Telegram 使用群链接：<a href="https://t.me/projectv2ray" target="_blank">https://t.me/projectv2ray</a></li>
 </ul>
 
 <p>V2Ray 配合一些模块目前来说可以伪装成正常的流量。但是配置相当复杂。大家可以自己Google自己玩吧。</p>
@@ -312,8 +313,8 @@ sudo docker run -d  --privileged \
 <p>Brook是一个由 Go语言编写的跨平台代理软件，支持 Linux/MacOS/Windows/Android/iOS 各个平台。</p>
 
 <ul>
-<li>Brook Github项目：<a href="https://github.com/txthinking/brook">https://github.com/txthinking/brook</a></li>
-<li>Github Wiki教程：<a href="https://github.com/txthinking/brook/wiki/使用说明(中文)">https://github.com/txthinking/brook/wiki/使用说明(中文)</a></li>
+<li>Brook Github项目：<a href="https://github.com/txthinking/brook" target="_blank">https://github.com/txthinking/brook</a></li>
+<li>Github Wiki教程：<a href="https://github.com/txthinking/brook/wiki/使用说明(中文)" target="_blank">https://github.com/txthinking/brook/wiki/使用说明(中文)</a></li>
 </ul>
 
 <p>服务器一行命令安装：</p>
@@ -360,7 +361,7 @@ sudo docker run -d  --privileged \
 
 <p>如下还有一些其它的方式（注：均由网友提供，我没有验证过）</p>
 
-<p><a href="https://getoutline.org/en/home">Outline</a> 是由 Google 旗下 <a href="https://jigsaw.google.com/">Jigsaw</a> 团队开发的整套翻墙解决方案。Server 端使用 Shadowsocks，MacOS, Windows, iOS, Android 均有官方客户端。使用 Outline Manager 可以一键配置 DigitalOcean。其他平台例如 AWS, Google Cloud 也提供相应脚本。主要优点就是使用简单并且整个软件栈全部<a href="https://github.com/Jigsaw-Code/?q=outline">开源</a>，有专业团队长期维护。</p>
+<p><a href="https://getoutline.org/en/home" target="_blank">Outline</a> 是由 Google 旗下 <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> 团队开发的整套翻墙解决方案。Server 端使用 Shadowsocks，MacOS, Windows, iOS, Android 均有官方客户端。使用 Outline Manager 可以一键配置 DigitalOcean。其他平台例如 AWS, Google Cloud 也提供相应脚本。主要优点就是使用简单并且整个软件栈全部<a href="https://github.com/Jigsaw-Code/?q=outline" target="_blank">开源</a>，有专业团队长期维护。</p>
 
 <p>（全文完）</p>
 ]]></content>
@@ -368,10 +369,10 @@ sudo docker run -d  --privileged \
         
         <item>
             <title>解决添加到GitIgnore的文件没被忽略的问题</title>
-            <link>https://blog.sailfishc.cn/posts/git-ignore/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</link>
             <pubDate>Wed, 30 Oct 2019 09:56:18 +0800</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/git-ignore/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
             <description> 问题简述
  在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
 The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached.  意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
@@ -412,18 +413,18 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 </blockquote>
 
 <ul>
-<li><a href="https://git-scm.com/docs/gitignore">Git - gitignore Documentation</a></li>
-<li><a href="https://git-scm.com/docs/git-rm">Git - git-rm Documentation</a></li>
+<li><a href="https://git-scm.com/docs/gitignore" target="_blank">Git - gitignore Documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-rm" target="_blank">Git - git-rm Documentation</a></li>
 </ul>
 ]]></content>
         </item>
         
         <item>
             <title>通过Hugo&#43;Github快速搭建博客</title>
-            <link>https://blog.sailfishc.cn/posts/deploy_blog_to_hugo/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
             <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/deploy_blog_to_hugo/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
             <description>写在前面
  程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
 先罗列下常见的博客网站：
@@ -462,7 +463,7 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <h2 id="快速开始">快速开始</h2>
 
 <ul>
-<li><a href="https://gohugo.io/getting-started/quick-start/">Quick Start | Hugo</a></li>
+<li><a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start | Hugo</a></li>
 </ul>
 
 <p>Hugo安装很简单，就以Mac为例快速开始：</p>
@@ -505,12 +506,12 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li>新建项目，添加<code>gh-pages</code>分支</li>
 </ul>
 
-<p>最开始本来想尝试第一种，但是还有一个博客已经使用这种模式了，暂时是用不了，因为第二种会将源代码和静态网站在一个分支中，也就不考虑，就采用了第三种，对于第三种方式的部署，最开始采用了Travis部署的方式，但是经过一些尝试，效果并不好（主要是对于Travis的脚本不熟悉，找了一些脚本效果比较差），最后也放弃了，有兴趣的小伙伴们可以看参考文章中对于Travis部署的一些博客，之后一段时间采用了本地执行脚本的方式，等文章写完后，执行脚本<a href="https://gist.github.com/Sailfishc/5c8861ace0469aec69f834d972da64f3">push hugo site to Github gh-pages branch · GitHub</a> ，脚本会自动将生成静态public文件，然后加入<code>gh-pages</code>分支，然后将源代码push到<code>master</code>分支，public下的文件push到<code>gh-pages</code>分支，就可以使用<code>https://sailfishc.github.io/sail-blog</code>访问博客站点了。</p>
+<p>最开始本来想尝试第一种，但是还有一个博客已经使用这种模式了，暂时是用不了，因为第二种会将源代码和静态网站在一个分支中，也就不考虑，就采用了第三种，对于第三种方式的部署，最开始采用了Travis部署的方式，但是经过一些尝试，效果并不好（主要是对于Travis的脚本不熟悉，找了一些脚本效果比较差），最后也放弃了，有兴趣的小伙伴们可以看参考文章中对于Travis部署的一些博客，之后一段时间采用了本地执行脚本的方式，等文章写完后，执行脚本<a href="https://gist.github.com/Sailfishc/5c8861ace0469aec69f834d972da64f3" target="_blank">push hugo site to Github gh-pages branch · GitHub</a> ，脚本会自动将生成静态public文件，然后加入<code>gh-pages</code>分支，然后将源代码push到<code>master</code>分支，public下的文件push到<code>gh-pages</code>分支，就可以使用<code>https://sailfishc.github.io/sail-blog</code>访问博客站点了。</p>
 
 <p>大功告成了吗？没有，因为没使用第一种Github pages方案，这个链接包含了<code>项目这名</code>这一级路径，用着很难受，于是就有了之后的改版，也就是<code>Host On Render</code>的方案。</p>
 
 <ul>
-<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Host on Render | Hugo</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank">Host on Render | Hugo</a></li>
 </ul>
 
 <blockquote>
@@ -542,23 +543,23 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 </blockquote>
 
 <ul>
-<li><a href="https://axdlog.com/zh/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/">利用Travis CI和Hugo將Blog自動部署到Github Pages - AxdLog</a></li>
-<li><a href="https://zyfdegh.github.io/post/201705-how-i-setup-hugo/">我是如何用 Hugo、Travis CI 和 GitHub Pages 搭建博客的? - 独行的蚂蚁 - 博客</a></li>
-<li><a href="https://blog.yuantops.com/tech/hugo-travis-ci-auto-deploy-to-gh-pages/">Blog自动部署实践: Hugo + Travis CI -&gt; GitHub Pages // Yuantops’ Blog</a></li>
-<li><a href="https://medium.com/swlh/hosting-a-hugo-blog-on-github-pages-with-travis-ci-e74a1d686f10">Hosting a Hugo blog on GitHub Pages with Travis CI - The Startup - Medium</a></li>
-<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub | Hugo</a></li>
-<li><a href="https://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages - Hugo中文文档</a></li>
-<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Host on Render | Hugo</a></li>
+<li><a href="https://axdlog.com/zh/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/" target="_blank">利用Travis CI和Hugo將Blog自動部署到Github Pages - AxdLog</a></li>
+<li><a href="https://zyfdegh.github.io/post/201705-how-i-setup-hugo/" target="_blank">我是如何用 Hugo、Travis CI 和 GitHub Pages 搭建博客的? - 独行的蚂蚁 - 博客</a></li>
+<li><a href="https://blog.yuantops.com/tech/hugo-travis-ci-auto-deploy-to-gh-pages/" target="_blank">Blog自动部署实践: Hugo + Travis CI -&gt; GitHub Pages // Yuantops’ Blog</a></li>
+<li><a href="https://medium.com/swlh/hosting-a-hugo-blog-on-github-pages-with-travis-ci-e74a1d686f10" target="_blank">Hosting a Hugo blog on GitHub Pages with Travis CI - The Startup - Medium</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank">Host on GitHub | Hugo</a></li>
+<li><a href="https://www.gohugo.org/doc/tutorials/github-pages-blog/" target="_blank">Hosting on GitHub Pages - Hugo中文文档</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank">Host on Render | Hugo</a></li>
 </ul>
 ]]></content>
         </item>
         
         <item>
             <title>以练代学，学习算法和数据结构</title>
-            <link>https://blog.sailfishc.cn/posts/learn_leetcode/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
             <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/learn_leetcode/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
             <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
 首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：
  算法导论 数据结构与算法分析 配合LeetCode或者OJ来练习   我的学习计划是这样的（以练代学）：
@@ -710,23 +711,23 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
         
         <item>
             <title>长期关注的一些博客</title>
-            <link>https://blog.sailfishc.cn/posts/blog-star/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</link>
             <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/blog-star/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</guid>
             <description> 酷壳 – CoolShell.cn  </description>
             <content type="html"><![CDATA[<ul>
-<li><a href="https://coolshell.cn/">酷壳 – CoolShell.cn</a></li>
+<li><a href="https://coolshell.cn/" target="_blank">酷壳 – CoolShell.cn</a></li>
 </ul>
 ]]></content>
         </item>
         
         <item>
             <title>2018年总结</title>
-            <link>https://blog.sailfishc.cn/posts/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
             <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
             <description> 2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
 工作  2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司
  虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。
@@ -825,10 +826,10 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
         
         <item>
             <title>那些书本中没告诉你的MyBatis</title>
-            <link>https://blog.sailfishc.cn/posts/mybatis/</link>
+            <link>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</link>
             <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/mybatis/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</guid>
             <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
 &amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
@@ -994,10 +995,10 @@ public User doSomeBusinessStuff(String userId) {
         
         <item>
             <title>致生活</title>
-            <link>https://blog.sailfishc.cn/posts/to_liive/</link>
+            <link>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</link>
             <pubDate>Sun, 02 Sep 2018 11:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/to_liive/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</guid>
             <description> 少年真正成人的那一刻，大概就是，对于你的家人，你会时不时惦记，想念，渴望从他们那里得到抚慰，害怕他们哪天离开人世——他们成为你梦境的常客，内心最柔软的部分；你却无比清楚：纵然爱他们，却再无法同他们心无芥蒂地谈论，或长久地生活在一起。 — 一个
  今天送妈妈去火车站回家了，过来的时间不长不短，来去10天，期间工作比较忙，只有周末有时间出去逛，没去几个地方，只去了故宫、颐和园、森林公园、鸟巢、前门、天安门，这是过年回家之后第一次见我妈，来北京以后基本每年就回一趟家，这次我妈在我的坚持下过来，我就规划着带她吃点好的，买几件衣服，带她逛逛。
 去车站接她的时候，她穿着一件橘色的衣服，在人群中显得很突兀，在家的时候还没怎么注意，来北京了，突然发现妈妈已经老了，白头发多了些，她在人群中提着一个箱子，面对人群，有一点慌乱，我想着她做了一天火车了，回来休息一下，第二天再出去，她坚持说自己不累，下午就去周边的森林公园逛了逛，晚上在外面吃了点鱼，吃完就说太贵了。
@@ -1034,10 +1035,10 @@ public User doSomeBusinessStuff(String userId) {
         
         <item>
             <title>设计模式总结</title>
-            <link>https://blog.sailfishc.cn/posts/learn_design_patterns/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</link>
             <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/learn_design_patterns/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</guid>
             <description>一、创建型模式(五种)  工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源） 抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy） 单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制） 建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能） 原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）  二、结构型模式(七种)  适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系） 装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx） 代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池） 外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数） 桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动） 组合模式(Composite)：部分与整体，常用于表示树形结构 享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）  三、行为型模式(十一种)  策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口） 模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件） 观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ） 迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器） 责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve） 命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2） 备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据 状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象） 访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象） 中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者 解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐  四、学习资源  调停者模式 解释器模式 访问者模式 状态模式 备忘录模式 命令模式 责任链模式 迭代子模式 观察者模式 模板方法模式 策略模式 不变模式 桥梁模式 门面模式 享元模式 代理模式 装饰模式 合成模式 适配器模式 原型模式 建造模式 单例模式 抽象工厂模式 工厂方法模式 简单工厂模式  五、总结   内容部分引用自http://smallbug-vip.</description>
             <content type="html"><![CDATA[
 
@@ -1084,38 +1085,38 @@ public User doSomeBusinessStuff(String userId) {
 <h2 id="四-学习资源">四、学习资源</h2>
 
 <ul>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/20/2554024.html">调停者模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/19/2552617.html">解释器模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/14/2545381.html">访问者模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html">状态模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/06/2534942.html">备忘录模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/01/2526972.html">命令模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/28/2516865.html">责任链模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/22/2511506.html">迭代子模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/16/2502279.html">观察者模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/14/2495235.html">模板方法模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/10/2491891.html">策略模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/08/2487757.html">不变模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/07/2480938.html">桥梁模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/02/2478101.html">门面模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/26/2468499.html">享元模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/23/2466712.html">代理模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/20/2455726.html">装饰模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html">合成模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html">适配器模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/11/2439387.html">原型模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/07/2433939.html">建造模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/31/2425631.html">单例模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/28/2418836.html">抽象工厂模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/25/2416227.html">工厂方法模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/22/2412308.html">简单工厂模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/20/2554024.html" target="_blank">调停者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/19/2552617.html" target="_blank">解释器模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/14/2545381.html" target="_blank">访问者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank">状态模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/06/2534942.html" target="_blank">备忘录模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/01/2526972.html" target="_blank">命令模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/28/2516865.html" target="_blank">责任链模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/22/2511506.html" target="_blank">迭代子模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/16/2502279.html" target="_blank">观察者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/14/2495235.html" target="_blank">模板方法模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/10/2491891.html" target="_blank">策略模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/08/2487757.html" target="_blank">不变模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/07/2480938.html" target="_blank">桥梁模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/02/2478101.html" target="_blank">门面模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/26/2468499.html" target="_blank">享元模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/23/2466712.html" target="_blank">代理模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/20/2455726.html" target="_blank">装饰模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html" target="_blank">合成模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html" target="_blank">适配器模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/11/2439387.html" target="_blank">原型模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/07/2433939.html" target="_blank">建造模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/31/2425631.html" target="_blank">单例模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/28/2418836.html" target="_blank">抽象工厂模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/25/2416227.html" target="_blank">工厂方法模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/22/2412308.html" target="_blank">简单工厂模式</a></li>
 </ul>
 
 <h2 id="五-总结">五、总结</h2>
 
 <blockquote>
 <ul>
-<li>内容部分引用自<a href="http://smallbug-vip.iteye.com/blog/2276470">http://smallbug-vip.iteye.com/blog/2276470</a></li>
+<li>内容部分引用自<a href="http://smallbug-vip.iteye.com/blog/2276470" target="_blank">http://smallbug-vip.iteye.com/blog/2276470</a></li>
 <li>在学习设计模式的过程中最直观的感觉就是小demo感觉看着很爽，自己也能理解，但是在实际开发中想套用哪种设计模式却感觉有点心有余而力不足的意思，这可能就是设计模式太灵活的缘故，设计模式都是在大量的代码中积累的精髓所在，这篇总结也是给自己一个笔记，让自己在之后的开发中可以回过头来看看。</li>
 <li>很多人对设计模式有点误解，认为只有GoF的设计模式才是设计模式，这种观点有点不正确，以下是引用一段解释：
 
@@ -1154,10 +1155,10 @@ public User doSomeBusinessStuff(String userId) {
         
         <item>
             <title>浅析RPC</title>
-            <link>https://blog.sailfishc.cn/posts/learn_rpc/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/</link>
             <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/learn_rpc/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/</guid>
             <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
 之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
@@ -1182,7 +1183,7 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 
 <p>RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。
 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。
-这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695">通俗的语言解释什么是 RPC 框架</a></p>
+这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695" target="_blank">通俗的语言解释什么是 RPC 框架</a></p>
 
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-56600e1178de48f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
 
@@ -1190,7 +1191,7 @@ RPC的实现包含了两部分，一部分是客户端，一部分是服务端�
 
 <p>众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。</p>
 
-<p>针对对象序列化，有各种方式的性能对比，<a href="https://github.com/eishay/jvm-serializers/wiki">Github地址</a>:</p>
+<p>针对对象序列化，有各种方式的性能对比，<a href="https://github.com/eishay/jvm-serializers/wiki" target="_blank">Github地址</a>:</p>
 
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-ff9c09c4b7ae2916.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" />
 通过对比可知：
@@ -1555,10 +1556,10 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
         
         <item>
             <title>消息队列之RabbitMQ基础</title>
-            <link>https://blog.sailfishc.cn/posts/learn_rabbitmq/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</link>
             <pubDate>Sun, 23 Apr 2017 14:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/learn_rabbitmq/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</guid>
             <description>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。
  一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息
  主体流程：  队列类似一个broker角色，生产者将内容（消息）发送到队列 队列进行存储，消费者将消息消费 消费者确认消费消息（ack）  生产者和消费者都可以通过来创建队列：
@@ -1701,7 +1702,7 @@ rabbitmq:management
 </ul>
 
 <blockquote>
-<p>介于代码粘贴进来比较多，提供项目<a href="https://github.com/Sailfishc/learn-rabbitmq">GitHub</a>地址，本文提取代码片段进行讲解</p>
+<p>介于代码粘贴进来比较多，提供项目<a href="https://github.com/Sailfishc/learn-rabbitmq" target="_blank">GitHub</a>地址，本文提取代码片段进行讲解</p>
 </blockquote>
 
 <h3 id="项目结构">项目结构</h3>
@@ -1770,10 +1771,10 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
         
         <item>
             <title>38年（转载）</title>
-            <link>https://blog.sailfishc.cn/posts/liangbo/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/04/38%E5%B9%B4%E8%BD%AC%E8%BD%BD/</link>
             <pubDate>Fri, 07 Apr 2017 14:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/liangbo/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/04/38%E5%B9%B4%E8%BD%AC%E8%BD%BD/</guid>
             <description>1979年4月7日的夜里3点，一个卑微的生命诞生了，这个小生命就是我。和当时大多数家庭一样，生活一直非常艰苦。从小开始穿哥哥留下的衣服，终于有一天，我希望买一件新羽绒服，父母推辞了很多次，闹了很多次，终于有一次妈妈下班回家，我堵住大门，不买羽绒服不让进门，但这一次终于迎来了一件新羽绒服，然而这一次仿佛是人生重大的洗礼，我一下子就长大了，从此再也没有闹过什么新衣服，默默穿起来哥哥的旧衣服，背起了旧书包，人生迎来了新的境界，一定要靠自己努力，一定一定要靠自己努力。当时我把所有的玩具赠送给了一个好友，他很奇怪，为什么这些之前珍重的宝贝都不要了，我说我想多看点书，多明白一些道理。
 当时家里很小很小，哥哥回到家要学英语，需要一个安静的环境，关起了门，我也无处去，就到处玩，很晚才回家。加上天资平庸，学习成绩并不突出，但也不坏。考大学的时候，亲戚都劝我父母，供两个孩子上大学太辛苦了，不如让我当兵算了，能考上专科的话就读个专科，我就是这样一个不被看好的丑小鸭。
 那时我也没什么梦想，也做好了当兵的打算，并填补了材料进行了体检。不想分数还够读专科。直到上了大学，我在内心深处还一直瞧不起自己，什么都不如别人，什么都不敢争取，有喜欢的姑娘，连说话的勇气都没有，也没穿过什么漂亮衣服，长相又傻，可以说自己就把自己当烂仔了。
@@ -1814,10 +1815,10 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
         
         <item>
             <title>Elasticsearch学习记录</title>
-            <link>https://blog.sailfishc.cn/posts/learn_es_mind/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/03/elasticsearch%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
             <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/learn_es_mind/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/03/elasticsearch%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
             <description></description>
             <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/734456-8aeb5bbc2b58286a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
 
@@ -1827,10 +1828,10 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
         
         <item>
             <title>解决Mysql存储Emoji乱码问题</title>
-            <link>https://blog.sailfishc.cn/posts/emoji_demo/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</link>
             <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/emoji_demo/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</guid>
             <description>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
  在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
 总的就一句话，UTF-8是Unicode的一种实现。
@@ -1844,14 +1845,14 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
 </blockquote>
 
 <p>在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？
-- <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">字符编码笔记</a></p>
+- <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank">字符编码笔记</a></p>
 
 <p>总的就一句话，UTF-8是Unicode的一种实现。</p>
 
 <h2 id="一-如何解决emoji存储问题">一、如何解决Emoji存储问题</h2>
 
 <ul>
-<li><a href="https://github.com/Sailfishc/emoji-demo">Github地址解决方案</a></li>
+<li><a href="https://github.com/Sailfishc/emoji-demo" target="_blank">Github地址解决方案</a></li>
 </ul>
 
 <p>再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：
@@ -1927,10 +1928,10 @@ public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutE
         
         <item>
             <title>Mac下Elasticsearch5.X和Head插件的安装</title>
-            <link>https://blog.sailfishc.cn/posts/es_head_install/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/03/mac%E4%B8%8Belasticsearch5.x%E5%92%8Chead%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/</link>
             <pubDate>Sat, 25 Mar 2017 14:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/es_head_install/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/03/mac%E4%B8%8Belasticsearch5.x%E5%92%8Chead%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
             <description>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。
  一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动 &amp;gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
  进入es的conf目录修改配置文件
@@ -1946,11 +1947,11 @@ cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200
 <h3 id="一-安装elasticsearch">一、安装Elasticsearch</h3>
 
 <ul>
-<li>在官网下载tar包，<a href="https://www.elastic.co/downloads/elasticsearch">下载地址</a></li>
+<li>在官网下载tar包，<a href="https://www.elastic.co/downloads/elasticsearch" target="_blank">下载地址</a></li>
 <li>下载之后解压</li>
 
 <li><p>进入bin目录下启动
-&gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：<a href="https://my.oschina.net/topeagle/blog/591451?fromerr=mzOr2qzZlogstash">CENTOS安装ElasticSearch</a>。</p></li>
+&gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：<a href="https://my.oschina.net/topeagle/blog/591451?fromerr=mzOr2qzZlogstash" target="_blank">CENTOS安装ElasticSearch</a>。</p></li>
 
 <li><p>进入es的conf目录修改配置文件</p>
 
@@ -2020,7 +2021,7 @@ tagline: &quot;You Know, for Search&quot;
 </blockquote>
 
 <ul>
-<li><a href="https://github.com/mobz/elasticsearch-head">Head-GitHub官网</a></li>
+<li><a href="https://github.com/mobz/elasticsearch-head" target="_blank">Head-GitHub官网</a></li>
 
 <li><p>官网简易教程</p>
 
@@ -2033,7 +2034,7 @@ grunt server
 
 <p><strong>这里依赖Node环境，我们需要做一下工作：</strong>
 - Git
-- <a href="https://nodejs.org/en/download/">Node官网</a></p>
+- <a href="https://nodejs.org/en/download/" target="_blank">Node官网</a></p>
 
 <h4 id="1-head插件安装">1、Head插件安装</h4>
 
@@ -2064,7 +2065,7 @@ server: {
 
 <ul>
 <li>npm install
-&gt; 备注：如果npm源特别慢的话，可以参考这篇文档：<a href="http://www.uedbox.com/npm-install-slow-solution/">npm install 无响应解决方案
+&gt; 备注：如果npm源特别慢的话，可以参考这篇文档：<a href="http://www.uedbox.com/npm-install-slow-solution/" target="_blank">npm install 无响应解决方案
 </a></li>
 <li>grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt：<code>npm install grunt-cli</code></li>
 <li>grunt server：保证es服务已经启动</li>
@@ -2095,10 +2096,10 @@ http.cors.allow-origin: &quot;*&quot;
         
         <item>
             <title>Jenkins Maven Git SpringBoot Jar War Linux持续集成</title>
-            <link>https://blog.sailfishc.cn/posts/deploy_springboot_jenkins/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/03/jenkins-maven-git-springboot-jar-war-linux%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link>
             <pubDate>Fri, 24 Mar 2017 15:12:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/deploy_springboot_jenkins/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/03/jenkins-maven-git-springboot-jar-war-linux%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid>
             <description>一、前言 公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。
 Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使用Maven/Ant/Gradle等构件工具进行Build - 构建成功之后会进行部署（deploy）
 二、安装  Jenkins官网 下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）   安装（略过） 安装条件  JDK MAVEN  插件安装  - 必备插件 - Git plugin - Maven Integration plugin - publish over ssh插件（用于上传打包好的项目到远程Linux） - 插件列表（太多不一一列出）
@@ -2128,7 +2129,7 @@ Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使�
 <h2 id="二-安装">二、安装</h2>
 
 <ul>
-<li><a href="https://jenkins.io/index.html">Jenkins官网</a></li>
+<li><a href="https://jenkins.io/index.html" target="_blank">Jenkins官网</a></li>
 <li>下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）</li>
 </ul>
 
@@ -2148,7 +2149,7 @@ Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使�
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-31a2db10f939d233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" />
 - 必备插件
     - Git plugin
-    - <a href="http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin">Maven Integration plugin</a>
+    - <a href="http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin" target="_blank">Maven Integration plugin</a>
     - publish over ssh插件（用于上传打包好的项目到远程Linux）
 - 插件列表（太多不一一列出）</p>
 
@@ -2189,7 +2190,7 @@ Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使�
 <blockquote>
 <p>备注：Passphrase这里不用填值，这是自动生成的。
 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接
-<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm">http://www.linuxidc.com/Linux/2014-<sup>10</sup>&frasl;<sub>108080</sub>.htm</a></p>
+<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm" target="_blank">http://www.linuxidc.com/Linux/2014-<sup>10</sup>&frasl;<sub>108080</sub>.htm</a></p>
 </blockquote>
 
 <p>配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了
@@ -2298,10 +2299,10 @@ echo &quot;启动成功...&quot;
         
         <item>
             <title>如何高效学习，总结自己的学习方法</title>
-            <link>https://blog.sailfishc.cn/posts/learn_good/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/03/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E8%87%AA%E5%B7%B1%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
             <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/learn_good/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/03/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E8%87%AA%E5%B7%B1%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
             <description>在工作之后一段时间一直会有这么一种感觉：一天浑浑噩噩不知道干了什么，或者整天被他人打断而不能专注，又或者从早到晚的忙导致下班头脑发胀。
  自己也在寻找适合自己的学习方法，可能是学习能力比较差，一直没找到合适的，很多人推荐的番茄工作法自己尝试了几次也放弃了，但是现在工作每天都很忙，但是不知道自己干嘛了，这促使我又开始寻找一个适合自己的工具和学习方法。
 这次的主题分两部分： - 工具 - 学习方法
@@ -2424,10 +2425,10 @@ echo &quot;启动成功...&quot;
         
         <item>
             <title>Java程序员学习路线</title>
-            <link>https://blog.sailfishc.cn/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+            <link>https://blog.sailfishc.cn/posts/2017/03/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
             <pubDate>Wed, 01 Mar 2017 17:58:27 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2017/03/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
             <description>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。 感觉有点跑题了，说回来，还是怎么学习：
 1、你得对你所在行业的知识框架要有一个基本的了解  比如我所在的JavaEE的学习路线：
  Java基础 - 基础语法 - 逻辑控制流 - 面向对象的知识 - 常用的类，如String - IO - 集合 - 多线程 - 异常 - 网络编程
@@ -2495,10 +2496,10 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
         
         <item>
             <title>使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</title>
-            <link>https://blog.sailfishc.cn/posts/hexo/</link>
+            <link>https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/</link>
             <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
             
-            <guid>https://blog.sailfishc.cn/posts/hexo/</guid>
+            <guid>https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/</guid>
             <description>部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
  为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）  软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable  账号：  Github：https://github.</description>
             <content type="html"><![CDATA[
@@ -2514,8 +2515,8 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <h3 id="hexo-是什么">Hexo 是什么</h3>
 
 <ul>
-<li>Hexo 的中文官网：<a href="http://hexo.io/zh-cn/">http://hexo.io/zh-cn/</a></li>
-<li>作者 Tommy Chen：<a href="https://zespia.tw/">https://zespia.tw/</a></li>
+<li>Hexo 的中文官网：<a href="http://hexo.io/zh-cn/" target="_blank">http://hexo.io/zh-cn/</a></li>
+<li>作者 Tommy Chen：<a href="https://zespia.tw/" target="_blank">https://zespia.tw/</a></li>
 <li>在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。</li>
 <li>而官网自己是这样说的：</li>
 </ul>
@@ -2528,7 +2529,7 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 
 <ul>
 <li>我：因为其他博客框架太烂了</li>
-<li>Tommy Chen：<a href="https://zespia.tw/blog/2012/10/11/hexo-debut/">https://zespia.tw/blog/2012/10/11/hexo-debut/</a></li>
+<li>Tommy Chen：<a href="https://zespia.tw/blog/2012/10/11/hexo-debut/" target="_blank">https://zespia.tw/blog/2012/10/11/hexo-debut/</a></li>
 </ul>
 
 <h3 id="适合人群">适合人群</h3>
@@ -2562,8 +2563,8 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li>账号：
 
 <ul>
-<li>Github：<a href="https://github.com/">https://github.com/</a></li>
-<li>DNSPOD：<a href="https://www.dnspod.cn/">https://www.dnspod.cn/</a></li>
+<li>Github：<a href="https://github.com/" target="_blank">https://github.com/</a></li>
+<li>DNSPOD：<a href="https://www.dnspod.cn/" target="_blank">https://www.dnspod.cn/</a></li>
 </ul></li>
 </ul>
 
@@ -2573,14 +2574,14 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li>各个软件官网：
 
 <ul>
-<li>git：<a href="http://git-scm.com/">http://git-scm.com/</a></li>
-<li>IntelliJ IDEA：<a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></li>
-<li>node.js：<a href="http://nodejs.org/">http://nodejs.org/</a></li>
+<li>git：<a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></li>
+<li>IntelliJ IDEA：<a href="https://www.jetbrains.com/idea/" target="_blank">https://www.jetbrains.com/idea/</a></li>
+<li>node.js：<a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a></li>
 </ul></li>
 <li>所需软件集合：
 
 <ul>
-<li>上面三者集合包：<a href="http://pan.baidu.com/s/1bvbo8e">http://pan.baidu.com/s/1bvbo8e</a></li>
+<li>上面三者集合包：<a href="http://pan.baidu.com/s/1bvbo8e" target="_blank">http://pan.baidu.com/s/1bvbo8e</a></li>
 </ul></li>
 </ul>
 
@@ -2590,15 +2591,15 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li>如果你对上面要求的软件一个都不了解的话，建议你先看如下内容（只是让你们先了解下，当时别照着文章内容做）：
 
 <ul>
-<li><a href="http://www.jianshu.com/p/05289a4bc8b2">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
-<li><a href="http://www.jianshu.com/p/858ecf233db9">通过Hexo在Github上搭建博客教程</a></li>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/">hexo你的博客</a></li>
-<li><a href="http://www.jianshu.com/p/701b1095da11">手把手教你建github技术博客</a></li>
-<li><a href="http://www.jianshu.com/p/05289a4bc8b2">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
-<li><a href="http://www.jianshu.com/p/e858a90d0a17">windows下搭建hexo博客并将其部署到GitCafe终极教程</a></li>
-<li><a href="http://www.jianshu.com/p/db7e64d86067">使用Hexo搭建博客（三），博客配置、主题和写作</a></li>
-<li><a href="http://www.jianshu.com/p/e7413116e9d4">Hexo搭建WiKi</a></li>
-<li><a href="https://www.zhihu.com/question/28058973">怎么用hexo上传一个README.md到github?</a></li>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://www.jianshu.com/p/858ecf233db9" target="_blank">通过Hexo在Github上搭建博客教程</a></li>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank">hexo你的博客</a></li>
+<li><a href="http://www.jianshu.com/p/701b1095da11" target="_blank">手把手教你建github技术博客</a></li>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://www.jianshu.com/p/e858a90d0a17" target="_blank">windows下搭建hexo博客并将其部署到GitCafe终极教程</a></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank">使用Hexo搭建博客（三），博客配置、主题和写作</a></li>
+<li><a href="http://www.jianshu.com/p/e7413116e9d4" target="_blank">Hexo搭建WiKi</a></li>
+<li><a href="https://www.zhihu.com/question/28058973" target="_blank">怎么用hexo上传一个README.md到github?</a></li>
 </ul></li>
 </ul>
 
@@ -2639,7 +2640,7 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <h3 id="node-js-源设置">Node.js 源设置</h3>
 
 <ul>
-<li>在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：<a href="http://registry.npmjs.org">http://registry.npmjs.org</a>，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：<a href="http://npm.taobao.org/">http://npm.taobao.org/</a></li>
+<li>在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：<a href="http://registry.npmjs.org" target="_blank">http://registry.npmjs.org</a>，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：<a href="http://npm.taobao.org/" target="_blank">http://npm.taobao.org/</a></li>
 <li>在 Git Bash 中我们执行下面这一句（这是一整句的）：</li>
 </ul>
 
@@ -2686,7 +2687,7 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li><img src="http://img.youmeek.com/2016/hexo-start-b-1.jpg" alt="安装 hexo 后的目录结构" /></li>
 </ul></li>
 <li>现在我们启动 hexo 本地服务，看下默认的博客是怎样的，命令：<code>hexo server</code></li>
-<li>现在用浏览器访问：<a href="http://localhost:4000/">http://localhost:4000/</a>，效果如下图
+<li>现在用浏览器访问：<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，效果如下图
 
 <ul>
 <li><img src="http://img.youmeek.com/2016/hexo-start-b-2.jpg" alt="默认模板效果" /></li>
@@ -2702,11 +2703,11 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li>你可以去这里找主题：
 
 <ul>
-<li>hexo-theme：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a></li>
-<li>hexo-github-theme-list：<a href="https://github.com/hexojs/hexo/wiki/Themes">https://github.com/hexojs/hexo/wiki/Themes</a></li>
-<li>有那些好看的hexo主题？：<a href="http://www.zhihu.com/question/24422335">http://www.zhihu.com/question/24422335</a></li>
+<li>hexo-theme：<a href="https://hexo.io/themes/" target="_blank">https://hexo.io/themes/</a></li>
+<li>hexo-github-theme-list：<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank">https://github.com/hexojs/hexo/wiki/Themes</a></li>
+<li>有那些好看的hexo主题？：<a href="http://www.zhihu.com/question/24422335" target="_blank">http://www.zhihu.com/question/24422335</a></li>
 </ul></li>
-<li>我这里选择的 <strong>yelee</strong>：<a href="https://github.com/MOxFIVE/hexo-theme-yelee">https://github.com/MOxFIVE/hexo-theme-yelee</a>
+<li>我这里选择的 <strong>yelee</strong>：<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank">https://github.com/MOxFIVE/hexo-theme-yelee</a>
 
 <ul>
 <li>原因是能最大化衬托出：目录、文章内容、代码块。因为我对这个博客的定位就是用来放技术类内容，所以不会让它太杂或是太花。只是目前这个颜色偏浅，后续还需要调整。</li>
@@ -2736,7 +2737,7 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <ul>
 <li>重新生成静态博客的所有内容：<code>hexo generate</code></li>
 <li>重启 hexo 本地服务：<code>hexo server</code></li>
-<li>重新访问：<a href="http://localhost:4000/">http://localhost:4000/</a>，效果如下图</li>
+<li>重新访问：<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，效果如下图</li>
 <li><img src="http://img.youmeek.com/2016/hexo-start-b-4.jpg" alt="新主题效果" /></li>
 </ul></li>
 </ul></li>
@@ -2766,7 +2767,7 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li>现在用记事本打开 id_rsa.pub，复制文件中的所有内容。
 
 <ul>
-<li>访问：<a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a>，添加新秘钥，效果如下图
+<li>访问：<a href="https://github.com/settings/ssh" target="_blank">https://github.com/settings/ssh</a>，添加新秘钥，效果如下图
 
 <ul>
 <li>Title：自己随便取</li>
@@ -2790,7 +2791,7 @@ JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Se
 <li>编辑全局 hexo 的配置文件：<strong>_config.yml</strong>
 
 <ul>
-<li>官网对此配置的介绍：<a href="https://hexo.io/zh-cn/docs/configuration.html">https://hexo.io/zh-cn/docs/configuration.html</a></li>
+<li>官网对此配置的介绍：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank">https://hexo.io/zh-cn/docs/configuration.html</a></li>
 <li>我自己的编辑内容初稿（你需要认真看的是含有中文注释的内容）：
 <br /></li>
 </ul></li>
@@ -2900,7 +2901,7 @@ deploy:
 <ul>
 <li><img src="http://img.youmeek.com/2016/hexo-start-d-2.jpg" alt="提交成功" /></li>
 </ul></li>
-<li>访问服务器地址进行检查：<a href="http://judasn.github.io">http://judasn.github.io</a>，效果如下
+<li>访问服务器地址进行检查：<a href="http://judasn.github.io" target="_blank">http://judasn.github.io</a>，效果如下
 
 <ul>
 <li><img src="http://img.youmeek.com/2016/hexo-start-d-3.jpg" alt="服务器效果" /></li>
@@ -2934,13 +2935,13 @@ deploy:
 <li>绑定域名不排除会遇到很多网络问题或是七七八八，所以这里先提供先官网的一些说明：
 
 <ul>
-<li><a href="https://help.github.com/articles/setting-up-your-pages-site-repository/">https://help.github.com/articles/setting-up-your-pages-site-repository/</a></li>
-<li><a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/">https://help.github.com/articles/quick-start-setting-up-a-custom-domain/</a></li>
-<li><a href="https://help.github.com/articles/setting-up-an-apex-domain/">https://help.github.com/articles/setting-up-an-apex-domain/</a></li>
-<li><a href="https://help.github.com/articles/troubleshooting-custom-domains/">https://help.github.com/articles/troubleshooting-custom-domains/</a></li>
-<li><a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/">https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/</a></li>
+<li><a href="https://help.github.com/articles/setting-up-your-pages-site-repository/" target="_blank">https://help.github.com/articles/setting-up-your-pages-site-repository/</a></li>
+<li><a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/" target="_blank">https://help.github.com/articles/quick-start-setting-up-a-custom-domain/</a></li>
+<li><a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank">https://help.github.com/articles/setting-up-an-apex-domain/</a></li>
+<li><a href="https://help.github.com/articles/troubleshooting-custom-domains/" target="_blank">https://help.github.com/articles/troubleshooting-custom-domains/</a></li>
+<li><a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/" target="_blank">https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/</a></li>
 </ul></li>
-<li>首先我们要一个 CNAME 文件（文件名叫 CNAME，没有文件后缀的），把该文件放在 E:\git_work_space\hexo\source 目录下，以后一些需要放在根目录的资源文件都可以放这里。如果你找不到这样的文件可以到我的项目上下载：<a href="https://github.com/judasn/judasn.github.io">https://github.com/judasn/judasn.github.io</a>
+<li>首先我们要一个 CNAME 文件（文件名叫 CNAME，没有文件后缀的），把该文件放在 E:\git_work_space\hexo\source 目录下，以后一些需要放在根目录的资源文件都可以放这里。如果你找不到这样的文件可以到我的项目上下载：<a href="https://github.com/judasn/judasn.github.io" target="_blank">https://github.com/judasn/judasn.github.io</a>
 
 <ul>
 <li>CNAME 上的内容需要写你具体要绑定的域名信息，比如我是：<strong>code.youmeek.com</strong>，具体你可以参考下图：
@@ -2949,13 +2950,13 @@ deploy:
 <li><img src="http://img.youmeek.com/2016/hexo-start-e-1.jpg" alt="设置 CNAME 文件" /></li>
 </ul></li>
 </ul></li>
-<li>接着我们需要到 DNSPOD 上设置域名解析：<a href="https://www.dnspod.cn/">https://www.dnspod.cn/</a>
+<li>接着我们需要到 DNSPOD 上设置域名解析：<a href="https://www.dnspod.cn/" target="_blank">https://www.dnspod.cn/</a>
 
 <ul>
 <li><img src="http://img.youmeek.com/2016/hexo-start-e-2.jpg" alt="设置域名解析" /></li>
 <li><img src="http://img.youmeek.com/2016/hexo-start-e-3.jpg" alt="设置域名解析" /></li>
 </ul></li>
-<li>设置好之后，等过几分钟域名解析好之后，我们访问：<a href="http://code.youmeek.com">http://code.youmeek.com</a>，效果如下：<br />
+<li>设置好之后，等过几分钟域名解析好之后，我们访问：<a href="http://code.youmeek.com" target="_blank">http://code.youmeek.com</a>，效果如下：<br />
 
 <ul>
 <li><img src="http://img.youmeek.com/2016/hexo-start-e-4.jpg" alt="域名访问效果" /></li>
@@ -2980,7 +2981,7 @@ deploy:
 <li>IntelliJ IDEA 可以快速地全文检索项目所有的文件</li>
 <li>对 JavaScript、CSS、HTML 等常见语言的良好支持，方便你修改你的主题</li>
 </ul></li>
-<li>如果你还不会使用 IntelliJ IDEA 或是 JetBrains 家其他产品，你可以看下我写一整套教程：<a href="http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/">http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/</a></li>
+<li>如果你还不会使用 IntelliJ IDEA 或是 JetBrains 家其他产品，你可以看下我写一整套教程：<a href="http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/" target="_blank">http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/</a></li>
 <li>现在我们用 IntelliJ IDEA 打开我们本地目录：E:\git_work_space\hexo，打开后效果如下图：
 
 <ul>

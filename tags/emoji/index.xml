@@ -6,6 +6,7 @@
     <description>Recent content in Emoji on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 31 Mar 2017 17:58:27 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>解决Mysql存储Emoji乱码问题</title>
-      <link>https://blog.sailfishc.cn/posts/emoji_demo/</link>
+      <link>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
       
-      <guid>https://blog.sailfishc.cn/posts/emoji_demo/</guid>
+      <guid>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</guid>
       <description>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
  在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
 总的就一句话，UTF-8是Unicode的一种实现。
