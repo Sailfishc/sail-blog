@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSR on 橙小张的博客</title>
+    <link>https://blog.sailfishc.cn/tags/ssr/</link>
+    <description>Recent content in SSR on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2019 09:56:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.sailfishc.cn/tags/ssr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>科学上网</title>
+      <link>https://blog.sailfishc.cn/posts/good-internet/</link>
+      <pubDate>Fri, 01 Nov 2019 09:56:18 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/good-internet/</guid>
+      <description>本文转自左耳朵耗子
+ 作者：左耳朵 http://coolshell.cn 更新时间：2019-11-01
+这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新
+ 科学上网  0. 序 1. 英文能力 2. 购买VPS 2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路 3. 搭建 Shadowsocks 和 VPN 服务 3.1 设置Docker服务 3.2 开启 TCP BBR 拥塞控制算法 3.3 设置Shadowsocks服务 3.4 设置L2TP/IPSec服务 3.5 设置PPTP服务 4. 客户端设置 4.1 Shadowsocks 客户端 4.2 VPN 客户端 5. 流量伪装和其它方式 5.1 V2Ray 5.2 Brook 6. 针对 IP 被封的解决方案 6.1 Cloudflare 6.2 V2Ray 6.3 补充 7.</description>
+    </item>
+    
+  </channel>
+</rss>
