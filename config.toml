@@ -1,22 +1,63 @@
 baseurl = "https://blog.sailfishc.cn/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
-enableRobotsTXT = true
-enableEmoji = true
+
 googleAnalytics = "UA-124900585-1"
-copyright = "sailfish"
 defaultContentLanguage = "en"           # Default language to use
+
+title="橙小张的博客"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+#archetypeDir = "archetypes"
+#contentDir   = "content"
+#dataDir      = "data"
+#layoutDir    = "layouts"
+#publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[blackfriday]
+  hrefTargetBlank = true
 
 [author]                  # essential                     # 必需
   name = "sailfish"
+[taxonomies]
+  tag      = "tags"
+  category = ""
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
+
 [params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
   since = "2017"            # Site creation time          # 站点建立时间
+
+  homeSubtitle = "讨论技术，聊聊生活"
+
 
   # Metadata mostly used in document's head
   description = "讨论技术，聊聊生活"
@@ -25,6 +66,14 @@ defaultContentLanguage = "en"           # Default language to use
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
@@ -36,14 +85,23 @@ defaultContentLanguage = "en"           # Default language to use
   contentTypeName = "posts"
   # Default theme "light" or "dark"
   defaultTheme = "dark"
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
 
   [params.logo]
       logoText     = "$ cd /home/"
       logoHomeLink = "/"
-  [params.utter]
-      repo = "sailfishc/blog-comments"
-      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
-      theme = "github-dark"
+#  [params.utter]
+#      repo = "sailfishc/blog-comments"
+#      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+#      theme = "github-dark"
+
+  [params.utterances]       # https://utteranc.es/
+    owner = "sailfishc"              # Your GitHub ID
+    repo = "blog-comments"               # The repo to store comments
 
   # Social icons
   [[params.social]]
@@ -62,33 +120,16 @@ defaultContentLanguage = "en"           # Default language to use
     name = "linkedin"
     url  = "https://www.linkedin.com/in/sailfishc/"
 
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
-    title = "橙小张的博客"
-    subtitle = "讨论技术，聊聊生活"
-    keywords = ""
-    copyright = ""
-    readOtherPosts = "Read other posts"
+     weight    = 1
+     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-    [languages.en.params.logo]
-      logoText = "$ cd /home/"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
-	# You can create a language based menu
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "about/"
-      [[languages.en.menu.main]]
-        identifier = "posts"
-        name       = "Articles"
-        url        = "posts/"
 
 # And you can even create generic menu
 [menu]
