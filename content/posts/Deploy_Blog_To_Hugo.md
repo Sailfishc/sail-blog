@@ -2,7 +2,7 @@
 title: 通过Hugo+Github快速搭建博客
 date: 2019-10-24T15:05:56+08:00
 draft: false
-toc: false
+toc: true
 images:
 tags:
   - Hugo
