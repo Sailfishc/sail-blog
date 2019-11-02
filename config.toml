@@ -1,8 +1,9 @@
+#https://raw.githubusercontent.com/it-gro/hugo-theme-w3css-basic/master/exampleSite/config.toml
 baseURL = "https://blog.sailfishc.cn/"
-#title="橙小张的博客"
+title="橙小张的博客"
 
 defaultContentLanguage = "en"           # Default language to use
-
+languageCode  = "en-us"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
@@ -41,9 +42,10 @@ disableHugoGeneratorInject = false
 
 [author]                  # essential                     # 必需
   name = "sailfish"
+
 [taxonomies]
   tag      = "tags"
-  category = ""
+  category = "categories"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -132,7 +134,7 @@ disableHugoGeneratorInject = false
   [languages.en]
      title = "橙小张的博客"
      subtitle = "讨论技术，聊聊生活"
-     weight = 1
+#     weight = 1
      copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 # And you can even create generic menu
@@ -140,8 +142,8 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "/about"
+    url        = "about/"
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts"
+    url        = "posts/"
