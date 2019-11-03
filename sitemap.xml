@@ -4,18 +4,43 @@
   
   <url>
     <loc>https://blog.sailfishc.cn/posts/</loc>
-    <lastmod>2019-11-01T09:56:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sailfishc.cn/tags/ssr/</loc>
-    <lastmod>2019-11-01T09:56:18+08:00</lastmod>
+    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.sailfishc.cn/tags/</loc>
+    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/</loc>
+    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/</loc>
+    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/%E8%8B%B1%E8%AF%AD/</loc>
+    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/ssr/</loc>
     <lastmod>2019-11-01T09:56:18+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -28,12 +53,6 @@
   
   <url>
     <loc>https://blog.sailfishc.cn/tags/vps/</loc>
-    <lastmod>2019-11-01T09:56:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sailfishc.cn/</loc>
     <lastmod>2019-11-01T09:56:18+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -263,12 +282,6 @@
   
   <url>
     <loc>https://blog.sailfishc.cn/categories/%E4%BA%BA%E6%96%87/</loc>
-    <lastmod>2017-04-07T14:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sailfishc.cn/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2017-04-07T14:37:00+00:00</lastmod>
     <priority>0</priority>
   </url>
