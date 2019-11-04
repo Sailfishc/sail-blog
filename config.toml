@@ -34,6 +34,9 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
+disqusShortname = "disqus_Y8uuv714Q0"
+
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
