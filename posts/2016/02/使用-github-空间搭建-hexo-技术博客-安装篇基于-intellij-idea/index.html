@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="sailfish ">
+<meta name="description"
+    content="部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+ 为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）  软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable  账号：  Github：https://github." />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/" />
+
+
+<title>
+    
+    使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA） :: 橙小张的博客  — 讨论技术，聊聊生活
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+<link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+<link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+<meta name="msapplication-TileColor" content="#252627">
+<meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）">
+<meta itemprop="description" content="本文将讲解基于 IntelliJ IDEA 如何使用 IDE 搭建 Hexo 博客、写博客！">
+
+
+<meta itemprop="datePublished" content="2016-02-28T17:58:27&#43;00:00" />
+<meta itemprop="dateModified" content="2016-02-28T17:58:27&#43;00:00" />
+<meta itemprop="wordCount" content="736">
+
+
+
+<meta itemprop="keywords" content="Hexo,IntelliJ IDEA,Git,Github,Node.js," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
+
+<meta name="twitter:title" content="使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）"/>
+<meta name="twitter:description" content="本文将讲解基于 IntelliJ IDEA 如何使用 IDE 搭建 Hexo 博客、写博客！"/>
+
+
+
+<meta property="article:section" content="Hexo" />
+<meta property="article:section" content="IntelliJ IDEA" />
+
+<meta property="article:published_time" content="2016-02-28 17:58:27 &#43;0000 UTC" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://blog.sailfishc.cn/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/">使用 Github 空间搭建 Hexo 技术博客&ndash;安装篇（基于 IntelliJ IDEA）</a></h1>
+
+            
+
+            <div class="post-content">
+                
+
+<!-- more -->
+
+<h2 id="部署前介绍">部署前介绍</h2>
+
+<ul>
+<li>这篇博客引自code.youmeek.com</li>
+</ul>
+
+<h3 id="hexo-是什么">Hexo 是什么</h3>
+
+<ul>
+<li>Hexo 的中文官网：<a href="http://hexo.io/zh-cn/" target="_blank">http://hexo.io/zh-cn/</a></li>
+<li>作者 Tommy Chen：<a href="https://zespia.tw/" target="_blank">https://zespia.tw/</a></li>
+<li>在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。</li>
+<li>而官网自己是这样说的：</li>
+</ul>
+
+<blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+
+<h3 id="为什么要用-hexo">为什么要用 Hexo</h3>
+
+<ul>
+<li>我：因为其他博客框架太烂了</li>
+<li>Tommy Chen：<a href="https://zespia.tw/blog/2012/10/11/hexo-debut/" target="_blank">https://zespia.tw/blog/2012/10/11/hexo-debut/</a></li>
+</ul>
+
+<h3 id="适合人群">适合人群</h3>
+
+<ul>
+<li>有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品）</li>
+<li>只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）</li>
+</ul>
+
+<h3 id="文章要求">文章要求</h3>
+
+<ul>
+<li>如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。</li>
+</ul>
+
+<h3 id="本文环境">本文环境</h3>
+
+<ul>
+<li>系统：
+
+<ul>
+<li>Windows 10（64 位）</li>
+</ul></li>
+<li>软件：
+
+<ul>
+<li>git：<strong>2.7.0.2-64-bit</strong></li>
+<li>IntelliJ IDEA：<strong>15.0.4</strong></li>
+<li>node.js：<strong>v5.7.0-64-bit Stable</strong></li>
+</ul></li>
+<li>账号：
+
+<ul>
+<li>Github：<a href="https://github.com/" target="_blank">https://github.com/</a></li>
+<li>DNSPOD：<a href="https://www.dnspod.cn/" target="_blank">https://www.dnspod.cn/</a></li>
+</ul></li>
+</ul>
+
+<h3 id="搭建所需软件">搭建所需软件</h3>
+
+<ul>
+<li>各个软件官网：
+
+<ul>
+<li>git：<a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></li>
+<li>IntelliJ IDEA：<a href="https://www.jetbrains.com/idea/" target="_blank">https://www.jetbrains.com/idea/</a></li>
+<li>node.js：<a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a></li>
+</ul></li>
+<li>所需软件集合：
+
+<ul>
+<li>上面三者集合包：<a href="http://pan.baidu.com/s/1bvbo8e" target="_blank">http://pan.baidu.com/s/1bvbo8e</a></li>
+</ul></li>
+</ul>
+
+<h3 id="文章前提">文章前提</h3>
+
+<ul>
+<li>如果你对上面要求的软件一个都不了解的话，建议你先看如下内容（只是让你们先了解下，当时别照着文章内容做）：
+
+<ul>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://www.jianshu.com/p/858ecf233db9" target="_blank">通过Hexo在Github上搭建博客教程</a></li>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank">hexo你的博客</a></li>
+<li><a href="http://www.jianshu.com/p/701b1095da11" target="_blank">手把手教你建github技术博客</a></li>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://www.jianshu.com/p/e858a90d0a17" target="_blank">windows下搭建hexo博客并将其部署到GitCafe终极教程</a></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank">使用Hexo搭建博客（三），博客配置、主题和写作</a></li>
+<li><a href="http://www.jianshu.com/p/e7413116e9d4" target="_blank">Hexo搭建WiKi</a></li>
+<li><a href="https://www.zhihu.com/question/28058973" target="_blank">怎么用hexo上传一个README.md到github?</a></li>
+</ul></li>
+</ul>
+
+<h3 id="域名绑定">域名绑定</h3>
+
+<ul>
+<li>如果你一开始就打算要绑定域名，则下面教程中所有可以填写域名的地方你都填写上你要绑定的域名，如果你没独立域名，那就使用 Github 默认给你的：XXXXXX.github.io 域名即可。</li>
+</ul>
+
+<hr />
+
+<h2 id="部署开始">部署开始</h2>
+
+<h3 id="git-安装">git 安装</h3>
+
+<ul>
+<li>双击运行 <strong>Git-2.7.0.2-64-bit.exe</strong>，接下来一律下一步，不需要多余的选择，假设你安装的目录位置跟我一样：C:\Program Files\Git</li>
+<li>打开 Git Bash（路径：C:\Program Files\Git\git-bash.exe），输入：<code>git --version</code>
+
+<ul>
+<li>如下图，如果出现：<strong>git version 2.7.0.windows.2</strong>，这表示安装成功</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-a-1.jpg" alt="验证 git 安装" /></li>
+</ul></li>
+</ul>
+
+<h3 id="node-js-安装">Node.js 安装</h3>
+
+<ul>
+<li>双击运行 <strong>node-v5.7.0-x64.msi</strong>，接下来一律下一步，不需要多余的选择。</li>
+<li>安装完之后，打开 Git Bash，输入：<code>npm -v</code>
+
+<ul>
+<li>如下图，如果出现：<strong>3.6.0</strong>，则表示 Node.js 安装成功。如果你没有显示这个信息，我怀疑你需要重启电脑试试看，因为我在给我弟讲解这一步的时候发现有这个问题。</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-a-2.jpg" alt="验证 node.js 安装" /></li>
+</ul></li>
+</ul>
+
+<h3 id="node-js-源设置">Node.js 源设置</h3>
+
+<ul>
+<li>在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：<a href="http://registry.npmjs.org" target="_blank">http://registry.npmjs.org</a>，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：<a href="http://npm.taobao.org/" target="_blank">http://npm.taobao.org/</a></li>
+<li>在 Git Bash 中我们执行下面这一句（这是一整句的）：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias cnpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;npm --registry=https://registry.npm.taobao.org \
+</span><span style="color:#e6db74">--cache=</span>$HOME<span style="color:#e6db74">/.npm/.cache/cnpm \
+</span><span style="color:#e6db74">--disturl=https://npm.taobao.org/dist \
+</span><span style="color:#e6db74">--userconfig=</span>$HOME<span style="color:#e6db74">/.cnpmrc&#34;</span></code></pre></div>
+<ul>
+<li>现在验证下是否可以使用淘宝的 cnpm 命令：<code>cnpm info express</code>
+
+<ul>
+<li>如果能输出一大堆介绍，则说明成功了，以后每次要使用淘宝的源都需要这样来。现在除了默认的 <strong>npm</strong>，还多了一个 <strong>cnpm</strong> 可以使用，我们下面有关安装的讲解内容也都是基于此临时命令。</li>
+<li>如果输出：bash: cnpm: command not found，则表示没成功，需要你在排查下</li>
+<li>需要强调的是：<strong>cnpm</strong> 不是永久性命令，只是此时这个界面窗口下的临时命令，关掉窗口就没效果了。</li>
+</ul></li>
+</ul>
+
+<h3 id="安装-hexo-框架">安装 Hexo 框架</h3>
+
+<ul>
+<li>安装 Hexo（注意，现在是 cnpm 开头了，不是 npm 了）：<code>cnpm install -g hexo-cli</code>
+
+<ul>
+<li>安装时间不一定很快，有可能需要等 3 ~ 5 分钟。</li>
+<li>安装过程中有 WARN 警告也没关系的，不用在意这些 WARN，继续等它安装完成。因为国内的网络问题，有时候安装异常慢花了大半个小时都没效果，那就 Ctrl + C 停掉这次命令，重新再执行一次。</li>
+</ul></li>
+</ul>
+
+<h3 id="创建-hexo-项目">创建 Hexo 项目</h3>
+
+<ul>
+<li>现在假设我要创建一个名为 hexo 的项目，项目目录就放在：E:\git_work_space 目录下，所以我们在 E:\git_work_space 目录下创建一个 hexo 目录。现在这个项目的全路径是：E:\git_work_space\hexo</li>
+<li>打开 Git Bash：
+
+<ul>
+<li>进入该目录：<code>cd e:/git_work_space/hexo</code></li>
+<li>然后执行：<code>hexo init</code>，这个时间也会比较长，也有可能要等几分钟，有显示 WARN 也不用管</li>
+<li>最后执行：<code>cnpm install</code>，有显示 WARN 也不用管</li>
+<li>安装完成之后，E:\git_work_space\hexo 目录结构是这样的：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-1.jpg" alt="安装 hexo 后的目录结构" /></li>
+</ul></li>
+<li>现在我们启动 hexo 本地服务，看下默认的博客是怎样的，命令：<code>hexo server</code></li>
+<li>现在用浏览器访问：<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，效果如下图
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-2.jpg" alt="默认模板效果" /></li>
+</ul></li>
+<li>如果要停止 hexo 服务：在 Git Bash 下按 <code>Ctrl + C</code> 即可</li>
+</ul></li>
+</ul>
+
+<h3 id="选用其他主题">选用其他主题</h3>
+
+<ul>
+<li>由于默认主题太大众了，所以现在我们换个主题。</li>
+<li>你可以去这里找主题：
+
+<ul>
+<li>hexo-theme：<a href="https://hexo.io/themes/" target="_blank">https://hexo.io/themes/</a></li>
+<li>hexo-github-theme-list：<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank">https://github.com/hexojs/hexo/wiki/Themes</a></li>
+<li>有那些好看的hexo主题？：<a href="http://www.zhihu.com/question/24422335" target="_blank">http://www.zhihu.com/question/24422335</a></li>
+</ul></li>
+<li>我这里选择的 <strong>yelee</strong>：<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank">https://github.com/MOxFIVE/hexo-theme-yelee</a>
+
+<ul>
+<li>原因是能最大化衬托出：目录、文章内容、代码块。因为我对这个博客的定位就是用来放技术类内容，所以不会让它太杂或是太花。只是目前这个颜色偏浅，后续还需要调整。</li>
+</ul></li>
+<li>现在假设你跟我要用的模板是一样：
+
+<ul>
+<li>还是让 Git Bash 保持在 E:\git_work_space\hexo 目录下，然后输入命令：<code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee</code></li>
+<li>这样就在 E:\git_work_space\hexo\themes 目录下生成了一个 yelle 文件夹，里面有我们刚刚 clone 下来的主题内容。</li>
+<li>如果以后你不自己修改这个主题的话，可以考虑经常更新下作者的更新内容：
+
+<ul>
+<li><code>cd e:/git_work_space/hexo/themes/yelee</code></li>
+<li><code>git pull origin master</code></li>
+</ul></li>
+</ul></li>
+<li>下载好主题文件之后，我们现在要修改 E:\git_work_space\hexo 目录下的项目配置文件：<strong>_config.yml</strong>，把对应的主题目录名改下，编辑如下图。
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-3.jpg" alt="修改主题目录" /></li>
+</ul></li>
+<li>更改主题目录名后，我们还要重新生成主题静态内容：
+
+<ul>
+<li>继续在 Git Bash 中输入命令：
+
+<ul>
+<li>重新生成静态博客的所有内容：<code>hexo generate</code></li>
+<li>重启 hexo 本地服务：<code>hexo server</code></li>
+<li>重新访问：<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，效果如下图</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-4.jpg" alt="新主题效果" /></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="创建-github-pages-并-ssh-授权">创建 Github pages 并 SSH 授权</h3>
+
+<ul>
+<li>现在假设你已经有一个 Gtihub 账号，你还需要一个特别的仓库，特别在仓库名就是你的 Github 账号登录名，比如我的用户名是：judasn，那我要创建的仓库名字完整滴填写是：judasn.github.io，具体效果如下图。
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-c-1.jpg" alt="创建 github pages" /></li>
+</ul></li>
+<li>创建好仓库之后，要本地生成 SSH 秘钥，方便电脑上的 git 软件好提交内容到 Github 上
+
+<ul>
+<li>在 Git Bash 中，输入：<code>ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code>，然后回车，回车，再回车，一共 3 次回车，具体含义自己 Google。</li>
+<li>比如我的：<code>ssh-keygen -t rsa -C &quot;jn3.141592654@gmail.com&quot;</code>，生成后效果如下图：</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-c-2.jpg" alt="生成 ssh 密钥" /></li>
+<li>此时，生成密钥后，在你电脑目录：C:\Users\你的计算机用户名\.ssh 下，会生成两个文件：
+
+<ul>
+<li>私钥：<strong>id_rsa</strong></li>
+<li>公钥：<strong>id_rsa.pub</strong></li>
+<li>如果生成的不是这样的文件，那删除掉这两个生成的，重新执行上面的命令，让它再一次生成。</li>
+</ul></li>
+<li>现在用记事本打开 id_rsa.pub，复制文件中的所有内容。
+
+<ul>
+<li>访问：<a href="https://github.com/settings/ssh" target="_blank">https://github.com/settings/ssh</a>，添加新秘钥，效果如下图
+
+<ul>
+<li>Title：自己随便取</li>
+<li>Key：把刚刚复制的都粘贴进来</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-c-3.jpg" alt="添加密钥" /></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="把本地的博客内容同步到-github-上">把本地的博客内容同步到 Github 上</h3>
+
+<ul>
+<li>要把本地的静态博客同步到 Github，我们还需要先安装两个跟部署相关的 hexo 插件：
+
+<ul>
+<li>继续在 Git Bash 中输入：</li>
+<li><code>cnpm install hexo -server --save</code></li>
+<li><code>cnpm install hexo-deployer-git --save</code></li>
+</ul></li>
+<li>编辑全局 hexo 的配置文件：<strong>_config.yml</strong>
+
+<ul>
+<li>官网对此配置的介绍：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank">https://hexo.io/zh-cn/docs/configuration.html</a></li>
+<li>我自己的编辑内容初稿（你需要认真看的是含有中文注释的内容）：
+<br /></li>
+</ul></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Hexo Configuration</span>
+<span style="color:#75715e">## Docs: https://hexo.io/docs/configuration.html</span>
+<span style="color:#75715e">## Source: https://github.com/hexojs/hexo/</span>
+
+<span style="color:#75715e"># Site，这一块区域主要是设置博客的主要说明，需要注意的是：每个冒号后面都是有一个空格，然后再书写自己的内容的</span>
+title: YouMeek Code
+subtitle: 这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com
+description: 这里是 YouMeek.com 一部分
+author: Judas.n
+email: <span style="color:#ae81ff">363379444</span>@qq.com
+language: zh-CN
+timezone:
+
+<span style="color:#75715e"># URL，这一块一般可以设置的是 url 这个参数，比如我要设置绑定域名的，这里就需要填写我的域名信息</span>
+<span style="color:#75715e">## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;</span>
+url: http://code.youmeek.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+<span style="color:#75715e"># Directory</span>
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+<span style="color:#75715e"># Writing</span>
+new_post_name: :title.md <span style="color:#75715e"># File name of new posts</span>
+default_layout: post
+titlecase: false <span style="color:#75715e"># Transform title into titlecase</span>
+external_link: true <span style="color:#75715e"># Open external links in new tab</span>
+filename_case: <span style="color:#ae81ff">0</span>
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+<span style="color:#75715e"># Category &amp; Tag</span>
+default_category: uncategorized
+category_map:
+tag_map:
+
+<span style="color:#75715e"># Date / Time format</span>
+<span style="color:#75715e">## Hexo uses Moment.js to parse and display date</span>
+<span style="color:#75715e">## You can customize the date format as defined in</span>
+<span style="color:#75715e">## http://momentjs.com/docs/#/displaying/format/</span>
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+<span style="color:#75715e"># Pagination</span>
+<span style="color:#75715e">## Set per_page to 0 to disable pagination</span>
+per_page: <span style="color:#ae81ff">10</span>
+pagination_dir: page
+
+<span style="color:#75715e"># Extensions</span>
+<span style="color:#75715e">## Plugins: https://hexo.io/plugins/</span>
+<span style="color:#75715e">## Themes: https://hexo.io/themes/</span>
+theme: yelee
+
+<span style="color:#75715e"># Deployment</span>
+<span style="color:#75715e">## 这里是重点，这里是修改发布地址，因为我们前面已经加了 SSH 密钥信息在 Github 设置里面了，所以只要我们电脑里面持有那两个密钥文件就可以无需密码地跟 Github 做同步。</span>
+<span style="color:#75715e">## 需要注意的是这里的 repo 采用的是 ssh 的地址，而不是 https 的。分支我们默认采用 master 分支，以后你翅膀硬了要换其他也无所谓。</span>
+<span style="color:#75715e">## Docs: https://hexo.io/docs/deployment.html</span>
+deploy:
+  type: git
+  repo: git@github.com:judasn/judasn.github.io.git
+  branch: master
+  </code></pre></div>
+<ul>
+<li>编辑全局配置后我们需要重新部署：
+
+<ul>
+<li>继续在 Git Bash 中输入命令：</li>
+<li>先清除掉已经生成的旧文件：<code>hexo clean</code></li>
+<li>再生成一次静态文件：<code>hexo generate</code></li>
+<li>在本地预览下：<code>hexo server</code></li>
+<li>本地没问题之后，Ctrl + C 停掉本地预览。</li>
+<li>在部署到 Github 之前，需要先确定你是否已经用过 Git，如果你没用过，则此时你需要做如下设置，在 Git Bash 中依次输入下面两个命令：
+
+<ul>
+<li><code>git config --global user.email &quot;你的 Github 注册邮箱地址&quot;</code></li>
+<li><code>git config --global user.name &quot;你的 Github 用户名&quot;</code></li>
+</ul></li>
+<li>使用部署命令部署到 Github 上：<code>hexo deploy</code>，有弹出下面提示框，请输入：<code>yes</code>
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-d-1.jpg" alt="确认提交" /></li>
+</ul></li>
+<li>提交成功效果如下：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-d-2.jpg" alt="提交成功" /></li>
+</ul></li>
+<li>访问服务器地址进行检查：<a href="http://judasn.github.io" target="_blank">http://judasn.github.io</a>，效果如下
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-d-3.jpg" alt="服务器效果" /></li>
+</ul></li>
+<li>但是，也不排除你 deploy 不了到 Github，报这个错误：<code>Host key verification failed</code>，那解决办法如下：
+
+<ul>
+<li>还是在 Git Bash 界面中，输入如下命令：<code>ssh -T git@github.com</code>，根据界面提示，输入：<code>yes</code> 回车。之后你可以再试一下是否可以 deploy。</li>
+</ul></li>
+</ul></li>
+<li>通过上面几次流程我们也就可以总结：以后，每次发表新文章要部署都按这样的流程来：
+
+<ul>
+<li><code>hexo clean</code></li>
+<li><code>hexo generate</code></li>
+<li><code>hexo deploy</code></li>
+</ul></li>
+<li>也因为这几个命令太频繁了，所以又有了精简版的命令：
+
+<ul>
+<li><code>hexo clean == hexo clean</code></li>
+<li><code>hexo g == hexo generate</code></li>
+<li><code>hexo s == hexo server</code></li>
+<li><code>hexo d == hexo deploy</code></li>
+</ul></li>
+</ul>
+
+<h3 id="绑定域名">绑定域名</h3>
+
+<ul>
+<li>绑定域名不排除会遇到很多网络问题或是七七八八，所以这里先提供先官网的一些说明：
+
+<ul>
+<li><a href="https://help.github.com/articles/setting-up-your-pages-site-repository/" target="_blank">https://help.github.com/articles/setting-up-your-pages-site-repository/</a></li>
+<li><a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/" target="_blank">https://help.github.com/articles/quick-start-setting-up-a-custom-domain/</a></li>
+<li><a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank">https://help.github.com/articles/setting-up-an-apex-domain/</a></li>
+<li><a href="https://help.github.com/articles/troubleshooting-custom-domains/" target="_blank">https://help.github.com/articles/troubleshooting-custom-domains/</a></li>
+<li><a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/" target="_blank">https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/</a></li>
+</ul></li>
+<li>首先我们要一个 CNAME 文件（文件名叫 CNAME，没有文件后缀的），把该文件放在 E:\git_work_space\hexo\source 目录下，以后一些需要放在根目录的资源文件都可以放这里。如果你找不到这样的文件可以到我的项目上下载：<a href="https://github.com/judasn/judasn.github.io" target="_blank">https://github.com/judasn/judasn.github.io</a>
+
+<ul>
+<li>CNAME 上的内容需要写你具体要绑定的域名信息，比如我是：<strong>code.youmeek.com</strong>，具体你可以参考下图：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-1.jpg" alt="设置 CNAME 文件" /></li>
+</ul></li>
+</ul></li>
+<li>接着我们需要到 DNSPOD 上设置域名解析：<a href="https://www.dnspod.cn/" target="_blank">https://www.dnspod.cn/</a>
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-2.jpg" alt="设置域名解析" /></li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-3.jpg" alt="设置域名解析" /></li>
+</ul></li>
+<li>设置好之后，等过几分钟域名解析好之后，我们访问：<a href="http://code.youmeek.com" target="_blank">http://code.youmeek.com</a>，效果如下：<br />
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-4.jpg" alt="域名访问效果" /></li>
+<li>2016-08-19 更新：Github 提示，建议我们使用 CNAME 方式来指向，别用 IP，所以建议你这样配置，还是以我的为例：
+
+<ul>
+<li>主机记录：code</li>
+<li>记录类型：CNAME</li>
+<li>记录值：judasn.github.io.（后面的这个点别忘记了）</li>
+<li>还有，要记得把 CNAME 那个文件再 deploy 到 Github 哦，不然还是访问不了的。</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="整合-intellij-idea-提高效率">整合 IntelliJ IDEA 提高效率</h3>
+
+<ul>
+<li>为了提交写作效率，我个人建议使用 IntelliJ IDEA 作为 Markdown 编辑工具
+
+<ul>
+<li>IntelliJ IDEA 有各种各样的快捷键支持你的操作</li>
+<li>IntelliJ IDEA 可以快速地全文检索项目所有的文件</li>
+<li>对 JavaScript、CSS、HTML 等常见语言的良好支持，方便你修改你的主题</li>
+</ul></li>
+<li>如果你还不会使用 IntelliJ IDEA 或是 JetBrains 家其他产品，你可以看下我写一整套教程：<a href="http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/" target="_blank">http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/</a></li>
+<li>现在我们用 IntelliJ IDEA 打开我们本地目录：E:\git_work_space\hexo，打开后效果如下图：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-f-1.jpg" alt="IntelliJ IDEA 打开项目" /></li>
+</ul></li>
+<li>由于 IntelliJ IDEA 在 Windows 下的默认终端是 <code>cmd</code> 不好用，我们现在需要重新修改下 IntelliJ IDEA 的终端工具，把它指向我们习惯的 Git Bash，这样方便操作，如下图 gif 演示。
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-f-2.gif" alt="IntelliJ IDEA 下操作 hexo" /></li>
+<li>如 gif 演示，我们可以 IntelliJ IDEA 里面安心写文章、做发布等操作。</li>
+</ul></li>
+<li>为了更稳定地使用 IntelliJ IDEA，在不修改主题的情况下，我们还需要这样做：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-f-3.jpg" alt="IntelliJ IDEA 下操作 hexo" /></li>
+</ul></li>
+<li>hexo 新文章内容的开头需要这样定义：
+
+<ul>
+<li>categories：表示文章所属分类</li>
+<li>tags：表示文章所属标签</li>
+</ul></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
+title: 这是文章标题
+date: <span style="color:#ae81ff">2016</span>-02-28 <span style="color:#ae81ff">17</span>:58:27
+categories: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA<span style="color:#f92672">]</span>
+tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<span style="color:#f92672">]</span>
+---</code></pre></div>
+<h2 id="结束语">结束语</h2>
+
+<ul>
+<li>我希望从这一篇你也可以再一次了解到 IntelliJ IDEA 的美丽之处。</li>
+<li>最后，欢迎再次来到 IntelliJ IDEA 的世界！</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/hexo">Hexo</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/intellij-idea">IntelliJ IDEA</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/git">Git</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/github">Github</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/node.js">Node.js</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>736 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2016-02-29 01:58 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://blog.sailfishc.cn/posts/2017/03/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Java程序员学习路线</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="https://blog.sailfishc.cn/">sailfish</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-124900585-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>

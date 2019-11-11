@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="sailfish ">
+<meta name="description"
+    content="写在前面
+ 程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
+先罗列下常见的博客网站：
+ Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
+ node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
+快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
+ 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &amp;gt;&amp;gt; config.toml  新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：" />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" />
+
+
+<title>
+    
+    通过Hugo&#43;Github快速搭建博客 :: 橙小张的博客  — 讨论技术，聊聊生活
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+<link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+<link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+<meta name="msapplication-TileColor" content="#252627">
+<meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="通过Hugo&#43;Github快速搭建博客">
+<meta itemprop="description" content="写在前面
+ 程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
+先罗列下常见的博客网站：
+ Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
+ node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
+快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
+ 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &gt;&gt; config.toml  新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：">
+
+
+<meta itemprop="datePublished" content="2019-10-24T15:05:56&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-24T15:05:56&#43;08:00" />
+<meta itemprop="wordCount" content="166">
+
+
+
+<meta itemprop="keywords" content="Hugo," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
+
+<meta name="twitter:title" content="通过Hugo&#43;Github快速搭建博客"/>
+<meta name="twitter:description" content="写在前面
+ 程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
+先罗列下常见的博客网站：
+ Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
+ node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
+快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
+ 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &gt;&gt; config.toml  新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种："/>
+
+
+
+
+<meta property="article:published_time" content="2019-10-24 15:05:56 &#43;0800 CST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://blog.sailfishc.cn/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">通过Hugo+Github快速搭建博客</a></h1>
+                <hr />
+                <aside id="toc">
+                <div class="toc-title">Table of Contents</div>
+                    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#快速开始">快速开始</a></li>
+<li><a href="#部署">部署</a></li>
+<li><a href="#一些总结">一些总结</a></li>
+</ul></li>
+</ul>
+</nav>
+                </aside>
+                <hr />
+
+            
+
+            <div class="post-content">
+                
+
+<blockquote>
+<p>写在前面</p>
+</blockquote>
+
+<p>程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。</p>
+
+<p>先罗列下常见的博客网站：</p>
+
+<ul>
+<li>Hexo</li>
+<li>WordPress</li>
+<li>JekyII</li>
+<li>Ghost</li>
+<li>Hugo</li>
+</ul>
+
+<p>Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：</p>
+
+<ul>
+<li>node环境问题较多，本身对Node不熟悉，解决成本高</li>
+<li>node_modules过大，网络问题下载依赖过慢</li>
+<li>编译为html过程越来越慢</li>
+</ul>
+
+<p>后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：<code>The world’s fastest framework for building websites</code>，总结起来就一句话，那就是快！！！</p>
+
+<h2 id="快速开始">快速开始</h2>
+
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start | Hugo</a></li>
+</ul>
+
+<p>Hugo安装很简单，就以Mac为例快速开始：</p>
+
+<ul>
+<li>安装Hugo：<code>brew install Hugo</code></li>
+<li>查看Hugo版本：<code>Hugo version</code></li>
+<li>新建一个网站，名字为<code>quickstart</code>：<code>Hugo new site quickstart</code></li>
+<li>安装主题
+
+<ul>
+<li>进入目录：<code>cd quickstart</code></li>
+<li>使用Git Init创建Git仓库：<code>git init</code></li>
+<li>下载主题，放入theme目录（名字为<code>ananke</code>）：<code>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</code></li>
+<li>使用主题：<code>echo ‘theme = “ananke”’ &gt;&gt; config.toml</code></li>
+</ul></li>
+<li>新建MarkDown文章（也可以用现有的放入content/posts目录）：<code>Hugo new posts/my-first-post.md</code></li>
+<li>本地预览：<code>Hugo server -D</code></li>
+<li>打开浏览器：<code>http://localhost:1313</code></li>
+<li>搞定🌹</li>
+</ul>
+
+<h2 id="部署">部署</h2>
+
+<p>本地搭建好了网站要部署到外部服务上，常见的方式有三种：</p>
+
+<ul>
+<li>部署Github Pages</li>
+<li>部署到自己服务器，用静态服务器（例如Nginx）上</li>
+<li>使用一些云服务（推荐）</li>
+</ul>
+
+<p>先简要介绍下流程，Hugo将Markdown转为静态资源（Html，Css，Js）等资源，放在public目录下，将public发布到静态服务器或者CDN下达到外部可以访问的效果。</p>
+
+<p>对于自己购买服务器部署的方式目前是不推荐的，因为刚开始博客没有自己的品牌，浪费一些资源在服务器上的话是不划算的（也增加维护成本），所以就只考虑基于Github Pages和云服务这两种方式，对于Github Pages，简要说明下，Github Pages提供了3种方式：</p>
+
+<ul>
+<li>新建Github用户名（例如<code>sailfishc</code>）的仓库：<code>sailfishc.github.io</code></li>
+<li>新建项目，在<code>master</code>分支下新建<code>docs</code>目录</li>
+<li>新建项目，添加<code>gh-pages</code>分支</li>
+</ul>
+
+<p>最开始本来想尝试第一种，但是还有一个博客已经使用这种模式了，暂时是用不了，因为第二种会将源代码和静态网站在一个分支中，也就不考虑，就采用了第三种，对于第三种方式的部署，最开始采用了Travis部署的方式，但是经过一些尝试，效果并不好（主要是对于Travis的脚本不熟悉，找了一些脚本效果比较差），最后也放弃了，有兴趣的小伙伴们可以看参考文章中对于Travis部署的一些博客，之后一段时间采用了本地执行脚本的方式，等文章写完后，执行脚本<a href="https://gist.github.com/Sailfishc/5c8861ace0469aec69f834d972da64f3" target="_blank">push hugo site to Github gh-pages branch · GitHub</a> ，脚本会自动将生成静态public文件，然后加入<code>gh-pages</code>分支，然后将源代码push到<code>master</code>分支，public下的文件push到<code>gh-pages</code>分支，就可以使用<code>https://sailfishc.github.io/sail-blog</code>访问博客站点了。</p>
+
+<p>大功告成了吗？没有，因为没使用第一种Github pages方案，这个链接包含了<code>项目这名</code>这一级路径，用着很难受，于是就有了之后的改版，也就是<code>Host On Render</code>的方案。</p>
+
+<ul>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank">Host on Render | Hugo</a></li>
+</ul>
+
+<blockquote>
+<p>将网站部署到Render上，享受全球CDN服务，通过<code>Cloudflare</code>自定义域名</p>
+</blockquote>
+
+<ul>
+<li>打开Render</li>
+<li>注册</li>
+<li>创建<code>Webservice</code></li>
+<li>授予仓库权限</li>
+<li>设置参数
+
+<ul>
+<li>Environment</li>
+<li>Build Command</li>
+<li>Publish Directory</li>
+</ul></li>
+<li>将自定义域名加入Render，在Cloudflare配置DNS转发</li>
+<li>搞定🌹</li>
+</ul>
+
+<h2 id="一些总结">一些总结</h2>
+
+<blockquote>
+<p>中间走了很多弯路，到最后发现官方文档已经有很多成熟的方案，只是自己没认真看，借<code>左耳朵耗子的话</code>：花时间学习基础知识，花时间度文档，只要把基础打扎实，认真读下文档，就会生出很多时间。</p>
+
+<p>参考文章</p>
+</blockquote>
+
+<ul>
+<li><a href="https://axdlog.com/zh/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/" target="_blank">利用Travis CI和Hugo將Blog自動部署到Github Pages - AxdLog</a></li>
+<li><a href="https://zyfdegh.github.io/post/201705-how-i-setup-hugo/" target="_blank">我是如何用 Hugo、Travis CI 和 GitHub Pages 搭建博客的? - 独行的蚂蚁 - 博客</a></li>
+<li><a href="https://blog.yuantops.com/tech/hugo-travis-ci-auto-deploy-to-gh-pages/" target="_blank">Blog自动部署实践: Hugo + Travis CI -&gt; GitHub Pages // Yuantops’ Blog</a></li>
+<li><a href="https://medium.com/swlh/hosting-a-hugo-blog-on-github-pages-with-travis-ci-e74a1d686f10" target="_blank">Hosting a Hugo blog on GitHub Pages with Travis CI - The Startup - Medium</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank">Host on GitHub | Hugo</a></li>
+<li><a href="https://www.gohugo.org/doc/tutorials/github-pages-blog/" target="_blank">Hosting on GitHub Pages - Hugo中文文档</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank">Host on Render | Hugo</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/hugo">Hugo</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>166 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-10-24 15:05 &#43;0800</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">解决添加到GitIgnore的文件没被忽略的问题</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                                <span class="button__text">以练代学，学习算法和数据结构</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="https://blog.sailfishc.cn/">sailfish</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-124900585-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>

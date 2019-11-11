@@ -1,49 +1,570 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on 橙小张的博客</title>
-    <link>https://blog.sailfishc.cn/posts/</link>
-    <description>Recent content in Posts on 橙小张的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 03 Nov 2019 21:01:53 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.sailfishc.cn/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>学习观</title>
-      <link>https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/</link>
-      <pubDate>Sun, 03 Nov 2019 21:01:53 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/</guid>
-      <description>为学习付费，还是为知识付费，亦或者是为信息付费，在高中时看到一个资料，是一套数学的学习模型，当时心情非常激动，被资料宣传的效果倾倒，觉得有一套这样的学习资料，一定会学有所成，但是最终效果一般，也没考上一个好学校，毕业后坚信Just do IT，选择了IT道路，在IT路上，如何学习也是很重要的一门手艺。
+    <channel>
+        <title>Posts on 橙小张的博客</title>
+        <link>https://blog.sailfishc.cn/posts/</link>
+        <description>Recent content in Posts on 橙小张的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 03 Nov 2019 21:01:53 +0800</lastBuildDate>
+        <atom:link href="https://blog.sailfishc.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>学习观</title>
+            <link>https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/</link>
+            <pubDate>Sun, 03 Nov 2019 21:01:53 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/</guid>
+            <description>为学习付费，还是为知识付费，亦或者是为信息付费，在高中时看到一个资料，是一套数学的学习模型，当时心情非常激动，被资料宣传的效果倾倒，觉得有一套这样的学习资料，一定会学有所成，但是最终效果一般，也没考上一个好学校，毕业后坚信Just do IT，选择了IT道路，在IT路上，如何学习也是很重要的一门手艺。
 介绍 本篇文章主要是从网络资源《学习观》中做的一些总结，主要包含两部分内容：
  学习理论  学习和记忆 信息和知识 知识的分类  学习工具  思维导图 费曼技巧  学习实战  正确的学习方法 如何学习英文   学习 理论知识 学习和记忆 从上学到工作，一直在学习，也有一些号称终生学习的人，但是好像没人告诉我们什么是学习，或者很少人去思考学习是什么？在上学的时候，听课是学习，做题是学习，考试也是学习，但是这个过程中到底哪些步骤才算是学习呢？学习的结果是学会，那怎么才算是学会呢？抽象的思考下，老师在课堂讲解了A，B，C三个知识点，对应给出了A，B，C三个知识点的题目，你将A，B，C三道题的题目解出来了，说明你学会了A，B，C这三个知识点，但是在考试中出现了你没见过的题目，类似AB，AC，BC，甚至是ABC这种组合的题目，你根据学习的A，B，C的基础知识点没有将题目解出来，这说明你没有学会，那学习究竟是什么呢？
 我们将这个过程简化去分析下，有3个数：1，2，3，只有一种规则：乘，那么所有的可能性是：
 1 * 1 = 1 1 * 2 = 2 1 * 3 = 3 2 * 1 = 2 2 * 2 = 4 2 * 3 = 6 3 * 1 = 3 3 * 2 = 6 3 * 3 = 9  这个数字是规则是有限的（这也是我们小学数学有可能满分，高中大学很难满分的原因），我们可以使用大脑记忆，出现类似题目可以很快的反馈出结果，但是我们真的学会了吗？没有，因为出现2 * 4的时候就不知道结果了，但是我们通过上面的例子去学习，总结出规律，即使出现其他题目也能解出来的过程就是学习。</description>
-    </item>
-    
-    <item>
-      <title>科学上网</title>
-      <link>https://blog.sailfishc.cn/posts/2019/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
-      <pubDate>Fri, 01 Nov 2019 09:56:18 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
-      <description>本文转自左耳朵耗子
+            <content type="html"><![CDATA[
+
+<p>为学习付费，还是为知识付费，亦或者是为信息付费，在高中时看到一个资料，是一套数学的学习模型，当时心情非常激动，被资料宣传的效果倾倒，觉得有一套这样的学习资料，一定会学有所成，但是最终效果一般，也没考上一个好学校，毕业后坚信<code>Just do IT</code>，选择了IT道路，在IT路上，如何学习也是很重要的一门手艺。</p>
+
+<h2 id="介绍">介绍</h2>
+
+<p>本篇文章主要是从网络资源《学习观》中做的一些总结，主要包含两部分内容：</p>
+
+<ul>
+<li>学习理论
+
+<ul>
+<li>学习和记忆</li>
+<li>信息和知识</li>
+<li>知识的分类</li>
+</ul></li>
+<li>学习工具
+
+<ul>
+<li>思维导图</li>
+<li>费曼技巧</li>
+</ul></li>
+<li>学习实战
+
+<ul>
+<li>正确的学习方法</li>
+<li>如何学习英文</li>
+</ul></li>
+</ul>
+
+<h2 id="学习">学习</h2>
+
+<h3 id="理论知识">理论知识</h3>
+
+<h4 id="学习和记忆">学习和记忆</h4>
+
+<p>从上学到工作，一直在学习，也有一些号称终生学习的人，但是好像没人告诉我们什么是学习，或者很少人去思考学习是什么？在上学的时候，听课是学习，做题是学习，考试也是学习，但是这个过程中到底哪些步骤才算是学习呢？学习的结果是学会，那怎么才算是学会呢？抽象的思考下，老师在课堂讲解了A，B，C三个知识点，对应给出了A，B，C三个知识点的题目，你将A，B，C三道题的题目解出来了，说明你学会了A，B，C这三个知识点，但是在考试中出现了你没见过的题目，类似AB，AC，BC，甚至是ABC这种组合的题目，你根据学习的A，B，C的基础知识点没有将题目解出来，这说明你没有学会，那学习究竟是什么呢？</p>
+
+<p>我们将这个过程简化去分析下，有3个数：1，2，3，只有一种规则：乘，那么所有的可能性是：</p>
+
+<pre><code>1 * 1 = 1
+1 * 2 = 2
+1 * 3 = 3
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+</code></pre>
+
+<p>这个数字是规则是有限的（这也是我们小学数学有可能满分，高中大学很难满分的原因），我们可以使用大脑记忆，出现类似题目可以很快的反馈出结果，但是我们真的学会了吗？没有，因为出现<code>2 * 4</code>的时候就不知道结果了，但是我们通过<code>上面的例子</code>去学习，总结出规律，即使出现其他题目也能解出来的过程就是<code>学习</code>。</p>
+
+<h4 id="信息和知识">信息和知识</h4>
+
+<p>我们无时无刻不在接受信息，微信消息，别人说的话，那个付费APP推出的专栏课程，这些对于我们来说都是信息，但是并不是知识，那什么是知识呢？回答这个问题，我们先来看什么不是知识：</p>
+
+<ul>
+<li><del>买了没看的课程</del></li>
+<li><del>匆匆看了一遍的课程</del></li>
+<li><del>课堂上没注意听讲的话</del></li>
+</ul>
+
+<p>看了这几个例子可以有一点体会，就是某个东西他是不是信息不是绝对的，而在于对你来说他当时的某个状态，我对知识的一个定义是：<code>经过了学习之后将信息压缩，提炼出的内容</code>，这里有一些误区，就是比如老师将他的学习经验分享给了你，这个经验传递的是信息，而不是知识，但是这部分信息已经被压缩了，所以也可以叫做知识的描述，只有等你真正学会，对于你来说，才能叫做知识。</p>
+
+<h4 id="知识的分类">知识的分类</h4>
+
+<p>知识可以分为思考类和运动类，如何区分思考类和运动类知识呢？一个衡量标准就是是否使用了意识，意识是后天进化的，解决的是推断问题，只能同时运用一个，比如数学，逻辑等，对于语言类（学习英语）和运动类都属于运动类知识，他不靠意识（不然太慢）。</p>
+
+<h3 id="学习工具">学习工具</h3>
+
+<h4 id="思维导图">思维导图</h4>
+
+<p>思维导图的作用是可以通过一些关键词将思维连接，但是包括我在内很多人都用错了思维导图，常见的学习方法是：</p>
+
+<ul>
+<li>阅读知识描述</li>
+<li>理解文字意思</li>
+<li>不断重复描述</li>
+</ul>
+
+<p>在这个过程中将思维导图当成了笔记或者是大纲，试图去记住内容而不是去理解内容，这样导致的就是学会了的错觉。</p>
+
+<blockquote>
+<p>思维导图的灵魂：思考</p>
+</blockquote>
+
+<p>思维导图通过一个关键词去思考，他是什么？通过一个关键词去联想更多例子，试图用一个关键词去描述这些例子，进而去分析这些例子的输入和输出，找出内部规律，这个规律是不变的，例子中的输入和输出是可变的，通过这些少量的例子找出不变的规律去解决以后更多的问题，这个过程其实是在压缩信息，思维导图不是为了记住知识描述，导图的作用是为了重塑在这个过程中的大脑连接，最终的导图是为了以后复习，在不知道背景的情况下我的导图对你来说应该是没有用的。</p>
+
+<h4 id="费曼学习">费曼学习</h4>
+
+<p>费曼技巧成为终极学习法，费曼技巧包含了学习和解释，学习在之前已经说了，为什么加了一个解释就显得威力巨大，原因是因为在解释的过程中不能将学习过程中的例子完整的叙述出来，要用自己的话将知识再进行浓缩，并且面临新的问题去阐述。</p>
+
+<h3 id="学习实战">学习实战</h3>
+
+<h4 id="正确的学习方法">正确的学习方法</h4>
+
+<p>在之前明确了什么是学习，可以将学习的过程抽象为编程语言：</p>
+
+<ul>
+<li>已知的信息：输入</li>
+<li>经过大脑处理：函数</li>
+<li>得出的结论：输出</li>
+</ul>
+
+<p>学习的正确流程：</p>
+
+<ul>
+<li>明确问题和答案</li>
+<li>用例子构建知识</li>
+<li>验证知识的有效性</li>
+</ul>
+
+<p>这样说其实还是有点抽象，这里先明确几点：</p>
+
+<ul>
+<li>例子是为了连接问题和答案，更多的例子可以让你在学习的过程中体会答案是解决了什么样的问题，是如何解决的，从例子中寻找规律，其实例子就是故事，人还是喜欢听故事的，这也是为什么很多演讲都喜欢讲故事了，因为故事（例子）更容易让人理解</li>
+<li>通过例子自己总结出的规律要去验证</li>
+</ul>
+
+<p>先举几个简单的案例来体会：</p>
+
+<ul>
+<li>开源项目学习：
+
+<ul>
+<li>首先是需要一定的基础知识（自己大脑中已知的知识）</li>
+<li>了解开源库解决了什么问题（例如Dubbo解决的是服务治理问题）</li>
+<li>寻找例子：
+
+<ul>
+<li>如何使用Dubbo服务（Quick Start）</li>
+<li>Dubbo的SPI配置</li>
+<li>Dubbo环境（ZK）的搭建</li>
+</ul></li>
+<li>通过例子去熟悉Dubbo是什么，解决了什么问题，怎么用的</li>
+<li>寻找新问题：Dubbo使用Hessian序列化的过程中子类和父类属性名一致获取不到值是什么原因？
+
+<ul>
+<li>不知道：写一个Demo（例子）去本地验证，Debug查看
+<br /></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h4 id="如何学习英语">如何学习英语</h4>
+
+<blockquote>
+<p>运动类知识不能使用意识，也就是不能有中间转义的操作，现在学习的过程都是英文转中文，这种是错误和低效的，运动类知识不能使用思维类的知识，比如不能书中学游泳。<br />
+学英文也要以具体为单位，不要只学习单词，从句子学习<br />
+参考打游戏时的操作</p>
+</blockquote>
+
+<p><strong>学习原则：</strong></p>
+
+<ul>
+<li>明确任务的输入和输出</li>
+<li>用例子重塑大脑链接</li>
+</ul>
+
+<ol>
+<li>看单词的英文解释：看完基本还是不理解</li>
+<li>看多个例句去体会意思：选择一些简单句去理解</li>
+<li>看句子不思考中文的情况下去想想场景（多尝试几次）</li>
+<li>可以尝试打出句子</li>
+<li>将例子放到翻译网站，播放例句去思考场景</li>
+<li>读几遍例句，并思考场景</li>
+<li>改几个单词，造一个简单的句子</li>
+</ol>
+
+<h2 id="参考文档">参考文档</h2>
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCUrJvRXzVBOYtHBs9fDnJEw" target="_blank">Jango Y - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=Q2oYGjR1_KE" target="_blank">如何才能正确使用思维导图 - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=E3Q5nlr078Q" target="_blank">如何正确使用人脑来在几个月内学会英语 - YouTube</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>科学上网</title>
+            <link>https://blog.sailfishc.cn/posts/2019/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+            <pubDate>Fri, 01 Nov 2019 09:56:18 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/11/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+            <description>本文转自左耳朵耗子
  作者：左耳朵 http://coolshell.cn 更新时间：2019-11-01
 这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新
  科学上网  0. 序 1. 英文能力 2. 购买VPS 2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路 3. 搭建 Shadowsocks 和 VPN 服务 3.1 设置Docker服务 3.2 开启 TCP BBR 拥塞控制算法 3.3 设置Shadowsocks服务 3.4 设置L2TP/IPSec服务 3.5 设置PPTP服务 4. 客户端设置 4.1 Shadowsocks 客户端 4.2 VPN 客户端 5. 流量伪装和其它方式 5.1 V2Ray 5.2 Brook 6. 针对 IP 被封的解决方案 6.1 Cloudflare 6.2 V2Ray 6.3 补充 7.</description>
-    </item>
-    
-    <item>
-      <title>解决添加到GitIgnore的文件没被忽略的问题</title>
-      <link>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Wed, 30 Oct 2019 09:56:18 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-      <description> 问题简述
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>本文转自左耳朵耗子</p>
+</blockquote>
+
+<p>作者：左耳朵 <a href="http://coolshell.cn" target="_blank">http://coolshell.cn</a>
+更新时间：2019-11-01</p>
+
+<p>这篇文章可以写的更好，欢迎到 <a href="https://github.com/haoel/haoel.github.io" target="_blank">https://github.com/haoel/haoel.github.io</a> 更新</p>
+
+<ul>
+<li><a href="#科学上网">科学上网</a>
+
+<ul>
+<li><a href="#0-序">0. 序</a></li>
+<li><a href="#1-英文能力">1. 英文能力</a></li>
+<li><a href="#2-购买vps">2. 购买VPS</a></li>
+<li><a href="#21-常规vps">2.1 常规VPS</a></li>
+<li><a href="#22-cn2-线路">2.2 CN2 线路</a></li>
+<li><a href="#23-ncp-线路">2.3 NCP 线路</a></li>
+<li><a href="#3-搭建-shadowsocks-和-vpn-服务">3. 搭建 Shadowsocks 和 VPN 服务</a></li>
+<li><a href="#31-设置docker服务">3.1 设置Docker服务</a></li>
+<li><a href="#32-开启-tcp-bbr-拥塞控制算法">3.2 开启 TCP BBR 拥塞控制算法</a></li>
+<li><a href="#33-设置shadowsocks服务">3.3 设置Shadowsocks服务</a></li>
+<li><a href="#34-设置l2tpipsec服务">3.4 设置L2TP/IPSec服务</a></li>
+<li><a href="#35-设置pptp服务">3.5 设置PPTP服务</a></li>
+<li><a href="#4-客户端设置">4. 客户端设置</a></li>
+<li><a href="#41-shadowsocks-客户端">4.1 Shadowsocks 客户端</a></li>
+<li><a href="#42-vpn-客户端">4.2 VPN 客户端</a></li>
+<li><a href="#5-流量伪装和其它方式">5. 流量伪装和其它方式</a></li>
+<li><a href="#51-v2ray">5.1 V2Ray</a></li>
+<li><a href="#52-brook">5.2 Brook</a></li>
+<li><a href="#6-针对-ip-被封的解决方案">6. 针对 IP 被封的解决方案</a></li>
+<li><a href="#61-cloudflare">6.1 Cloudflare</a></li>
+<li><a href="#62-v2ray">6.2 V2Ray</a></li>
+<li><a href="#63-补充">6.3 补充</a></li>
+<li><a href="#7-其它">7. 其它</a></li>
+</ul></li>
+</ul>
+
+<h2 id="0-序">0. 序</h2>
+
+<p>首先，我们先明确一下，我科学上网的目的主要是为了学习、工作、交友、查资料、和丰富自己的眼界，不是为了看黄片，或是干一些非法、政治或是见不得人的事。</p>
+
+<p>对我来说，科学上网很重要，下面罗列一下需要科学上网，我才能真正学习工作和生活的网站：</p>
+
+<ul>
+<li>Youtube 和 Vimeo 上的各种大会和教学视频，除了我自己要学，我的孩子也要学。</li>
+<li>Wikipedia 维基百科是我目前唯一信得过的百科全书，我在上面可以比较系统地翻阅各种词条。</li>
+<li>Slideshare 上有很多的技术文档和资料的PPT，是我的知识学习的地方。</li>
+<li>Quora 问答网站，在上面有很多有趣的问答。</li>
+<li>博客和论文，很多博客和论文站点都被墙了，比如：Blogspot 和 Medium。</li>
+<li>Google 的各种服务，比如：Gmail, Map, Docs，Driver，照片，图片搜索，Voices，论文搜索……包括Google官方的各种技术文档……</li>
+<li>一些云服务，比如：Dropbox，IFTTT，Imgur，archive.org……</li>
+<li>Twitter 上 Follow 一些牛人和一些官方账号，比如：AWS、Docker……</li>
+<li>社交 Facebook, Telegram, Whatsapp，Slack…… 有一些我在国外的亲戚和朋友……</li>
+<li>Reddit 是一个聚合网站，一个新闻和文章的集散地，你可以认为是各种频道的今日头条……</li>
+<li>Pinterest 和 Instagram  上面有很多不错的图片和视频新闻，是我减压力的地方……</li>
+<li>新闻，如BBC。 BBC是全球比较出众的媒体，有太多的有价值资源和内容了，比如纪录片、学英文……</li>
+<li>编程，有很多编程的场景需要翻墙，比如，Go语言编程时的 go get 中的很多库是放在 Google的服务器上， 然而Google是全部被墙，包括 Android 和其它一些文档和资源也是一样。包括 SourceForge 的某些项目也需要科学上网，Docker Registry也有部分被墙，还有偶尔抽疯的Github，以及不能访问的gist……</li>
+<li>……等等</li>
+</ul>
+
+<p>是的，我的互联网不是——全是骗子的百度、充满广告的微信朋友圈、质量低下的公众号、娱乐至死的新浪微博、只有抖机灵和“怎么看XX”的知乎、毫无营养的今日头条…… 在这样的网络空间里，我真的无法生存…… 这根本不是互联网，不是为我服务的互联网，而是在消费我的互联网，是让我变傻变笨的互联网…… 我不能忍，因为它影响到了我的生存……</p>
+
+<h2 id="1-英文能力">1. 英文能力</h2>
+
+<p><strong>首先，你应该对英文读写没什么问题!</strong></p>
+
+<p>为什么这么说？<strong>这主要是针对计算机相关的知识，逻辑是这样的，如果你上了Google还是在用中文关键词，那么你好不容易出来了，结果又回去了，所以没什么意义呢？</strong> 换言之，科学上网的目的是为了进入广阔的世界范围与全世界的人交流，所以，英文是必备的，如果你英文有问题，VPN过去的用处也不大。</p>
+
+<p>所以，我把这个前提条件放在第一的位置，就是说—— <strong>真正的墙不是GFW，而是人的大脑！</strong> 意思是，屏蔽你获得信息能力的不是墙，而很大一部分则是我们自己的语言能力！</p>
+
+<h2 id="2-购买vps">2. 购买VPS</h2>
+
+<p>然后，你需要一个VPS。</p>
+
+<p>（注：*当然，你也可以直接购买一些科学上网的服务，但我这里不推荐了，一方面是广告，另一方面通常这样的服务非常的不稳定，而且也容易被代理方做中间件攻击*）</p>
+
+<p><strong>现在你买一台VPS也不贵了，也就是一个月10美金左右（70元），我个人觉得一个月花70元钱不算奢侈的事，而且会让你的生活质量得得改善</strong>。</p>
+
+<p>（注：*我现在每个投入在科学上网上的成本大概在不到1000元人民币左右，常备3-5个不同国家的VPS，因为国内的网络路由经常性的变化，所以，为了确保总是有一条快的，所以，得多备几个*）。</p>
+
+<h3 id="2-1-常规vps">2.1 常规VPS</h3>
+
+<p>对于VPS，下面是一些常规选项。</p>
+
+<ul>
+<li><a href="https://lightsail.aws.amazon.com/" target="_blank">AWS LightSail</a> 是一个非常便宜好用的服务，最低配置一个月 $3.5 美金，目前的Zone不多，推荐使用日本或新加坡（支持银联卡）</li>
+<li><a href="https://aws.amazon.com/cn/" target="_blank">AWS EC2</a>香港、日本或韩国申请个免费试用一年的EC2 VPS （支持银联卡）</li>
+<li><a href="https://cloud.google.com/" target="_blank">Google Cloud Platform</a>提供免费试用，赠送300刀赠金（需要国际信用卡）</li>
+<li><a href="https://www.linode.com" target="_blank">Linode</a>买个一月USD10刀的VPS</li>
+<li><a href="https://www.conoha.jp/zh/" target="_blank">Conoha</a>上买一个日本的VPS，一个月900日元 （可以支付宝）</li>
+<li><a href="https://www.vultr.com" target="_blank">Vultr</a>上买一个日本的VPS，一个月5刀 （可以支付宝）</li>
+<li><a href="https://www.oracle.com/cloud/free/" target="_blank">Oracle Cloud</a>两台VPS无限期使用，可选美日韩等地（需要国际信用卡）</li>
+</ul>
+
+<blockquote>
+<p><strong>注意</strong>
+- 在中国，因为有太多的网络提供商，所以，国内的网络也是很奇葩的，可以看到的是，不同的地方，不同的网络，到不同的国家完全不一样，而且还经常性地调整路由，所以，经常性地有时候快有时候慢，简真就是随机的。所以，像我这样要求比较高的人，一般会备3-5个不同国家地区的VPS，以保障上网的速度。</p>
+
+<ul>
+<li><p>香港网速应该是比较好的，但是香港的成本也是比较高的。</p></li>
+
+<li><p>日本区的网络质量并不一定很好，有时候快的飞快，但有时候会有很大的丢包率（不同的网络不一样），有时候会很慢。上述的这几个VPS服务商中，AWS韩国和日本会好点，然后是Linode，最后是Conoha和Vultr（如果你有更好的，请推荐）</p></li>
+
+<li><p>Google Cloud Platform - GCP 的香港和台湾结点也是很快的。但是你要能买GCP的主机，你还得先翻墙，所以，感觉有点死锁了。所以，你可能先用Vultr（按时付费）翻墙，然后再到GCP上购买。</p></li>
+</ul>
+</blockquote>
+
+<h3 id="2-2-cn2-线路">2.2 CN2 线路</h3>
+
+<p>如果你需要更好更高速的网络服务（比如你要看Youtube的1080P），那么，你需要下面的这些服务器资源了（价格也会高一些）</p>
+
+<p><code>CN2</code> 和 <code>GIA</code> 是两个关键词。<strong>CN2 GIA</strong> 全称 China telecom Next Carrier Network- Global Internet Access 电信国际精品网络，特征是路由线路上骨干节点均为59.43开头的IP。如果想要寻找接入CN2线路的国外VPS提供商，建议使用 <code>Next Carrier Network</code> 或者 <code>CN2</code> 这个关键词搜索即可。</p>
+
+<p>多说一句， CN2本身又分为两种类型：</p>
+
+<ul>
+<li><p><strong>CN2 GT</strong>: CN2 里属于Global Transit的产品(又名GIS-Global Internet Service)，在CN2里等级低，省级/出国节点为 <code>202.97</code> 开头，国际骨干节点有2～4个 <code>59.43</code> 开头的CN2节点。在出国线路上拥堵程度一般，相对于163骨干网的稍强，相比CN2 GIA，性价比也较高。</p></li>
+
+<li><p><strong>CN2 GIA</strong>: CN2 里属于Global Internet Access的产品，等级最高，省级/出国/国际骨干节点都以<code>59.43</code>开头，全程没有<code>202.97</code>开头的节点。在出国线路上表现最好，很少拥堵，理论上速度最快最稳定，当然，价格也相对 CN2 GT 偏高。</p></li>
+</ul>
+
+<p>关于 <code>CN2</code> 线路的主机提供商，下面罗列几个</p>
+
+<ul>
+<li><a href="https://bwh8.net/aff.php?aff=39384" target="_blank">搬瓦工</a>  这应该是美区最好的一个用来科学上网的VPS提供商了，实测飞快。购买时你需要注意VPS规格上的 <code>CN2</code> 和 <code>GIA</code> 的描述。（注：点击主页右上角的 <code>regisiter</code> 以后，你可以看到页面上方有两个导航条，在下面的导航条上点 <code>Services</code> -&gt; <code>Order New Services</code> 就可以看到所有的列表了。买完后，你可能需要重装一下操作系统，装成64位带BBR的 ）</li>
+<li><a href="https://clientarea.gigsgigscloud.com/index.php?/cart/cloudlet-v-hk/&amp;step=0" target="_blank">Gigsgigscloud</a> CN2 GIA 在香港的结点是很不错的，当然，价格也很不错（建议几个人一起平摊费用）</li>
+<li><a href="https://www.kvmla.com/" target="_blank">Kvmla</a> 香港地区的CN2 GIA提供商 每月80元</li>
+<li><a href="https://manage.hostdare.com/index.php" target="_blank">Hostdare</a> 的CN2 GIA产品也是三网直连，KVM和OpenVZ两种架构，KVM产品长期缺货</li>
+</ul>
+
+<p>更多的可以参考这篇文章《<a href="https://wzfou.com/cn2-gia-vps/" target="_blank">CN2 GIA VPS主机收集整理汇总-电信,联通,移动三网CN2 GIA线路VPS主机</a>》（注：随时间推移，这篇文章的内容可能会失效）</p>
+
+<p>重点说一下，<strong>CN2 GIA + 香港机房</strong>，你会得到巨快无比的上网速度，然而，香港地区的VPS的确是有点贵了。在Youtube.com上看1080p的视频毫无压力。虽然阿里云和腾讯的也有，但是被查到的风险基本上是100%，不建议使用，被抓了别怪我没警告过你。</p>
+
+<h3 id="2-3-ncp-线路">2.3 NCP 线路</h3>
+
+<p><strong>NCP</strong> 全称 New Cross Pacific（新跨太平洋海底光缆系统）。
+2018年11月底，中国到美国之间的海底光缆新开通了NCP线路，并且容量更大（系统设计容量超过80Tbps），路由更少（中国上海到美国中间路由节点只有11个，ping值110ms）。</p>
+
+<p>NCP线路全长13,000公里，连接美国俄勒冈州希尔斯伯勒，连接崇明（中国大陆），南汇（中国大陆），临港（中国大陆），釜山（韩国），头城（台湾），和丸山（日本）。</p>
+
+<p>相对于第二条中美直达海底光缆系统（跨太平洋快线，TPE），现阶段NCP线路的网络流量更少更稳定。特征是华东/中地区流量会经过NCP直达路由节点，IP地址为202.97.95.201/202。</p>
+
+<p>关于 <code>NCP</code> 线路的主机提供商，下面罗列两个</p>
+
+<ul>
+<li><a href="https://www.50kvm.com" target="_blank">50KVM VPS</a> 截止2018年12月2日KVM 产品最低价格￥81.60/月。</li>
+<li><a href="https://t667.com/" target="_blank">OLVPS</a> 截止2018年12月2日KVM 产品最低价格¥22/月。</li>
+</ul>
+
+<h2 id="3-搭建-shadowsocks-和-vpn-服务">3. 搭建 Shadowsocks 和 VPN 服务</h2>
+
+<h3 id="3-1-设置docker服务">3.1 设置Docker服务</h3>
+
+<p>首先，你要安装一个Docker CE 服务，这里你要去看一下docker官方的安装文档：</p>
+
+<ul>
+<li><a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank">CentOS 上的 Docker CE 安装</a></li>
+<li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">Ubuntu 上的 Docker CE 安装</a></li>
+</ul>
+
+<p>然后开始设置你的VPN/SS服务</p>
+
+<h3 id="3-2-开启-tcp-bbr-拥塞控制算法">3.2 开启 TCP BBR 拥塞控制算法</h3>
+
+<p>TCP BBR（Bottleneck Bandwidth and Round-trip propagation time）是由Google设计，于2016年发布的拥塞算法。以往大部分拥塞算法是基于丢包来作为降低传输速率的信号，而BBR则基于模型主动探测。该算法使用网络最近出站数据分组当时的最大带宽和往返时间来创建网络的显式模型。数据包传输的每个累积或选择性确认用于生成记录在数据包传输过程和确认返回期间的时间内所传送数据量的采样率。该算法认为随着网络接口控制器逐渐进入千兆速度时，分组丢失不应该被认为是识别拥塞的主要决定因素，所以基于模型的拥塞控制算法能有更高的吞吐量和更低的延迟，可以用BBR来替代其他流行的拥塞算法，例如CUBIC。Google在YouTube上应用该算法，将全球平均的YouTube网络吞吐量提高了4%，在一些国家超过了14%。</p>
+
+<p>BBR之后移植入Linux内核4.9版本，并且对于QUIC可用。</p>
+
+<p>如果开启，请参看 《<a href="https://github.com/iMeiji/shadowsocks_install/wiki/开启TCP-BBR拥塞控制算法" target="_blank">开启TCP BBR拥塞控制算法</a> 》</p>
+
+<h3 id="3-3-设置shadowsocks服务">3.3 设置Shadowsocks服务</h3>
+
+<p>Shadowsocks 的 Docker 启动脚本 （其中的 <code>SS_PORT</code> 和 <code>SS_PASSWD</code> 需要重新定义一下）</p>
+
+<pre><code>#!/bin/bash
+
+SS_PORT=1984
+SS_PASSWD=MyPasswd
+
+sudo docker run -dt --name ss \
+   -p ${SS_PORT}:${SS_PORT} mritd/shadowsocks \
+   -s &quot;-s 0.0.0.0 -p ${SS_PORT} -m aes-256-cfb -k ${SS_PASSWD} --fast-open&quot;
+</code></pre>
+
+<h3 id="3-4-设置l2tp-ipsec服务">3.4 设置L2TP/IPSec服务</h3>
+
+<p>L2TP/IPSec 的启动脚本，其中的三个环境变量 <code>USER</code>， <code>PASS</code> 和 <code>PSK</code> 需要替换一下。</p>
+
+<pre><code>#!/bin/bash
+
+USER=someone
+PASS=password
+PSK=psk_key
+
+sudo docker run -d  --privileged \
+    -e PSK=${PSK} \
+    -e USERNAME=${USER} -e PASSWORD=${PASS} \
+    -p 500:500/udp \
+    -p 4500:4500/udp \
+    -p 1701:1701/tcp \
+    -p 1194:1194/udp  \
+    siomiz/softethervpn
+</code></pre>
+
+<h3 id="3-5-设置pptp服务">3.5 设置PPTP服务</h3>
+
+<p>PPTP不安全，请慎重使用</p>
+
+<pre><code>sudo docker run -d --privileged --net=host 
+                -v {/path_to_file/chap-secrets}:/etc/ppp/chap-secrets \
+                mobtitude/vpn-pptp
+</code></pre>
+
+<p>PPTP 使用 <code>/etc/ppp/chap-secrets</code> 文件设置用户名和密码，所以你需要给docker容器提供这个文件，下面是这个文件的示例：</p>
+
+<pre><code># Secrets for authentication using PAP
+# client    server      secret           acceptable local IP addresses
+  fuckgfw   *           whosyourdaddy    *
+</code></pre>
+
+<h2 id="4-客户端设置">4. 客户端设置</h2>
+
+<h3 id="4-1-shadowsocks-客户端">4.1 Shadowsocks 客户端</h3>
+
+<p>对于 Shadowsocks 客户端，可以到这里查看 <a href="https://shadowsocks.org/en/download/clients.html" target="_blank">Shadowsocks Clients</a></p>
+
+<ul>
+<li>MacOS 上你可以下载 <a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases" target="_blank">ShadowsocksX-NG</a></li>
+<li>Windows上你可以下载 <a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank">Shadowsocks-Windows</a>，需要先安装 <a href="https://dotnet.microsoft.com/download/dotnet-framework-runtime" target="_blank">.NET Framework</a></li>
+<li>Android的客户端，你可以用手机访问并下载 <a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank">Shadowsocks-Android</a></li>
+<li>iPhone 端就比较麻烦了。因为国内全都被下架了。
+
+<ol>
+<li>你需要注册一个美国的苹果ID.</li>
+<li>然后 iTunes/App Store 用这个美区的ID登录（不是退出iCloud ，而是退出App Store）</li>
+<li>然后搜索 <code>Wingy</code> ，你会搜到 <code>OpenWingy</code>, <code>SuperWingy</code> 等</li>
+</ol></li>
+</ul>
+
+<blockquote>
+<p><strong>注意</strong></p>
+
+<ul>
+<li>关于如何注册美区Apple ID账号，你可以参看如下的这几篇文章（我不保证这些文章可不可用，但是你可以自行Google）。
+
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/36574047" target="_blank">5分钟注册美国区Apple ID（18年亲测有效）</a></li>
+<li><a href="https://www.jianshu.com/p/b32da641e849" target="_blank">2018年6月亲测：注册美国地区苹果apple ID帐号终极教程</a></li>
+<li><a href="https://blog.csdn.net/ziyuzhiye/article/details/82769129" target="_blank">iOS开发之注册美国Apple Id不需要绑定信用卡，亲测可用</a></li>
+</ul></li>
+</ul>
+</blockquote>
+
+<h3 id="4-2-vpn-客户端">4.2 VPN 客户端</h3>
+
+<p>对于L2TP/IPSec，几乎所有的客户端操作系统（无论是Windows/Mac/Linux的电脑，还是iPhone/Android）都支持，你可以自行Google。</p>
+
+<ul>
+<li><a href="https://www.jianshu.com/p/24e48cfb574f" target="_blank">Mac OS X PPTP/L2TP设置教程</a></li>
+<li><a href="http://nic.upc.edu.cn/2016/0928/c7809a132077/page.htm" target="_blank">Windows 7操作系统配置L2TP VPN方法</a></li>
+</ul>
+
+<h2 id="5-流量伪装和其它方式">5. 流量伪装和其它方式</h2>
+
+<p>我们知道，你翻墙的行为，其实都是在被探测中的，因为无论你的手机还是宽带都是有需要到运营商那里开通上网账户的，所以，各大电信运营商有你的所有的上网的记录。</p>
+
+<p>在Youtube上有个视频，你可以看一下 《<a href="https://www.youtube.com/watch?v=G-P8eyltc5E&amp;feature=youtu.be" target="_blank">哪种翻墙软件更隐蔽？</a>》，这个播主实测过，SS也好，SSR也好，无论你怎么混淆，都是没用的，都是可以被抓出来的。只有V2Ray 和 Brook 可以伪装得很好。</p>
+
+<blockquote>
+<p><strong>注：</strong> 说句老实话，我其时并不想害怕别人知道自己的上什么样的网站，因为我觉得我访问的都是合法的网站，但是就今天这个局势我也没办法——为什么要让像我这样的光明正大的良民搞得跟偷鸡摸狗之徒一样……</p>
+</blockquote>
+
+<h3 id="5-1-v2ray">5.1 V2Ray</h3>
+
+<p>V2Ray 是一个与 Shadowsocks 类似的代理软件。</p>
+
+<ul>
+<li>V2Ray 用户手册：<a href="https://www.v2ray.com" target="_blank">https://www.v2ray.com</a></li>
+<li>V2Ray 项目地址：<a href="https://github.com/v2ray/v2ray-core" target="_blank">https://github.com/v2ray/v2ray-core</a></li>
+<li>V2Ray Telegram 使用群链接：<a href="https://t.me/projectv2ray" target="_blank">https://t.me/projectv2ray</a></li>
+</ul>
+
+<p>V2Ray 配合一些模块目前来说可以伪装成正常的流量。但是配置相当复杂。大家可以自己Google自己玩吧。</p>
+
+<h3 id="5-2-brook">5.2 Brook</h3>
+
+<p>Brook是一个由 Go语言编写的跨平台代理软件，支持 Linux/MacOS/Windows/Android/iOS 各个平台。</p>
+
+<ul>
+<li>Brook Github项目：<a href="https://github.com/txthinking/brook" target="_blank">https://github.com/txthinking/brook</a></li>
+<li>Github Wiki教程：<a href="https://github.com/txthinking/brook/wiki/使用说明(中文)" target="_blank">https://github.com/txthinking/brook/wiki/使用说明(中文)</a></li>
+</ul>
+
+<p>服务器一行命令安装：</p>
+
+<pre><code>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/brook.sh &amp;&amp; chmod +x brook.sh &amp;&amp; bash brook.sh
+</code></pre>
+
+<p>运行 <code>brook.sh</code> 会出菜单项，你可以按菜单项来，主要就是设置端口号，密码。很简单的，我这里就不截图了，因为这个脚本运行起来中文菜单式的。</p>
+
+<p>然后你可以在 Brook 项目的 Github 首页上下载不同平台的客户端。设置起来也很简单！</p>
+
+<h2 id="6-针对-ip-被封的解决方案">6. 针对 IP 被封的解决方案</h2>
+
+<p>花钱购买的 VPS 即便做了流量伪装依然有很大的几率 IP 被封锁，大多 VPS 服务商并不提供更换 IP 的服务，使用 CDN 可以让被封锁的 VPS 继续发挥翻墙功能。</p>
+
+<h3 id="6-1-cloudflare">6.1 Cloudflare</h3>
+
+<p>Cloudflare 是一个 CDN 服务商，目前国内依然能正常的访问，可以作为跳板来实现翻墙。</p>
+
+<p>注册 Cloudflare 帐号，并有一个空闲域名（三级域名即可），交给 Cloudflare 托管并将域名指向被封的 VPS IP，注意开启 Proxied 并且 SSL-TLS 使用 Flexible 选项。</p>
+
+<p>Cloudflare 只需免费方案足以，不必花钱。</p>
+
+<h3 id="6-2-v2ray">6.2 V2Ray</h3>
+
+<p>VPS 上正常安装并配置好 V2Ray，注意两点:</p>
+
+<ol>
+<li>传输协议必须要使用 ws</li>
+<li>要使用 80 或者 8080 端口</li>
+</ol>
+
+<p>如果端口有其他用途，那么用 Nginx/Caddy 之类软件，做一个 WebSocket proxy 到 V2Ray 即可。</p>
+
+<h3 id="6-3-补充">6.3 补充</h3>
+
+<p>客户端注意使用网址来连接。</p>
+
+<p>目前支持 WebSocket 的免费 CDN 似乎只有 Cloudflare 一家，国内 CDN 服务商既不支持也不安全，不要考虑了。如果有更好的服务商欢迎补充。</p>
+
+<p>网络延迟比直连增加不少，如果是频繁操作会很痛苦。网络带宽如果运气好可能比直连还优化了，用来看 Youtube 搞不好更流畅。</p>
+
+<h2 id="7-其它">7. 其它</h2>
+
+<p>如下还有一些其它的方式（注：均由网友提供，我没有验证过）</p>
+
+<p><a href="https://getoutline.org/en/home" target="_blank">Outline</a> 是由 Google 旗下 <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> 团队开发的整套翻墙解决方案。Server 端使用 Shadowsocks，MacOS, Windows, iOS, Android 均有官方客户端。使用 Outline Manager 可以一键配置 DigitalOcean。其他平台例如 AWS, Google Cloud 也提供相应脚本。主要优点就是使用简单并且整个软件栈全部<a href="https://github.com/Jigsaw-Code/?q=outline" target="_blank">开源</a>，有专业团队长期维护。</p>
+
+<p>（全文完）</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>解决添加到GitIgnore的文件没被忽略的问题</title>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+            <pubDate>Wed, 30 Oct 2019 09:56:18 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+            <description> 问题简述
  在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
 The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached.  意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
  原因
@@ -51,54 +572,354 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
  具体执行
   如果是单个文件：git rm —cached path/filename 如果是文件夹：git rm -r —cached path   参考文档
   Git - gitignore Documentation Git - git-rm Documentation  </description>
-    </item>
-    
-    <item>
-      <title>通过Hugo&#43;Github快速搭建博客</title>
-      <link>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>写在前面
+            <content type="html"><![CDATA[<blockquote>
+<p>问题简述</p>
+</blockquote>
+
+<p>在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：</p>
+
+<pre><code>The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked.
+To stop tracking a file that is currently tracked, use：git rm —cached.
+</code></pre>
+
+<p>意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用<code>git rm --cached</code>。</p>
+
+<blockquote>
+<p>原因</p>
+</blockquote>
+
+<p>一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。</p>
+
+<blockquote>
+<p>具体执行</p>
+</blockquote>
+
+<ul>
+<li>如果是单个文件：git rm —cached  path/filename</li>
+<li>如果是文件夹：git rm -r —cached path</li>
+</ul>
+
+<blockquote>
+<p>参考文档</p>
+</blockquote>
+
+<ul>
+<li><a href="https://git-scm.com/docs/gitignore" target="_blank">Git - gitignore Documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-rm" target="_blank">Git - git-rm Documentation</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>通过Hugo&#43;Github快速搭建博客</title>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+            <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+            <description>写在前面
  程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
 先罗列下常见的博客网站：
  Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
  node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
 快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
  安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &amp;gt;&amp;gt; config.toml  新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：</description>
-    </item>
-    
-    <item>
-      <title>以练代学，学习算法和数据结构</title>
-      <link>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
-      <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-      <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>写在前面</p>
+</blockquote>
+
+<p>程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。</p>
+
+<p>先罗列下常见的博客网站：</p>
+
+<ul>
+<li>Hexo</li>
+<li>WordPress</li>
+<li>JekyII</li>
+<li>Ghost</li>
+<li>Hugo</li>
+</ul>
+
+<p>Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：</p>
+
+<ul>
+<li>node环境问题较多，本身对Node不熟悉，解决成本高</li>
+<li>node_modules过大，网络问题下载依赖过慢</li>
+<li>编译为html过程越来越慢</li>
+</ul>
+
+<p>后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：<code>The world’s fastest framework for building websites</code>，总结起来就一句话，那就是快！！！</p>
+
+<h2 id="快速开始">快速开始</h2>
+
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start | Hugo</a></li>
+</ul>
+
+<p>Hugo安装很简单，就以Mac为例快速开始：</p>
+
+<ul>
+<li>安装Hugo：<code>brew install Hugo</code></li>
+<li>查看Hugo版本：<code>Hugo version</code></li>
+<li>新建一个网站，名字为<code>quickstart</code>：<code>Hugo new site quickstart</code></li>
+<li>安装主题
+
+<ul>
+<li>进入目录：<code>cd quickstart</code></li>
+<li>使用Git Init创建Git仓库：<code>git init</code></li>
+<li>下载主题，放入theme目录（名字为<code>ananke</code>）：<code>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</code></li>
+<li>使用主题：<code>echo ‘theme = “ananke”’ &gt;&gt; config.toml</code></li>
+</ul></li>
+<li>新建MarkDown文章（也可以用现有的放入content/posts目录）：<code>Hugo new posts/my-first-post.md</code></li>
+<li>本地预览：<code>Hugo server -D</code></li>
+<li>打开浏览器：<code>http://localhost:1313</code></li>
+<li>搞定🌹</li>
+</ul>
+
+<h2 id="部署">部署</h2>
+
+<p>本地搭建好了网站要部署到外部服务上，常见的方式有三种：</p>
+
+<ul>
+<li>部署Github Pages</li>
+<li>部署到自己服务器，用静态服务器（例如Nginx）上</li>
+<li>使用一些云服务（推荐）</li>
+</ul>
+
+<p>先简要介绍下流程，Hugo将Markdown转为静态资源（Html，Css，Js）等资源，放在public目录下，将public发布到静态服务器或者CDN下达到外部可以访问的效果。</p>
+
+<p>对于自己购买服务器部署的方式目前是不推荐的，因为刚开始博客没有自己的品牌，浪费一些资源在服务器上的话是不划算的（也增加维护成本），所以就只考虑基于Github Pages和云服务这两种方式，对于Github Pages，简要说明下，Github Pages提供了3种方式：</p>
+
+<ul>
+<li>新建Github用户名（例如<code>sailfishc</code>）的仓库：<code>sailfishc.github.io</code></li>
+<li>新建项目，在<code>master</code>分支下新建<code>docs</code>目录</li>
+<li>新建项目，添加<code>gh-pages</code>分支</li>
+</ul>
+
+<p>最开始本来想尝试第一种，但是还有一个博客已经使用这种模式了，暂时是用不了，因为第二种会将源代码和静态网站在一个分支中，也就不考虑，就采用了第三种，对于第三种方式的部署，最开始采用了Travis部署的方式，但是经过一些尝试，效果并不好（主要是对于Travis的脚本不熟悉，找了一些脚本效果比较差），最后也放弃了，有兴趣的小伙伴们可以看参考文章中对于Travis部署的一些博客，之后一段时间采用了本地执行脚本的方式，等文章写完后，执行脚本<a href="https://gist.github.com/Sailfishc/5c8861ace0469aec69f834d972da64f3" target="_blank">push hugo site to Github gh-pages branch · GitHub</a> ，脚本会自动将生成静态public文件，然后加入<code>gh-pages</code>分支，然后将源代码push到<code>master</code>分支，public下的文件push到<code>gh-pages</code>分支，就可以使用<code>https://sailfishc.github.io/sail-blog</code>访问博客站点了。</p>
+
+<p>大功告成了吗？没有，因为没使用第一种Github pages方案，这个链接包含了<code>项目这名</code>这一级路径，用着很难受，于是就有了之后的改版，也就是<code>Host On Render</code>的方案。</p>
+
+<ul>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank">Host on Render | Hugo</a></li>
+</ul>
+
+<blockquote>
+<p>将网站部署到Render上，享受全球CDN服务，通过<code>Cloudflare</code>自定义域名</p>
+</blockquote>
+
+<ul>
+<li>打开Render</li>
+<li>注册</li>
+<li>创建<code>Webservice</code></li>
+<li>授予仓库权限</li>
+<li>设置参数
+
+<ul>
+<li>Environment</li>
+<li>Build Command</li>
+<li>Publish Directory</li>
+</ul></li>
+<li>将自定义域名加入Render，在Cloudflare配置DNS转发</li>
+<li>搞定🌹</li>
+</ul>
+
+<h2 id="一些总结">一些总结</h2>
+
+<blockquote>
+<p>中间走了很多弯路，到最后发现官方文档已经有很多成熟的方案，只是自己没认真看，借<code>左耳朵耗子的话</code>：花时间学习基础知识，花时间度文档，只要把基础打扎实，认真读下文档，就会生出很多时间。</p>
+
+<p>参考文章</p>
+</blockquote>
+
+<ul>
+<li><a href="https://axdlog.com/zh/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/" target="_blank">利用Travis CI和Hugo將Blog自動部署到Github Pages - AxdLog</a></li>
+<li><a href="https://zyfdegh.github.io/post/201705-how-i-setup-hugo/" target="_blank">我是如何用 Hugo、Travis CI 和 GitHub Pages 搭建博客的? - 独行的蚂蚁 - 博客</a></li>
+<li><a href="https://blog.yuantops.com/tech/hugo-travis-ci-auto-deploy-to-gh-pages/" target="_blank">Blog自动部署实践: Hugo + Travis CI -&gt; GitHub Pages // Yuantops’ Blog</a></li>
+<li><a href="https://medium.com/swlh/hosting-a-hugo-blog-on-github-pages-with-travis-ci-e74a1d686f10" target="_blank">Hosting a Hugo blog on GitHub Pages with Travis CI - The Startup - Medium</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank">Host on GitHub | Hugo</a></li>
+<li><a href="https://www.gohugo.org/doc/tutorials/github-pages-blog/" target="_blank">Hosting on GitHub Pages - Hugo中文文档</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank">Host on Render | Hugo</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>以练代学，学习算法和数据结构</title>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+            <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E4%BB%A5%E7%BB%83%E4%BB%A3%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+            <description>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。
 首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：
  算法导论 数据结构与算法分析 配合LeetCode或者OJ来练习   我的学习计划是这样的（以练代学）：
   寻找LeetCode的Java版最优解实现（至少400题） 将数据结构和算法进行分类（目录见后文） 寻找可以快速熟悉的视频资源（极客时间的算法面试40讲就挺好） 按分类将LeetCode的题目归类，附上题号，LeetCode题目链接，题目难度分类，最优解地址（Github地址），自己的解法地址   具体是这样做的（第一遍）
   先跟着视频学习（例如数组，链表作为一个阶段，去了解理论基础，及几道经典题型解读） 从分类中找出要练习的LeetCode题目 深度思考10分钟去寻找思路 有思路的话写代码，对比最优解 没有思路直接看答案（最好有视频讲解），理解题目解题思路 自己重新做一遍   第二遍刷题（基本同第一遍步骤）
 数据结构和算法分类
   数据结构  栈 队列 表  数组 单链表 双链表 循环链表 散列表  二叉树  平衡二叉树 红黑树 哈弗曼树 堆  多叉树  B，B+Tree 字典树  图  有向图 无向图 权图   算法  算法思想  分治 动态规划 贪心 回溯 分支界定  复杂度  时间复杂度 空间复杂度  字符串匹配  BF算法 BM算法 Sunday算法 KMP算法 Tire树  排序  插入排序  希尔 直插  交换排序  冒泡 快排（重点）  选择排序  简单排序 堆排序（重点）  归并排序 基数排序  查找  二分查找 二叉排序树 B数 Hash BloomFilter    </description>
-    </item>
-    
-    <item>
-      <title>长期关注的一些博客</title>
-      <link>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</guid>
-      <description> 酷壳 – CoolShell.cn  </description>
-    </item>
-    
-    <item>
-      <title>2018年总结</title>
-      <link>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
-      <description> 2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
+            <content type="html"><![CDATA[<p>数据结构和算法的学习总是一条漫长而艰辛的道路，做题是一条学习数据结构和算法的捷径，之前自己零零碎碎的刷了一些LeetCode的题，但是效果并不好，后来吸取了一些刷题人的经验，结合自己对于语言知识和数据结构及算法的掌握程度，总结了自己的一套刷题方式。</p>
+
+<p>首先是对自己的定位，熟悉Java语言，对于常用的数据结构比较熟悉，算法较弱，目标是在较短的时间去熟练掌握数据结构和算法，基于这几点，不能走常规的学习路径（如果在校或者是时间比较充裕可以参考）：</p>
+
+<ul>
+<li>算法导论</li>
+<li>数据结构与算法分析</li>
+<li>配合LeetCode或者OJ来练习</li>
+</ul>
+
+<blockquote>
+<p>我的学习计划是这样的（以练代学）：</p>
+</blockquote>
+
+<ul>
+<li>寻找LeetCode的Java版最优解实现（至少400题）</li>
+<li>将数据结构和算法进行分类（目录见后文）</li>
+<li>寻找可以快速熟悉的视频资源（极客时间的算法面试40讲就挺好）</li>
+<li>按分类将LeetCode的题目归类，附上题号，LeetCode题目链接，题目难度分类，最优解地址（Github地址），自己的解法地址</li>
+</ul>
+
+<blockquote>
+<p>具体是这样做的（第一遍）</p>
+</blockquote>
+
+<ul>
+<li>先跟着视频学习（例如数组，链表作为一个阶段，去了解理论基础，及几道经典题型解读）</li>
+<li>从分类中找出要练习的LeetCode题目</li>
+<li>深度思考10分钟去寻找思路</li>
+<li>有思路的话写代码，对比最优解</li>
+<li>没有思路直接看答案（最好有视频讲解），理解题目解题思路</li>
+<li>自己重新做一遍</li>
+</ul>
+
+<blockquote>
+<p>第二遍刷题（基本同第一遍步骤）</p>
+
+<p>数据结构和算法分类</p>
+</blockquote>
+
+<ul>
+<li>数据结构
+
+<ul>
+<li>栈</li>
+<li>队列</li>
+<li>表
+
+<ul>
+<li>数组</li>
+<li>单链表</li>
+<li>双链表</li>
+<li>循环链表</li>
+<li>散列表</li>
+</ul></li>
+<li>二叉树
+
+<ul>
+<li>平衡二叉树</li>
+<li>红黑树</li>
+<li>哈弗曼树</li>
+<li>堆</li>
+</ul></li>
+<li>多叉树
+
+<ul>
+<li>B，B+Tree</li>
+<li>字典树</li>
+</ul></li>
+<li>图
+
+<ul>
+<li>有向图</li>
+<li>无向图</li>
+<li>权图</li>
+</ul></li>
+</ul></li>
+<li>算法
+
+<ul>
+<li>算法思想
+
+<ul>
+<li>分治</li>
+<li>动态规划</li>
+<li>贪心</li>
+<li>回溯</li>
+<li>分支界定</li>
+</ul></li>
+<li>复杂度
+
+<ul>
+<li>时间复杂度</li>
+<li>空间复杂度</li>
+</ul></li>
+<li>字符串匹配
+
+<ul>
+<li>BF算法</li>
+<li>BM算法</li>
+<li>Sunday算法</li>
+<li>KMP算法</li>
+<li>Tire树</li>
+</ul></li>
+<li>排序
+
+<ul>
+<li>插入排序
+
+<ul>
+<li>希尔</li>
+<li>直插</li>
+</ul></li>
+<li>交换排序
+
+<ul>
+<li>冒泡</li>
+<li>快排（重点）</li>
+</ul></li>
+<li>选择排序
+
+<ul>
+<li>简单排序</li>
+<li>堆排序（重点）</li>
+</ul></li>
+<li>归并排序</li>
+<li>基数排序</li>
+</ul></li>
+<li>查找
+
+<ul>
+<li>二分查找</li>
+<li>二叉排序树</li>
+<li>B数</li>
+<li>Hash</li>
+<li>BloomFilter</li>
+</ul></li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>长期关注的一些博客</title>
+            <link>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</link>
+            <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</guid>
+            <description> 酷壳 – CoolShell.cn  </description>
+            <content type="html"><![CDATA[<ul>
+<li><a href="https://coolshell.cn/" target="_blank">酷壳 – CoolShell.cn</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>2018年总结</title>
+            <link>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+            <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+            <description> 2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
 工作  2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司
  虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。
 产品迭代 那些日子，每次上线一个版本之后，大家都去喝酒撸串，尽兴的玩。开发之前骂着产品这么多需求，但是产品上线的时候还是开心的。在公司总结上，我还是觉得团队的战斗力没有比一年前变得更强，只是有部分人的能力变强了，
@@ -112,15 +933,95 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
 工程师 去思考程序的可读性，可维护性和健壮性，思考如何高效
 架构师 去挑战不可能的事情，尝试设计更高级的技术，更灵活的系统
 2018年的好书  心理学 整洁架构 极客时间的部分专栏 DDIA 函数式编程思维 修改代码的艺术 有效的单元测试 如何阅读一本书  </description>
-    </item>
-    
-    <item>
-      <title>那些书本中没告诉你的MyBatis</title>
-      <link>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</link>
-      <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</guid>
-      <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
+            <content type="html"><![CDATA[
+
+<p><img src="http://image.wufazhuce.com/FkfPZxbajsvcUM7qDmr-sq_yrrH5" alt="2018" /></p>
+
+<p>2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。</p>
+
+<h2 id="工作">工作</h2>
+
+<blockquote>
+<p>2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司</p>
+</blockquote>
+
+<p>虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。</p>
+
+<h3 id="产品迭代">产品迭代</h3>
+
+<p>那些日子，每次上线一个版本之后，大家都去喝酒撸串，尽兴的玩。开发之前骂着产品这么多需求，但是产品上线的时候还是开心的。在公司总结上，<code>我还是觉得团队的战斗力没有比一年前变得更强，只是有部分人的能力变强了</code>，</p>
+
+<h3 id="研发">研发</h3>
+
+<p>得益于之前公司的基础建设，还是有一些基础储备，项目在RPC，ZK，Cache，监控，构建部署，MQ，DB维护上还是没怎么费力，大家更多的还是专注于业务，但是前期没有一个好的架构师来规划项目架构，以及开发人员的认知能力和业务迭代的紧迫性，导致项目还是有很多问题：</p>
+
+<ul>
+<li>技术债：虽然很多代码是新写的，但是业务速度和人员水平，还是存在很多技术债</li>
+<li>直接搬用了母公司的技术栈，虽然少了很多维护成本，但是技术选型没有选用最新最成熟的解决方案，生产力还是有点欠缺</li>
+</ul>
+
+<h3 id="企业文化">企业文化</h3>
+
+<p>可能由于之前两家公司的关系，对于企业文化来说没什么感觉，就像大学的校训，只是在某些场合有仪式感的说出来，但是在创业公司，<code>企业文化是对产品是有指导作用的</code>，在某些时候，想不出该做什么，老板就要求从企业文化中去创新，一个公司的一些文化还是深深的影响着一些人，他就像人的价值观和人生观一样，应该是牢牢铭记在心中的，这也就是创业公司的迷人之处吧，因为参与程度高，所以会将自己的价值观注入到公司的文化中。</p>
+
+<h2 id="生活">生活</h2>
+
+<h3 id="找到了对的人">找到了对的人</h3>
+
+<p>啥也不说了，找到了对的人，是今年最大的收获</p>
+
+<h3 id="养了只狗">养了只狗</h3>
+
+<p>名字叫格林，一只拆家的柯基</p>
+
+<h2 id="技术成长">技术成长</h2>
+
+<blockquote>
+<p>更多的去思考如何去学习</p>
+</blockquote>
+
+<p>我觉得大部分程序员有三个阶段：</p>
+
+<ul>
+<li>普通程序员</li>
+<li>工程师</li>
+<li>架构师</li>
+</ul>
+
+<h3 id="普通程序员">普通程序员</h3>
+
+<p>普通程序员是占有了80%的人，只关注于实现功能</p>
+
+<h3 id="工程师">工程师</h3>
+
+<p>去思考程序的可读性，可维护性和健壮性，思考如何高效</p>
+
+<h3 id="架构师">架构师</h3>
+
+<p>去挑战不可能的事情，尝试设计更高级的技术，更灵活的系统</p>
+
+<h3 id="2018年的好书">2018年的好书</h3>
+
+<ul>
+<li>心理学</li>
+<li>整洁架构</li>
+<li>极客时间的部分专栏</li>
+<li>DDIA</li>
+<li>函数式编程思维</li>
+<li>修改代码的艺术</li>
+<li>有效的单元测试</li>
+<li>如何阅读一本书</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>那些书本中没告诉你的MyBatis</title>
+            <link>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</link>
+            <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</guid>
+            <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
 &amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
 当我们需要连接MySQL时，需要用到几个属性：
@@ -130,15 +1031,166 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
 public class UserService { @Resource private UserMapper userMapper; }  那这其中究竟是怎么做到这样简化的呢？
 实现细节 SqlSessionFactoryBean&amp;amp;SqlSessionFactory 上面介绍了关键类SqlSession, 那如何创建SqlSession呢？MyBatis使用了工厂方法来创建SqlSession，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：
 &amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;   DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</description>
-    </item>
-    
-    <item>
-      <title>致生活</title>
-      <link>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Sun, 02 Sep 2018 11:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</guid>
-      <description> 少年真正成人的那一刻，大概就是，对于你的家人，你会时不时惦记，想念，渴望从他们那里得到抚慰，害怕他们哪天离开人世——他们成为你梦境的常客，内心最柔软的部分；你却无比清楚：纵然爱他们，却再无法同他们心无芥蒂地谈论，或长久地生活在一起。 — 一个
+            <content type="html"><![CDATA[
+
+<p>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。<br />
+&gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容</p>
+
+<h2 id="关键类">关键类</h2>
+
+<ul>
+<li>SqlSessionFactory</li>
+<li>SqlSessionFactoryBean</li>
+<li>SqlSession</li>
+<li>MapperFactoryBean</li>
+<li>SqlSessionDaoSupport</li>
+<li>SqlSessionTemplate</li>
+<li>MapperScannerConfigurer</li>
+</ul>
+
+<h2 id="如何访问数据库">如何访问数据库</h2>
+
+<p><code>mysql -uadmin -pxxx -h58.87.87.129 -P32007</code></p>
+
+<p>当我们需要连接MySQL时，需要用到几个属性：</p>
+
+<ul>
+<li>用户名</li>
+<li>密码</li>
+<li>地址</li>
+<li>端口</li>
+</ul>
+
+<p>这在MySQL中叫一次会话（session），在JDBC中JDBC定义了规范，其实现类具体去操作，在MyBatis中，MyBatis的关键类<code>SqlSession</code>定义了如何去操作数据库，例如：</p>
+
+<ul>
+<li>selectOne</li>
+<li>selectAll</li>
+<li>selectList</li>
+<li>insert</li>
+<li>…..</li>
+</ul>
+
+<p>具体的实现类有：</p>
+
+<ul>
+<li>DefaultSqlSession</li>
+<li>SqlSessionTemplate</li>
+<li>SqlSessionManager</li>
+</ul>
+
+<p>当然我们都不会直接使用这几个实现类，我们一般是这样的：</p>
+
+<pre><code>public class UserService {
+	
+	@Resource
+	private UserMapper userMapper;
+}
+</code></pre>
+
+<p>那这其中究竟是怎么做到这样简化的呢？</p>
+
+<h2 id="实现细节">实现细节</h2>
+
+<h3 id="sqlsessionfactorybean-sqlsessionfactory">SqlSessionFactoryBean&amp;SqlSessionFactory</h3>
+
+<p>上面介绍了关键类<code>SqlSession</code>, 那如何创建<code>SqlSession</code>呢？MyBatis使用了工厂方法来创建<code>SqlSession</code>，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：</p>
+
+<pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
+  &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot; /&gt;
+&lt;/bean&gt;
+</code></pre>
+
+<ul>
+<li>DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource</li>
+</ul>
+
+<h3 id="mapperfactorybean">MapperFactoryBean</h3>
+
+<p>大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</p>
+
+<ul>
+<li>UserMapper</li>
+<li>PersonMapper</li>
+<li>AddressMapper</li>
+<li>…..</li>
+</ul>
+
+<p>那MapperFactoryBean是干什么用的呢？</p>
+
+<ul>
+<li><p>告诉容器（可以是Spring容器）：我的这个Mapper可以访问这个数据，所以MapperFactoryBean需要配置<code>Mapper</code>和<code>SqlSessionFactory</code></p>
+
+<pre><code>&lt;bean id=&quot;userMapper&quot; class=&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;&gt;
+&lt;property name=&quot;mapperInterface&quot; value=&quot;org.mybatis.spring.sample.mapper.UserMapper&quot; /&gt;
+&lt;property name=&quot;sqlSessionFactory&quot; ref=&quot;sqlSessionFactory&quot; /&gt;
+&lt;/bean&gt;
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>到目前为止，我们没有定义mapper.xml文件，但是我们可以这样用了</p>
+</blockquote>
+
+<pre><code>public interface UserMapper {
+  @Select(&quot;SELECT * FROM users WHERE id = #{userId}&quot;)
+  User getUser(@Param(&quot;userId&quot;) String userId);
+} 
+</code></pre>
+
+<p>AND</p>
+
+<pre><code>public class FooServiceImpl implements FooService {
+
+private UserMapper userMapper;
+
+public void setUserMapper(UserMapper userMapper) {
+  this.userMapper = userMapper;
+}
+
+public User doSomeBusinessStuff(String userId) {
+  return this.userMapper.getUser(userId);
+}
+}
+</code></pre>
+
+<p>但是只用注解的话面对繁杂的SQL，会显得代码凌乱，就出现了使用xml来描述SQL（当然其他的ORM甚至可以使Markdown），MyBatis要知道SQL文件在哪里有两种方式：</p>
+
+<ul>
+<li>和mapper接口在同一个包路径下</li>
+
+<li><p>mapperLocations：将目录地址设置到mapperLocations中</p>
+
+<pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
+&lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot; /&gt;
+&lt;property name=&quot;mapperLocations&quot; value=&quot;classpath*:sample/config/mappers/**/*.xml&quot; /&gt;
+&lt;/bean&gt;
+</code></pre></li>
+</ul>
+
+<h3 id="mapperscannerconfigurer">MapperScannerConfigurer</h3>
+
+<p>在上面的方法中，我们需要把Mapper当做Service的Bean中的属性设置进去，这样显得太麻烦了，就有了<code>MapperScannerConfigurer</code></p>
+
+<pre><code>&lt;bean class=&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;&gt;
+  &lt;property name=&quot;basePackage&quot; value=&quot;org.mybatis.spring.sample.mapper&quot; /&gt;
+&lt;/bean&gt;
+</code></pre>
+
+<ul>
+<li>basePackage 属性是让你为映射器接口文件设置基本的包路径</li>
+<li>MapperScannerConfigurer , 它 将 会 查 找 类 路 径 下 的 映 射 器 并 自 动 将 它 们 创 建 成 MapperFactoryBean</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>致生活</title>
+            <link>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</link>
+            <pubDate>Sun, 02 Sep 2018 11:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</guid>
+            <description> 少年真正成人的那一刻，大概就是，对于你的家人，你会时不时惦记，想念，渴望从他们那里得到抚慰，害怕他们哪天离开人世——他们成为你梦境的常客，内心最柔软的部分；你却无比清楚：纵然爱他们，却再无法同他们心无芥蒂地谈论，或长久地生活在一起。 — 一个
  今天送妈妈去火车站回家了，过来的时间不长不短，来去10天，期间工作比较忙，只有周末有时间出去逛，没去几个地方，只去了故宫、颐和园、森林公园、鸟巢、前门、天安门，这是过年回家之后第一次见我妈，来北京以后基本每年就回一趟家，这次我妈在我的坚持下过来，我就规划着带她吃点好的，买几件衣服，带她逛逛。
 去车站接她的时候，她穿着一件橘色的衣服，在人群中显得很突兀，在家的时候还没怎么注意，来北京了，突然发现妈妈已经老了，白头发多了些，她在人群中提着一个箱子，面对人群，有一点慌乱，我想着她做了一天火车了，回来休息一下，第二天再出去，她坚持说自己不累，下午就去周边的森林公园逛了逛，晚上在外面吃了点鱼，吃完就说太贵了。
 周六和周天带着她逛，我给她教着怎么会使用地图，怎么使用微信支付，怎么坐地铁，之后我说目的地，妈妈打开地图，给我说路线，我跟着她走，想着上班的时候能自己出去走走，其实她来北京最重要的是陪陪我，不在乎去哪，我上班的那几天，等着我回家，加班很晚，回来已经11点多了，妈妈会倒点牛奶或做点汤给我，其实最温暖的，是回家的时候灯是亮着的，屋里有牵挂着你的人。
@@ -147,16 +1199,2011 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
 时间过得很快，今天送她回家了，心情有点低落，觉得有点对不起他们，不在他们身边，现在自己赚钱，但是还是给不了他们好的生活，只希望他们身体健康，争取明年带爸妈出去玩。
  自己好久不写这种非技术文章了，今天特别想写，写的有点乱，每个在外边工作的人，可能心里都有一团火。
  </description>
-    </item>
-    
-    <item>
-      <title>设计模式总结</title>
-      <link>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</guid>
-      <description>一、创建型模式(五种)  工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源） 抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy） 单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制） 建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能） 原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）  二、结构型模式(七种)  适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系） 装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx） 代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池） 外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数） 桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动） 组合模式(Composite)：部分与整体，常用于表示树形结构 享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）  三、行为型模式(十一种)  策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口） 模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件） 观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ） 迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器） 责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve） 命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2） 备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据 状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象） 访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象） 中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者 解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐  四、学习资源  调停者模式 解释器模式 访问者模式 状态模式 备忘录模式 命令模式 责任链模式 迭代子模式 观察者模式 模板方法模式 策略模式 不变模式 桥梁模式 门面模式 享元模式 代理模式 装饰模式 合成模式 适配器模式 原型模式 建造模式 单例模式 抽象工厂模式 工厂方法模式 简单工厂模式  五、总结   内容部分引用自http://smallbug-vip.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p><img src="http://p783z0zp1.bkt.clouddn.com/img/20180902122035.png" alt="Mother" /></p>
+
+<blockquote>
+<p>少年真正成人的那一刻，大概就是，对于你的家人，你会时不时惦记，想念，渴望从他们那里得到抚慰，害怕他们哪天离开人世——他们成为你梦境的常客，内心最柔软的部分；你却无比清楚：纵然爱他们，却再无法同他们心无芥蒂地谈论，或长久地生活在一起。
+— 一个</p>
+</blockquote>
+
+<p>今天送妈妈去火车站回家了，过来的时间不长不短，来去10天，期间工作比较忙，只有周末有时间出去逛，没去几个地方，只去了故宫、颐和园、森林公园、鸟巢、前门、天安门，这是过年回家之后第一次见我妈，来北京以后基本每年就回一趟家，这次我妈在我的坚持下过来，我就规划着带她吃点好的，买几件衣服，带她逛逛。</p>
+
+<p>去车站接她的时候，她穿着一件橘色的衣服，在人群中显得很突兀，在家的时候还没怎么注意，来北京了，突然发现妈妈已经老了，白头发多了些，她在人群中提着一个箱子，面对人群，有一点慌乱，我想着她做了一天火车了，回来休息一下，第二天再出去，她坚持说自己不累，下午就去周边的森林公园逛了逛，晚上在外面吃了点鱼，吃完就说太贵了。</p>
+
+<p>周六和周天带着她逛，我给她教着怎么会使用地图，怎么使用微信支付，怎么坐地铁，之后我说目的地，妈妈打开地图，给我说路线，我跟着她走，想着上班的时候能自己出去走走，其实她来北京最重要的是陪陪我，不在乎去哪，我上班的那几天，等着我回家，加班很晚，回来已经11点多了，妈妈会倒点牛奶或做点汤给我，其实最温暖的，是回家的时候灯是亮着的，屋里有牵挂着你的人。</p>
+
+<p>昨天我问她感觉北京怎么样，她说就是东西贵，赚得多花的也多，你一个人很孤单。</p>
+
+<p>可能是家庭本身的因素，我妈从小就比较严厉，有些感情也不好表达，现在越大了和爸妈也聊得不多了，每次就是问问身体怎么样啊，家里怎么样啊，家里缺啥吗？这次来给妈妈拍照，妈妈就会看看给她拍的怎么样啊，有时候就说笑起来拍出照片不好看，不笑拍出来也不好看-.-</p>
+
+<p>时间过得很快，今天送她回家了，心情有点低落，觉得有点对不起他们，不在他们身边，现在自己赚钱，但是还是给不了他们好的生活，只希望他们身体健康，争取明年带爸妈出去玩。</p>
+
+<blockquote>
+<p>自己好久不写这种非技术文章了，今天特别想写，写的有点乱，每个在外边工作的人，可能心里都有一团火。</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>设计模式总结</title>
+            <link>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</link>
+            <pubDate>Wed, 24 May 2017 11:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</guid>
+            <description>一、创建型模式(五种)  工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源） 抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy） 单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制） 建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能） 原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）  二、结构型模式(七种)  适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系） 装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx） 代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池） 外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数） 桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动） 组合模式(Composite)：部分与整体，常用于表示树形结构 享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）  三、行为型模式(十一种)  策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口） 模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件） 观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ） 迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器） 责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve） 命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2） 备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据 状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象） 访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象） 中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者 解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐  四、学习资源  调停者模式 解释器模式 访问者模式 状态模式 备忘录模式 命令模式 责任链模式 迭代子模式 观察者模式 模板方法模式 策略模式 不变模式 桥梁模式 门面模式 享元模式 代理模式 装饰模式 合成模式 适配器模式 原型模式 建造模式 单例模式 抽象工厂模式 工厂方法模式 简单工厂模式  五、总结   内容部分引用自http://smallbug-vip.</description>
+            <content type="html"><![CDATA[
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-32b3fb0c1a41aa71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+
+<h2 id="一-创建型模式-五种">一、创建型模式(五种)</h2>
+
+<ul>
+<li>工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源）</li>
+<li>抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy）</li>
+<li>单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制）</li>
+<li>建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能）</li>
+<li>原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）</li>
+</ul>
+
+<h2 id="二-结构型模式-七种">二、结构型模式(七种)</h2>
+
+<ul>
+<li>适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系）</li>
+<li>装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx）</li>
+<li>代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池）</li>
+<li>外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数）</li>
+<li>桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动）</li>
+<li>组合模式(Composite)：部分与整体，常用于表示树形结构</li>
+<li>享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）</li>
+</ul>
+
+<h2 id="三-行为型模式-十一种">三、行为型模式(十一种)</h2>
+
+<ul>
+<li>策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口）</li>
+<li>模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件）</li>
+<li>观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ）</li>
+<li>迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器）</li>
+<li>责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve）</li>
+<li>命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2）</li>
+<li>备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据</li>
+<li>状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象）</li>
+<li>访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象）</li>
+<li>中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者</li>
+<li>解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐</li>
+</ul>
+
+<h2 id="四-学习资源">四、学习资源</h2>
+
+<ul>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/20/2554024.html" target="_blank">调停者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/19/2552617.html" target="_blank">解释器模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/14/2545381.html" target="_blank">访问者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank">状态模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/06/2534942.html" target="_blank">备忘录模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/01/2526972.html" target="_blank">命令模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/28/2516865.html" target="_blank">责任链模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/22/2511506.html" target="_blank">迭代子模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/16/2502279.html" target="_blank">观察者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/14/2495235.html" target="_blank">模板方法模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/10/2491891.html" target="_blank">策略模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/08/2487757.html" target="_blank">不变模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/07/2480938.html" target="_blank">桥梁模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/02/2478101.html" target="_blank">门面模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/26/2468499.html" target="_blank">享元模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/23/2466712.html" target="_blank">代理模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/20/2455726.html" target="_blank">装饰模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html" target="_blank">合成模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html" target="_blank">适配器模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/11/2439387.html" target="_blank">原型模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/07/2433939.html" target="_blank">建造模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/31/2425631.html" target="_blank">单例模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/28/2418836.html" target="_blank">抽象工厂模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/25/2416227.html" target="_blank">工厂方法模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/22/2412308.html" target="_blank">简单工厂模式</a></li>
+</ul>
+
+<h2 id="五-总结">五、总结</h2>
+
+<blockquote>
+<ul>
+<li>内容部分引用自<a href="http://smallbug-vip.iteye.com/blog/2276470" target="_blank">http://smallbug-vip.iteye.com/blog/2276470</a></li>
+<li>在学习设计模式的过程中最直观的感觉就是小demo感觉看着很爽，自己也能理解，但是在实际开发中想套用哪种设计模式却感觉有点心有余而力不足的意思，这可能就是设计模式太灵活的缘故，设计模式都是在大量的代码中积累的精髓所在，这篇总结也是给自己一个笔记，让自己在之后的开发中可以回过头来看看。</li>
+<li>很多人对设计模式有点误解，认为只有GoF的设计模式才是设计模式，这种观点有点不正确，以下是引用一段解释：
+
+<ul>
+<li>设计模式的不同侧重
+
+<ul>
+<li>1、 侧重总体架构的设计模式，如MVC(Java web开发)，MVVM(WPF)</li>
+<li>2、 侧重细节架构的设计模式，如GoF所描述的23种设计模式</li>
+<li>3、 侧重实现的模式，如生产消费队列的同步问题等等</li>
+</ul></li>
+</ul></li>
+<li>设计模式是对oo原则的实现</li>
+<li>再引用一段话：
+
+<ul>
+<li>简单的功能或演示性的程序不要考虑设计模式
+
+<ul>
+<li>关注问题而非解决方案。也就是说只有遇到问题时才去设计模式里找方法</li>
+</ul></li>
+<li>关注重用而非设计模式。也就是说设计模式是以重用为目的的，只要能做到重用，是否使用了某种设计模式并不重要</li>
+<li>在支持函数式编程的语言里避免使用设计模式。如前所述，设计模式是以重用的目的的，而高阶函数很多情况下是比设计模式更好的重用方法，这些语言包括常见的js, ruby, python等
+能用简单的模式解决的问题不要引入复杂的模式
+
+<ul>
+<li>已经有解决方案的情况下不要硬套设计模式，设计模式不是一切</li>
+</ul></li>
+<li>正确认识些暂时无法理解的模式，如Memento, Interpreter, Visitor等，这些模式代表着一类问题，很多时候使用第三方库是更好的选择</li>
+<li>看轻设计模式，它们只能解决一小部分问题</li>
+</ul></li>
+</ul>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>浅析RPC</title>
+            <link>https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/</link>
+            <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/</guid>
+            <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
+之后就萌生了写一篇关于RPC的文章。
+ 一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
+RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。
+众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。
+针对对象序列化，有各种方式的性能对比，Github地址:
+通过对比可知： - Google的Protostuff性能最好 - JSON/XML性能比较差
+但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
+dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：
+@Component public class CityDubboConsumerService { @Reference(version = &amp;quot;1.0.0&amp;quot;) CityDubboService cityDubboService; public void printCity() { String cityName=&amp;quot;xx&amp;quot;; City city = cityDubboService.</description>
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。
+- 问题一：既然有http 请求，为什么还要用rpc调用？
+- 问题二：请问rpc协议和http协议的关系和区别？</p>
+
+<p>之后就萌生了写一篇关于RPC的文章。</p>
+</blockquote>
+
+<h2 id="一-rpc的基本概念">一、RPC的基本概念</h2>
+
+<p>RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。
+RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。
+这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695" target="_blank">通俗的语言解释什么是 RPC 框架</a></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-56600e1178de48f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
+
+<p>RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。</p>
+
+<p>众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。</p>
+
+<p>针对对象序列化，有各种方式的性能对比，<a href="https://github.com/eishay/jvm-serializers/wiki" target="_blank">Github地址</a>:</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-ff9c09c4b7ae2916.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" />
+通过对比可知：
+- Google的Protostuff性能最好
+- JSON/XML性能比较差</p>
+
+<p>但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。</p>
+
+<p>dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：</p>
+
+<pre><code>@Component
+public class CityDubboConsumerService {
+
+    @Reference(version = &quot;1.0.0&quot;)
+    CityDubboService cityDubboService;
+
+    public void printCity() {
+        String cityName=&quot;xx&quot;;
+        City city = cityDubboService.findCityByName(cityName);
+        System.out.println(city.toString());
+    }
+}
+</code></pre>
+
+<ul>
+<li>在不理解RPC概念的情况下，会认为RPC就只有这种应用，其实开发中经常使用的HTTPClient调用也是属于RPC的一种方式。</li>
+</ul>
+
+<h2 id="二-rpc的使用">二、RPC的使用</h2>
+
+<h3 id="1-基于tcp的远程调用">1、基于TCP的远程调用</h3>
+
+<ul>
+<li><p>服务消费者</p>
+
+<pre><code>public class Consumer {
+
+
+	public static void main(String[] args) throws UnknownHostException, IOException, SecurityException, NoSuchMethodException, ClassNotFoundException{
+
+		//接口名称
+		String interfacename= SayHelloService.class.getName();
+
+		//需要远程执行的方法
+		Method method = SayHelloService.class.getMethod(&quot;sayHello&quot;, java.lang.String.class);
+
+		//需要传递到远端的参数
+		Object[] arguments = {&quot;hello&quot;};
+
+		Socket socket = new Socket(&quot;127.0.0.1&quot;, 1234);
+
+		//将方法名称和参数传递到远端
+		ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
+		output.writeUTF(interfacename); //接口名称
+		output.writeUTF(method.getName());  //方法名称
+		output.writeObject(method.getParameterTypes());
+		output.writeObject(arguments);
+
+		//从远端读取方法执行结果
+		ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+		Object result = input.readObject();
+
+		//使用代理对象来处理，直接返回string类型
+
+		System.out.println(result);
+	}
+}
+</code></pre></li>
+
+<li><p>服务提供者</p>
+
+<pre><code>public class Provider {
+
+	//所有的服务
+	private static Map&lt;String,Object&gt; services = new HashMap&lt;String,Object&gt;();
+
+	static{
+		services.put(SayHelloService.class.getName(), new SayHelloServiceImpl());
+	}
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException, SecurityException, NoSuchMethodException, IllegalArgumentException, IllegalAccessException, InvocationTargetException{
+
+		ServerSocket server = new ServerSocket(1234);
+		while(true) {
+			Socket socket = server.accept();
+
+			//读取服务信息
+			ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+			String interfacename = input.readUTF(); //接口名称
+			String methodName = input.readUTF();  //方法名称
+			Class&lt;?&gt;[] parameterTypes = (Class&lt;?&gt;[])input.readObject();  //参数类型
+			Object[] arguments = (Object[])input.readObject();  //参数对象
+
+			//执行调用
+			Class serviceinterfaceclass = Class.forName(interfacename);//得到接口的class
+			Object service = services.get(interfacename);//取得服务实现的对象
+			Method method = serviceinterfaceclass.getMethod(methodName, parameterTypes);//获得要调用的方法
+			Object result = method.invoke(service, arguments);
+
+			ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
+			output.writeObject(result);
+		}
+	}
+}
+</code></pre></li>
+
+<li><p>接口</p>
+
+<pre><code>public interface SayHelloService {
+
+	/**
+	 * 问好的接口
+	 * @param helloArg 参数
+	 * @return
+	 */
+	public String sayHello(String helloArg);
+}
+</code></pre></li>
+
+<li><p>实现类</p>
+
+<pre><code>public class SayHelloServiceImpl implements SayHelloService {
+
+	@Override
+	public String sayHello(String helloArg) {
+
+		if(helloArg.equals(&quot;hello&quot;)){
+			return &quot;hello&quot;;
+		}else{
+			return &quot;bye bye&quot;;
+		}
+
+	}
+
+}
+</code></pre></li>
+</ul>
+
+<h3 id="2-基于http的远程调用">2、基于HTTP的远程调用</h3>
+
+<ul>
+<li><p>基础服务接口</p>
+
+<pre><code>public interface BaseService {
+
+	public Object execute(Map&lt;String,Object&gt; args);
+}
+</code></pre></li>
+
+<li><p>JSON结果集</p>
+
+<pre><code>public class JsonResult {
+
+	//结果状态码
+	private int resultCode;
+	//状态码解释消息
+	private String message;
+	//结果
+	private Object result;
+
+	public int getResultCode() {
+		return resultCode;
+	}
+	public void setResultCode(int resultCode) {
+		this.resultCode = resultCode;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public Object getResult() {
+		return result;
+	}
+	public void setResult(Object result) {
+		this.result = result;
+	}
+}
+</code></pre></li>
+
+<li><p>JSON帮助类</p>
+
+<pre><code>public class JsonUtil {
+
+	private static final ObjectMapper mapper = new ObjectMapper();
+
+	public static Object jsonToObject(String json, Class cls) {
+
+		try{
+			//允许json串里面的key value不带双引号
+			mapper.configure(org.codehaus.jackson.JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+
+			// 允许制定的object中的属性没有json串中某个key
+			mapper.configure(org.codehaus.jackson.map.DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+			return mapper.readValue(json, cls);
+
+		}catch(Exception e){}
+
+		return null;
+
+	}
+
+	public static String getJson(Object object)  {
+
+		try{
+			String json = null;
+
+			StringWriter sw = new StringWriter();
+			JsonGenerator gen = new JsonFactory().createJsonGenerator(sw);
+			mapper.writeValue(gen, object);
+			gen.close();
+			json = sw.toString();
+			return json;
+
+		}catch(Exception e){}
+
+		return null;
+	}
+}
+</code></pre>
+
+<pre><code>public class SayHelloService implements BaseService{
+
+	public Object execute(Map&lt;String, Object&gt; args) {
+		//request.getParameterMap() 取出来为array,此处需要注意
+		String[] helloArg = (String[]) args.get(&quot;arg1&quot;);
+
+		if(&quot;hello&quot;.equals(helloArg[0])){
+			return &quot;hello&quot;;
+		}else{
+			return &quot;bye bye&quot;;
+		}
+	}
+
+}
+</code></pre></li>
+
+<li><p>服务消费者</p>
+
+<pre><code>public class ServiceConsumer extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		this.doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		//参数
+		String service = &quot;com.http.sayhello&quot;;
+		String format = &quot;json&quot;;
+		String arg1 = &quot;hello&quot;;
+
+
+		String url = &quot;http://localhost:8080//testhttprpc/provider.do?&quot;+&quot;service=&quot; + service + &quot;&amp;format=&quot; + format + &quot;&amp;arg1=&quot; + arg1;
+
+		//组装请求
+		HttpClient httpClient = new DefaultHttpClient();
+		HttpGet httpGet = new HttpGet(url);
+
+		//接收响应
+		HttpResponse response = httpClient.execute(httpGet);
+
+		HttpEntity entity = response.getEntity();
+		byte[] bytes = EntityUtils.toByteArray(entity);
+		String jsonresult = new String(bytes, &quot;utf8&quot;);
+
+		JsonResult result = (JsonResult)JsonUtil.jsonToObject(jsonresult, JsonResult.class);
+
+		resp.getWriter().write(result.getResult().toString());
+
+	}
+}
+</code></pre></li>
+
+<li><p>服务提供者</p>
+
+<pre><code>public class ServiceProvider  extends HttpServlet{
+
+	private Map&lt;String,BaseService&gt; serviceMap ;
+
+
+	@Override
+	public void init() throws ServletException {
+		//服务map初始化
+		serviceMap = new HashMap&lt;String,BaseService&gt;();
+		serviceMap.put(&quot;com.http.sayhello&quot;, new SayHelloService());
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		this.doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		//基本参数
+		String servicename = req.getParameter(&quot;service&quot;);
+		String format = req.getParameter(&quot;format&quot;);
+
+		Map parameters =  req.getParameterMap();
+
+		BaseService service = serviceMap.get(servicename);
+		Object result = service.execute(parameters);
+
+		//生成json结果集
+		JsonResult jsonResult = new JsonResult();
+		jsonResult.setResult(result);
+		jsonResult.setMessage(&quot;success&quot;);
+		jsonResult.setResultCode(200);
+
+		String json = JsonUtil.getJson(jsonResult);
+		resp.getWriter().write(json);
+	}
+}
+</code></pre></li>
+</ul>
+
+<h3 id="3-url风格">3、URL风格</h3>
+
+<ul>
+<li>RPC风格的URL</li>
+<li>RESTFUL风格的URL</li>
+</ul>
+
+<p><strong>RPC风格的URL</strong>
+<code>http://hostname/provider.do?service=com.http.sayhello&amp;format=json&amp;timest amp=2017-04-07-13-22-09&amp;arg1=arg1&amp;arg2=arg2</code>
+- hostname表示服务提供方的主机名
+- service表示远程调用的服务接口名称
+-  format表示返回参数的格式
+- timestamp表示客户端请求的时间戳
+- arg1和 arg2表示服务所需要的参数
+- 备注：淘宝开放平台的API以这种形式的URL提供</p>
+
+<p><strong>RESTFUL风格的URL</strong></p>
+
+<pre><code>POST http://hostname/people 创建name为zhangsan的people记录
+GET http://hostname/people/zhangsan 返回name为zhangsan的people记录
+PUT http://hostname/people/zhangsan 提交name为zhangsan的people记录更新 
+DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
+</code></pre>
+
+<h2 id="三-总结">三、总结</h2>
+
+<blockquote>
+<ul>
+<li>本文内容部分摘自《大型分布式网站架构》</li>
+</ul>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>消息队列之RabbitMQ基础</title>
+            <link>https://blog.sailfishc.cn/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</link>
+            <pubDate>Sun, 23 Apr 2017 14:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</guid>
+            <description>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。
+ 一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息
+ 主体流程：  队列类似一个broker角色，生产者将内容（消息）发送到队列 队列进行存储，消费者将消息消费 消费者确认消费消息（ack）  生产者和消费者都可以通过来创建队列：
+channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   durable：队列名称，不指定则随机生成 exclusive：设置为true则为私有队列，只有当前消费者可以订阅； autoDelete：设置为true时最后一个消费者取消订阅将自动移除队列； arguments：参数   交换器&amp;amp;绑定 RabbitMQ的消息不是直接从生产者发送到队列的，而是要经过交换器然后才可以到达队列： - 生成者把消息发布到交换器上； - 消息最终到达队列，并被消费者接收； - 绑定决定了消息如何从交换器到特定的队列；
+四种交换器类型： - fanout：把所有发送到该Exchange的消息路由到所有与它绑定的Queue中 - direct：把消息路由到bindingKey与routingKey完全匹配的Queue中 - topic：把消息路由到bindingKey与routingKey模糊匹配的Queue中 - headers：headers类型的Exchange不依赖于routingKey与bindingKey的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配
+1、fanout  生产者（P）发送到Exchange（X）的所有消息都会路由到图中的两个Queue，并最终被两个消费者（C1与C2）消费。  2、direct  routingKey=”error”发送消息，则会同时路由到Queue1（amqp.gen-S9b…）和Queue2（amqp.gen-Agl…） routingKey=”info”或routingKey=”warning”发送消息，则只会路由到Queue2 以其他routingKey发送消息，则不会路由到这两个Queue中  3、topic  routingKey=”quick.</description>
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。</p>
+</blockquote>
+
+<h2 id="一-amqp基础">一、AMQP基础</h2>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-845cc2702f14ced5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h2 id="二-rabbitmq">二、RabbitMQ</h2>
+
+<h3 id="基础概念">基础概念</h3>
+
+<ul>
+<li>生产者、消费者</li>
+<li>队列</li>
+<li>交换器</li>
+<li>绑定</li>
+</ul>
+
+<h3 id="生产者-消费者">生产者、消费者</h3>
+
+<ul>
+<li>生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ）</li>
+<li>消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递）</li>
+<li>信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的</li>
+<li>消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）</li>
+</ul>
+
+<h3 id="队列-queue">队列(queue)</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-f86bac7c48c13760.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>Queue（队列）是RabbitMQ的内部对象，用于存储消息<br /></li>
+<li>主体流程：
+
+<ul>
+<li>队列类似一个broker角色，生产者将内容（消息）发送到队列</li>
+<li>队列进行存储，消费者将消息消费</li>
+<li>消费者确认消费消息（ack）</li>
+</ul></li>
+
+<li><p>生产者和消费者都可以通过来创建队列：</p>
+
+<pre><code>channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);
+</code></pre>
+
+<ul>
+<li>durable：队列名称，不指定则随机生成</li>
+<li>exclusive：设置为true则为私有队列，只有当前消费者可以订阅；</li>
+<li>autoDelete：设置为true时最后一个消费者取消订阅将自动移除队列；</li>
+<li>arguments：参数</li>
+</ul></li>
+</ul>
+
+<h3 id="交换器-绑定">交换器&amp;绑定</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-21d9bdcc89b8e154.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>RabbitMQ的消息不是直接从生产者发送到队列的，而是要经过交换器然后才可以到达队列：
+- 生成者把消息发布到交换器上；
+- 消息最终到达队列，并被消费者接收；
+- 绑定决定了消息如何从交换器到特定的队列；</p>
+
+<p>四种交换器类型：
+- fanout：把所有发送到该Exchange的消息路由到所有与它绑定的Queue中
+- direct：把消息路由到bindingKey与routingKey完全匹配的Queue中
+- topic：把消息路由到bindingKey与routingKey模糊匹配的Queue中
+- headers：headers类型的Exchange不依赖于routingKey与bindingKey的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配</p>
+
+<h3 id="1-fanout">1、fanout</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-258010ad115af8ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>生产者（P）发送到Exchange（X）的所有消息都会路由到图中的两个Queue，并最终被两个消费者（C1与C2）消费。</li>
+</ul>
+
+<h3 id="2-direct">2、direct</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-9e5a006e5b703846.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>routingKey=”error”发送消息，则会同时路由到Queue1（amqp.gen-S9b…）和Queue2（amqp.gen-Agl…）</li>
+<li>routingKey=”info”或routingKey=”warning”发送消息，则只会路由到Queue2</li>
+<li>以其他routingKey发送消息，则不会路由到这两个Queue中</li>
+</ul>
+
+<h3 id="3-topic">3、topic</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-5a35611ee3132828.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>routingKey=”quick.orange.rabbit”发送信息，则会同时路由到Q1与Q2</li>
+<li>routingKey=”lazy.orange.fox”发送信息，则只会路由到Q1</li>
+<li>routingKey=”lazy.brown.fox”发送消息，则只会路由到Q2</li>
+<li>routingKey=”lazy.pink.rabbit”发送消息，则只会路由到Q2（只会投递给Q2一次，虽然这个routingKey与Q2的两个bindingKey都匹配）</li>
+<li>routingKey=”quick.brown.fox”、routingKey=”orange”、routingKey=”quick.orange.male.rabbit”发送消息，则会被丢弃，它们并没有匹配任何bindingKey</li>
+</ul>
+
+<h3 id="4-header">4、header</h3>
+
+<p>headers类型的Exchange不依赖于routingKey与bindingKey的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配。在绑定Queue与Exchange时指定一组键值对；当消息发送到Exchange时，RabbitMQ会取到该消息的headers（也是一个键值对的形式），对比其中的键值对是否完全匹配Queue与Exchange绑定时指定的键值对；如果完全匹配则消息会路由到该Queue，否则不会路由到该Queue。</p>
+
+<h2 id="三-springboot-rabbitmq实战">三、SpringBoot+RabbitMQ实战</h2>
+
+<p>** Docker环境下安装RabbitMQ**</p>
+
+<pre><code># 下载rabbitmq的docker镜像和managerment的镜像
+docker pull rabbitmq:management
+# 启动rabbitmq镜像
+docker run -d --name rabbitmq --publish 5671:5671 \
+ --publish 5672:5672 --publish 4369:4369 --publish 25672:25672 --publish 15671:15671 --publish 15672:15672 \
+rabbitmq:management
+</code></pre>
+
+<ul>
+<li><p>端口解释：</p>
+
+<ul>
+<li>4369:epmd(Erlang Port Mapper Daemon)</li>
+<li>25672:Erlang distribution</li>
+<li>5672, 5671:AMQP 0-9-1 without and with TLS</li>
+<li>15672:if management plugin is enabled</li>
+<li>61613, 61614:if STOMP is enabled</li>
+<li>1883, 8883:if MQTT is enabled</li>
+</ul></li>
+
+<li><p>默认访问路径：<code>http://localhost:15672</code></p></li>
+
+<li><p>默认用户名和密码：<code>guest/guest</code></p></li>
+</ul>
+
+<blockquote>
+<p>介于代码粘贴进来比较多，提供项目<a href="https://github.com/Sailfishc/learn-rabbitmq" target="_blank">GitHub</a>地址，本文提取代码片段进行讲解</p>
+</blockquote>
+
+<h3 id="项目结构">项目结构</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-8a6f1499f3aa21ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="关键参数">关键参数</h3>
+
+<ul>
+<li>@RabbitListener(queues = &ldquo;xxx&rdquo;)</li>
+<li>RabbitTemplate</li>
+<li>TopicExchange</li>
+<li>Binding</li>
+<li>Queue</li>
+</ul>
+
+<h3 id="代码段讲解">代码段讲解</h3>
+
+<ul>
+<li><p>创建队列</p>
+
+<pre><code>@Bean
+public Queue ssdQueue(){
+    return new Queue(&quot;hello&quot;);
+}
+</code></pre></li>
+
+<li><p>创建topic类型交换器</p>
+
+<pre><code>@Bean
+public TopicExchange topicExchange() {
+    return new TopicExchange(&quot;topicExchange&quot;);
+}
+</code></pre></li>
+
+<li><p>创建fanout类型的交换器</p>
+
+<pre><code>@Bean
+public FanoutExchange fanoutExchange() {
+    return new FanoutExchange(&quot;fanoutExchange&quot;);
+}
+</code></pre></li>
+
+<li><p>绑定topic类型的交换器</p>
+
+<pre><code>@Bean
+public Binding bindingExchangeTopicA(Queue topicAQueue, TopicExchange topicExchange) {
+    return BindingBuilder.bind(topicAQueue).to(topicExchange).with(&quot;topic.a&quot;);
+}
+</code></pre></li>
+
+<li><p>绑定fanout类型的交换器</p>
+
+<pre><code>@Bean
+public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutExchange) {
+    return BindingBuilder.bind(fanoutCQueue).to(fanoutExchange);
+}
+</code></pre></li>
+</ul>
+
+<h2 id="四-总结">四、总结</h2>
+
+<p>本片文章主要讲解了以下RabbitMQ的一些基础概念和使用SpringBoot和RabbitMQ整合的几个案例，也是笔者结合博客和官网写的一片总结，总结的也比较基础，没有包括一些高级的内容，例如事务，最终一致性，重复消息和顺序消息的处理等等。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>38年（转载）</title>
+            <link>https://blog.sailfishc.cn/posts/2017/04/38%E5%B9%B4%E8%BD%AC%E8%BD%BD/</link>
+            <pubDate>Fri, 07 Apr 2017 14:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/04/38%E5%B9%B4%E8%BD%AC%E8%BD%BD/</guid>
+            <description>1979年4月7日的夜里3点，一个卑微的生命诞生了，这个小生命就是我。和当时大多数家庭一样，生活一直非常艰苦。从小开始穿哥哥留下的衣服，终于有一天，我希望买一件新羽绒服，父母推辞了很多次，闹了很多次，终于有一次妈妈下班回家，我堵住大门，不买羽绒服不让进门，但这一次终于迎来了一件新羽绒服，然而这一次仿佛是人生重大的洗礼，我一下子就长大了，从此再也没有闹过什么新衣服，默默穿起来哥哥的旧衣服，背起了旧书包，人生迎来了新的境界，一定要靠自己努力，一定一定要靠自己努力。当时我把所有的玩具赠送给了一个好友，他很奇怪，为什么这些之前珍重的宝贝都不要了，我说我想多看点书，多明白一些道理。
+当时家里很小很小，哥哥回到家要学英语，需要一个安静的环境，关起了门，我也无处去，就到处玩，很晚才回家。加上天资平庸，学习成绩并不突出，但也不坏。考大学的时候，亲戚都劝我父母，供两个孩子上大学太辛苦了，不如让我当兵算了，能考上专科的话就读个专科，我就是这样一个不被看好的丑小鸭。
+那时我也没什么梦想，也做好了当兵的打算，并填补了材料进行了体检。不想分数还够读专科。直到上了大学，我在内心深处还一直瞧不起自己，什么都不如别人，什么都不敢争取，有喜欢的姑娘，连说话的勇气都没有，也没穿过什么漂亮衣服，长相又傻，可以说自己就把自己当烂仔了。
+我读的这个学校，淮海工学院，是一个僻静的远在郊区的学校，一个仿佛与世隔绝的地方，除了读书以外，没有什么不花钱的娱乐。那个时候我认识了一个女孩，非常努力的学习，每天晚上无论我多晚下晚自习，总能看到她。有一次我和同学决定守到一次她下晚自习，并且看看她是不是通宵学习的。我们准备了食品和水，终于守到11点半，这个女孩收拾书包走了，宿舍是10点半熄灯，11点锁大门，我们已经回不去了，只好在自习室憋了一夜，后来才知道这个女孩和宿舍管理员疏通了，可以随时回去。。
+有一次她离开的时候，我看了她的笔记和做得习题，我简直难以置信这个世界上会有这样一种学习的方法，于是我就开始跟随她的学习脚步，后来大学时光基本都是看着她的背影过来的，有一次她主动向我问好，我们就认识了，但交流也不多，他有个很不错的男友，经常看到他们幸福的样子。
+毕业的时候这个女孩毫无悬念地考研上了南京航空航天大学。我准备2年后符合专科考试资格后也考研，然后就是4年，失败了4次后，选择调剂到南京大学软件学院，从97年开始考试大学，准备考研，历经7年不懈努力，日夜奋斗，迎来了人生第一次胜利。
+我想经历过考研的人会理解，备考的过程是非常惨烈的，每个知识点的整理，反复练习不亚于高考，而且是在完全无人监督的情况下，靠着内在的巨大动力完成的考试过程，特别是对我这么个天赋很差的人来说，就更加艰难。
+研究生毕业那年是2007年，我在硕士这个圈子算大龄了，找工作很困难，加上之前专科背景，非常非常难，当时几个宿舍一起投西门子，所有人都获得笔试机会，唯独我被排除了，无论多么艰难，我都没有隐瞒过简历，宁可被淘汰，后来在南京投遍所有单位，无一录用，经一个北京朋友介绍，来到北京闯世界，在搜狗打工，然后就是3年。搜狗是我职业生涯的高峰，我的很多技能都是在搜狗学会的，这是一个顽强战斗的团队。
+2010年，我又开始人生新的征途，进入了清华大学攻读博士学位，在所有脱产博士中，找不到比我年龄再大的了，我甚至比一个老师年龄还大。克服了很多困难，很多人的嘲笑，走到了博士毕业这一天。这些嘲笑包括没有发表重要论文，一清博士等等。在毕业典礼的时候，我对自己说，虽然我这个博士学位没有公开认可的含金量的东西，但是我做了很多非常有价值的东西，只是没有转化成论文，是的，只是没有转化成论文，我对自己的研究工作是满意的。pullword分词，词库，thuirdb至今还在为公司和很多人创造价值，我想这个世界上也只有我自己能认可自己并不是一个很水很水的博士了。
+毕业季，找工作又非常难，那时我已经是36岁的老同志了，即便找到工作也没有北京户口，最大的offer只有50万年薪，也没有更好的选择，和一个同年毕业的博士一起创业，然后又是艰苦奋斗2年至今，公司也没倒闭，发展得不快，但也活着，那天合伙人对我说，我现在真的很热爱自己的工作，我听后很想流泪，我说，其实我也很热爱自己的工作，我们有更伟大的梦想，一起努力吧。
+97年读了大学好，我就几乎没什么娱乐了，很多同龄人玩的东西，我都没玩过，看过的电影电视我都没看过，从小至今都不被看好，各种嘲笑，蔑视。前不久我看了微博的黑名单很是感慨，我大概几年前就不再拉黑任何人，也不删除任何网友的侮辱和嘲讽的语言了，来到38岁的我少了很多意气，看淡了很多很多，也不争什么名，能把家庭管理好，把公司管理好，照顾好厂里几名职工的生活，把客户服务好，让客户放心，人生就阔以了。
+但是有一点我想是非常非常重要，也是我写这篇文章的核心用意，任何时候都要坚持努力，坚持自己，相信自己，不要责备没有好的家庭环境，也不要责备自己天赋很差，就在能力范围内，做好自己，一切美好的事情都将自然到来，人只有一个人生，无论我们如何书写，如何定义，都只有一个人生，所以能努力一点就努力一点，谢谢。</description>
+            <content type="html"><![CDATA[<p>1979年4月7日的夜里3点，一个卑微的生命诞生了，这个小生命就是我。和当时大多数家庭一样，生活一直非常艰苦。从小开始穿哥哥留下的衣服，终于有一天，我希望买一件新羽绒服，父母推辞了很多次，闹了很多次，终于有一次妈妈下班回家，我堵住大门，不买羽绒服不让进门，但这一次终于迎来了一件新羽绒服，然而这一次仿佛是人生重大的洗礼，我一下子就长大了，从此再也没有闹过什么新衣服，默默穿起来哥哥的旧衣服，背起了旧书包，人生迎来了新的境界，一定要靠自己努力，一定一定要靠自己努力。当时我把所有的玩具赠送给了一个好友，他很奇怪，为什么这些之前珍重的宝贝都不要了，我说我想多看点书，多明白一些道理。</p>
+
+<p>当时家里很小很小，哥哥回到家要学英语，需要一个安静的环境，关起了门，我也无处去，就到处玩，很晚才回家。加上天资平庸，学习成绩并不突出，但也不坏。考大学的时候，亲戚都劝我父母，供两个孩子上大学太辛苦了，不如让我当兵算了，能考上专科的话就读个专科，我就是这样一个不被看好的丑小鸭。</p>
+
+<p>那时我也没什么梦想，也做好了当兵的打算，并填补了材料进行了体检。不想分数还够读专科。直到上了大学，我在内心深处还一直瞧不起自己，什么都不如别人，什么都不敢争取，有喜欢的姑娘，连说话的勇气都没有，也没穿过什么漂亮衣服，长相又傻，可以说自己就把自己当烂仔了。</p>
+
+<p>我读的这个学校，淮海工学院，是一个僻静的远在郊区的学校，一个仿佛与世隔绝的地方，除了读书以外，没有什么不花钱的娱乐。那个时候我认识了一个女孩，非常努力的学习，每天晚上无论我多晚下晚自习，总能看到她。有一次我和同学决定守到一次她下晚自习，并且看看她是不是通宵学习的。我们准备了食品和水，终于守到11点半，这个女孩收拾书包走了，宿舍是10点半熄灯，11点锁大门，我们已经回不去了，只好在自习室憋了一夜，后来才知道这个女孩和宿舍管理员疏通了，可以随时回去。。</p>
+
+<p>有一次她离开的时候，我看了她的笔记和做得习题，我简直难以置信这个世界上会有这样一种学习的方法，于是我就开始跟随她的学习脚步，后来大学时光基本都是看着她的背影过来的，有一次她主动向我问好，我们就认识了，但交流也不多，他有个很不错的男友，经常看到他们幸福的样子。</p>
+
+<p>毕业的时候这个女孩毫无悬念地考研上了南京航空航天大学。我准备2年后符合专科考试资格后也考研，然后就是4年，失败了4次后，选择调剂到南京大学软件学院，从97年开始考试大学，准备考研，历经7年不懈努力，日夜奋斗，迎来了人生第一次胜利。</p>
+
+<p>我想经历过考研的人会理解，备考的过程是非常惨烈的，每个知识点的整理，反复练习不亚于高考，而且是在完全无人监督的情况下，靠着内在的巨大动力完成的考试过程，特别是对我这么个天赋很差的人来说，就更加艰难。</p>
+
+<p>研究生毕业那年是2007年，我在硕士这个圈子算大龄了，找工作很困难，加上之前专科背景，非常非常难，当时几个宿舍一起投西门子，所有人都获得笔试机会，唯独我被排除了，无论多么艰难，我都没有隐瞒过简历，宁可被淘汰，后来在南京投遍所有单位，无一录用，经一个北京朋友介绍，来到北京闯世界，在搜狗打工，然后就是3年。搜狗是我职业生涯的高峰，我的很多技能都是在搜狗学会的，这是一个顽强战斗的团队。</p>
+
+<p>2010年，我又开始人生新的征途，进入了清华大学攻读博士学位，在所有脱产博士中，找不到比我年龄再大的了，我甚至比一个老师年龄还大。克服了很多困难，很多人的嘲笑，走到了博士毕业这一天。这些嘲笑包括没有发表重要论文，一清博士等等。在毕业典礼的时候，我对自己说，虽然我这个博士学位没有公开认可的含金量的东西，但是我做了很多非常有价值的东西，只是没有转化成论文，是的，只是没有转化成论文，我对自己的研究工作是满意的。pullword分词，词库，thuirdb至今还在为公司和很多人创造价值，我想这个世界上也只有我自己能认可自己并不是一个很水很水的博士了。</p>
+
+<p>毕业季，找工作又非常难，那时我已经是36岁的老同志了，即便找到工作也没有北京户口，最大的offer只有50万年薪，也没有更好的选择，和一个同年毕业的博士一起创业，然后又是艰苦奋斗2年至今，公司也没倒闭，发展得不快，但也活着，那天合伙人对我说，我现在真的很热爱自己的工作，我听后很想流泪，我说，其实我也很热爱自己的工作，我们有更伟大的梦想，一起努力吧。</p>
+
+<p>97年读了大学好，我就几乎没什么娱乐了，很多同龄人玩的东西，我都没玩过，看过的电影电视我都没看过，从小至今都不被看好，各种嘲笑，蔑视。前不久我看了微博的黑名单很是感慨，我大概几年前就不再拉黑任何人，也不删除任何网友的侮辱和嘲讽的语言了，来到38岁的我少了很多意气，看淡了很多很多，也不争什么名，能把家庭管理好，把公司管理好，照顾好厂里几名职工的生活，把客户服务好，让客户放心，人生就阔以了。</p>
+
+<p>但是有一点我想是非常非常重要，也是我写这篇文章的核心用意，任何时候都要坚持努力，坚持自己，相信自己，不要责备没有好的家庭环境，也不要责备自己天赋很差，就在能力范围内，做好自己，一切美好的事情都将自然到来，人只有一个人生，无论我们如何书写，如何定义，都只有一个人生，所以能努力一点就努力一点，谢谢。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Elasticsearch学习记录</title>
+            <link>https://blog.sailfishc.cn/posts/2017/03/elasticsearch%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+            <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/03/elasticsearch%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+            <description></description>
+            <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/734456-8aeb5bbc2b58286a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-e5889b34c4fc6d90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>解决Mysql存储Emoji乱码问题</title>
+            <link>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</link>
+            <pubDate>Fri, 31 Mar 2017 17:58:27 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</guid>
+            <description>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
+ 在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
+总的就一句话，UTF-8是Unicode的一种实现。
+一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路： - 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 - 读取的时候可以将😄这个字符转为😁
+例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。
+1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper.</description>
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。</p>
+</blockquote>
+
+<p>在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？
+- <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank">字符编码笔记</a></p>
+
+<p>总的就一句话，UTF-8是Unicode的一种实现。</p>
+
+<h2 id="一-如何解决emoji存储问题">一、如何解决Emoji存储问题</h2>
+
+<ul>
+<li><a href="https://github.com/Sailfishc/emoji-demo" target="_blank">Github地址解决方案</a></li>
+</ul>
+
+<p>再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：
+- 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库
+- 读取的时候可以将😄这个字符转为😁</p>
+
+<p>例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。</p>
+
+<h3 id="1-引入依赖">1、引入依赖</h3>
+
+<pre><code>&lt;dependency&gt;
+     &lt;groupId&gt;com.vdurmont&lt;/groupId&gt;
+     &lt;artifactId&gt;emoji-java&lt;/artifactId&gt;
+    &lt;version&gt;3.2.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<h3 id="2-常用api">2、常用API</h3>
+
+<pre><code>    @RequestMapping(&quot;/add/content&quot;)
+    public ResponseEntity insertContent(@RequestBody Content content) {
+        String title = content.getTitle();
+
+        String titles = EmojiParser.parseToAliases(title);
+        content.setTitle(titles);
+        Integer integer = emojiMapper.insertContent(content);
+        if (integer == 1) {
+           return ResponseEntity.ok().build();
+        }
+        return  ResponseEntity.badRequest().build();
+
+    }
+
+    @RequestMapping(&quot;/get/{id}&quot;)
+    public Content getById(@PathVariable(&quot;id&quot;) Integer id) {
+
+        Content content = emojiMapper.selectById(id);
+        String title = EmojiParser.parseToUnicode(content.getTitle());
+        content.setTitle(title);
+        if (content != null) {
+            return content;
+        }
+        return  null;
+    }
+</code></pre>
+
+<ul>
+<li>EmojiParser.parseToAliases(string); 将表情符号转为字符</li>
+<li>EmojiParser.parseToUnicode(string); 将字符转为表情符号</li>
+</ul>
+
+<h3 id="3-案例">3、案例</h3>
+
+<ul>
+<li>存储图片</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-7ca27396c4a6b58e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>数据库存储记录</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-61a5a894b926af27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>查询记录</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-a97bc9194fbe4ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Mac下Elasticsearch5.X和Head插件的安装</title>
+            <link>https://blog.sailfishc.cn/posts/2017/03/mac%E4%B8%8Belasticsearch5.x%E5%92%8Chead%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+            <pubDate>Sat, 25 Mar 2017 14:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/03/mac%E4%B8%8Belasticsearch5.x%E5%92%8Chead%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+            <description>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。
+ 一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动 &amp;gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
+ 进入es的conf目录修改配置文件
+cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200  启动ES，命令如下
+ ./elasticsearch ./elasticsearch -d (这是后台启动）  看到如下日志信息：
+[2017-03-25T14:30:45,189][INFO ][o.e.n.Node ] [node-1] initializing ... [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs] [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] heap size [1.9gb], compressed ordinary object pointers [true] [2017-03-25T14:30:45,273][INFO ][o.</description>
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。</p>
+</blockquote>
+
+<h3 id="一-安装elasticsearch">一、安装Elasticsearch</h3>
+
+<ul>
+<li>在官网下载tar包，<a href="https://www.elastic.co/downloads/elasticsearch" target="_blank">下载地址</a></li>
+<li>下载之后解压</li>
+
+<li><p>进入bin目录下启动
+&gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：<a href="https://my.oschina.net/topeagle/blog/591451?fromerr=mzOr2qzZlogstash" target="_blank">CENTOS安装ElasticSearch</a>。</p></li>
+
+<li><p>进入es的conf目录修改配置文件</p>
+
+<pre><code>cluster.name: es-cluster
+node.name: node-1
+network.host: 0.0.0.0
+http.port: 9200
+</code></pre></li>
+
+<li><p>启动ES，命令如下</p>
+
+<ul>
+<li>./elasticsearch</li>
+<li>./elasticsearch -d (这是后台启动）</li>
+</ul></li>
+
+<li><p>看到如下日志信息：</p>
+
+<pre><code>[2017-03-25T14:30:45,189][INFO ][o.e.n.Node               ] [node-1] initializing ...
+[2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs]
+[2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-03-25T14:30:45,273][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [n1HFjO-TQlSs4Ncw0HD34A]
+[2017-03-25T14:30:45,276][INFO ][o.e.n.Node               ] [node-1] version[5.2.2], pid[3763], build[f9d9b74/2017-02-24T17:26:45.835Z], OS[Mac OS X/10.12.3/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_111/25.111-b14]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-groovy]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2017-03-25T14:30:45,971][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2017-03-25T14:30:45,972][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty3]
+[2017-03-25T14:30:45,972][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2017-03-25T14:30:45,972][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2017-03-25T14:30:47,936][INFO ][o.e.n.Node               ] [node-1] initialized
+[2017-03-25T14:30:47,936][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2017-03-25T14:30:48,119][INFO ][o.e.t.TransportService   ] [node-1] publish_address {192.168.31.110:9300}, bound_addresses {[::]:9300}
+[2017-03-25T14:30:48,123][INFO ][o.e.b.BootstrapChecks    ] [node-1] bound or publishing to a non-loopback or non-link-local address, enforcing bootstrap checks
+[2017-03-25T14:30:51,226][INFO ][o.e.c.s.ClusterService   ] [node-1] new_master {node-1}{n1HFjO-TQlSs4Ncw0HD34A}{gn6UwArmTG-DEwYmzh1U9g}{192.168.31.110}{192.168.31.110:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-03-25T14:30:51,240][INFO ][o.e.h.HttpServer         ] [node-1] publish_address {192.168.31.110:9200}, bound_addresses {[::]:9200}
+[2017-03-25T14:30:51,240][INFO ][o.e.n.Node               ] [node-1] started
+[2017-03-25T14:30:51,246][INFO ][o.e.g.GatewayService     ] [node-1] recovered [0] indices into cluster_state
+</code></pre></li>
+
+<li><p>通过IP访问，例如我的IP是192.168.31.110，那么访问地址就是192.168.31.110:9200，可以看到如下信息</p>
+
+<pre><code>{
+name: &quot;n1HFjO-&quot;,
+cluster_name: &quot;elasticsearch&quot;,
+cluster_uuid: &quot;njH6T6eMS-mDf3tloN5THg&quot;,
+version: {
+number: &quot;5.2.2&quot;,
+build_hash: &quot;f9d9b74&quot;,
+build_date: &quot;2017-02-24T17:26:45.835Z&quot;,
+build_snapshot: false,
+lucene_version: &quot;6.4.1&quot;
+},
+tagline: &quot;You Know, for Search&quot;
+}
+</code></pre></li>
+</ul>
+
+<h3 id="二-安装head插件">二、安装Head插件</h3>
+
+<blockquote>
+<p>Head插件是我们常用的插件，但是在ELK5.0以后按照之前的插件安装方式不能使用了，看了head官网之后，要单独启动一个服务才可以。</p>
+</blockquote>
+
+<ul>
+<li><a href="https://github.com/mobz/elasticsearch-head" target="_blank">Head-GitHub官网</a></li>
+
+<li><p>官网简易教程</p>
+
+<pre><code>git clone git://github.com/mobz/elasticsearch-head.git
+cd elasticsearch-head
+npm install
+grunt server
+</code></pre></li>
+</ul>
+
+<p><strong>这里依赖Node环境，我们需要做一下工作：</strong>
+- Git
+- <a href="https://nodejs.org/en/download/" target="_blank">Node官网</a></p>
+
+<h4 id="1-head插件安装">1、Head插件安装</h4>
+
+<ul>
+<li>下载并安装对应的Node安装包</li>
+<li>安装Git环境</li>
+<li>下载Head项目</li>
+<li>cd elasticsearch-head</li>
+
+<li><p>修改服务器监听地址，地址目录：head/Gruntfile.js</p>
+
+<pre><code>connect: {
+server: {
+    options: {
+        port: 9100,
+        hostname: '*',
+        base: '.',
+        keepalive: true
+    }
+}
+}
+</code></pre></li>
+
+<li><p>修改连接地址，目录：head/_site/app.js</p></li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-38c88f015bd861e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>npm install
+&gt; 备注：如果npm源特别慢的话，可以参考这篇文档：<a href="http://www.uedbox.com/npm-install-slow-solution/" target="_blank">npm install 无响应解决方案
+</a></li>
+<li>grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt：<code>npm install grunt-cli</code></li>
+<li>grunt server：保证es服务已经启动</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-633cc8658676a775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>打开浏览器输入：IP:9100</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-411df93d94cc0cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li><p>正常的话可以看到已经连接了ES，但是ES社区中很多人反映都配置好了，但是看不到连接信息，这时候需要在在 es 的 elasticsearch.ym 里添加如下配置：</p>
+
+<pre><code>http.cors.enabled: true
+http.cors.allow-origin: &quot;*&quot; 
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>2017-03-26补充：在安装x-pack之后head无法连接es，只能将es的xpack认证给关闭，关闭方式：
+- 在Es的conf文件中配置xpack.security.enabled: false</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Jenkins Maven Git SpringBoot Jar War Linux持续集成</title>
+            <link>https://blog.sailfishc.cn/posts/2017/03/jenkins-maven-git-springboot-jar-war-linux%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link>
+            <pubDate>Fri, 24 Mar 2017 15:12:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/03/jenkins-maven-git-springboot-jar-war-linux%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid>
+            <description>一、前言 公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。
+Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使用Maven/Ant/Gradle等构件工具进行Build - 构建成功之后会进行部署（deploy）
+二、安装  Jenkins官网 下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）   安装（略过） 安装条件  JDK MAVEN  插件安装  - 必备插件 - Git plugin - Maven Integration plugin - publish over ssh插件（用于上传打包好的项目到远程Linux） - 插件列表（太多不一一列出）
+三、配置  此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装
+ 1、系统配置 在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置
+注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置
+三、新建项目 这里我们选择创建Maven项目：
+如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权
+这里使用了Git作为源码管理工具，先配置SSH Key，在Jenkins的证书管理中添加SSH。在Jenkins管理页面，选择“Credentials”，然后选择“Global credentials (unrestricted)”，点击“Add Credentials”，如下图所示，我们填写自己的SSH信息，然后点击“Save”，这样就把SSH添加到Jenkins的全局域中去了。
+ 备注：Passphrase这里不用填值，这是自动生成的。 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接 http://www.linuxidc.com/Linux/2014-10&amp;frasl;108080.htm
+ 配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了 1、构建  备注：这里的Root Pom指的是根目录下的Pom文件</description>
+            <content type="html"><![CDATA[
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-9d9aa000a2176fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h2 id="一-前言">一、前言</h2>
+
+<p>公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-727fcd1dd174863b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>Jenkins大概就这么工作：
+- 拉取GIT/SVN 等仓库的文件
+- 然后使用Maven/Ant/Gradle等构件工具进行Build
+- 构建成功之后会进行部署（deploy）</p>
+
+<h2 id="二-安装">二、安装</h2>
+
+<ul>
+<li><a href="https://jenkins.io/index.html" target="_blank">Jenkins官网</a></li>
+<li>下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-6ed5afc220bcf971.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<ul>
+<li>安装（略过）</li>
+<li>安装条件
+
+<ul>
+<li>JDK</li>
+<li>MAVEN</li>
+</ul></li>
+<li>插件安装</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-31a2db10f939d233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" />
+- 必备插件
+    - Git plugin
+    - <a href="http://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin" target="_blank">Maven Integration plugin</a>
+    - publish over ssh插件（用于上传打包好的项目到远程Linux）
+- 插件列表（太多不一一列出）</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-ba5e79a14fc8f11f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h2 id="三-配置">三、配置</h2>
+
+<blockquote>
+<p>此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装</p>
+</blockquote>
+
+<h3 id="1-系统配置">1、系统配置</h3>
+
+<p>在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-6b6ad974687749b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-e6630d187141a908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-c442bc89ef0430d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置</p>
+
+<h2 id="三-新建项目">三、新建项目</h2>
+
+<p>这里我们选择创建Maven项目：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-f1f3c101baba2e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-a3ff81beed0bd601.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>这里使用了Git作为源码管理工具，先配置SSH Key，在Jenkins的证书管理中添加SSH。在Jenkins管理页面，选择“Credentials”，然后选择“Global credentials (unrestricted)”，点击“Add Credentials”，如下图所示，我们填写自己的SSH信息，然后点击“Save”，这样就把SSH添加到Jenkins的全局域中去了。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-d4812fcccba017d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>备注：Passphrase这里不用填值，这是自动生成的。
+如何配置Git ssh解决上述ssh key问题，可参考以下教程链接
+<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm" target="_blank">http://www.linuxidc.com/Linux/2014-<sup>10</sup>&frasl;<sub>108080</sub>.htm</a></p>
+</blockquote>
+
+<p>配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了
+<img src="http://upload-images.jianshu.io/upload_images/734456-9aca3e863f2438bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="1-构建">1、构建</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-f8aad83a9637aca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>备注：这里的Root Pom指的是根目录下的Pom文件</p>
+</blockquote>
+
+<p>如果是图一结构，Root Pom为：pom.xml</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-5d60696a8822d328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>如果为图二结构，Root Pom为：project_A/pom.xml</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-1fc8d3ad36650808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="2-授权服务器">2、授权服务器</h3>
+
+<p>打开jenkins首页，点击系统管理&ndash;系统设置，下拉找到找到publish over ssh,进行以下设置（请确保前面的步骤中publish over ssh插件已经安装成功，如果没有发现，那就是还没有安装成功，请返回去安装）。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-91e845ed76874d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="3-部署jar包">3、部署Jar包</h3>
+
+<p>进入上面的已经创建好的jenkinsWeb项目，点击配置，下拉找到Post Steps进行配置。</p>
+
+<p>１、点击</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-a4f2907d49e74db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" />
+如果没找到这项，证明publish over ssh没有安装成功。</p>
+
+<p>2、接着进行下图配置</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-b95732df59e48d68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>参数说明：</p>
+
+<p>Transfer SetSource files：表示要上传的本地的jar包及路径，可到工作空间去看。</p>
+
+<p>Remove prefix:表示要上传时要去除的文件夹，即只上传jar包。</p>
+
+<p>remote driectory:即表示执行时的路径，相当于把jar包上传到这里了。</p>
+
+<p>exec commad:要执行的命令脚本。</p>
+
+<blockquote>
+<p>构建脚本</p>
+</blockquote>
+
+<pre><code># 将应用停止
+#stop.sh
+#!/bin/bash
+echo &quot;Stopping SpringBoot Application&quot;
+pid=`ps -ef | grep search-1.0-SNAPSHOT.jar | grep -v grep | awk '{print $2}'`
+if [ -n &quot;$pid&quot; ]
+then
+   kill -9 $pid
+fi
+</code></pre>
+
+<pre><code>#replace.sh 用于将上次构建的结果备份，然后将新的构建结果移动到合适的位置
+#!/bin/bash
+# 先判断文件是否存在，如果存在，则备份
+file=&quot;/home/app/mall-search/search-1.0-SNAPSHOT.jar&quot;
+if [ -f &quot;$file&quot; ]
+then
+   mv /home/app/mall-search/search-1.0-SNAPSHOT.jar /home/app/mall-search/backup/search-1.0-SNAPSHOT.jar.`date +%Y%m%d%H%M%S`
+fi
+mv /home/app/deploy/search-1.0-SNAPSHOT.jar /home/app/mall-search/search-1.0-SNAPSHOT.jar
+</code></pre>
+
+<pre><code># startup.sh 启动项目
+#!/bin/sh
+export JAVA_HOME=/home/shopin/jdk1.8.0_121
+echo ${JAVA_HOME}
+echo &quot;授予当前用户权限&quot;
+chmod 777 /home/shopin/mall-search/search-1.0-SNAPSHOT.jar
+echo &quot;执行.....&quot;
+cd /home/shopin/mall-search/
+nohup ${JAVA_HOME}/bin/java -jar search-1.0-SNAPSHOT.jar &gt; /dev/null &amp;
+echo &quot;启动成功...&quot;
+</code></pre>
+
+<p>这样就可以将jar包打到远程服务器了</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-7bee1d38208a4082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<h3 id="4-部署war包容器-tomcat-中">4、部署War包容器（tomcat）中</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-c0f207c324028f18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>如果容器是tomcat，就需要在tomcat配置相应的用户名和密码：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-63057a4157bef0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>以上就是Jenkins for SpringBoot，同样也可以发布到tomcat</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>如何高效学习，总结自己的学习方法</title>
+            <link>https://blog.sailfishc.cn/posts/2017/03/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E8%87%AA%E5%B7%B1%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+            <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/03/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E8%87%AA%E5%B7%B1%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
+            <description>在工作之后一段时间一直会有这么一种感觉：一天浑浑噩噩不知道干了什么，或者整天被他人打断而不能专注，又或者从早到晚的忙导致下班头脑发胀。
+ 自己也在寻找适合自己的学习方法，可能是学习能力比较差，一直没找到合适的，很多人推荐的番茄工作法自己尝试了几次也放弃了，但是现在工作每天都很忙，但是不知道自己干嘛了，这促使我又开始寻找一个适合自己的工具和学习方法。
+这次的主题分两部分： - 工具 - 学习方法
+一、工具 还是从番茄工作法开始了，再看了其他的学习法之后觉得还是回归到番茄工作法，原因就是简单，并且理论上是可行的，我一直坚定的认为只有理论正确，行动才不会走弯路。 - 我的番茄工作流程
+这里区分两个工具： - 一个任务清单软件，例如滴答清单 - 一个番茄钟，这里推荐Chrome插件版的番茄钟
+1、List清单负责维护近期的活动清单
+2、计时插件界面简洁还提供了统计和云同步功能。
+3、简单的excel表格用来记录每天的完成情况
+ 备注：Excel是一个额外的动作，主要是为了知道自己每天做了什么，在番茄钟运行的过程中很可能因为外部原因或者内部原因导致中断，如果中断了就如实的记录下来。
+ 二、学习方法 这里的学习方法不是指某个具体学科的学习方法，而是对知识的一个统一轮廓，就是一个大的概念，不是那种21天精通Java等等，也就是一个理论加实践的过程，很多时候最基础的就是最好的，学习方法其实在上学的时候老师就会经常说，就是：预习+认真听讲+复习，在1W小时训练的基础上很大一部分就是重复，但是是要有目的的重复。
+ 我的理论基础  我们获取知识的渠道多种多样，但是最终的目的就是为了在用的时候可以想起来或者可以灵活运用（在大脑中建立起联系），也就像写代码，有输入，有输入，在中间环节进行了转换而已，我大概理了一下，知识的获取有这么一些渠道： - 官网文档 - 博客 - GitHub等 - 视频资源 - 书籍 - 门户网站 - 各类信息类APP - 微信公众账号 - &amp;hellip;&amp;hellip;.
+总的来说，我已吸收知识的时间段分为： - 即时知识 - 延时知识
+即时知识是在看的过程中就可以消化的了，知识量比较少，常见的是为了解决一个问题去百度或者Google或者查找资料找到了解决办法，或者是一些非专业性知识等，再或者是在大片时间去看书，延时知识是我们经常用到的知识，例如一片专业的博客或者资料没时间看会保存在笔记类软件中或者是类似POCKET这种稍后阅读软件中，然后有时间再看。
+ 基于此知识体系我理出的流程就是知识输入，中间转化，然后输出，有必要（精华）再分享，在复习即可，关于复习这其实是很重要的一步，这也是重复练习和记录笔记重要的一步，我也一直没做好这步，具体操作有以下几个步骤。
+ 以周作为一个小单元，月作为一个大单元，每周给自己安排一段时间专门进行知识的复习，清空自己在POCKET中存储的List，将没用的清除掉，有用的整理为笔记存储，然后也从Pocket中清除掉，不要把没经过自己大脑思考的东西记录到笔记中，如果有必要，将自己的笔记整理为博客发表，关于学习，用好工具也是相当必要的，推荐几款上面说到不同阶段的工具。
+ 输入工具
+ pocket 开发者头条 掘金 知乎 简书 各类博客  中间转化</description>
+            <content type="html"><![CDATA[
+
+<blockquote>
+<p>在工作之后一段时间一直会有这么一种感觉：一天浑浑噩噩不知道干了什么，或者整天被他人打断而不能专注，又或者从早到晚的忙导致下班头脑发胀。</p>
+</blockquote>
+
+<p>自己也在寻找适合自己的学习方法，可能是学习能力比较差，一直没找到合适的，很多人推荐的番茄工作法自己尝试了几次也放弃了，但是现在工作每天都很忙，但是不知道自己干嘛了，这促使我又开始寻找一个适合自己的工具和学习方法。</p>
+
+<p>这次的主题分两部分：
+- 工具
+- 学习方法</p>
+
+<h2 id="一-工具">一、工具</h2>
+
+<p>还是从番茄工作法开始了，再看了其他的学习法之后觉得还是回归到番茄工作法，原因就是简单，并且理论上是可行的，我一直坚定的认为只有理论正确，行动才不会走弯路。
+- 我的番茄工作流程</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-8f085c7444438995.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>这里区分两个工具：
+- 一个任务清单软件，例如滴答清单
+- 一个番茄钟，这里推荐Chrome插件版的番茄钟</p>
+
+<p>1、List清单负责维护近期的活动清单</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-00ad77333d792c68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>2、计时插件界面简洁还提供了统计和云同步功能。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-5d991fe0ae6a94d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>3、简单的excel表格用来记录每天的完成情况</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-11651b402cafdf8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<blockquote>
+<p>备注：Excel是一个额外的动作，主要是为了知道自己每天做了什么，在番茄钟运行的过程中很可能因为外部原因或者内部原因导致中断，如果中断了就如实的记录下来。</p>
+</blockquote>
+
+<h2 id="二-学习方法">二、学习方法</h2>
+
+<p>这里的学习方法不是指某个具体学科的学习方法，而是对知识的一个统一轮廓，就是一个大的概念，不是那种21天精通Java等等，也就是一个理论加实践的过程，很多时候最基础的就是最好的，学习方法其实在上学的时候老师就会经常说，就是：预习+认真听讲+复习，在1W小时训练的基础上很大一部分就是重复，但是是要有目的的重复。</p>
+
+<ul>
+<li>我的理论基础</li>
+</ul>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-b542f58c7685aff3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>我们获取知识的渠道多种多样，但是最终的目的就是为了在用的时候可以想起来或者可以灵活运用（在大脑中建立起联系），也就像写代码，有输入，有输入，在中间环节进行了转换而已，我大概理了一下，知识的获取有这么一些渠道：
+- 官网文档
+- 博客
+- GitHub等
+- 视频资源
+- 书籍
+- 门户网站
+- 各类信息类APP
+- 微信公众账号
+- &hellip;&hellip;.</p>
+
+<p>总的来说，我已吸收知识的时间段分为：
+- 即时知识
+- 延时知识</p>
+
+<p>即时知识是在看的过程中就可以消化的了，知识量比较少，常见的是为了解决一个问题去百度或者Google或者查找资料找到了解决办法，或者是一些非专业性知识等，再或者是在大片时间去看书，延时知识是我们经常用到的知识，例如一片专业的博客或者资料没时间看会保存在笔记类软件中或者是类似POCKET这种稍后阅读软件中，然后有时间再看。</p>
+
+<ul>
+<li><p>基于此知识体系我理出的流程就是知识输入，中间转化，然后输出，有必要（精华）再分享，在复习即可，关于复习这其实是很重要的一步，这也是重复练习和记录笔记重要的一步，我也一直没做好这步，具体操作有以下几个步骤。</p></li>
+
+<li><p>以周作为一个小单元，月作为一个大单元，每周给自己安排一段时间专门进行知识的复习，清空自己在POCKET中存储的List，将没用的清除掉，有用的整理为笔记存储，然后也从Pocket中清除掉，<strong>不要把没经过自己大脑思考的东西记录到笔记中</strong>，如果有必要，将自己的笔记整理为博客发表，关于学习，用好工具也是相当必要的，推荐几款上面说到不同阶段的工具。</p></li>
+
+<li><p>输入工具</p>
+
+<ul>
+<li>pocket</li>
+<li>开发者头条</li>
+<li>掘金</li>
+<li>知乎</li>
+<li>简书</li>
+<li>各类博客</li>
+</ul></li>
+
+<li><p>中间转化</p>
+
+<ul>
+<li>Xmind（思维导图）</li>
+<li>processon（画流程图）</li>
+<li>纸和笔</li>
+<li>你的大脑</li>
+</ul></li>
+
+<li><p>输出工具</p>
+
+<ul>
+<li>为知笔记</li>
+<li>有道云笔记</li>
+<li>印象笔记</li>
+<li>OneNote</li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Java程序员学习路线</title>
+            <link>https://blog.sailfishc.cn/posts/2017/03/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+            <pubDate>Wed, 01 Mar 2017 17:58:27 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2017/03/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+            <description>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。 感觉有点跑题了，说回来，还是怎么学习：
+1、你得对你所在行业的知识框架要有一个基本的了解  比如我所在的JavaEE的学习路线：
+ Java基础 - 基础语法 - 逻辑控制流 - 面向对象的知识 - 常用的类，如String - IO - 集合 - 多线程 - 异常 - 网络编程
+JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Servlet/JSP - 数据库相关知识 - 过滤器，监听器 - ajax - session/cookie - jdbc
+框架相关(会用即可) - spring - springmvc - myBatis
+这是最基础的知识，这个层面就是先会用，可以在网上找一个网上商城的例子用来练习，把整体的代码思路看看，就算是OK了。 在实习工作期间，主要是适应公司的代码环境，这时候要会用一定的工具，类似版本控制，项目管理工具等： - GIT - SVN - Maven
+这些工具的基本操作学习用不了多久，但是会给你带动很高的效率，在这之后，就是真正开始自己学习的过程，这才是提高的过程，你得根据自己的实际情况开始自己学习，不再依赖于视频教程，更多的是来源于书籍和自己实际项目的思考，首先要将业务需求转化为自己的代码实现，这是最关键的，其次是思考，怎么写更好，这是一个模仿+思考的过程，你要了解系统的整体结构是什么，用到了哪些技术，日志是怎么处理的，异常是怎么处理的，最关键的是要有自己的代码风格。
+2、一次项目交接的思考 前几天有个同事要离职了，他的项目需要进行交接，我最近工作量比较少，就由我进行交接，这几天我觉得是我好几个月来成长最快的几天，我和他单独交流，因为项目是新建的一个项目，项目中业务信息不多，所以好理解，两天时间，基本上就可以上手了，之后的一天里我就一直和他在聊系统的设计思路和编码风格以及如何提高自己的编码水平。 很多人在做项目的时候思考的是如何做出来，也包括我，但是没有思考怎么做更好，他说他在做这个项目中删除了很多代码，想了好几套方法去解决，最终是保留了一套觉得自己好的，在这里，它借鉴了两个框架的设计思路，他没有深入了解过一个框架，但是大体了解一些，通过在写项目的过程中它看了些框架的源码，借鉴了一些它的思路，慢慢的也就有了一个从需求很不明确，没有的项目到现在也算是一个产品的项目，这其中花费了自己很大的心思。 我一直觉得自己的代码写的很烂，也一直想提高，但是苦于不知道如何提高，听了他的这些话，我就在想，目前我有基本的编码基础，我应该怎样提高，做项目？目前没有太多的时间去完整的做一个项目，最好的开端就是借鉴，从一个开源框架中借鉴它的思路，学习它的设计模式，编码风格，对工具类的封装，对功能的实现，这就像是你刚来公司的时候，要学习公司项目一样，但是这种开源框架会比较大，也比较难，不会像公司项目那样相对容易的让你去学习，但是坚持下去，总会有改变。</description>
+            <content type="html"><![CDATA[
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-bd44329a91cb8500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
+<p>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。
+在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。
+感觉有点跑题了，说回来，还是怎么学习：</p>
+
+<h3 id="1-你得对你所在行业的知识框架要有一个基本的了解">1、你得对你所在行业的知识框架要有一个基本的了解</h3>
+
+<blockquote>
+<p>比如我所在的JavaEE的学习路线：</p>
+</blockquote>
+
+<p><strong>Java基础</strong>
+- 基础语法
+- 逻辑控制流
+- 面向对象的知识
+- 常用的类，如String
+- IO
+- 集合
+- 多线程
+- 异常
+- 网络编程</p>
+
+<p><strong>JavaWeb</strong>
+- html/css/js相关基础知识
+- xml相关配置
+- Tomcat服务器
+- Servlet/JSP
+- 数据库相关知识
+- 过滤器，监听器
+- ajax
+- session/cookie
+- jdbc</p>
+
+<p><strong>框架相关(会用即可)</strong>
+- spring
+- springmvc
+- myBatis</p>
+
+<p>这是最基础的知识，这个层面就是先会用，可以在网上找一个网上商城的例子用来练习，把整体的代码思路看看，就算是OK了。
+在实习工作期间，主要是适应公司的代码环境，这时候要会用一定的工具，类似版本控制，项目管理工具等：
+- GIT
+- SVN
+- Maven</p>
+
+<p>这些工具的基本操作学习用不了多久，但是会给你带动很高的效率，在这之后，就是真正开始自己学习的过程，这才是提高的过程，你得根据自己的实际情况开始自己学习，不再依赖于视频教程，更多的是来源于书籍和自己实际项目的思考，首先要将业务需求转化为自己的代码实现，这是最关键的，其次是思考，怎么写更好，这是一个模仿+思考的过程，你要了解系统的整体结构是什么，用到了哪些技术，日志是怎么处理的，异常是怎么处理的，最关键的是要有自己的代码风格。</p>
+
+<h3 id="2-一次项目交接的思考">2、一次项目交接的思考</h3>
+
+<p>前几天有个同事要离职了，他的项目需要进行交接，我最近工作量比较少，就由我进行交接，这几天我觉得是我好几个月来成长最快的几天，我和他单独交流，因为项目是新建的一个项目，项目中业务信息不多，所以好理解，两天时间，基本上就可以上手了，之后的一天里我就一直和他在聊系统的设计思路和编码风格以及如何提高自己的编码水平。
+很多人在做项目的时候思考的是如何做出来，也包括我，但是没有思考怎么做更好，他说他在做这个项目中删除了很多代码，想了好几套方法去解决，最终是保留了一套觉得自己好的，在这里，它借鉴了两个框架的设计思路，他没有深入了解过一个框架，但是大体了解一些，通过在写项目的过程中它看了些框架的源码，借鉴了一些它的思路，慢慢的也就有了一个从需求很不明确，没有的项目到现在也算是一个产品的项目，这其中花费了自己很大的心思。
+我一直觉得自己的代码写的很烂，也一直想提高，但是苦于不知道如何提高，听了他的这些话，我就在想，目前我有基本的编码基础，我应该怎样提高，做项目？目前没有太多的时间去完整的做一个项目，最好的开端就是借鉴，从一个开源框架中借鉴它的思路，学习它的设计模式，编码风格，对工具类的封装，对功能的实现，这就像是你刚来公司的时候，要学习公司项目一样，但是这种开源框架会比较大，也比较难，不会像公司项目那样相对容易的让你去学习，但是坚持下去，总会有改变。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</title>
+            <link>https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/</link>
+            <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/</guid>
+            <description>部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+ 为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）  软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable  账号：  Github：https://github.</description>
+            <content type="html"><![CDATA[
+
+<!-- more -->
+
+<h2 id="部署前介绍">部署前介绍</h2>
+
+<ul>
+<li>这篇博客引自code.youmeek.com</li>
+</ul>
+
+<h3 id="hexo-是什么">Hexo 是什么</h3>
+
+<ul>
+<li>Hexo 的中文官网：<a href="http://hexo.io/zh-cn/" target="_blank">http://hexo.io/zh-cn/</a></li>
+<li>作者 Tommy Chen：<a href="https://zespia.tw/" target="_blank">https://zespia.tw/</a></li>
+<li>在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。</li>
+<li>而官网自己是这样说的：</li>
+</ul>
+
+<blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+
+<h3 id="为什么要用-hexo">为什么要用 Hexo</h3>
+
+<ul>
+<li>我：因为其他博客框架太烂了</li>
+<li>Tommy Chen：<a href="https://zespia.tw/blog/2012/10/11/hexo-debut/" target="_blank">https://zespia.tw/blog/2012/10/11/hexo-debut/</a></li>
+</ul>
+
+<h3 id="适合人群">适合人群</h3>
+
+<ul>
+<li>有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品）</li>
+<li>只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）</li>
+</ul>
+
+<h3 id="文章要求">文章要求</h3>
+
+<ul>
+<li>如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。</li>
+</ul>
+
+<h3 id="本文环境">本文环境</h3>
+
+<ul>
+<li>系统：
+
+<ul>
+<li>Windows 10（64 位）</li>
+</ul></li>
+<li>软件：
+
+<ul>
+<li>git：<strong>2.7.0.2-64-bit</strong></li>
+<li>IntelliJ IDEA：<strong>15.0.4</strong></li>
+<li>node.js：<strong>v5.7.0-64-bit Stable</strong></li>
+</ul></li>
+<li>账号：
+
+<ul>
+<li>Github：<a href="https://github.com/" target="_blank">https://github.com/</a></li>
+<li>DNSPOD：<a href="https://www.dnspod.cn/" target="_blank">https://www.dnspod.cn/</a></li>
+</ul></li>
+</ul>
+
+<h3 id="搭建所需软件">搭建所需软件</h3>
+
+<ul>
+<li>各个软件官网：
+
+<ul>
+<li>git：<a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></li>
+<li>IntelliJ IDEA：<a href="https://www.jetbrains.com/idea/" target="_blank">https://www.jetbrains.com/idea/</a></li>
+<li>node.js：<a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a></li>
+</ul></li>
+<li>所需软件集合：
+
+<ul>
+<li>上面三者集合包：<a href="http://pan.baidu.com/s/1bvbo8e" target="_blank">http://pan.baidu.com/s/1bvbo8e</a></li>
+</ul></li>
+</ul>
+
+<h3 id="文章前提">文章前提</h3>
+
+<ul>
+<li>如果你对上面要求的软件一个都不了解的话，建议你先看如下内容（只是让你们先了解下，当时别照着文章内容做）：
+
+<ul>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://www.jianshu.com/p/858ecf233db9" target="_blank">通过Hexo在Github上搭建博客教程</a></li>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank">hexo你的博客</a></li>
+<li><a href="http://www.jianshu.com/p/701b1095da11" target="_blank">手把手教你建github技术博客</a></li>
+<li><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://www.jianshu.com/p/e858a90d0a17" target="_blank">windows下搭建hexo博客并将其部署到GitCafe终极教程</a></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank">使用Hexo搭建博客（三），博客配置、主题和写作</a></li>
+<li><a href="http://www.jianshu.com/p/e7413116e9d4" target="_blank">Hexo搭建WiKi</a></li>
+<li><a href="https://www.zhihu.com/question/28058973" target="_blank">怎么用hexo上传一个README.md到github?</a></li>
+</ul></li>
+</ul>
+
+<h3 id="域名绑定">域名绑定</h3>
+
+<ul>
+<li>如果你一开始就打算要绑定域名，则下面教程中所有可以填写域名的地方你都填写上你要绑定的域名，如果你没独立域名，那就使用 Github 默认给你的：XXXXXX.github.io 域名即可。</li>
+</ul>
+
+<hr />
+
+<h2 id="部署开始">部署开始</h2>
+
+<h3 id="git-安装">git 安装</h3>
+
+<ul>
+<li>双击运行 <strong>Git-2.7.0.2-64-bit.exe</strong>，接下来一律下一步，不需要多余的选择，假设你安装的目录位置跟我一样：C:\Program Files\Git</li>
+<li>打开 Git Bash（路径：C:\Program Files\Git\git-bash.exe），输入：<code>git --version</code>
+
+<ul>
+<li>如下图，如果出现：<strong>git version 2.7.0.windows.2</strong>，这表示安装成功</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-a-1.jpg" alt="验证 git 安装" /></li>
+</ul></li>
+</ul>
+
+<h3 id="node-js-安装">Node.js 安装</h3>
+
+<ul>
+<li>双击运行 <strong>node-v5.7.0-x64.msi</strong>，接下来一律下一步，不需要多余的选择。</li>
+<li>安装完之后，打开 Git Bash，输入：<code>npm -v</code>
+
+<ul>
+<li>如下图，如果出现：<strong>3.6.0</strong>，则表示 Node.js 安装成功。如果你没有显示这个信息，我怀疑你需要重启电脑试试看，因为我在给我弟讲解这一步的时候发现有这个问题。</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-a-2.jpg" alt="验证 node.js 安装" /></li>
+</ul></li>
+</ul>
+
+<h3 id="node-js-源设置">Node.js 源设置</h3>
+
+<ul>
+<li>在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：<a href="http://registry.npmjs.org" target="_blank">http://registry.npmjs.org</a>，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：<a href="http://npm.taobao.org/" target="_blank">http://npm.taobao.org/</a></li>
+<li>在 Git Bash 中我们执行下面这一句（这是一整句的）：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias cnpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;npm --registry=https://registry.npm.taobao.org \
+</span><span style="color:#e6db74">--cache=</span>$HOME<span style="color:#e6db74">/.npm/.cache/cnpm \
+</span><span style="color:#e6db74">--disturl=https://npm.taobao.org/dist \
+</span><span style="color:#e6db74">--userconfig=</span>$HOME<span style="color:#e6db74">/.cnpmrc&#34;</span></code></pre></div>
+<ul>
+<li>现在验证下是否可以使用淘宝的 cnpm 命令：<code>cnpm info express</code>
+
+<ul>
+<li>如果能输出一大堆介绍，则说明成功了，以后每次要使用淘宝的源都需要这样来。现在除了默认的 <strong>npm</strong>，还多了一个 <strong>cnpm</strong> 可以使用，我们下面有关安装的讲解内容也都是基于此临时命令。</li>
+<li>如果输出：bash: cnpm: command not found，则表示没成功，需要你在排查下</li>
+<li>需要强调的是：<strong>cnpm</strong> 不是永久性命令，只是此时这个界面窗口下的临时命令，关掉窗口就没效果了。</li>
+</ul></li>
+</ul>
+
+<h3 id="安装-hexo-框架">安装 Hexo 框架</h3>
+
+<ul>
+<li>安装 Hexo（注意，现在是 cnpm 开头了，不是 npm 了）：<code>cnpm install -g hexo-cli</code>
+
+<ul>
+<li>安装时间不一定很快，有可能需要等 3 ~ 5 分钟。</li>
+<li>安装过程中有 WARN 警告也没关系的，不用在意这些 WARN，继续等它安装完成。因为国内的网络问题，有时候安装异常慢花了大半个小时都没效果，那就 Ctrl + C 停掉这次命令，重新再执行一次。</li>
+</ul></li>
+</ul>
+
+<h3 id="创建-hexo-项目">创建 Hexo 项目</h3>
+
+<ul>
+<li>现在假设我要创建一个名为 hexo 的项目，项目目录就放在：E:\git_work_space 目录下，所以我们在 E:\git_work_space 目录下创建一个 hexo 目录。现在这个项目的全路径是：E:\git_work_space\hexo</li>
+<li>打开 Git Bash：
+
+<ul>
+<li>进入该目录：<code>cd e:/git_work_space/hexo</code></li>
+<li>然后执行：<code>hexo init</code>，这个时间也会比较长，也有可能要等几分钟，有显示 WARN 也不用管</li>
+<li>最后执行：<code>cnpm install</code>，有显示 WARN 也不用管</li>
+<li>安装完成之后，E:\git_work_space\hexo 目录结构是这样的：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-1.jpg" alt="安装 hexo 后的目录结构" /></li>
+</ul></li>
+<li>现在我们启动 hexo 本地服务，看下默认的博客是怎样的，命令：<code>hexo server</code></li>
+<li>现在用浏览器访问：<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，效果如下图
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-2.jpg" alt="默认模板效果" /></li>
+</ul></li>
+<li>如果要停止 hexo 服务：在 Git Bash 下按 <code>Ctrl + C</code> 即可</li>
+</ul></li>
+</ul>
+
+<h3 id="选用其他主题">选用其他主题</h3>
+
+<ul>
+<li>由于默认主题太大众了，所以现在我们换个主题。</li>
+<li>你可以去这里找主题：
+
+<ul>
+<li>hexo-theme：<a href="https://hexo.io/themes/" target="_blank">https://hexo.io/themes/</a></li>
+<li>hexo-github-theme-list：<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank">https://github.com/hexojs/hexo/wiki/Themes</a></li>
+<li>有那些好看的hexo主题？：<a href="http://www.zhihu.com/question/24422335" target="_blank">http://www.zhihu.com/question/24422335</a></li>
+</ul></li>
+<li>我这里选择的 <strong>yelee</strong>：<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank">https://github.com/MOxFIVE/hexo-theme-yelee</a>
+
+<ul>
+<li>原因是能最大化衬托出：目录、文章内容、代码块。因为我对这个博客的定位就是用来放技术类内容，所以不会让它太杂或是太花。只是目前这个颜色偏浅，后续还需要调整。</li>
+</ul></li>
+<li>现在假设你跟我要用的模板是一样：
+
+<ul>
+<li>还是让 Git Bash 保持在 E:\git_work_space\hexo 目录下，然后输入命令：<code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee</code></li>
+<li>这样就在 E:\git_work_space\hexo\themes 目录下生成了一个 yelle 文件夹，里面有我们刚刚 clone 下来的主题内容。</li>
+<li>如果以后你不自己修改这个主题的话，可以考虑经常更新下作者的更新内容：
+
+<ul>
+<li><code>cd e:/git_work_space/hexo/themes/yelee</code></li>
+<li><code>git pull origin master</code></li>
+</ul></li>
+</ul></li>
+<li>下载好主题文件之后，我们现在要修改 E:\git_work_space\hexo 目录下的项目配置文件：<strong>_config.yml</strong>，把对应的主题目录名改下，编辑如下图。
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-3.jpg" alt="修改主题目录" /></li>
+</ul></li>
+<li>更改主题目录名后，我们还要重新生成主题静态内容：
+
+<ul>
+<li>继续在 Git Bash 中输入命令：
+
+<ul>
+<li>重新生成静态博客的所有内容：<code>hexo generate</code></li>
+<li>重启 hexo 本地服务：<code>hexo server</code></li>
+<li>重新访问：<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>，效果如下图</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-b-4.jpg" alt="新主题效果" /></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="创建-github-pages-并-ssh-授权">创建 Github pages 并 SSH 授权</h3>
+
+<ul>
+<li>现在假设你已经有一个 Gtihub 账号，你还需要一个特别的仓库，特别在仓库名就是你的 Github 账号登录名，比如我的用户名是：judasn，那我要创建的仓库名字完整滴填写是：judasn.github.io，具体效果如下图。
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-c-1.jpg" alt="创建 github pages" /></li>
+</ul></li>
+<li>创建好仓库之后，要本地生成 SSH 秘钥，方便电脑上的 git 软件好提交内容到 Github 上
+
+<ul>
+<li>在 Git Bash 中，输入：<code>ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code>，然后回车，回车，再回车，一共 3 次回车，具体含义自己 Google。</li>
+<li>比如我的：<code>ssh-keygen -t rsa -C &quot;jn3.141592654@gmail.com&quot;</code>，生成后效果如下图：</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-c-2.jpg" alt="生成 ssh 密钥" /></li>
+<li>此时，生成密钥后，在你电脑目录：C:\Users\你的计算机用户名\.ssh 下，会生成两个文件：
+
+<ul>
+<li>私钥：<strong>id_rsa</strong></li>
+<li>公钥：<strong>id_rsa.pub</strong></li>
+<li>如果生成的不是这样的文件，那删除掉这两个生成的，重新执行上面的命令，让它再一次生成。</li>
+</ul></li>
+<li>现在用记事本打开 id_rsa.pub，复制文件中的所有内容。
+
+<ul>
+<li>访问：<a href="https://github.com/settings/ssh" target="_blank">https://github.com/settings/ssh</a>，添加新秘钥，效果如下图
+
+<ul>
+<li>Title：自己随便取</li>
+<li>Key：把刚刚复制的都粘贴进来</li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-c-3.jpg" alt="添加密钥" /></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="把本地的博客内容同步到-github-上">把本地的博客内容同步到 Github 上</h3>
+
+<ul>
+<li>要把本地的静态博客同步到 Github，我们还需要先安装两个跟部署相关的 hexo 插件：
+
+<ul>
+<li>继续在 Git Bash 中输入：</li>
+<li><code>cnpm install hexo -server --save</code></li>
+<li><code>cnpm install hexo-deployer-git --save</code></li>
+</ul></li>
+<li>编辑全局 hexo 的配置文件：<strong>_config.yml</strong>
+
+<ul>
+<li>官网对此配置的介绍：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank">https://hexo.io/zh-cn/docs/configuration.html</a></li>
+<li>我自己的编辑内容初稿（你需要认真看的是含有中文注释的内容）：
+<br /></li>
+</ul></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Hexo Configuration</span>
+<span style="color:#75715e">## Docs: https://hexo.io/docs/configuration.html</span>
+<span style="color:#75715e">## Source: https://github.com/hexojs/hexo/</span>
+
+<span style="color:#75715e"># Site，这一块区域主要是设置博客的主要说明，需要注意的是：每个冒号后面都是有一个空格，然后再书写自己的内容的</span>
+title: YouMeek Code
+subtitle: 这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com
+description: 这里是 YouMeek.com 一部分
+author: Judas.n
+email: <span style="color:#ae81ff">363379444</span>@qq.com
+language: zh-CN
+timezone:
+
+<span style="color:#75715e"># URL，这一块一般可以设置的是 url 这个参数，比如我要设置绑定域名的，这里就需要填写我的域名信息</span>
+<span style="color:#75715e">## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;</span>
+url: http://code.youmeek.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+<span style="color:#75715e"># Directory</span>
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+<span style="color:#75715e"># Writing</span>
+new_post_name: :title.md <span style="color:#75715e"># File name of new posts</span>
+default_layout: post
+titlecase: false <span style="color:#75715e"># Transform title into titlecase</span>
+external_link: true <span style="color:#75715e"># Open external links in new tab</span>
+filename_case: <span style="color:#ae81ff">0</span>
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+<span style="color:#75715e"># Category &amp; Tag</span>
+default_category: uncategorized
+category_map:
+tag_map:
+
+<span style="color:#75715e"># Date / Time format</span>
+<span style="color:#75715e">## Hexo uses Moment.js to parse and display date</span>
+<span style="color:#75715e">## You can customize the date format as defined in</span>
+<span style="color:#75715e">## http://momentjs.com/docs/#/displaying/format/</span>
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+<span style="color:#75715e"># Pagination</span>
+<span style="color:#75715e">## Set per_page to 0 to disable pagination</span>
+per_page: <span style="color:#ae81ff">10</span>
+pagination_dir: page
+
+<span style="color:#75715e"># Extensions</span>
+<span style="color:#75715e">## Plugins: https://hexo.io/plugins/</span>
+<span style="color:#75715e">## Themes: https://hexo.io/themes/</span>
+theme: yelee
+
+<span style="color:#75715e"># Deployment</span>
+<span style="color:#75715e">## 这里是重点，这里是修改发布地址，因为我们前面已经加了 SSH 密钥信息在 Github 设置里面了，所以只要我们电脑里面持有那两个密钥文件就可以无需密码地跟 Github 做同步。</span>
+<span style="color:#75715e">## 需要注意的是这里的 repo 采用的是 ssh 的地址，而不是 https 的。分支我们默认采用 master 分支，以后你翅膀硬了要换其他也无所谓。</span>
+<span style="color:#75715e">## Docs: https://hexo.io/docs/deployment.html</span>
+deploy:
+  type: git
+  repo: git@github.com:judasn/judasn.github.io.git
+  branch: master
+  </code></pre></div>
+<ul>
+<li>编辑全局配置后我们需要重新部署：
+
+<ul>
+<li>继续在 Git Bash 中输入命令：</li>
+<li>先清除掉已经生成的旧文件：<code>hexo clean</code></li>
+<li>再生成一次静态文件：<code>hexo generate</code></li>
+<li>在本地预览下：<code>hexo server</code></li>
+<li>本地没问题之后，Ctrl + C 停掉本地预览。</li>
+<li>在部署到 Github 之前，需要先确定你是否已经用过 Git，如果你没用过，则此时你需要做如下设置，在 Git Bash 中依次输入下面两个命令：
+
+<ul>
+<li><code>git config --global user.email &quot;你的 Github 注册邮箱地址&quot;</code></li>
+<li><code>git config --global user.name &quot;你的 Github 用户名&quot;</code></li>
+</ul></li>
+<li>使用部署命令部署到 Github 上：<code>hexo deploy</code>，有弹出下面提示框，请输入：<code>yes</code>
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-d-1.jpg" alt="确认提交" /></li>
+</ul></li>
+<li>提交成功效果如下：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-d-2.jpg" alt="提交成功" /></li>
+</ul></li>
+<li>访问服务器地址进行检查：<a href="http://judasn.github.io" target="_blank">http://judasn.github.io</a>，效果如下
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-d-3.jpg" alt="服务器效果" /></li>
+</ul></li>
+<li>但是，也不排除你 deploy 不了到 Github，报这个错误：<code>Host key verification failed</code>，那解决办法如下：
+
+<ul>
+<li>还是在 Git Bash 界面中，输入如下命令：<code>ssh -T git@github.com</code>，根据界面提示，输入：<code>yes</code> 回车。之后你可以再试一下是否可以 deploy。</li>
+</ul></li>
+</ul></li>
+<li>通过上面几次流程我们也就可以总结：以后，每次发表新文章要部署都按这样的流程来：
+
+<ul>
+<li><code>hexo clean</code></li>
+<li><code>hexo generate</code></li>
+<li><code>hexo deploy</code></li>
+</ul></li>
+<li>也因为这几个命令太频繁了，所以又有了精简版的命令：
+
+<ul>
+<li><code>hexo clean == hexo clean</code></li>
+<li><code>hexo g == hexo generate</code></li>
+<li><code>hexo s == hexo server</code></li>
+<li><code>hexo d == hexo deploy</code></li>
+</ul></li>
+</ul>
+
+<h3 id="绑定域名">绑定域名</h3>
+
+<ul>
+<li>绑定域名不排除会遇到很多网络问题或是七七八八，所以这里先提供先官网的一些说明：
+
+<ul>
+<li><a href="https://help.github.com/articles/setting-up-your-pages-site-repository/" target="_blank">https://help.github.com/articles/setting-up-your-pages-site-repository/</a></li>
+<li><a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/" target="_blank">https://help.github.com/articles/quick-start-setting-up-a-custom-domain/</a></li>
+<li><a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank">https://help.github.com/articles/setting-up-an-apex-domain/</a></li>
+<li><a href="https://help.github.com/articles/troubleshooting-custom-domains/" target="_blank">https://help.github.com/articles/troubleshooting-custom-domains/</a></li>
+<li><a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/" target="_blank">https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/</a></li>
+</ul></li>
+<li>首先我们要一个 CNAME 文件（文件名叫 CNAME，没有文件后缀的），把该文件放在 E:\git_work_space\hexo\source 目录下，以后一些需要放在根目录的资源文件都可以放这里。如果你找不到这样的文件可以到我的项目上下载：<a href="https://github.com/judasn/judasn.github.io" target="_blank">https://github.com/judasn/judasn.github.io</a>
+
+<ul>
+<li>CNAME 上的内容需要写你具体要绑定的域名信息，比如我是：<strong>code.youmeek.com</strong>，具体你可以参考下图：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-1.jpg" alt="设置 CNAME 文件" /></li>
+</ul></li>
+</ul></li>
+<li>接着我们需要到 DNSPOD 上设置域名解析：<a href="https://www.dnspod.cn/" target="_blank">https://www.dnspod.cn/</a>
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-2.jpg" alt="设置域名解析" /></li>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-3.jpg" alt="设置域名解析" /></li>
+</ul></li>
+<li>设置好之后，等过几分钟域名解析好之后，我们访问：<a href="http://code.youmeek.com" target="_blank">http://code.youmeek.com</a>，效果如下：<br />
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-e-4.jpg" alt="域名访问效果" /></li>
+<li>2016-08-19 更新：Github 提示，建议我们使用 CNAME 方式来指向，别用 IP，所以建议你这样配置，还是以我的为例：
+
+<ul>
+<li>主机记录：code</li>
+<li>记录类型：CNAME</li>
+<li>记录值：judasn.github.io.（后面的这个点别忘记了）</li>
+<li>还有，要记得把 CNAME 那个文件再 deploy 到 Github 哦，不然还是访问不了的。</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3 id="整合-intellij-idea-提高效率">整合 IntelliJ IDEA 提高效率</h3>
+
+<ul>
+<li>为了提交写作效率，我个人建议使用 IntelliJ IDEA 作为 Markdown 编辑工具
+
+<ul>
+<li>IntelliJ IDEA 有各种各样的快捷键支持你的操作</li>
+<li>IntelliJ IDEA 可以快速地全文检索项目所有的文件</li>
+<li>对 JavaScript、CSS、HTML 等常见语言的良好支持，方便你修改你的主题</li>
+</ul></li>
+<li>如果你还不会使用 IntelliJ IDEA 或是 JetBrains 家其他产品，你可以看下我写一整套教程：<a href="http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/" target="_blank">http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/</a></li>
+<li>现在我们用 IntelliJ IDEA 打开我们本地目录：E:\git_work_space\hexo，打开后效果如下图：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-f-1.jpg" alt="IntelliJ IDEA 打开项目" /></li>
+</ul></li>
+<li>由于 IntelliJ IDEA 在 Windows 下的默认终端是 <code>cmd</code> 不好用，我们现在需要重新修改下 IntelliJ IDEA 的终端工具，把它指向我们习惯的 Git Bash，这样方便操作，如下图 gif 演示。
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-f-2.gif" alt="IntelliJ IDEA 下操作 hexo" /></li>
+<li>如 gif 演示，我们可以 IntelliJ IDEA 里面安心写文章、做发布等操作。</li>
+</ul></li>
+<li>为了更稳定地使用 IntelliJ IDEA，在不修改主题的情况下，我们还需要这样做：
+
+<ul>
+<li><img src="http://img.youmeek.com/2016/hexo-start-f-3.jpg" alt="IntelliJ IDEA 下操作 hexo" /></li>
+</ul></li>
+<li>hexo 新文章内容的开头需要这样定义：
+
+<ul>
+<li>categories：表示文章所属分类</li>
+<li>tags：表示文章所属标签</li>
+</ul></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
+title: 这是文章标题
+date: <span style="color:#ae81ff">2016</span>-02-28 <span style="color:#ae81ff">17</span>:58:27
+categories: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA<span style="color:#f92672">]</span>
+tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<span style="color:#f92672">]</span>
+---</code></pre></div>
+<h2 id="结束语">结束语</h2>
+
+<ul>
+<li>我希望从这一篇你也可以再一次了解到 IntelliJ IDEA 的美丽之处。</li>
+<li>最后，欢迎再次来到 IntelliJ IDEA 的世界！</li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>
