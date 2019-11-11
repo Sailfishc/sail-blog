@@ -3,8 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.sailfishc.cn/posts/2019/11/docker-basic/</loc>
+    <lastmod>2019-11-10T16:01:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sailfishc.cn/posts/</loc>
-    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
+    <lastmod>2019-11-10T16:01:41+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/</loc>
+    <lastmod>2019-11-10T16:01:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -25,12 +38,6 @@
     <lastmod>2019-11-03T21:01:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sailfishc.cn/</loc>
-    <lastmod>2019-11-03T21:01:53+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
