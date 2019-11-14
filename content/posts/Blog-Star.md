@@ -11,3 +11,4 @@ tags:
 - [List of posts - <antirez>](http://antirez.com/latest/0)
 - [Barret李靖 | 小胡子哥的个人网站](https://www.barretlee.com/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
+- [Doug Lea’s Workstation - JDK Author - AQS](http://gee.cs.oswego.edu/)
