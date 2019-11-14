@@ -1123,9 +1123,13 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
             <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
             
             <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8D%9A%E5%AE%A2/</guid>
-            <description> 酷壳 – CoolShell.cn  </description>
+            <description> 酷壳 – CoolShell.cn Martin Kleppmann’s blog DDIA Author List of posts -  Barret李靖 | 小胡子哥的个人网站 阮一峰的网络日志  </description>
             <content type="html"><![CDATA[<ul>
 <li><a href="https://coolshell.cn/" target="_blank">酷壳 – CoolShell.cn</a></li>
+<li><a href="http://martin.kleppmann.com/" target="_blank">Martin Kleppmann’s blog DDIA Author</a></li>
+<li><a href="http://antirez.com/latest/0" target="_blank">List of posts - <antirez></a></li>
+<li><a href="https://www.barretlee.com/" target="_blank">Barret李靖 | 小胡子哥的个人网站</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a></li>
 </ul>
 ]]></content>
         </item>
