@@ -150,3 +150,9 @@ disqusShortname = "disqus_Y8uuv714Q0"
     identifier = "blog"
     name       = "Blog"
     url        = "posts/"
+
+  [[menu.main]]
+      identifier = "link"
+      name       = "Link"
+      url        = "link/"
+
