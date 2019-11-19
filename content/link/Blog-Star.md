@@ -12,3 +12,6 @@ tags:
 - [Barret李靖 | 小胡子哥的个人网站](https://www.barretlee.com/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [Doug Lea’s Workstation - JDK Author - AQS](http://gee.cs.oswego.edu/)
+- [当然我在扯淡](http://www.yinwang.org/)
+- [martinfowler.com](https://martinfowler.com/)
+- [YouMeek | You Are So Beautiful - 生活技术的典范](http://www.youmeek.com/)

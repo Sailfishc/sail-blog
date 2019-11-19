@@ -34,7 +34,7 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
-disqusShortname = "disqus_Y8uuv714Q0"
+disqusShortname = "sailfishc"
 
 
 [permalinks]
@@ -114,10 +114,6 @@ disqusShortname = "disqus_Y8uuv714Q0"
 
   # Social icons
   [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/sailfishcc/"
-
-  [[params.social]]
     name = "email"
     url  = "mailto:sailfishcc@gmail.com"
 
@@ -132,6 +128,11 @@ disqusShortname = "disqus_Y8uuv714Q0"
   [[params.social]]
     name = "stackoverflow"
     url  = "https://www.stackoverflow.com/"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/sailfishcc1"
+
 
 [languages]
   [languages.en]
@@ -150,6 +151,11 @@ disqusShortname = "disqus_Y8uuv714Q0"
     identifier = "blog"
     name       = "Blog"
     url        = "posts/"
+
+  [[menu.main]]
+      identifier = "life"
+      name       = "Life"
+      url        = "life/"
 
   [[menu.main]]
       identifier = "link"
