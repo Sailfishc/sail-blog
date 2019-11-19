@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author"
-    content="sailfish ">
-<meta name="description"
-    content="不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
+<meta name="author" content="sailfish ">
+<meta name="description" content="不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
 &amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
 当我们需要连接MySQL时，需要用到几个属性：
@@ -19,14 +17,15 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
 &amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;   DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了" />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/" />
 
 
-<title>
-    
-    那些书本中没告诉你的MyBatis :: 橙小张的博客  — 讨论技术，聊聊生活
-    
-</title>
+    <title>
+        
+            那些书本中没告诉你的MyBatis :: 橙小张的博客  — 讨论技术，聊聊生活
+        
+    </title>
 
 
 
@@ -40,14 +39,15 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
-<link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
-<link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
-<link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
-<meta name="msapplication-TileColor" content="#252627">
-<meta name="theme-color" content="#252627">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+    <link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+    <link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
 
 <meta itemprop="name" content="那些书本中没告诉你的MyBatis">
 <meta itemprop="description" content="MyBatis">
@@ -68,9 +68,12 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
 
 
 
-<meta property="article:section" content="MyBatis" />
+    <meta property="article:section" content="MyBatis" />
 
-<meta property="article:published_time" content="2019-01-07 21:37:00 &#43;0000 UTC" />
+
+
+    <meta property="article:published_time" content="2019-01-07 21:37:00 &#43;0000 UTC" />
+
 
 
 
@@ -98,7 +101,7 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/life/">Life</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
     </ul>
 </nav>
 
@@ -134,7 +137,9 @@ public class UserService { @Resource private UserMapper userMapper; }  那这其
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/">那些书本中没告诉你的MyBatis</a></h1>
+            <h1 class="post-title">
+                <a href="https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/">那些书本中没告诉你的MyBatis</a>
+            </h1>
 
             
 
@@ -353,11 +358,6 @@ public User doSomeBusinessStuff(String userId) {
     </div>
     <div class="footer__inner">
         <div class="footer__content">
-
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
             <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
             <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
         </div>
@@ -372,7 +372,7 @@ public User doSomeBusinessStuff(String userId) {
 
 
 
-<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

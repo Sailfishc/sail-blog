@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author"
-    content="sailfish ">
-<meta name="description"
-    content="目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
+<meta name="author" content="sailfish ">
+<meta name="description" content="目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
 之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
 RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。
@@ -19,14 +17,15 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 @Component public class CityDubboConsumerService { @Reference(version = &amp;quot;1.0.0&amp;quot;) CityDubboService cityDubboService; public void printCity() { String cityName=&amp;quot;xx&amp;quot;; City city = cityDubboService." />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/" />
 
 
-<title>
-    
-    浅析RPC :: 橙小张的博客  — 讨论技术，聊聊生活
-    
-</title>
+    <title>
+        
+            浅析RPC :: 橙小张的博客  — 讨论技术，聊聊生活
+        
+    </title>
 
 
 
@@ -40,14 +39,15 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
-<link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
-<link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
-<link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
-<meta name="msapplication-TileColor" content="#252627">
-<meta name="theme-color" content="#252627">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+    <link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+    <link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
 
 <meta itemprop="name" content="浅析RPC">
 <meta itemprop="description" content="浅析RPC">
@@ -68,9 +68,12 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 
 
 
-<meta property="article:section" content="RPC" />
+    <meta property="article:section" content="RPC" />
 
-<meta property="article:published_time" content="2017-04-29 14:37:00 &#43;0000 UTC" />
+
+
+    <meta property="article:published_time" content="2017-04-29 14:37:00 &#43;0000 UTC" />
+
 
 
 
@@ -98,7 +101,7 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/life/">Life</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
     </ul>
 </nav>
 
@@ -134,7 +137,9 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/">浅析RPC</a></h1>
+            <h1 class="post-title">
+                <a href="https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/">浅析RPC</a>
+            </h1>
 
             
 
@@ -585,11 +590,6 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
     </div>
     <div class="footer__inner">
         <div class="footer__content">
-
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
             <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
             <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
         </div>
@@ -604,7 +604,7 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
 
 
 
-<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

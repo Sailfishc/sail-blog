@@ -4,21 +4,20 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author"
-    content="sailfish ">
-<meta name="description"
-    content="部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+<meta name="author" content="sailfish ">
+<meta name="description" content="部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
  为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）  软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable  账号：  Github：https://github." />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/" />
 
 
-<title>
-    
-    使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA） :: 橙小张的博客  — 讨论技术，聊聊生活
-    
-</title>
+    <title>
+        
+            使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA） :: 橙小张的博客  — 讨论技术，聊聊生活
+        
+    </title>
 
 
 
@@ -32,14 +31,15 @@
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
-<link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
-<link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
-<link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
-<meta name="msapplication-TileColor" content="#252627">
-<meta name="theme-color" content="#252627">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+    <link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+    <link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
 
 <meta itemprop="name" content="使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）">
 <meta itemprop="description" content="本文将讲解基于 IntelliJ IDEA 如何使用 IDE 搭建 Hexo 博客、写博客！">
@@ -60,10 +60,14 @@
 
 
 
-<meta property="article:section" content="Hexo" />
-<meta property="article:section" content="IntelliJ IDEA" />
+    <meta property="article:section" content="Hexo" />
 
-<meta property="article:published_time" content="2016-02-28 17:58:27 &#43;0000 UTC" />
+    <meta property="article:section" content="IntelliJ IDEA" />
+
+
+
+    <meta property="article:published_time" content="2016-02-28 17:58:27 &#43;0000 UTC" />
+
 
 
 
@@ -91,7 +95,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/life/">Life</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
     </ul>
 </nav>
 
@@ -127,7 +131,9 @@
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/">使用 Github 空间搭建 Hexo 技术博客&ndash;安装篇（基于 IntelliJ IDEA）</a></h1>
+            <h1 class="post-title">
+                <a href="https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/">使用 Github 空间搭建 Hexo 技术博客&ndash;安装篇（基于 IntelliJ IDEA）</a>
+            </h1>
 
             
 
@@ -698,11 +704,6 @@ tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<
     </div>
     <div class="footer__inner">
         <div class="footer__content">
-
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
             <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
             <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
         </div>
@@ -717,7 +718,7 @@ tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<
 
 
 
-<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

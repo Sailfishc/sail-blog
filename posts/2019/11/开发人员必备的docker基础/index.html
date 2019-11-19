@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author"
-    content="sailfish ">
-<meta name="description"
-    content="Docker简介 说到Docker，我们就来谈谈业务应用从旧时代到Docker的发展历程。
+<meta name="author" content="sailfish ">
+<meta name="description" content="Docker简介 说到Docker，我们就来谈谈业务应用从旧时代到Docker的发展历程。
 旧时代 旧时代是基于Application运转的，一台服务器（无虚拟机时代）部署多个Application，不管是Windows还是Linux其实是无法保证在一台服务器上稳定安全的运行多个应用的，CPU，内存等公共资源的竞争导致应用极为不稳定。
 VM阶段 VM让世界变得美好了，VM算是划时代意义的技术，但是VM不是完美的，VM会占用宿主机额外的CPU,RAM和存储（VM不够轻量级），启动慢。
 Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广泛应用了，Docker解决了VM的问题以外，还有如下优点：
@@ -19,14 +17,15 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
  在Linux打开Shell 执行：curl -fsSL https://get.docker.com -o get-docker." />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2019/11/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E5%A4%87%E7%9A%84docker%E5%9F%BA%E7%A1%80/" />
 
 
-<title>
-    
-    开发人员必备的Docker基础 :: 橙小张的博客  — 讨论技术，聊聊生活
-    
-</title>
+    <title>
+        
+            开发人员必备的Docker基础 :: 橙小张的博客  — 讨论技术，聊聊生活
+        
+    </title>
 
 
 
@@ -40,14 +39,15 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
-<link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
-<link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
-<link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
-<meta name="msapplication-TileColor" content="#252627">
-<meta name="theme-color" content="#252627">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+    <link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+    <link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
 
 <meta itemprop="name" content="开发人员必备的Docker基础">
 <meta itemprop="description" content="Docker简介 说到Docker，我们就来谈谈业务应用从旧时代到Docker的发展历程。
@@ -87,7 +87,9 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
 
 
 
-<meta property="article:published_time" content="2019-11-10 16:01:41 &#43;0800 CST" />
+
+    <meta property="article:published_time" content="2019-11-10 16:01:41 &#43;0800 CST" />
+
 
 
 
@@ -115,7 +117,7 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/life/">Life</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
     </ul>
 </nav>
 
@@ -151,7 +153,9 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
         </div>
 
         <article>
-            <h1 class="post-title"><a href="https://blog.sailfishc.cn/posts/2019/11/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E5%A4%87%E7%9A%84docker%E5%9F%BA%E7%A1%80/">开发人员必备的Docker基础</a></h1>
+            <h1 class="post-title">
+                <a href="https://blog.sailfishc.cn/posts/2019/11/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E5%A4%87%E7%9A%84docker%E5%9F%BA%E7%A1%80/">开发人员必备的Docker基础</a>
+            </h1>
                 <hr />
                 <aside id="toc">
                 <div class="toc-title">Table of Contents</div>
@@ -443,11 +447,6 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
     </div>
     <div class="footer__inner">
         <div class="footer__content">
-
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
             <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
             <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
         </div>
@@ -462,7 +461,7 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
 
 
 
-<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
