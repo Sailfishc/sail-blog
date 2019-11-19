@@ -466,4 +466,9 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>https://blog.sailfishc.cn/life/</loc>
+    <priority>0</priority>
+  </url>
+  
 </urlset>
