@@ -15,3 +15,4 @@ tags:
 - [当然我在扯淡](http://www.yinwang.org/)
 - [martinfowler.com](https://martinfowler.com/)
 - [YouMeek | You Are So Beautiful - 生活技术的典范](http://www.youmeek.com/)
+- [面向信仰编程](https://draveness.me/)
