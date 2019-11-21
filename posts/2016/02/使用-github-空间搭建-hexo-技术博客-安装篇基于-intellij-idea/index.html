@@ -26,7 +26,7 @@
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
 
 
 
@@ -39,7 +39,6 @@
     <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
-
 
 <meta itemprop="name" content="使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）">
 <meta itemprop="description" content="本文将讲解基于 IntelliJ IDEA 如何使用 IDE 搭建 Hexo 博客、写博客！">
@@ -277,14 +276,14 @@
 
 <ul>
 <li>在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：<a href="http://registry.npmjs.org" target="_blank">http://registry.npmjs.org</a>，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：<a href="http://npm.taobao.org/" target="_blank">http://npm.taobao.org/</a></li>
-<li>在 Git Bash 中我们执行下面这一句（这是一整句的）：</li>
-</ul>
+
+<li><p>在 Git Bash 中我们执行下面这一句（这是一整句的）：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias cnpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;npm --registry=https://registry.npm.taobao.org \
 </span><span style="color:#e6db74">--cache=</span>$HOME<span style="color:#e6db74">/.npm/.cache/cnpm \
 </span><span style="color:#e6db74">--disturl=https://npm.taobao.org/dist \
-</span><span style="color:#e6db74">--userconfig=</span>$HOME<span style="color:#e6db74">/.cnpmrc&#34;</span></code></pre></div>
-<ul>
-<li>现在验证下是否可以使用淘宝的 cnpm 命令：<code>cnpm info express</code>
+</span><span style="color:#e6db74">--userconfig=</span>$HOME<span style="color:#e6db74">/.cnpmrc&#34;</span></code></pre></div></li>
+
+<li><p>现在验证下是否可以使用淘宝的 cnpm 命令：<code>cnpm info express</code></p>
 
 <ul>
 <li>如果能输出一大堆介绍，则说明成功了，以后每次要使用淘宝的源都需要这样来。现在除了默认的 <strong>npm</strong>，还多了一个 <strong>cnpm</strong> 可以使用，我们下面有关安装的讲解内容也都是基于此临时命令。</li>
@@ -421,14 +420,13 @@
 <li><code>cnpm install hexo -server --save</code></li>
 <li><code>cnpm install hexo-deployer-git --save</code></li>
 </ul></li>
-<li>编辑全局 hexo 的配置文件：<strong>_config.yml</strong>
+
+<li><p>编辑全局 hexo 的配置文件：<strong>_config.yml</strong></p>
 
 <ul>
 <li>官网对此配置的介绍：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank">https://hexo.io/zh-cn/docs/configuration.html</a></li>
-<li>我自己的编辑内容初稿（你需要认真看的是含有中文注释的内容）：
-<br /></li>
-</ul></li>
-</ul>
+
+<li><p>我自己的编辑内容初稿（你需要认真看的是含有中文注释的内容）：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Hexo Configuration</span>
 <span style="color:#75715e">## Docs: https://hexo.io/docs/configuration.html</span>
 <span style="color:#75715e">## Source: https://github.com/hexojs/hexo/</span>
@@ -470,10 +468,10 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+enable: true
+line_number: true
+auto_detect: false
+tab_replace:
 
 <span style="color:#75715e"># Category &amp; Tag</span>
 default_category: uncategorized
@@ -502,12 +500,13 @@ theme: yelee
 <span style="color:#75715e">## 需要注意的是这里的 repo 采用的是 ssh 的地址，而不是 https 的。分支我们默认采用 master 分支，以后你翅膀硬了要换其他也无所谓。</span>
 <span style="color:#75715e">## Docs: https://hexo.io/docs/deployment.html</span>
 deploy:
-  type: git
-  repo: git@github.com:judasn/judasn.github.io.git
-  branch: master
-  </code></pre></div>
-<ul>
-<li>编辑全局配置后我们需要重新部署：
+type: git
+repo: git@github.com:judasn/judasn.github.io.git
+branch: master
+  </code></pre></div></li>
+</ul></li>
+
+<li><p>编辑全局配置后我们需要重新部署：</p>
 
 <ul>
 <li>继续在 Git Bash 中输入命令：</li>
@@ -542,14 +541,16 @@ deploy:
 <li>还是在 Git Bash 界面中，输入如下命令：<code>ssh -T git@github.com</code>，根据界面提示，输入：<code>yes</code> 回车。之后你可以再试一下是否可以 deploy。</li>
 </ul></li>
 </ul></li>
-<li>通过上面几次流程我们也就可以总结：以后，每次发表新文章要部署都按这样的流程来：
+
+<li><p>通过上面几次流程我们也就可以总结：以后，每次发表新文章要部署都按这样的流程来：</p>
 
 <ul>
 <li><code>hexo clean</code></li>
 <li><code>hexo generate</code></li>
 <li><code>hexo deploy</code></li>
 </ul></li>
-<li>也因为这几个命令太频繁了，所以又有了精简版的命令：
+
+<li><p>也因为这几个命令太频繁了，所以又有了精简版的命令：</p>
 
 <ul>
 <li><code>hexo clean == hexo clean</code></li>
@@ -628,19 +629,22 @@ deploy:
 <ul>
 <li><img src="http://img.youmeek.com/2016/hexo-start-f-3.jpg" alt="IntelliJ IDEA 下操作 hexo" /></li>
 </ul></li>
-<li>hexo 新文章内容的开头需要这样定义：
+
+<li><p>hexo 新文章内容的开头需要这样定义：</p>
 
 <ul>
 <li>categories：表示文章所属分类</li>
-<li>tags：表示文章所属标签</li>
-</ul></li>
-</ul>
+
+<li><p>tags：表示文章所属标签</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
 title: 这是文章标题
 date: <span style="color:#ae81ff">2016</span>-02-28 <span style="color:#ae81ff">17</span>:58:27
 categories: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA<span style="color:#f92672">]</span>
 tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<span style="color:#f92672">]</span>
----</code></pre></div>
+---</code></pre></div></li>
+</ul></li>
+</ul>
+
 <h2 id="结束语">结束语</h2>
 
 <ul>
@@ -718,7 +722,7 @@ tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<
 
 
 
-<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

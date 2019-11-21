@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>橙小张的博客</title>
@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 10 Nov 2019 16:01:41 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2019 07:01:41 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>这可能是最全的Redis分布式锁介绍</title>
+      <link>https://blog.sailfishc.cn/posts/2019/11/%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%85%A8%E7%9A%84redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Thu, 21 Nov 2019 07:01:41 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/2019/11/%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%85%A8%E7%9A%84redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%BB%8B%E7%BB%8D/</guid>
+      <description>目录  分布式锁介绍 分布式锁的应用场景 分布式锁几种实现方式介绍  Redis ZK 数据库  Redis实现分布式锁的实现原理 易宝分布式锁分析 *实现Redis分布式锁的正确操作 实现Redis分布式锁的错误案例 Redis分布式锁的问题 Redisson的原理及Redission的一些讨论 基于Redisson的分布式锁的使用  分布式锁介绍 定义  A distributed lock manager (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides software applications which are distributed across a cluster on multiple machines with a means to synchronize their accesses to shared resources .</description>
+    </item>
     
     <item>
       <title>开发人员必备的Docker基础</title>
@@ -148,23 +157,6 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
 public class UserService { @Resource private UserMapper userMapper; }  那这其中究竟是怎么做到这样简化的呢？
 实现细节 SqlSessionFactoryBean&amp;amp;SqlSessionFactory 上面介绍了关键类SqlSession, 那如何创建SqlSession呢？MyBatis使用了工厂方法来创建SqlSession，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：
 &amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;   DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</description>
-    </item>
-    
-    <item>
-      <title>致生活</title>
-      <link>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Sun, 02 Sep 2018 11:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2018/09/%E8%87%B4%E7%94%9F%E6%B4%BB/</guid>
-      <description> 少年真正成人的那一刻，大概就是，对于你的家人，你会时不时惦记，想念，渴望从他们那里得到抚慰，害怕他们哪天离开人世——他们成为你梦境的常客，内心最柔软的部分；你却无比清楚：纵然爱他们，却再无法同他们心无芥蒂地谈论，或长久地生活在一起。 — 一个
- 今天送妈妈去火车站回家了，过来的时间不长不短，来去10天，期间工作比较忙，只有周末有时间出去逛，没去几个地方，只去了故宫、颐和园、森林公园、鸟巢、前门、天安门，这是过年回家之后第一次见我妈，来北京以后基本每年就回一趟家，这次我妈在我的坚持下过来，我就规划着带她吃点好的，买几件衣服，带她逛逛。
-去车站接她的时候，她穿着一件橘色的衣服，在人群中显得很突兀，在家的时候还没怎么注意，来北京了，突然发现妈妈已经老了，白头发多了些，她在人群中提着一个箱子，面对人群，有一点慌乱，我想着她做了一天火车了，回来休息一下，第二天再出去，她坚持说自己不累，下午就去周边的森林公园逛了逛，晚上在外面吃了点鱼，吃完就说太贵了。
-周六和周天带着她逛，我给她教着怎么会使用地图，怎么使用微信支付，怎么坐地铁，之后我说目的地，妈妈打开地图，给我说路线，我跟着她走，想着上班的时候能自己出去走走，其实她来北京最重要的是陪陪我，不在乎去哪，我上班的那几天，等着我回家，加班很晚，回来已经11点多了，妈妈会倒点牛奶或做点汤给我，其实最温暖的，是回家的时候灯是亮着的，屋里有牵挂着你的人。
-昨天我问她感觉北京怎么样，她说就是东西贵，赚得多花的也多，你一个人很孤单。
-可能是家庭本身的因素，我妈从小就比较严厉，有些感情也不好表达，现在越大了和爸妈也聊得不多了，每次就是问问身体怎么样啊，家里怎么样啊，家里缺啥吗？这次来给妈妈拍照，妈妈就会看看给她拍的怎么样啊，有时候就说笑起来拍出照片不好看，不笑拍出来也不好看-.-
-时间过得很快，今天送她回家了，心情有点低落，觉得有点对不起他们，不在他们身边，现在自己赚钱，但是还是给不了他们好的生活，只希望他们身体健康，争取明年带爸妈出去玩。
- 自己好久不写这种非技术文章了，今天特别想写，写的有点乱，每个在外边工作的人，可能心里都有一团火。
- </description>
     </item>
     
   </channel>
