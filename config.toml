@@ -131,7 +131,7 @@ disqusShortname = "sailfishc"
 
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/sailfishcc1"
+    url  = "https://twitter.com/sailfishcc1/"
 
 
 [languages]
@@ -153,12 +153,12 @@ disqusShortname = "sailfishc"
     url        = "posts/"
 
   [[menu.main]]
-      identifier = "life"
-      name       = "Life"
-      url        = "life/"
+    identifier = "life"
+    name       = "Life"
+    url        = "life/"
 
   [[menu.main]]
-      identifier = "link"
-      name       = "Link"
-      url        = "link/"
+    identifier = "link"
+    name       = "Link"
+    url        = "link/"
 
