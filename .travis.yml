@@ -1,0 +1,72 @@
+#sudo: false
+#language: go
+#git:
+#  depth: 1
+#install: go get -v github.com/gohugoio/hugo
+#script:
+#  ‐ hugo
+##  - echo "$CNAME_URL" > public/CNAME
+#
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN
+#  on:
+#    branch: master
+#  local_dir: public
+#  repo: sailfishc/sailfishc.github.io
+#  fqdn: https://code.sailfishc.cn
+#  target_branch: master
+#  email: $GITHUB_EMAIL
+#  name: $GITHUB_USERNAME
+
+# https://docs.travis-ci.com/user/deployment/pages/
+# https://docs.travis-ci.com/user/reference/xenial/
+# https://docs.travis-ci.com/user/languages/go/
+# https://docs.travis-ci.com/user/customizing-the-build/
+
+dist: xenial
+language: go
+go:
+  - master
+
+# before_install:
+
+# install - install any dependencies required
+install:
+  - go get github.com/gohugoio/hugo   # consume time 70.85s
+
+before_script:
+  - rm -rf public 2> /dev/null
+
+# script - run the build script
+script:
+  - hugo
+  - echo "$CNAME_URL" > public/CNAME
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  email: $GITHUB_EMAIL
+  name: $GITHUB_USERNAME
+  verbose: true
+  keep-history: true
+  local-dir: public
+  fqdn: https://blog.sailfishc.cn
+  repo: sailfishc/sailfishccc.github.io
+  #  target_branch: master  # branch contains blog content
+  on:
+    branch: master  # branch contains Hugo generator code
+
+#notifications:
+#  email: false    # default notification method
+#  slack:
+#    rooms:
+#      - secure: AnW0EgqBoSfOFPZZbdlaAAus8+aA7yb+LPJnjPp9fftVN4yPtuhO++Wpto9cIcq+2djG6KaHNp36+MD0xH8hoe1+w4cGIGJxGu7rAp5Pnr8YyjEAMIxfG5WvDaTYAQKvSD5fQ4p8yEMkoi2vWBNseuBE/766j7iVf9mclp8tqdSAAW+euGc50s7tlHab30uZJ4M/5pHmEY1rjlLC57aAZEgHtcemRuVcrIT+cMKmH2WHNsHGWo+XByvsYcKZHrKHurKTcLAc7gQOCtDH8X+Es9+y0zjU3aLbHGGQy6NM5r4BRAJJAdhTeBwOdoGSzjVHPjfjdM4nupKPFjoZ4xcWrmrtDbVAgkl1QygP5qekHD50Y5ulgp/EmmNktBA1yx1ru0f3Jn/ED3907xVbNeV9Lg/QUcY3Gz3imcGDanZYWrJgLOIIBpHjHO+yaUxkXzErbJVLk4IU+IyDjbCjsU6vH0QmsrcgvXsLOC98+bgWdNcCjDJ9HNapA0X/24H31aXsJ6dem8pH9yJ7/dasYkwfnMZRuihJ7WJqntXodYi3za9Rs4VIJdEng4/ZRKk5lXesyJ8fpZb9JLeg+7ANVobUs6n6khbVUVsEgVOQpSI9Vf9byiF4JYTveuCgbbZ2gxP09NZTFgLeKhT2wi3icM+w/lNfJYwkHeVAOgWFC/NgyxU=
+#    on_success: always  # change: send a notification when the build status changes.
+#    on_failure: always  # always: always send a notification.
+#    template:
+#      - "Repo *%{repository_slug}* `%{result}` build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch *%{branch}*."
+#      - "Execution time: *%{duration}*"
+#      - "Message: %{message}"
