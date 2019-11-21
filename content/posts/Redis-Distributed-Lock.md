@@ -2,7 +2,6 @@
 title: "这可能是最全的Redis分布式锁介绍"
 date: 2019-11-21T07:01:41+08:00
 draft: false
-toc: true
 tat:
     - Redis
     - Distributed Lock
