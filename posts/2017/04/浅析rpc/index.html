@@ -5,14 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="sailfish ">
-<meta name="description" content="目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
-之后就萌生了写一篇关于RPC的文章。
+<meta name="description" content="目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。
+  问题一：既然有http 请求，为什么还要用rpc调用？ 问题二：请问rpc协议和http协议的关系和区别？   之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
 RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。
 众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。
 针对对象序列化，有各种方式的性能对比，Github地址:
-通过对比可知： - Google的Protostuff性能最好 - JSON/XML性能比较差
-但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
+通过对比可知：
+ Google的Protostuff性能最好 JSON/XML性能比较差  但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
 dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：
 @Component public class CityDubboConsumerService { @Reference(version = &amp;quot;1.0.0&amp;quot;) CityDubboService cityDubboService; public void printCity() { String cityName=&amp;quot;xx&amp;quot;; City city = cityDubboService." />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
@@ -34,7 +34,7 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
 
 
 
@@ -50,16 +50,14 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 
 <meta itemprop="name" content="浅析RPC">
 <meta itemprop="description" content="浅析RPC">
-
-
 <meta itemprop="datePublished" content="2017-04-29T14:37:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-04-29T14:37:00&#43;00:00" />
-<meta itemprop="wordCount" content="677">
+<meta itemprop="wordCount" content="667">
+<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
 
 
 
-<meta itemprop="keywords" content="Java,RPC,SOA," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="Java,RPC,SOA," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="浅析RPC"/>
@@ -143,39 +141,32 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
             
 
             <div class="post-content">
-                
-
+                <blockquote>
+<p>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。</p>
+</blockquote>
+<ul>
+<li>问题一：既然有http 请求，为什么还要用rpc调用？</li>
+<li>问题二：请问rpc协议和http协议的关系和区别？</li>
+</ul>
 <blockquote>
-<p>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。
-- 问题一：既然有http 请求，为什么还要用rpc调用？
-- 问题二：请问rpc协议和http协议的关系和区别？</p>
-
 <p>之后就萌生了写一篇关于RPC的文章。</p>
 </blockquote>
-
-<h2 id="一-rpc的基本概念">一、RPC的基本概念</h2>
-
+<h2 id="rpc">一、RPC的基本概念</h2>
 <p>RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。
 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。
-这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695" target="_blank">通俗的语言解释什么是 RPC 框架</a></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-56600e1178de48f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-
+这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695">通俗的语言解释什么是 RPC 框架</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-56600e1178de48f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。</p>
-
 <p>众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。</p>
-
-<p>针对对象序列化，有各种方式的性能对比，<a href="https://github.com/eishay/jvm-serializers/wiki" target="_blank">Github地址</a>:</p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-ff9c09c4b7ae2916.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" />
-通过对比可知：
-- Google的Protostuff性能最好
-- JSON/XML性能比较差</p>
-
+<p>针对对象序列化，有各种方式的性能对比，<a href="https://github.com/eishay/jvm-serializers/wiki">Github地址</a>:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-ff9c09c4b7ae2916.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png">
+通过对比可知：</p>
+<ul>
+<li>Google的Protostuff性能最好</li>
+<li>JSON/XML性能比较差</li>
+</ul>
 <p>但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。</p>
-
 <p>dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：</p>
-
 <pre><code>@Component
 public class CityDubboConsumerService {
 
@@ -188,19 +179,14 @@ public class CityDubboConsumerService {
         System.out.println(city.toString());
     }
 }
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>在不理解RPC概念的情况下，会认为RPC就只有这种应用，其实开发中经常使用的HTTPClient调用也是属于RPC的一种方式。</li>
 </ul>
-
-<h2 id="二-rpc的使用">二、RPC的使用</h2>
-
-<h3 id="1-基于tcp的远程调用">1、基于TCP的远程调用</h3>
-
+<h2 id="rpc1">二、RPC的使用</h2>
+<h3 id="1tcp">1、基于TCP的远程调用</h3>
 <ul>
-<li><p>服务消费者</p>
-
+<li>服务消费者</li>
+</ul>
 <pre><code>public class Consumer {
 
 
@@ -233,10 +219,9 @@ public class CityDubboConsumerService {
 		System.out.println(result);
 	}
 }
-</code></pre></li>
-
-<li><p>服务提供者</p>
-
+</code></pre><ul>
+<li>服务提供者</li>
+</ul>
 <pre><code>public class Provider {
 
 	//所有的服务
@@ -270,10 +255,9 @@ public class CityDubboConsumerService {
 		}
 	}
 }
-</code></pre></li>
-
-<li><p>接口</p>
-
+</code></pre><ul>
+<li>接口</li>
+</ul>
 <pre><code>public interface SayHelloService {
 
 	/**
@@ -283,10 +267,9 @@ public class CityDubboConsumerService {
 	 */
 	public String sayHello(String helloArg);
 }
-</code></pre></li>
-
-<li><p>实现类</p>
-
+</code></pre><ul>
+<li>实现类</li>
+</ul>
 <pre><code>public class SayHelloServiceImpl implements SayHelloService {
 
 	@Override
@@ -301,22 +284,17 @@ public class CityDubboConsumerService {
 	}
 
 }
-</code></pre></li>
-</ul>
-
-<h3 id="2-基于http的远程调用">2、基于HTTP的远程调用</h3>
-
+</code></pre><h3 id="2http">2、基于HTTP的远程调用</h3>
 <ul>
-<li><p>基础服务接口</p>
-
+<li>基础服务接口</li>
+</ul>
 <pre><code>public interface BaseService {
 
 	public Object execute(Map&lt;String,Object&gt; args);
 }
-</code></pre></li>
-
-<li><p>JSON结果集</p>
-
+</code></pre><ul>
+<li>JSON结果集</li>
+</ul>
 <pre><code>public class JsonResult {
 
 	//结果状态码
@@ -345,10 +323,9 @@ public class CityDubboConsumerService {
 		this.result = result;
 	}
 }
-</code></pre></li>
-
-<li><p>JSON帮助类</p>
-
+</code></pre><ul>
+<li>JSON帮助类</li>
+</ul>
 <pre><code>public class JsonUtil {
 
 	private static final ObjectMapper mapper = new ObjectMapper();
@@ -387,9 +364,7 @@ public class CityDubboConsumerService {
 		return null;
 	}
 }
-</code></pre>
-
-<pre><code>public class SayHelloService implements BaseService{
+</code></pre><pre><code>public class SayHelloService implements BaseService{
 
 	public Object execute(Map&lt;String, Object&gt; args) {
 		//request.getParameterMap() 取出来为array,此处需要注意
@@ -403,10 +378,9 @@ public class CityDubboConsumerService {
 	}
 
 }
-</code></pre></li>
-
-<li><p>服务消费者</p>
-
+</code></pre><ul>
+<li>服务消费者</li>
+</ul>
 <pre><code>public class ServiceConsumer extends HttpServlet{
 
 	@Override
@@ -445,10 +419,9 @@ public class CityDubboConsumerService {
 
 	}
 }
-</code></pre></li>
-
-<li><p>服务提供者</p>
-
+</code></pre><ul>
+<li>服务提供者</li>
+</ul>
 <pre><code>public class ServiceProvider  extends HttpServlet{
 
 	private Map&lt;String,BaseService&gt; serviceMap ;
@@ -491,35 +464,27 @@ public class CityDubboConsumerService {
 		resp.getWriter().write(json);
 	}
 }
-</code></pre></li>
-</ul>
-
-<h3 id="3-url风格">3、URL风格</h3>
-
+</code></pre><h3 id="3url">3、URL风格</h3>
 <ul>
 <li>RPC风格的URL</li>
 <li>RESTFUL风格的URL</li>
 </ul>
-
 <p><strong>RPC风格的URL</strong>
-<code>http://hostname/provider.do?service=com.http.sayhello&amp;format=json&amp;timest amp=2017-04-07-13-22-09&amp;arg1=arg1&amp;arg2=arg2</code>
-- hostname表示服务提供方的主机名
-- service表示远程调用的服务接口名称
--  format表示返回参数的格式
-- timestamp表示客户端请求的时间戳
-- arg1和 arg2表示服务所需要的参数
-- 备注：淘宝开放平台的API以这种形式的URL提供</p>
-
+<code>http://hostname/provider.do?service=com.http.sayhello&amp;format=json&amp;timest amp=2017-04-07-13-22-09&amp;arg1=arg1&amp;arg2=arg2</code></p>
+<ul>
+<li>hostname表示服务提供方的主机名</li>
+<li>service表示远程调用的服务接口名称</li>
+<li>format表示返回参数的格式</li>
+<li>timestamp表示客户端请求的时间戳</li>
+<li>arg1和 arg2表示服务所需要的参数</li>
+<li>备注：淘宝开放平台的API以这种形式的URL提供</li>
+</ul>
 <p><strong>RESTFUL风格的URL</strong></p>
-
 <pre><code>POST http://hostname/people 创建name为zhangsan的people记录
 GET http://hostname/people/zhangsan 返回name为zhangsan的people记录
 PUT http://hostname/people/zhangsan 提交name为zhangsan的people记录更新 
 DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
-</code></pre>
-
-<h2 id="三-总结">三、总结</h2>
-
+</code></pre><h2 id="heading">三、总结</h2>
 <blockquote>
 <ul>
 <li>本文内容部分摘自《大型分布式网站架构》</li>
@@ -536,7 +501,7 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/java">Java</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/rpc">RPC</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/soa">SOA</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>677 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>667 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2017-04-29 22:37 &#43;0800</p>
         </div>

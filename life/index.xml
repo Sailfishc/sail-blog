@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lives on 橙小张的博客</title>
+    <link>https://blog.sailfishc.cn/life/</link>
+    <description>Recent content in Lives on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 01 Dec 2019 18:09:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.sailfishc.cn/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RSS背后的逻辑</title>
+      <link>https://blog.sailfishc.cn/life/rss-basic/</link>
+      <pubDate>Sun, 01 Dec 2019 18:09:12 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/life/rss-basic/</guid>
+      <description>目录  前言 介绍RSS RSS的背后的逻辑论述 RSS实践 总结 参考资源  前言 其实知道RSS也挺久了，但是一直没应用起来，今天正式的了解了一下，发现RSS其实是很能创造生产力的一种工具。
+介绍RSS  RSS (originally ** Site Summary** RDF ; later, two competing approaches emerged, which used the backronyms Rich Site Summary and Really Simple Syndication respectively) [2] is a type of web feed [3] which allows users and applications to access updates to websites in a standardized, computer-readable format
+ 简单来说：RSS指的是允许以标准化计算机可读的方式让用户和应用程序访问网站更新。
+RSS的背后的逻辑论述 RSS的机制和软件设计中的一些方式很像：publish/subscribe发布订阅模式，用户作为服务的消费者，是采用主动去拉取（pull）源信息，还是被动的接收（push）信息，也是一个TradeOff的过程，很明显，对于用户来说，人不能像机器，定时的去（pull）数据下来，因为这样太浪费精力，所以RSS订阅的方式出现，提高了生产力。
+可能大家都被这种情况困扰过，接收信息的渠道太多，技术博客，新闻网站，某个关注的人的网站，YouTube频道，某个关注的Twitter动态，关注的UP主的直播，购物网站的商品优惠活动，在现在这样信息满天飞，贩卖焦虑的时期，我们要学会过滤信息，只关注自己关心的优质的内容，并且是可学习的，随着时间的变化，我们只保留了这些最优质的的，和自己最匹配的内容，我们每个人在一天的精力都是有限的，不能在每一天都挨个打开各类APP，去浏览信息，去让我们的碎片时间消耗掉，到最后接受了太多的垃圾信息，没有将信息转化为知识，还消耗了一天的精力。
+RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了下我自己的信息输入源：
+  个人技术博客 公共技术博客网站的某个人的动态 关注的YouTube频道 关注的Github人和仓库 关注的Twitter人的时间线  不是所有的网站都有RSS订阅的，如果我们想订阅的话需要借助一些工具：</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 21 Nov 2019 07:01:41 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 18:09:12 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RSS背后的逻辑</title>
+      <link>https://blog.sailfishc.cn/life/rss-basic/</link>
+      <pubDate>Sun, 01 Dec 2019 18:09:12 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/life/rss-basic/</guid>
+      <description>目录  前言 介绍RSS RSS的背后的逻辑论述 RSS实践 总结 参考资源  前言 其实知道RSS也挺久了，但是一直没应用起来，今天正式的了解了一下，发现RSS其实是很能创造生产力的一种工具。
+介绍RSS  RSS (originally ** Site Summary** RDF ; later, two competing approaches emerged, which used the backronyms Rich Site Summary and Really Simple Syndication respectively) [2] is a type of web feed [3] which allows users and applications to access updates to websites in a standardized, computer-readable format
+ 简单来说：RSS指的是允许以标准化计算机可读的方式让用户和应用程序访问网站更新。
+RSS的背后的逻辑论述 RSS的机制和软件设计中的一些方式很像：publish/subscribe发布订阅模式，用户作为服务的消费者，是采用主动去拉取（pull）源信息，还是被动的接收（push）信息，也是一个TradeOff的过程，很明显，对于用户来说，人不能像机器，定时的去（pull）数据下来，因为这样太浪费精力，所以RSS订阅的方式出现，提高了生产力。
+可能大家都被这种情况困扰过，接收信息的渠道太多，技术博客，新闻网站，某个关注的人的网站，YouTube频道，某个关注的Twitter动态，关注的UP主的直播，购物网站的商品优惠活动，在现在这样信息满天飞，贩卖焦虑的时期，我们要学会过滤信息，只关注自己关心的优质的内容，并且是可学习的，随着时间的变化，我们只保留了这些最优质的的，和自己最匹配的内容，我们每个人在一天的精力都是有限的，不能在每一天都挨个打开各类APP，去浏览信息，去让我们的碎片时间消耗掉，到最后接受了太多的垃圾信息，没有将信息转化为知识，还消耗了一天的精力。
+RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了下我自己的信息输入源：
+  个人技术博客 公共技术博客网站的某个人的动态 关注的YouTube频道 关注的Github人和仓库 关注的Twitter人的时间线  不是所有的网站都有RSS订阅的，如果我们想订阅的话需要借助一些工具：</description>
+    </item>
     
     <item>
       <title>这可能是最全的Redis分布式锁介绍</title>
@@ -18,7 +33,7 @@
       <pubDate>Thu, 21 Nov 2019 07:01:41 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/posts/2019/11/%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%85%A8%E7%9A%84redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%BB%8B%E7%BB%8D/</guid>
-      <description>目录  分布式锁介绍 分布式锁的应用场景 分布式锁几种实现方式介绍  Redis ZK 数据库  Redis实现分布式锁的实现原理 易宝分布式锁分析 *实现Redis分布式锁的正确操作 实现Redis分布式锁的错误案例 Redis分布式锁的问题 Redisson的原理及Redission的一些讨论 基于Redisson的分布式锁的使用  分布式锁介绍 定义  A distributed lock manager (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides software applications which are distributed across a cluster on multiple machines with a means to synchronize their accesses to shared resources .</description>
+      <description>目录  分布式锁介绍 分布式锁的应用场景 分布式锁几种实现方式介绍  Redis ZK 数据库   Redis实现分布式锁的实现原理 易宝分布式锁分析 *实现Redis分布式锁的正确操作 实现Redis分布式锁的错误案例 Redis分布式锁的问题 Redisson的原理及Redission的一些讨论 基于Redisson的分布式锁的使用  分布式锁介绍 定义  A distributed lock manager (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides software applications which are distributed across a cluster on multiple machines with a means to synchronize their accesses to shared resources .</description>
     </item>
     
     <item>
@@ -34,8 +49,8 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
  容易上手 解决了运维中的环境问题及服务调度的痛点  Docker安装 Docker提供了桌面安装和服务器安装，对于开发来说，我们可以归类为：
  Windows平台 Mac平台 Linux平台：Ubuntu/CentOS  Windows平台 硬件要求：
  win10 64位 启用Hyper-V和容器特性  安装步骤：Install Docker Desktop on Windows | Docker Documentation
- 下载Docker for windows安装包： https://www.docker.com/products/docker-desktop 根据安装向导安装 成功后再CMD中输入docker version查看版本，如果有版本信息表示安装成功  Mac平台 Mac版本和Windows桌面版安装类似，找到下载包，静默安装即可： - 下载地址：下载Docker for windows安装包： https://www.docker.com/products/docker-desktop
-Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker Documentation  Ubuntu有几种方式安装Docker，我们使用便捷脚本来安装Docker
+ 下载Docker for windows安装包： https://www.docker.com/products/docker-desktop 根据安装向导安装 成功后再CMD中输入docker version查看版本，如果有版本信息表示安装成功  Mac平台 Mac版本和Windows桌面版安装类似，找到下载包，静默安装即可：
+ 下载地址：下载Docker for windows安装包： https://www.docker.com/products/docker-desktop  Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker Documentation  Ubuntu有几种方式安装Docker，我们使用便捷脚本来安装Docker
  在Linux打开Shell 执行：curl -fsSL https://get.docker.com -o get-docker.</description>
     </item>
     
@@ -47,9 +62,9 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
       <guid>https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/</guid>
       <description>为学习付费，还是为知识付费，亦或者是为信息付费，在高中时看到一个资料，是一套数学的学习模型，当时心情非常激动，被资料宣传的效果倾倒，觉得有一套这样的学习资料，一定会学有所成，但是最终效果一般，也没考上一个好学校，毕业后坚信Just do IT，选择了IT道路，在IT路上，如何学习也是很重要的一门手艺。
 介绍 本篇文章主要是从网络资源《学习观》中做的一些总结，主要包含两部分内容：
- 学习理论  学习和记忆 信息和知识 知识的分类  学习工具  思维导图 费曼技巧  学习实战  正确的学习方法 如何学习英文   学习 理论知识 学习和记忆 从上学到工作，一直在学习，也有一些号称终生学习的人，但是好像没人告诉我们什么是学习，或者很少人去思考学习是什么？在上学的时候，听课是学习，做题是学习，考试也是学习，但是这个过程中到底哪些步骤才算是学习呢？学习的结果是学会，那怎么才算是学会呢？抽象的思考下，老师在课堂讲解了A，B，C三个知识点，对应给出了A，B，C三个知识点的题目，你将A，B，C三道题的题目解出来了，说明你学会了A，B，C这三个知识点，但是在考试中出现了你没见过的题目，类似AB，AC，BC，甚至是ABC这种组合的题目，你根据学习的A，B，C的基础知识点没有将题目解出来，这说明你没有学会，那学习究竟是什么呢？
+ 学习理论  学习和记忆 信息和知识 知识的分类   学习工具  思维导图 费曼技巧   学习实战  正确的学习方法 如何学习英文    学习 理论知识 学习和记忆 从上学到工作，一直在学习，也有一些号称终生学习的人，但是好像没人告诉我们什么是学习，或者很少人去思考学习是什么？在上学的时候，听课是学习，做题是学习，考试也是学习，但是这个过程中到底哪些步骤才算是学习呢？学习的结果是学会，那怎么才算是学会呢？抽象的思考下，老师在课堂讲解了A，B，C三个知识点，对应给出了A，B，C三个知识点的题目，你将A，B，C三道题的题目解出来了，说明你学会了A，B，C这三个知识点，但是在考试中出现了你没见过的题目，类似AB，AC，BC，甚至是ABC这种组合的题目，你根据学习的A，B，C的基础知识点没有将题目解出来，这说明你没有学会，那学习究竟是什么呢？
 我们将这个过程简化去分析下，有3个数：1，2，3，只有一种规则：乘，那么所有的可能性是：
-1 * 1 = 1 1 * 2 = 2 1 * 3 = 3 2 * 1 = 2 2 * 2 = 4 2 * 3 = 6 3 * 1 = 3 3 * 2 = 6 3 * 3 = 9  这个数字是规则是有限的（这也是我们小学数学有可能满分，高中大学很难满分的原因），我们可以使用大脑记忆，出现类似题目可以很快的反馈出结果，但是我们真的学会了吗？没有，因为出现2 * 4的时候就不知道结果了，但是我们通过上面的例子去学习，总结出规律，即使出现其他题目也能解出来的过程就是学习。</description>
+1 * 1 = 1 1 * 2 = 2 1 * 3 = 3 2 * 1 = 2 2 * 2 = 4 2 * 3 = 6 3 * 1 = 3 3 * 2 = 6 3 * 3 = 9 这个数字是规则是有限的（这也是我们小学数学有可能满分，高中大学很难满分的原因），我们可以使用大脑记忆，出现类似题目可以很快的反馈出结果，但是我们真的学会了吗？没有，因为出现2 * 4的时候就不知道结果了，但是我们通过上面的例子去学习，总结出规律，即使出现其他题目也能解出来的过程就是学习。</description>
     </item>
     
     <item>
@@ -61,7 +76,7 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
       <description>本文转自左耳朵耗子
  作者：左耳朵 http://coolshell.cn 更新时间：2019-11-01
 这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新
- 科学上网  0. 序 1. 英文能力 2. 购买VPS 2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路 3. 搭建 Shadowsocks 和 VPN 服务 3.1 设置Docker服务 3.2 开启 TCP BBR 拥塞控制算法 3.3 设置Shadowsocks服务 3.4 设置L2TP/IPSec服务 3.5 设置PPTP服务 4. 客户端设置 4.1 Shadowsocks 客户端 4.2 VPN 客户端 5. 流量伪装和其它方式 5.1 V2Ray 5.2 Brook 6. 针对 IP 被封的解决方案 6.1 Cloudflare 6.2 V2Ray 6.3 补充 7.</description>
+ 科学上网  0. 序 1. 英文能力 2. 购买VPS  2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路   3. 搭建 Shadowsocks 和 VPN 服务  3.1 设置Docker服务 3.2 开启 TCP BBR 拥塞控制算法 3.3 设置Shadowsocks服务 3.4 设置L2TP/IPSec服务 3.5 设置PPTP服务   4. 客户端设置  4.1 Shadowsocks 客户端 4.2 VPN 客户端   5. 流量伪装和其它方式  5.1 V2Ray 5.2 Brook   6.</description>
     </item>
     
     <item>
@@ -72,7 +87,7 @@ Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker D
       <guid>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description> 问题简述
  在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
-The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached.  意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
  原因
  一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
  具体执行
@@ -92,7 +107,7 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
  Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
  node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
 快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
- 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &amp;gt;&amp;gt; config.toml  新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：</description>
+ 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &amp;gt;&amp;gt; config.toml   新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：</description>
     </item>
     
     <item>
@@ -106,8 +121,8 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
  算法导论 数据结构与算法分析 配合LeetCode或者OJ来练习   我的学习计划是这样的（以练代学）：
   寻找LeetCode的Java版最优解实现（至少400题） 将数据结构和算法进行分类（目录见后文） 寻找可以快速熟悉的视频资源（极客时间的算法面试40讲就挺好） 按分类将LeetCode的题目归类，附上题号，LeetCode题目链接，题目难度分类，最优解地址（Github地址），自己的解法地址   具体是这样做的（第一遍）
   先跟着视频学习（例如数组，链表作为一个阶段，去了解理论基础，及几道经典题型解读） 从分类中找出要练习的LeetCode题目 深度思考10分钟去寻找思路 有思路的话写代码，对比最优解 没有思路直接看答案（最好有视频讲解），理解题目解题思路 自己重新做一遍   第二遍刷题（基本同第一遍步骤）
-数据结构和算法分类
-  数据结构  栈 队列 表  数组 单链表 双链表 循环链表 散列表  二叉树  平衡二叉树 红黑树 哈弗曼树 堆  多叉树  B，B+Tree 字典树  图  有向图 无向图 权图   算法  算法思想  分治 动态规划 贪心 回溯 分支界定  复杂度  时间复杂度 空间复杂度  字符串匹配  BF算法 BM算法 Sunday算法 KMP算法 Tire树  排序  插入排序  希尔 直插  交换排序  冒泡 快排（重点）  选择排序  简单排序 堆排序（重点）  归并排序 基数排序  查找  二分查找 二叉排序树 B数 Hash BloomFilter    </description>
+  数据结构和算法分类
+  数据结构  栈 队列 表  数组 单链表 双链表 循环链表 散列表   二叉树  平衡二叉树 红黑树 哈弗曼树 堆   多叉树  B，B+Tree 字典树   图  有向图 无向图 权图     算法  算法思想  分治 动态规划 贪心 回溯 分支界定   复杂度  时间复杂度 空间复杂度   字符串匹配  BF算法 BM算法 Sunday算法 KMP算法 Tire树   排序  插入排序  希尔 直插   交换排序  冒泡 快排（重点）   选择排序  简单排序 堆排序（重点）   归并排序 基数排序   查找  二分查找 二叉排序树 B数 Hash BloomFilter      </description>
     </item>
     
     <item>
@@ -125,7 +140,7 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
       <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
       
       <guid>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
-      <description> 2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
+      <description>2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
 工作  2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司
  虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。
 产品迭代 那些日子，每次上线一个版本之后，大家都去喝酒撸串，尽兴的玩。开发之前骂着产品这么多需求，但是产品上线的时候还是开心的。在公司总结上，我还是觉得团队的战斗力没有比一年前变得更强，只是有部分人的能力变强了，
@@ -139,24 +154,6 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
 工程师 去思考程序的可读性，可维护性和健壮性，思考如何高效
 架构师 去挑战不可能的事情，尝试设计更高级的技术，更灵活的系统
 2018年的好书  心理学 整洁架构 极客时间的部分专栏 DDIA 函数式编程思维 修改代码的艺术 有效的单元测试 如何阅读一本书  </description>
-    </item>
-    
-    <item>
-      <title>那些书本中没告诉你的MyBatis</title>
-      <link>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</link>
-      <pubDate>Mon, 07 Jan 2019 21:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</guid>
-      <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
-&amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
-关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
-当我们需要连接MySQL时，需要用到几个属性：
- 用户名 密码 地址 端口  这在MySQL中叫一次会话（session），在JDBC中JDBC定义了规范，其实现类具体去操作，在MyBatis中，MyBatis的关键类SqlSession定义了如何去操作数据库，例如：
- selectOne selectAll selectList insert …..  具体的实现类有：
- DefaultSqlSession SqlSessionTemplate SqlSessionManager  当然我们都不会直接使用这几个实现类，我们一般是这样的：
-public class UserService { @Resource private UserMapper userMapper; }  那这其中究竟是怎么做到这样简化的呢？
-实现细节 SqlSessionFactoryBean&amp;amp;SqlSessionFactory 上面介绍了关键类SqlSession, 那如何创建SqlSession呢？MyBatis使用了工厂方法来创建SqlSession，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：
-&amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;   DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</description>
     </item>
     
   </channel>

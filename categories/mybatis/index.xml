@@ -19,15 +19,15 @@
       
       <guid>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</guid>
       <description>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
-&amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
-关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
+ 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
+ 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
 当我们需要连接MySQL时，需要用到几个属性：
  用户名 密码 地址 端口  这在MySQL中叫一次会话（session），在JDBC中JDBC定义了规范，其实现类具体去操作，在MyBatis中，MyBatis的关键类SqlSession定义了如何去操作数据库，例如：
  selectOne selectAll selectList insert …..  具体的实现类有：
  DefaultSqlSession SqlSessionTemplate SqlSessionManager  当然我们都不会直接使用这几个实现类，我们一般是这样的：
-public class UserService { @Resource private UserMapper userMapper; }  那这其中究竟是怎么做到这样简化的呢？
+public class UserService { @Resource private UserMapper userMapper; } 那这其中究竟是怎么做到这样简化的呢？
 实现细节 SqlSessionFactoryBean&amp;amp;SqlSessionFactory 上面介绍了关键类SqlSession, 那如何创建SqlSession呢？MyBatis使用了工厂方法来创建SqlSession，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：
-&amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;   DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</description>
+&amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;  DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</description>
     </item>
     
   </channel>
