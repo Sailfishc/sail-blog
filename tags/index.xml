@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 03 Nov 2019 21:01:53 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 23:57:32 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TDD</title>
+      <link>https://blog.sailfishc.cn/tags/tdd/</link>
+      <pubDate>Tue, 03 Dec 2019 23:57:32 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/tags/tdd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>学习</title>
@@ -90,15 +99,6 @@
       <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LeetCode</title>
-      <link>https://blog.sailfishc.cn/tags/leetcode/</link>
-      <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/tags/leetcode/</guid>
       <description></description>
     </item>
     

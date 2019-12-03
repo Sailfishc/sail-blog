@@ -19,14 +19,15 @@
       
       <guid>https://blog.sailfishc.cn/posts/2017/03/jenkins-maven-git-springboot-jar-war-linux%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid>
       <description>一、前言 公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。
-Jenkins大概就这么工作：
- 拉取GIT/SVN 等仓库的文件 然后使用Maven/Ant/Gradle等构件工具进行Build 构建成功之后会进行部署（deploy）  二、安装  Jenkins官网 下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）   安装（略过） 安装条件  JDK MAVEN   插件安装   必备插件  Git plugin Maven Integration plugin publish over ssh插件（用于上传打包好的项目到远程Linux）   插件列表（太多不一一列出）  三、配置  此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装
+Jenkins大概就这么工作： - 拉取GIT/SVN 等仓库的文件 - 然后使用Maven/Ant/Gradle等构件工具进行Build - 构建成功之后会进行部署（deploy）
+二、安装  Jenkins官网 下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）   安装（略过） 安装条件  JDK MAVEN  插件安装  - 必备插件 - Git plugin - Maven Integration plugin - publish over ssh插件（用于上传打包好的项目到远程Linux） - 插件列表（太多不一一列出）
+三、配置  此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装
  1、系统配置 在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置
 注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置
 三、新建项目 这里我们选择创建Maven项目：
 如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权
 这里使用了Git作为源码管理工具，先配置SSH Key，在Jenkins的证书管理中添加SSH。在Jenkins管理页面，选择“Credentials”，然后选择“Global credentials (unrestricted)”，点击“Add Credentials”，如下图所示，我们填写自己的SSH信息，然后点击“Save”，这样就把SSH添加到Jenkins的全局域中去了。
- 备注：Passphrase这里不用填值，这是自动生成的。 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接 http://www.linuxidc.com/Linux/2014-10/108080.htm
+ 备注：Passphrase这里不用填值，这是自动生成的。 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接 http://www.linuxidc.com/Linux/2014-10&amp;frasl;108080.htm
  配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了 1、构建  备注：这里的Root Pom指的是根目录下的Pom文件</description>
     </item>
     

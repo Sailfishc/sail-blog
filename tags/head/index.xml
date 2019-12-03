@@ -19,10 +19,11 @@
       
       <guid>https://blog.sailfishc.cn/posts/2017/03/mac%E4%B8%8Belasticsearch5.x%E5%92%8Chead%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
       <description>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。
- 一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动   备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
-  进入es的conf目录修改配置文件  cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200   启动ES，命令如下
- ./elasticsearch ./elasticsearch -d (这是后台启动）    看到如下日志信息：
-  [2017-03-25T14:30:45,189][INFO ][o.e.n.Node ] [node-1] initializing ... [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs] [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] heap size [1.</description>
+ 一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动 &amp;gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
+ 进入es的conf目录修改配置文件
+cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200  启动ES，命令如下
+ ./elasticsearch ./elasticsearch -d (这是后台启动）  看到如下日志信息：
+[2017-03-25T14:30:45,189][INFO ][o.e.n.Node ] [node-1] initializing ... [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs] [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] heap size [1.9gb], compressed ordinary object pointers [true] [2017-03-25T14:30:45,273][INFO ][o.</description>
     </item>
     
   </channel>

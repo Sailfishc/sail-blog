@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="sailfish ">
 <meta name="description" content="最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
- 在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？
- 字符编码笔记  总的就一句话，UTF-8是Unicode的一种实现。
-一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：
- 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 读取的时候可以将😄这个字符转为😁  例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。
-1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper." />
+ 在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
+总的就一句话，UTF-8是Unicode的一种实现。
+一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路： - 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 - 读取的时候可以将😄这个字符转为😁
+例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。
+1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper." />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -30,7 +30,7 @@
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
 
 
 
@@ -46,14 +46,16 @@
 
 <meta itemprop="name" content="解决Mysql存储Emoji乱码问题">
 <meta itemprop="description" content="本文主要解决Emoji表情存储在MySql中乱码的问题">
+
+
 <meta itemprop="datePublished" content="2017-03-31T17:58:27&#43;00:00" />
 <meta itemprop="dateModified" content="2017-03-31T17:58:27&#43;00:00" />
-<meta itemprop="wordCount" content="87">
-<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
+<meta itemprop="wordCount" content="90">
 
 
 
-<meta itemprop="keywords" content="Java,Emoji," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="Java,Emoji," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="解决Mysql存储Emoji乱码问题"/>
@@ -137,31 +139,40 @@
             
 
             <div class="post-content">
-                <blockquote>
+                
+
+<blockquote>
 <p>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。</p>
 </blockquote>
-<p>在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？</p>
-<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">字符编码笔记</a></li>
-</ul>
+
+<p>在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？
+- <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank">字符编码笔记</a></p>
+
 <p>总的就一句话，UTF-8是Unicode的一种实现。</p>
-<h2 id="emoji">一、如何解决Emoji存储问题</h2>
+
+<h2 id="一-如何解决emoji存储问题">一、如何解决Emoji存储问题</h2>
+
 <ul>
-<li><a href="https://github.com/Sailfishc/emoji-demo">Github地址解决方案</a></li>
+<li><a href="https://github.com/Sailfishc/emoji-demo" target="_blank">Github地址解决方案</a></li>
 </ul>
-<p>再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：</p>
-<ul>
-<li>页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库</li>
-<li>读取的时候可以将😄这个字符转为😁</li>
-</ul>
+
+<p>再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：
+- 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库
+- 读取的时候可以将😄这个字符转为😁</p>
+
 <p>例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。</p>
-<h3 id="1">1、引入依赖</h3>
+
+<h3 id="1-引入依赖">1、引入依赖</h3>
+
 <pre><code>&lt;dependency&gt;
      &lt;groupId&gt;com.vdurmont&lt;/groupId&gt;
      &lt;artifactId&gt;emoji-java&lt;/artifactId&gt;
     &lt;version&gt;3.2.0&lt;/version&gt;
 &lt;/dependency&gt;
-</code></pre><h3 id="2api">2、常用API</h3>
+</code></pre>
+
+<h3 id="2-常用api">2、常用API</h3>
+
 <pre><code>    @RequestMapping(&quot;/add/content&quot;)
     public ResponseEntity insertContent(@RequestBody Content content) {
         String title = content.getTitle();
@@ -187,23 +198,32 @@
         }
         return  null;
     }
-</code></pre><ul>
+</code></pre>
+
+<ul>
 <li>EmojiParser.parseToAliases(string); 将表情符号转为字符</li>
 <li>EmojiParser.parseToUnicode(string); 将字符转为表情符号</li>
 </ul>
-<h3 id="3">3、案例</h3>
+
+<h3 id="3-案例">3、案例</h3>
+
 <ul>
 <li>存储图片</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-7ca27396c4a6b58e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-7ca27396c4a6b58e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
 <ul>
 <li>数据库存储记录</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-61a5a894b926af27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-61a5a894b926af27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
 <ul>
 <li>查询记录</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-a97bc9194fbe4ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-a97bc9194fbe4ee8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
 
             </div>
         </article>
@@ -215,7 +235,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/java">Java</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/emoji">Emoji</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>87 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>90 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2017-04-01 01:58 &#43;0800</p>
         </div>

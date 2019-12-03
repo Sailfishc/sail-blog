@@ -6,10 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="sailfish ">
 <meta name="description" content="Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。
- 一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动   备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
-  进入es的conf目录修改配置文件  cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200   启动ES，命令如下
- ./elasticsearch ./elasticsearch -d (这是后台启动）    看到如下日志信息：
-  [2017-03-25T14:30:45,189][INFO ][o.e.n.Node ] [node-1] initializing ... [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs] [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] heap size [1." />
+ 一、安装Elasticsearch  在官网下载tar包，下载地址 下载之后解压 进入bin目录下启动 &amp;gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：CENTOS安装ElasticSearch。
+ 进入es的conf目录修改配置文件
+cluster.name: es-cluster node.name: node-1 network.host: 0.0.0.0 http.port: 9200  启动ES，命令如下
+ ./elasticsearch ./elasticsearch -d (这是后台启动）  看到如下日志信息：
+[2017-03-25T14:30:45,189][INFO ][o.e.n.Node ] [node-1] initializing ... [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs] [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment ] [node-1] heap size [1.9gb], compressed ordinary object pointers [true] [2017-03-25T14:30:45,273][INFO ][o." />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -29,7 +30,7 @@
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
 
 
 
@@ -45,14 +46,16 @@
 
 <meta itemprop="name" content="Mac下Elasticsearch5.X和Head插件的安装">
 <meta itemprop="description" content="本文主要讲解ES5.0的安装和Head插件的安装配置，将自己的坑给大家放出来！">
+
+
 <meta itemprop="datePublished" content="2017-03-25T14:37:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-03-25T14:37:00&#43;00:00" />
-<meta itemprop="wordCount" content="322">
-<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
+<meta itemprop="wordCount" content="327">
 
 
 
-<meta itemprop="keywords" content="elasticsearch,Head," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="elasticsearch,Head," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="Mac下Elasticsearch5.X和Head插件的安装"/>
@@ -136,37 +139,38 @@
             
 
             <div class="post-content">
-                <blockquote>
+                
+
+<blockquote>
 <p>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。</p>
 </blockquote>
-<h3 id="elasticsearch">一、安装Elasticsearch</h3>
+
+<h3 id="一-安装elasticsearch">一、安装Elasticsearch</h3>
+
 <ul>
-<li>在官网下载tar包，<a href="https://www.elastic.co/downloads/elasticsearch">下载地址</a></li>
+<li>在官网下载tar包，<a href="https://www.elastic.co/downloads/elasticsearch" target="_blank">下载地址</a></li>
 <li>下载之后解压</li>
-<li>进入bin目录下启动</li>
-</ul>
-<blockquote>
-<p>备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：<a href="https://my.oschina.net/topeagle/blog/591451?fromerr=mzOr2qzZlogstash">CENTOS安装ElasticSearch</a>。</p>
-</blockquote>
-<ul>
-<li>进入es的conf目录修改配置文件</li>
-</ul>
+
+<li><p>进入bin目录下启动
+&gt; 备注：如果是root用户启动会出现异常，因为es出去安全性考虑，禁止以root用户启动，解决办法是新建一个用户，详情请看这篇博客：<a href="https://my.oschina.net/topeagle/blog/591451?fromerr=mzOr2qzZlogstash" target="_blank">CENTOS安装ElasticSearch</a>。</p></li>
+
+<li><p>进入es的conf目录修改配置文件</p>
+
 <pre><code>cluster.name: es-cluster
 node.name: node-1
 network.host: 0.0.0.0
 http.port: 9200
-</code></pre><ul>
-<li>
-<p>启动ES，命令如下</p>
+</code></pre></li>
+
+<li><p>启动ES，命令如下</p>
+
 <ul>
 <li>./elasticsearch</li>
 <li>./elasticsearch -d (这是后台启动）</li>
-</ul>
-</li>
-<li>
-<p>看到如下日志信息：</p>
-</li>
-</ul>
+</ul></li>
+
+<li><p>看到如下日志信息：</p>
+
 <pre><code>[2017-03-25T14:30:45,189][INFO ][o.e.n.Node               ] [node-1] initializing ...
 [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [278.8gb], net total_space [464.6gb], spins? [unknown], types [hfs]
 [2017-03-25T14:30:45,272][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [1.9gb], compressed ordinary object pointers [true]
@@ -191,9 +195,10 @@ http.port: 9200
 [2017-03-25T14:30:51,240][INFO ][o.e.h.HttpServer         ] [node-1] publish_address {192.168.31.110:9200}, bound_addresses {[::]:9200}
 [2017-03-25T14:30:51,240][INFO ][o.e.n.Node               ] [node-1] started
 [2017-03-25T14:30:51,246][INFO ][o.e.g.GatewayService     ] [node-1] recovered [0] indices into cluster_state
-</code></pre><ul>
-<li>通过IP访问，例如我的IP是192.168.31.110，那么访问地址就是192.168.31.110:9200，可以看到如下信息</li>
-</ul>
+</code></pre></li>
+
+<li><p>通过IP访问，例如我的IP是192.168.31.110，那么访问地址就是192.168.31.110:9200，可以看到如下信息</p>
+
 <pre><code>{
 name: &quot;n1HFjO-&quot;,
 cluster_name: &quot;elasticsearch&quot;,
@@ -207,72 +212,86 @@ lucene_version: &quot;6.4.1&quot;
 },
 tagline: &quot;You Know, for Search&quot;
 }
-</code></pre><h3 id="head">二、安装Head插件</h3>
+</code></pre></li>
+</ul>
+
+<h3 id="二-安装head插件">二、安装Head插件</h3>
+
 <blockquote>
 <p>Head插件是我们常用的插件，但是在ELK5.0以后按照之前的插件安装方式不能使用了，看了head官网之后，要单独启动一个服务才可以。</p>
 </blockquote>
+
 <ul>
-<li><a href="https://github.com/mobz/elasticsearch-head">Head-GitHub官网</a></li>
-<li>官网简易教程</li>
-</ul>
+<li><a href="https://github.com/mobz/elasticsearch-head" target="_blank">Head-GitHub官网</a></li>
+
+<li><p>官网简易教程</p>
+
 <pre><code>git clone git://github.com/mobz/elasticsearch-head.git
 cd elasticsearch-head
 npm install
 grunt server
-</code></pre><p><strong>这里依赖Node环境，我们需要做一下工作：</strong></p>
-<ul>
-<li>Git</li>
-<li><a href="https://nodejs.org/en/download/">Node官网</a></li>
+</code></pre></li>
 </ul>
-<h4 id="1head">1、Head插件安装</h4>
+
+<p><strong>这里依赖Node环境，我们需要做一下工作：</strong>
+- Git
+- <a href="https://nodejs.org/en/download/" target="_blank">Node官网</a></p>
+
+<h4 id="1-head插件安装">1、Head插件安装</h4>
+
 <ul>
 <li>下载并安装对应的Node安装包</li>
 <li>安装Git环境</li>
 <li>下载Head项目</li>
 <li>cd elasticsearch-head</li>
-<li>修改服务器监听地址，地址目录：head/Gruntfile.js</li>
-</ul>
+
+<li><p>修改服务器监听地址，地址目录：head/Gruntfile.js</p>
+
 <pre><code>connect: {
-    server: {
-        options: {
-            port: 9100,
-            hostname: '*',
-            base: '.',
-            keepalive: true
-        }
+server: {
+    options: {
+        port: 9100,
+        hostname: '*',
+        base: '.',
+        keepalive: true
     }
 }
-</code></pre><ul>
-<li>修改连接地址，目录：head/_site/app.js</li>
+}
+</code></pre></li>
+
+<li><p>修改连接地址，目录：head/_site/app.js</p></li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-38c88f015bd861e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-38c88f015bd861e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
 <ul>
-<li>npm install</li>
-</ul>
-<blockquote>
-<p>备注：如果npm源特别慢的话，可以参考这篇文档：<a href="http://www.uedbox.com/npm-install-slow-solution/">npm install 无响应解决方案
-</a></p>
-</blockquote>
-<ul>
+<li>npm install
+&gt; 备注：如果npm源特别慢的话，可以参考这篇文档：<a href="http://www.uedbox.com/npm-install-slow-solution/" target="_blank">npm install 无响应解决方案
+</a></li>
 <li>grunt是一个很方便的构建工具，可以进行打包压缩、测试、执行等等的工作，5.0里的head插件就是通过grunt启动的。因此需要安装一下grunt：<code>npm install grunt-cli</code></li>
 <li>grunt server：保证es服务已经启动</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-633cc8658676a775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-633cc8658676a775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
 <ul>
 <li>打开浏览器输入：IP:9100</li>
 </ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-411df93d94cc0cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-411df93d94cc0cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png" /></p>
+
 <ul>
-<li>正常的话可以看到已经连接了ES，但是ES社区中很多人反映都配置好了，但是看不到连接信息，这时候需要在在 es 的 elasticsearch.ym 里添加如下配置：</li>
-</ul>
+<li><p>正常的话可以看到已经连接了ES，但是ES社区中很多人反映都配置好了，但是看不到连接信息，这时候需要在在 es 的 elasticsearch.ym 里添加如下配置：</p>
+
 <pre><code>http.cors.enabled: true
 http.cors.allow-origin: &quot;*&quot; 
-</code></pre><blockquote>
-<p>2017-03-26补充：在安装x-pack之后head无法连接es，只能将es的xpack认证给关闭，关闭方式：</p>
-</blockquote>
-<ul>
-<li>在Es的conf文件中配置xpack.security.enabled: false</li>
+</code></pre></li>
 </ul>
+
+<blockquote>
+<p>2017-03-26补充：在安装x-pack之后head无法连接es，只能将es的xpack认证给关闭，关闭方式：
+- 在Es的conf文件中配置xpack.security.enabled: false</p>
+</blockquote>
 
             </div>
         </article>
@@ -284,7 +303,7 @@ http.cors.allow-origin: &quot;*&quot;
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/elasticsearch">elasticsearch</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/head">Head</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>322 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>327 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2017-03-25 22:37 &#43;0800</p>
         </div>

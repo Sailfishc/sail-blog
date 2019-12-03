@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="sailfish ">
 <meta name="description" content="不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。
- 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
- 关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
+&amp;gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容
+关键类  SqlSessionFactory SqlSessionFactoryBean SqlSession MapperFactoryBean SqlSessionDaoSupport SqlSessionTemplate MapperScannerConfigurer  如何访问数据库 mysql -uadmin -pxxx -h58.87.87.129 -P32007
 当我们需要连接MySQL时，需要用到几个属性：
  用户名 密码 地址 端口  这在MySQL中叫一次会话（session），在JDBC中JDBC定义了规范，其实现类具体去操作，在MyBatis中，MyBatis的关键类SqlSession定义了如何去操作数据库，例如：
  selectOne selectAll selectList insert …..  具体的实现类有：
  DefaultSqlSession SqlSessionTemplate SqlSessionManager  当然我们都不会直接使用这几个实现类，我们一般是这样的：
-public class UserService { @Resource private UserMapper userMapper; } 那这其中究竟是怎么做到这样简化的呢？
+public class UserService { @Resource private UserMapper userMapper; }  那这其中究竟是怎么做到这样简化的呢？
 实现细节 SqlSessionFactoryBean&amp;amp;SqlSessionFactory 上面介绍了关键类SqlSession, 那如何创建SqlSession呢？MyBatis使用了工厂方法来创建SqlSession，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：
-&amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;  DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了" />
+&amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;   DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了" />
 <meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -34,7 +34,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
 
 
 
@@ -50,14 +50,16 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 
 <meta itemprop="name" content="那些书本中没告诉你的MyBatis">
 <meta itemprop="description" content="MyBatis">
+
+
 <meta itemprop="datePublished" content="2019-01-07T21:37:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-01-07T21:37:00&#43;00:00" />
-<meta itemprop="wordCount" content="175">
-<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
+<meta itemprop="wordCount" content="176">
 
 
 
-<meta itemprop="keywords" content="MyBatis," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="MyBatis," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="那些书本中没告诉你的MyBatis"/>
@@ -141,11 +143,13 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
             
 
             <div class="post-content">
-                <p>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。</p>
-<blockquote>
-<p>本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容</p>
-</blockquote>
-<h2 id="heading">关键类</h2>
+                
+
+<p>不管是《MyBatis从入门到精通》，还是21天精通MyBatis，都告诉了你怎么做？但是没告诉你为什么以及是什么。<br />
+&gt; 本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容</p>
+
+<h2 id="关键类">关键类</h2>
+
 <ul>
 <li>SqlSessionFactory</li>
 <li>SqlSessionFactoryBean</li>
@@ -155,16 +159,22 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 <li>SqlSessionTemplate</li>
 <li>MapperScannerConfigurer</li>
 </ul>
-<h2 id="heading1">如何访问数据库</h2>
+
+<h2 id="如何访问数据库">如何访问数据库</h2>
+
 <p><code>mysql -uadmin -pxxx -h58.87.87.129 -P32007</code></p>
+
 <p>当我们需要连接MySQL时，需要用到几个属性：</p>
+
 <ul>
 <li>用户名</li>
 <li>密码</li>
 <li>地址</li>
 <li>端口</li>
 </ul>
+
 <p>这在MySQL中叫一次会话（session），在JDBC中JDBC定义了规范，其实现类具体去操作，在MyBatis中，MyBatis的关键类<code>SqlSession</code>定义了如何去操作数据库，例如：</p>
+
 <ul>
 <li>selectOne</li>
 <li>selectAll</li>
@@ -172,52 +182,76 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 <li>insert</li>
 <li>…..</li>
 </ul>
+
 <p>具体的实现类有：</p>
+
 <ul>
 <li>DefaultSqlSession</li>
 <li>SqlSessionTemplate</li>
 <li>SqlSessionManager</li>
 </ul>
+
 <p>当然我们都不会直接使用这几个实现类，我们一般是这样的：</p>
+
 <pre><code>public class UserService {
 	
 	@Resource
 	private UserMapper userMapper;
 }
-</code></pre><p>那这其中究竟是怎么做到这样简化的呢？</p>
-<h2 id="heading2">实现细节</h2>
-<h3 id="sqlsessionfactorybeansqlsessionfactory">SqlSessionFactoryBean&amp;SqlSessionFactory</h3>
+</code></pre>
+
+<p>那这其中究竟是怎么做到这样简化的呢？</p>
+
+<h2 id="实现细节">实现细节</h2>
+
+<h3 id="sqlsessionfactorybean-sqlsessionfactory">SqlSessionFactoryBean&amp;SqlSessionFactory</h3>
+
 <p>上面介绍了关键类<code>SqlSession</code>, 那如何创建<code>SqlSession</code>呢？MyBatis使用了工厂方法来创建<code>SqlSession</code>，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：</p>
+
 <pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
   &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot; /&gt;
 &lt;/bean&gt;
-</code></pre><ul>
+</code></pre>
+
+<ul>
 <li>DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource</li>
 </ul>
+
 <h3 id="mapperfactorybean">MapperFactoryBean</h3>
+
 <p>大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了</p>
+
 <ul>
 <li>UserMapper</li>
 <li>PersonMapper</li>
 <li>AddressMapper</li>
 <li>…..</li>
 </ul>
+
 <p>那MapperFactoryBean是干什么用的呢？</p>
+
 <ul>
-<li>告诉容器（可以是Spring容器）：我的这个Mapper可以访问这个数据，所以MapperFactoryBean需要配置<code>Mapper</code>和<code>SqlSessionFactory</code></li>
-</ul>
+<li><p>告诉容器（可以是Spring容器）：我的这个Mapper可以访问这个数据，所以MapperFactoryBean需要配置<code>Mapper</code>和<code>SqlSessionFactory</code></p>
+
 <pre><code>&lt;bean id=&quot;userMapper&quot; class=&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;&gt;
-  &lt;property name=&quot;mapperInterface&quot; value=&quot;org.mybatis.spring.sample.mapper.UserMapper&quot; /&gt;
-  &lt;property name=&quot;sqlSessionFactory&quot; ref=&quot;sqlSessionFactory&quot; /&gt;
+&lt;property name=&quot;mapperInterface&quot; value=&quot;org.mybatis.spring.sample.mapper.UserMapper&quot; /&gt;
+&lt;property name=&quot;sqlSessionFactory&quot; ref=&quot;sqlSessionFactory&quot; /&gt;
 &lt;/bean&gt;
-</code></pre><blockquote>
+</code></pre></li>
+</ul>
+
+<blockquote>
 <p>到目前为止，我们没有定义mapper.xml文件，但是我们可以这样用了</p>
 </blockquote>
+
 <pre><code>public interface UserMapper {
   @Select(&quot;SELECT * FROM users WHERE id = #{userId}&quot;)
   User getUser(@Param(&quot;userId&quot;) String userId);
 } 
-</code></pre><p>AND</p>
+</code></pre>
+
+<p>AND</p>
+
 <pre><code>public class FooServiceImpl implements FooService {
 
 private UserMapper userMapper;
@@ -230,21 +264,32 @@ public User doSomeBusinessStuff(String userId) {
   return this.userMapper.getUser(userId);
 }
 }
-</code></pre><p>但是只用注解的话面对繁杂的SQL，会显得代码凌乱，就出现了使用xml来描述SQL（当然其他的ORM甚至可以使Markdown），MyBatis要知道SQL文件在哪里有两种方式：</p>
+</code></pre>
+
+<p>但是只用注解的话面对繁杂的SQL，会显得代码凌乱，就出现了使用xml来描述SQL（当然其他的ORM甚至可以使Markdown），MyBatis要知道SQL文件在哪里有两种方式：</p>
+
 <ul>
 <li>和mapper接口在同一个包路径下</li>
-<li>mapperLocations：将目录地址设置到mapperLocations中</li>
-</ul>
+
+<li><p>mapperLocations：将目录地址设置到mapperLocations中</p>
+
 <pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
-  &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot; /&gt;
-  &lt;property name=&quot;mapperLocations&quot; value=&quot;classpath*:sample/config/mappers/**/*.xml&quot; /&gt;
+&lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot; /&gt;
+&lt;property name=&quot;mapperLocations&quot; value=&quot;classpath*:sample/config/mappers/**/*.xml&quot; /&gt;
 &lt;/bean&gt;
-</code></pre><h3 id="mapperscannerconfigurer">MapperScannerConfigurer</h3>
+</code></pre></li>
+</ul>
+
+<h3 id="mapperscannerconfigurer">MapperScannerConfigurer</h3>
+
 <p>在上面的方法中，我们需要把Mapper当做Service的Bean中的属性设置进去，这样显得太麻烦了，就有了<code>MapperScannerConfigurer</code></p>
+
 <pre><code>&lt;bean class=&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;&gt;
   &lt;property name=&quot;basePackage&quot; value=&quot;org.mybatis.spring.sample.mapper&quot; /&gt;
 &lt;/bean&gt;
-</code></pre><ul>
+</code></pre>
+
+<ul>
 <li>basePackage 属性是让你为映射器接口文件设置基本的包路径</li>
 <li>MapperScannerConfigurer , 它 将 会 查 找 类 路 径 下 的 映 射 器 并 自 动 将 它 们 创 建 成 MapperFactoryBean</li>
 </ul>
@@ -259,7 +304,7 @@ public User doSomeBusinessStuff(String userId) {
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/mybatis">MyBatis</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>175 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>176 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-01-08 05:37 &#43;0800</p>
         </div>

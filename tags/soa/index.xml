@@ -18,14 +18,14 @@
       <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
       
       <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/</guid>
-      <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。
-  问题一：既然有http 请求，为什么还要用rpc调用？ 问题二：请问rpc协议和http协议的关系和区别？   之后就萌生了写一篇关于RPC的文章。
+      <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
+之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
 RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。
 众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。
 针对对象序列化，有各种方式的性能对比，Github地址:
-通过对比可知：
- Google的Protostuff性能最好 JSON/XML性能比较差  但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
+通过对比可知： - Google的Protostuff性能最好 - JSON/XML性能比较差
+但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
 dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：
 @Component public class CityDubboConsumerService { @Reference(version = &amp;quot;1.0.0&amp;quot;) CityDubboService cityDubboService; public void printCity() { String cityName=&amp;quot;xx&amp;quot;; City city = cityDubboService.</description>
     </item>

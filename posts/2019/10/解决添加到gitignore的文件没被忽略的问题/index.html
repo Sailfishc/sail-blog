@@ -7,7 +7,7 @@
 <meta name="author" content="sailfish ">
 <meta name="description" content=" 问题简述
  在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
-The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached.  意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
  原因
  一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
  具体执行
@@ -32,7 +32,7 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
 
 
 
@@ -49,26 +49,28 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
 <meta itemprop="name" content="解决添加到GitIgnore的文件没被忽略的问题">
 <meta itemprop="description" content=" 问题简述
  在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
-The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached.  意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
  原因
  一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
  具体执行
   如果是单个文件：git rm —cached path/filename 如果是文件夹：git rm -r —cached path   参考文档
   Git - gitignore Documentation Git - git-rm Documentation  ">
+
+
 <meta itemprop="datePublished" content="2019-10-30T09:56:18&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-30T09:56:18&#43;08:00" />
 <meta itemprop="wordCount" content="56">
-<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
 
 
 
-<meta itemprop="keywords" content="Git,GitIgnore," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="Git,GitIgnore," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="解决添加到GitIgnore的文件没被忽略的问题"/>
 <meta name="twitter:description" content=" 问题简述
  在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
-The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached.  意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
  原因
  一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
  具体执行
@@ -154,27 +156,37 @@ The purpose of gitignore files is to ensure that certain files not tracked by Gi
                 <blockquote>
 <p>问题简述</p>
 </blockquote>
+
 <p>在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：</p>
+
 <pre><code>The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked.
 To stop tracking a file that is currently tracked, use：git rm —cached.
-</code></pre><p>意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用<code>git rm --cached</code>。</p>
+</code></pre>
+
+<p>意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用<code>git rm --cached</code>。</p>
+
 <blockquote>
 <p>原因</p>
 </blockquote>
+
 <p>一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。</p>
+
 <blockquote>
 <p>具体执行</p>
 </blockquote>
+
 <ul>
 <li>如果是单个文件：git rm —cached  path/filename</li>
 <li>如果是文件夹：git rm -r —cached path</li>
 </ul>
+
 <blockquote>
 <p>参考文档</p>
 </blockquote>
+
 <ul>
-<li><a href="https://git-scm.com/docs/gitignore">Git - gitignore Documentation</a></li>
-<li><a href="https://git-scm.com/docs/git-rm">Git - git-rm Documentation</a></li>
+<li><a href="https://git-scm.com/docs/gitignore" target="_blank">Git - gitignore Documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-rm" target="_blank">Git - git-rm Documentation</a></li>
 </ul>
 
             </div>
