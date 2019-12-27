@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 03 Dec 2019 23:57:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2019 12:03:29 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>juc</title>
+      <link>https://blog.sailfishc.cn/tags/juc/</link>
+      <pubDate>Fri, 27 Dec 2019 12:03:29 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/tags/juc/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TDD</title>
@@ -90,15 +99,6 @@
       <pubDate>Wed, 30 Oct 2019 09:56:18 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/tags/gitignore/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://blog.sailfishc.cn/tags/hugo/</link>
-      <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/tags/hugo/</guid>
       <description></description>
     </item>
     

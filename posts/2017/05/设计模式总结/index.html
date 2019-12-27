@@ -25,7 +25,7 @@
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
 
 
 
@@ -41,16 +41,14 @@
 
 <meta itemprop="name" content="设计模式总结">
 <meta itemprop="description" content="设计模式总结">
-
-
 <meta itemprop="datePublished" content="2017-05-24T11:37:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-05-24T11:37:00&#43;00:00" />
 <meta itemprop="wordCount" content="92">
+<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
 
 
 
-<meta itemprop="keywords" content="Java,Design Patterns," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="Java,Design Patterns," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="设计模式总结"/>
@@ -134,12 +132,8 @@
             
 
             <div class="post-content">
-                
-
-<p><img src="http://upload-images.jianshu.io/upload_images/734456-32b3fb0c1a41aa71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" /></p>
-
-<h2 id="一-创建型模式-五种">一、创建型模式(五种)</h2>
-
+                <p><img src="http://upload-images.jianshu.io/upload_images/734456-32b3fb0c1a41aa71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h2 id="heading">一、创建型模式(五种)</h2>
 <ul>
 <li>工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源）</li>
 <li>抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy）</li>
@@ -147,9 +141,7 @@
 <li>建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能）</li>
 <li>原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）</li>
 </ul>
-
-<h2 id="二-结构型模式-七种">二、结构型模式(七种)</h2>
-
+<h2 id="heading1">二、结构型模式(七种)</h2>
 <ul>
 <li>适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系）</li>
 <li>装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx）</li>
@@ -159,9 +151,7 @@
 <li>组合模式(Composite)：部分与整体，常用于表示树形结构</li>
 <li>享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）</li>
 </ul>
-
-<h2 id="三-行为型模式-十一种">三、行为型模式(十一种)</h2>
-
+<h2 id="heading2">三、行为型模式(十一种)</h2>
 <ul>
 <li>策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口）</li>
 <li>模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件）</li>
@@ -175,75 +165,67 @@
 <li>中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者</li>
 <li>解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐</li>
 </ul>
-
-<h2 id="四-学习资源">四、学习资源</h2>
-
+<h2 id="heading3">四、学习资源</h2>
 <ul>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/20/2554024.html" target="_blank">调停者模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/19/2552617.html" target="_blank">解释器模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/14/2545381.html" target="_blank">访问者模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html" target="_blank">状态模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/06/2534942.html" target="_blank">备忘录模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/01/2526972.html" target="_blank">命令模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/28/2516865.html" target="_blank">责任链模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/22/2511506.html" target="_blank">迭代子模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/16/2502279.html" target="_blank">观察者模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/14/2495235.html" target="_blank">模板方法模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/10/2491891.html" target="_blank">策略模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/08/2487757.html" target="_blank">不变模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/07/2480938.html" target="_blank">桥梁模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/02/2478101.html" target="_blank">门面模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/26/2468499.html" target="_blank">享元模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/23/2466712.html" target="_blank">代理模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/20/2455726.html" target="_blank">装饰模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html" target="_blank">合成模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html" target="_blank">适配器模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/11/2439387.html" target="_blank">原型模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/07/2433939.html" target="_blank">建造模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/31/2425631.html" target="_blank">单例模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/28/2418836.html" target="_blank">抽象工厂模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/25/2416227.html" target="_blank">工厂方法模式</a></li>
-<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/22/2412308.html" target="_blank">简单工厂模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/20/2554024.html">调停者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/19/2552617.html">解释器模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/14/2545381.html">访问者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/08/2538146.html">状态模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/06/2534942.html">备忘录模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/01/2526972.html">命令模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/28/2516865.html">责任链模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/22/2511506.html">迭代子模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/16/2502279.html">观察者模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/14/2495235.html">模板方法模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/10/2491891.html">策略模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/08/2487757.html">不变模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/07/2480938.html">桥梁模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/05/02/2478101.html">门面模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/26/2468499.html">享元模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/23/2466712.html">代理模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/20/2455726.html">装饰模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html">合成模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html">适配器模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/11/2439387.html">原型模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/04/07/2433939.html">建造模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/31/2425631.html">单例模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/28/2418836.html">抽象工厂模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/25/2416227.html">工厂方法模式</a></li>
+<li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/22/2412308.html">简单工厂模式</a></li>
 </ul>
-
-<h2 id="五-总结">五、总结</h2>
-
+<h2 id="heading4">五、总结</h2>
 <blockquote>
 <ul>
-<li>内容部分引用自<a href="http://smallbug-vip.iteye.com/blog/2276470" target="_blank">http://smallbug-vip.iteye.com/blog/2276470</a></li>
+<li>内容部分引用自http://smallbug-vip.iteye.com/blog/2276470</li>
+</ul>
+</blockquote>
+<ul>
 <li>在学习设计模式的过程中最直观的感觉就是小demo感觉看着很爽，自己也能理解，但是在实际开发中想套用哪种设计模式却感觉有点心有余而力不足的意思，这可能就是设计模式太灵活的缘故，设计模式都是在大量的代码中积累的精髓所在，这篇总结也是给自己一个笔记，让自己在之后的开发中可以回过头来看看。</li>
 <li>很多人对设计模式有点误解，认为只有GoF的设计模式才是设计模式，这种观点有点不正确，以下是引用一段解释：
-
 <ul>
 <li>设计模式的不同侧重
-
 <ul>
 <li>1、 侧重总体架构的设计模式，如MVC(Java web开发)，MVVM(WPF)</li>
 <li>2、 侧重细节架构的设计模式，如GoF所描述的23种设计模式</li>
 <li>3、 侧重实现的模式，如生产消费队列的同步问题等等</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>设计模式是对oo原则的实现</li>
 <li>再引用一段话：
-
 <ul>
-<li>简单的功能或演示性的程序不要考虑设计模式
-
-<ul>
+<li>简单的功能或演示性的程序不要考虑设计模式</li>
 <li>关注问题而非解决方案。也就是说只有遇到问题时才去设计模式里找方法</li>
-</ul></li>
 <li>关注重用而非设计模式。也就是说设计模式是以重用为目的的，只要能做到重用，是否使用了某种设计模式并不重要</li>
 <li>在支持函数式编程的语言里避免使用设计模式。如前所述，设计模式是以重用的目的的，而高阶函数很多情况下是比设计模式更好的重用方法，这些语言包括常见的js, ruby, python等
-能用简单的模式解决的问题不要引入复杂的模式
-
-<ul>
+能用简单的模式解决的问题不要引入复杂的模式</li>
 <li>已经有解决方案的情况下不要硬套设计模式，设计模式不是一切</li>
-</ul></li>
 <li>正确认识些暂时无法理解的模式，如Memento, Interpreter, Visitor等，这些模式代表着一类问题，很多时候使用第三方库是更好的选择</li>
 <li>看轻设计模式，它们只能解决一小部分问题</li>
-</ul></li>
 </ul>
-</blockquote>
+</li>
+</ul>
 
             </div>
         </article>

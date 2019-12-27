@@ -31,7 +31,7 @@ RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.73f55a8d452be4a71b2960620b80252cf69abd84d63fe7501abf0a39b1a70a78.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
 
 
 
@@ -53,16 +53,14 @@ RSS的背后的逻辑论述 RSS的机制和软件设计中的一些方式很像�
 可能大家都被这种情况困扰过，接收信息的渠道太多，技术博客，新闻网站，某个关注的人的网站，YouTube频道，某个关注的Twitter动态，关注的UP主的直播，购物网站的商品优惠活动，在现在这样信息满天飞，贩卖焦虑的时期，我们要学会过滤信息，只关注自己关心的优质的内容，并且是可学习的，随着时间的变化，我们只保留了这些最优质的的，和自己最匹配的内容，我们每个人在一天的精力都是有限的，不能在每一天都挨个打开各类APP，去浏览信息，去让我们的碎片时间消耗掉，到最后接受了太多的垃圾信息，没有将信息转化为知识，还消耗了一天的精力。
 RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了下我自己的信息输入源：
   个人技术博客 公共技术博客网站的某个人的动态 关注的YouTube频道 关注的Github人和仓库 关注的Twitter人的时间线  不是所有的网站都有RSS订阅的，如果我们想订阅的话需要借助一些工具：">
-
-
 <meta itemprop="datePublished" content="2019-12-01T18:09:12&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-01T18:09:12&#43;08:00" />
-<meta itemprop="wordCount" content="120">
+<meta itemprop="wordCount" content="119">
+<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content="RSS背后的逻辑"/>
@@ -145,10 +143,7 @@ RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了
             
 
             <div class="post-content">
-                
-
-<h2 id="目录">目录</h2>
-
+                <h2 id="heading">目录</h2>
 <ul>
 <li>前言</li>
 <li>介绍RSS</li>
@@ -157,31 +152,20 @@ RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了
 <li>总结</li>
 <li>参考资源</li>
 </ul>
-
-<h2 id="前言">前言</h2>
-
+<h2 id="heading1">前言</h2>
 <p>其实知道RSS也挺久了，但是一直没应用起来，今天正式的了解了一下，发现RSS其实是很能创造生产力的一种工具。</p>
-
-<h2 id="介绍rss">介绍RSS</h2>
-
+<h2 id="rss">介绍RSS</h2>
 <blockquote>
-<p><strong>RSS</strong> (originally **  Site Summary** <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework" target="_blank">RDF</a> ; later, two competing approaches emerged, which used the  <a href="https://en.wikipedia.org/wiki/Backronym" target="_blank">backronyms</a>  <strong>Rich Site Summary</strong> and <strong>Really Simple Syndication</strong> respectively) <a href="https://en.wikipedia.org/wiki/RSS#cite_note-powers-2003-1-2" target="_blank">[2]</a>  is a type of  <a href="https://en.wikipedia.org/wiki/Web_feed" target="_blank">web feed</a>  <a href="https://en.wikipedia.org/wiki/RSS#cite_note-Netsc99-3" target="_blank">[3]</a>  which allows users and applications to access updates to websites in a standardized, computer-readable format</p>
+<p><strong>RSS</strong> (originally **  Site Summary** <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a> ; later, two competing approaches emerged, which used the  <a href="https://en.wikipedia.org/wiki/Backronym">backronyms</a>  <strong>Rich Site Summary</strong> and <strong>Really Simple Syndication</strong> respectively) <a href="https://en.wikipedia.org/wiki/RSS#cite_note-powers-2003-1-2">[2]</a>  is a type of  <a href="https://en.wikipedia.org/wiki/Web_feed">web feed</a>  <a href="https://en.wikipedia.org/wiki/RSS#cite_note-Netsc99-3">[3]</a>  which allows users and applications to access updates to websites in a standardized, computer-readable format</p>
 </blockquote>
-
 <p>简单来说：RSS指的是允许以标准化计算机可读的方式让用户和应用程序访问网站更新。</p>
-
-<h2 id="rss的背后的逻辑论述">RSS的背后的逻辑论述</h2>
-
+<h2 id="rss1">RSS的背后的逻辑论述</h2>
 <p>RSS的机制和软件设计中的一些方式很像：<code>publish/subscribe</code>发布订阅模式，用户作为服务的消费者，是采用主动去拉取（pull）源信息，还是被动的接收（push）信息，也是一个TradeOff的过程，很明显，对于用户来说，人不能像机器，定时的去（pull）数据下来，因为这样太浪费精力，所以RSS订阅的方式出现，提高了生产力。</p>
-
 <p>可能大家都被这种情况困扰过，接收信息的渠道太多，技术博客，新闻网站，某个关注的人的网站，YouTube频道，某个关注的Twitter动态，关注的UP主的直播，购物网站的商品优惠活动，在现在这样信息满天飞，贩卖焦虑的时期，我们要学会过滤信息，只关注自己关心的优质的内容，并且是可学习的，随着时间的变化，我们只保留了这些最优质的的，和自己最匹配的内容，我们每个人在一天的精力都是有限的，不能在每一天都挨个打开各类APP，去浏览信息，去让我们的碎片时间消耗掉，到最后接受了太多的垃圾信息，没有将信息转化为知识，还消耗了一天的精力。</p>
-
-<h2 id="rss实践">RSS实践</h2>
-
+<h2 id="rss2">RSS实践</h2>
 <blockquote>
 <p>RSS订阅的过程是对自己信息源梳理的过程，我分析了下我自己的信息输入源：</p>
 </blockquote>
-
 <ul>
 <li>个人技术博客</li>
 <li>公共技术博客网站的某个人的动态</li>
@@ -189,37 +173,33 @@ RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了
 <li>关注的Github人和仓库</li>
 <li>关注的Twitter人的时间线</li>
 </ul>
-
 <p>不是所有的网站都有RSS订阅的，如果我们想订阅的话需要借助一些工具：</p>
-
 <ul>
 <li>RssHub：RSSHub 是一个开源、简单易用、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源</li>
 <li>Feedly：Keep up with all the topics that matter to you. All in one place.</li>
 <li>Reeder：本地阅读器</li>
 </ul>
-
 <blockquote>
 <p>RSS实践起来其实也比较简单，我现在的WorkFlow是这样的：</p>
 </blockquote>
-
 <ul>
 <li>安装RssHub的插件（收集信息的客户端，可以将没有RSS功能的网站添加RSS订阅源）</li>
 <li>使用Feedly订阅对应的RSS源</li>
 <li>每天使用Reeder或者是Feedly阅读（Reeder专注于阅读，阅读体验比Feedly要好）</li>
 </ul>
-
-<h2 id="总结">总结</h2>
-
+<h2 id="heading2">总结</h2>
 <p>工具只是实现目标的一个桥梁，最重要的其实是接触的信息，以及将信息转化为知识的能力，有些人没有这些工具，依然很厉害，不要做那种懂得了很多了道理，但是依然过不好一生的人。</p>
-
-<h2 id="参考资源">参考资源</h2>
-
+<h2 id="heading3">参考资源</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS - Wikipedia</a></li>
-<li>- <a href="https://docs.rsshub.app/" target="_blank">介绍 | RSSHub</a></li>
-<li><a href="https://sspai.com/post/47100" target="_blank">通过 RSSHub 订阅不支持 RSS 的网站 - 少数派</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/44215137" target="_blank">全网最详细的Reeder 3使用攻略 - 知乎</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/43752773" target="_blank">收下阅读神器 Reeder，一篇文章带你轻松入门 RSS - 知乎</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RSS">RSS - Wikipedia</a></li>
+<li>
+<ul>
+<li><a href="https://docs.rsshub.app/">介绍 | RSSHub</a></li>
+</ul>
+</li>
+<li><a href="https://sspai.com/post/47100">通过 RSSHub 订阅不支持 RSS 的网站 - 少数派</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/44215137">全网最详细的Reeder 3使用攻略 - 知乎</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/43752773">收下阅读神器 Reeder，一篇文章带你轻松入门 RSS - 知乎</a></li>
 </ul>
 
             </div>

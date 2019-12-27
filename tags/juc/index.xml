@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>juc on 橙小张的博客</title>
+    <link>https://blog.sailfishc.cn/tags/juc/</link>
+    <description>Recent content in juc on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 27 Dec 2019 12:03:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.sailfishc.cn/tags/juc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>J.U.C 同步框架（AQS 框架）</title>
+      <link>https://blog.sailfishc.cn/posts/2019/12/j.u.c-%E5%90%8C%E6%AD%A5%E6%A1%86%E6%9E%B6aqs-%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Fri, 27 Dec 2019 12:03:29 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/2019/12/j.u.c-%E5%90%8C%E6%AD%A5%E6%A1%86%E6%9E%B6aqs-%E6%A1%86%E6%9E%B6/</guid>
+      <description>本文转载自：biezhi.com https://www.cnblogs.com/dennyzhangdd/p/7218510.html
+一、论文简介 闲来无事，看看源码，发现了一篇JDK作者的论文《The java.util.concurrent Synchronizer Framework》主要描述了作者对 AbstractQueuedSynchronizer 同步器框架的设计和实现。权威性毋庸置疑！自然需要拜读一下，配上中文翻译，希望大家能有所收获。
+二、原文链接 论文英文版原文链接：http://gee.cs.oswego.edu/dl/papers/aqs.pdf
+http://gee.cs.oswego.edu/ 这个是老李头的主页，里面有他的部分贡献，感兴趣的可以关注一下，老李头确实比较厉害。
+三、中文翻译 摘要 在 J2SE 1.5 的 java.util.concurrent 包（下称 j.u.c 包）中，大部分的同步器（例如锁，屏障等等）都是基于 AbstractQueuedSynchronizer 类（下称 AQS 类），这个简单的框架而构建的。这个框架为同步状态的原子性管理、线程的阻塞和解除阻塞以及排队提供了一种通用的机制。这篇论文主要描述了这个框架基本原理、设计、实现、用法以及性能。
+1. 背景介绍 通过 JCP 的 JSR166 规范，Java 的 1.5 版本引入了 j.u.c 包，这个包提供了一系列支持中等程度并发的类。这些组件是一系列的同步器（抽象数据类型(ADT)）。这些同步器主要维护着以下几个功能：内部同步状态的管理(例如：表示一个锁的状态是获取还是释放)，同步状态的更新和检查操作，且至少有一个方法会导致调用线程在同步状态被获取时阻塞，以及在其他线程改变这个同步状态时解除线程的阻塞。上述的这些的实际例子包括：互斥排它锁的不同形式、读写锁、信号量、屏障、Future、事件指示器以及传送队列等。
+几乎任一同步器都可以用来实现其他形式的同步器。例如，可以用可重入锁实现信号量或者用信号量实现可重入锁。但是，这样做带来的复杂性，开销，不灵活使其至多只能是个二流工程，且缺乏吸引力。如果任何这样的构造方式不能在本质上比其他形式更简洁，那么开发者就不应该随意地选择其中的某个来构建另一个同步器。取而代之，JSR166 建立了一个小框架，AQS 类。这个框架为构造同步器提供一种通用的机制，并且被 j.u.c 包中大部分类使用，同时很多用户也用它来定义自己的同步器。
+在这篇论文的下面部分会讨论这个框架的需求、设计与实现背后的主要思路、示例用法，以及性能指标的一些测量。
+2 需求 2.1 功能 同步器一般包含两种方法，一种是 acquire，另一种是 release。acquire 操作阻塞调用的线程，直到或除非同步状态允许其继续执行。而 release 操作则是通过某种方式改变同步状态，使得一或多个被 acquire 阻塞的线程继续执行。
+j.u.c 包中并没有对同步器的API做一个统一的定义。因此，有一些类定义了通用的接口（如 Lock），而另外一些则定义了其专有的版本。因此在不同的类中，acquire 和 release 操作的名字和形式会各有不同。例如：Lock.lock，Semaphore.acquire，CountDownLatch.await 和 FutureTask.get，在这个框架里，这些方法都是 acquire 操作。但是，J.U.C 为支持一系列常见的使用选项，在类间都有个一致约定。在有意义的情况下，每一个同步器都支持下面的操作：
+ 阻塞和非阻塞（例如 tryLock）同步 可选的超时设置，让调用者可以放弃等待 通过中断实现的任务取消，通常是分为两个版本，一个 acquire 可取消，而另一个不可以  同步器的实现根据其状态是否独占而有所不同。独占状态的同步器，在同一时间只有一个线程可以通过阻塞点，而共享状态的同步器可以同时有多个线程在执行。一般锁的实现类往往只维护独占状态，但是，例如计数信号量在数量许可的情况下，允许多个线程同时执行。为了使框架能得到广泛应用，这两种模式都要支持。</description>
+    </item>
+    
+  </channel>
+</rss>

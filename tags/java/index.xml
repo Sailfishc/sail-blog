@@ -27,14 +27,14 @@
       <pubDate>Sat, 29 Apr 2017 14:37:00 +0000</pubDate>
       
       <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/</guid>
-      <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。 - 问题一：既然有http 请求，为什么还要用rpc调用？ - 问题二：请问rpc协议和http协议的关系和区别？
-之后就萌生了写一篇关于RPC的文章。
+      <description>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。
+  问题一：既然有http 请求，为什么还要用rpc调用？ 问题二：请问rpc协议和http协议的关系和区别？   之后就萌生了写一篇关于RPC的文章。
  一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
 RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。
 众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。
 针对对象序列化，有各种方式的性能对比，Github地址:
-通过对比可知： - Google的Protostuff性能最好 - JSON/XML性能比较差
-但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
+通过对比可知：
+ Google的Protostuff性能最好 JSON/XML性能比较差  但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
 dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：
 @Component public class CityDubboConsumerService { @Reference(version = &amp;quot;1.0.0&amp;quot;) CityDubboService cityDubboService; public void printCity() { String cityName=&amp;quot;xx&amp;quot;; City city = cityDubboService.</description>
     </item>
@@ -46,11 +46,9 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
       
       <guid>https://blog.sailfishc.cn/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/</guid>
       <description>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。
- 一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息
- 主体流程：  队列类似一个broker角色，生产者将内容（消息）发送到队列 队列进行存储，消费者将消息消费 消费者确认消费消息（ack）  生产者和消费者都可以通过来创建队列：
-channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   durable：队列名称，不指定则随机生成 exclusive：设置为true则为私有队列，只有当前消费者可以订阅； autoDelete：设置为true时最后一个消费者取消订阅将自动移除队列； arguments：参数   交换器&amp;amp;绑定 RabbitMQ的消息不是直接从生产者发送到队列的，而是要经过交换器然后才可以到达队列： - 生成者把消息发布到交换器上； - 消息最终到达队列，并被消费者接收； - 绑定决定了消息如何从交换器到特定的队列；
-四种交换器类型： - fanout：把所有发送到该Exchange的消息路由到所有与它绑定的Queue中 - direct：把消息路由到bindingKey与routingKey完全匹配的Queue中 - topic：把消息路由到bindingKey与routingKey模糊匹配的Queue中 - headers：headers类型的Exchange不依赖于routingKey与bindingKey的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配
-1、fanout  生产者（P）发送到Exchange（X）的所有消息都会路由到图中的两个Queue，并最终被两个消费者（C1与C2）消费。  2、direct  routingKey=”error”发送消息，则会同时路由到Queue1（amqp.gen-S9b…）和Queue2（amqp.gen-Agl…） routingKey=”info”或routingKey=”warning”发送消息，则只会路由到Queue2 以其他routingKey发送消息，则不会路由到这两个Queue中  3、topic  routingKey=”quick.</description>
+ 一、AMQP基础 二、RabbitMQ 基础概念  生产者、消费者 队列 交换器 绑定  生产者、消费者  生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ） 消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递） 信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的 消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）  队列(queue)  Queue（队列）是RabbitMQ的内部对象，用于存储消息 主体流程：  队列类似一个broker角色，生产者将内容（消息）发送到队列 队列进行存储，消费者将消息消费 消费者确认消费消息（ack）   生产者和消费者都可以通过来创建队列：  channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);  durable：队列名称，不指定则随机生成 exclusive：设置为true则为私有队列，只有当前消费者可以订阅； autoDelete：设置为true时最后一个消费者取消订阅将自动移除队列； arguments：参数  交换器&amp;amp;绑定 RabbitMQ的消息不是直接从生产者发送到队列的，而是要经过交换器然后才可以到达队列：
+ 生成者把消息发布到交换器上； 消息最终到达队列，并被消费者接收； 绑定决定了消息如何从交换器到特定的队列；  四种交换器类型：
+ fanout：把所有发送到该Exchange的消息路由到所有与它绑定的Queue中 direct：把消息路由到bindingKey与routingKey完全匹配的Queue中 topic：把消息路由到bindingKey与routingKey模糊匹配的Queue中 headers：headers类型的Exchange不依赖于routingKey与bindingKey的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配  1、fanout  生产者（P）发送到Exchange（X）的所有消息都会路由到图中的两个Queue，并最终被两个消费者（C1与C2）消费。  2、direct  routingKey=”error”发送消息，则会同时路由到Queue1（amqp.gen-S9b…）和Queue2（amqp.gen-Agl…） routingKey=”info”或routingKey=”warning”发送消息，则只会路由到Queue2 以其他routingKey发送消息，则不会路由到这两个Queue中  3、topic  routingKey=”quick.orange.rabbit”发送信息，则会同时路由到Q1与Q2 routingKey=”lazy.orange.fox”发送信息，则只会路由到Q1 routingKey=”lazy.</description>
     </item>
     
     <item>
@@ -60,11 +58,11 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
       
       <guid>https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</guid>
       <description>最近开发的小伙伴们在开发一个社区模块的时候发现目前数据库存储Emoji表情有问题，会出现乱码的情况，之后是这么解决的：UTF-8转为utf8mb4，但是这种操作数据库的方式很不好，然后就找到了这种方式解决。
- 在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？ - 字符编码笔记
-总的就一句话，UTF-8是Unicode的一种实现。
-一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路： - 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 - 读取的时候可以将😄这个字符转为😁
-例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。
-1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper.</description>
+ 在解决之前，得先说明一下为什么会出现乱码，Emoji表情占用4个字节，但是MySQL数据库UTF-8编码最多只能存储3个字节，就会导致存储不进去，在读取的时候读取不完整，导致乱码，那Unicode和UTF-8有什么区别呢？
+ 字符编码笔记  总的就一句话，UTF-8是Unicode的一种实现。
+一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：
+ 页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 读取的时候可以将😄这个字符转为😁  例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。
+1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper.</description>
     </item>
     
     <item>
@@ -75,11 +73,11 @@ channel.queueDeclare(QUEUE_NAME, durable, exclusive, autoDelete, arguments);   d
       <guid>https://blog.sailfishc.cn/posts/2017/03/java%E7%A8%8B%E5%BA%8F%E5%91%98%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
       <description>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。 感觉有点跑题了，说回来，还是怎么学习：
 1、你得对你所在行业的知识框架要有一个基本的了解  比如我所在的JavaEE的学习路线：
- Java基础 - 基础语法 - 逻辑控制流 - 面向对象的知识 - 常用的类，如String - IO - 集合 - 多线程 - 异常 - 网络编程
-JavaWeb - html/css/js相关基础知识 - xml相关配置 - Tomcat服务器 - Servlet/JSP - 数据库相关知识 - 过滤器，监听器 - ajax - session/cookie - jdbc
-框架相关(会用即可) - spring - springmvc - myBatis
-这是最基础的知识，这个层面就是先会用，可以在网上找一个网上商城的例子用来练习，把整体的代码思路看看，就算是OK了。 在实习工作期间，主要是适应公司的代码环境，这时候要会用一定的工具，类似版本控制，项目管理工具等： - GIT - SVN - Maven
-这些工具的基本操作学习用不了多久，但是会给你带动很高的效率，在这之后，就是真正开始自己学习的过程，这才是提高的过程，你得根据自己的实际情况开始自己学习，不再依赖于视频教程，更多的是来源于书籍和自己实际项目的思考，首先要将业务需求转化为自己的代码实现，这是最关键的，其次是思考，怎么写更好，这是一个模仿+思考的过程，你要了解系统的整体结构是什么，用到了哪些技术，日志是怎么处理的，异常是怎么处理的，最关键的是要有自己的代码风格。
+ Java基础
+ 基础语法 逻辑控制流 面向对象的知识 常用的类，如String IO 集合 多线程 异常 网络编程  JavaWeb
+ html/css/js相关基础知识 xml相关配置 Tomcat服务器 Servlet/JSP 数据库相关知识 过滤器，监听器 ajax session/cookie jdbc  框架相关(会用即可)
+ spring springmvc myBatis  这是最基础的知识，这个层面就是先会用，可以在网上找一个网上商城的例子用来练习，把整体的代码思路看看，就算是OK了。 在实习工作期间，主要是适应公司的代码环境，这时候要会用一定的工具，类似版本控制，项目管理工具等：
+ GIT SVN Maven  这些工具的基本操作学习用不了多久，但是会给你带动很高的效率，在这之后，就是真正开始自己学习的过程，这才是提高的过程，你得根据自己的实际情况开始自己学习，不再依赖于视频教程，更多的是来源于书籍和自己实际项目的思考，首先要将业务需求转化为自己的代码实现，这是最关键的，其次是思考，怎么写更好，这是一个模仿+思考的过程，你要了解系统的整体结构是什么，用到了哪些技术，日志是怎么处理的，异常是怎么处理的，最关键的是要有自己的代码风格。
 2、一次项目交接的思考 前几天有个同事要离职了，他的项目需要进行交接，我最近工作量比较少，就由我进行交接，这几天我觉得是我好几个月来成长最快的几天，我和他单独交流，因为项目是新建的一个项目，项目中业务信息不多，所以好理解，两天时间，基本上就可以上手了，之后的一天里我就一直和他在聊系统的设计思路和编码风格以及如何提高自己的编码水平。 很多人在做项目的时候思考的是如何做出来，也包括我，但是没有思考怎么做更好，他说他在做这个项目中删除了很多代码，想了好几套方法去解决，最终是保留了一套觉得自己好的，在这里，它借鉴了两个框架的设计思路，他没有深入了解过一个框架，但是大体了解一些，通过在写项目的过程中它看了些框架的源码，借鉴了一些它的思路，慢慢的也就有了一个从需求很不明确，没有的项目到现在也算是一个产品的项目，这其中花费了自己很大的心思。 我一直觉得自己的代码写的很烂，也一直想提高，但是苦于不知道如何提高，听了他的这些话，我就在想，目前我有基本的编码基础，我应该怎样提高，做项目？目前没有太多的时间去完整的做一个项目，最好的开端就是借鉴，从一个开源框架中借鉴它的思路，学习它的设计模式，编码风格，对工具类的封装，对功能的实现，这就像是你刚来公司的时候，要学习公司项目一样，但是这种开源框架会比较大，也比较难，不会像公司项目那样相对容易的让你去学习，但是坚持下去，总会有改变。</description>
     </item>
     
