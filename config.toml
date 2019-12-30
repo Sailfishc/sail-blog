@@ -162,3 +162,7 @@ disqusShortname = "sailfishc"
     name       = "Link"
     url        = "link/"
 
+   [[menu.main]]
+       identifier = "algorithm"
+       name       = "Algorithm"
+       url        = "algorithm/"
