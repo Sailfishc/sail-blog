@@ -311,14 +311,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/mq/</loc>
+    <loc>https://blog.sailfishc.cn/categories/mq/</loc>
     <lastmod>2017-04-23T14:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/mq/</loc>
+    <loc>https://blog.sailfishc.cn/tags/mq/</loc>
     <lastmod>2017-04-23T14:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -381,14 +381,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
+    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
+    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -458,14 +458,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://blog.sailfishc.cn/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-03-22T22:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://blog.sailfishc.cn/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-03-22T22:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -500,14 +500,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/hexo/</loc>
+    <loc>https://blog.sailfishc.cn/tags/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/hexo/</loc>
+    <loc>https://blog.sailfishc.cn/categories/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
