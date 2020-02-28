@@ -15,7 +15,7 @@
 public class UserService { @Resource private UserMapper userMapper; } 那这其中究竟是怎么做到这样简化的呢？
 实现细节 SqlSessionFactoryBean&amp;amp;SqlSessionFactory 上面介绍了关键类SqlSession, 那如何创建SqlSession呢？MyBatis使用了工厂方法来创建SqlSession，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：
 &amp;lt;bean id=&amp;quot;sqlSessionFactory&amp;quot; class=&amp;quot;org.mybatis.spring.SqlSessionFactoryBean&amp;quot;&amp;gt; &amp;lt;property name=&amp;quot;dataSource&amp;quot; ref=&amp;quot;dataSource&amp;quot; /&amp;gt; &amp;lt;/bean&amp;gt;  DataSource（必须配置）： SqlSessionFactory 需要一个（也可以是多个） DataSource  MapperFactoryBean 大家都知道MyBatis是基于Mapper的，一般情况MyBatis的一个Mapper就对应一张DB的Table，就有了" />
-<meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming, MyBatis" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/" />
@@ -89,7 +89,11 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
         
             <span class="logo__mark">></span>
             <span class="logo__text">$ cd /home/</span>
-            <span class="logo__cursor" style=""></span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
         
     </div>
 </a>

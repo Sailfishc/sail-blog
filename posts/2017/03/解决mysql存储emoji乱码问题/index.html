@@ -11,7 +11,7 @@
 一、如何解决Emoji存储问题  Github地址解决方案  再来摘抄一遍自己的笔记：mysql 的 utf8编码的一个字符最多3个字节，但是一个emoji表情为4个字节，所以utf8不支持存储emoji表情。但是utf8的超集utf8mb4一个字符最多能有4字节，所以能支持emoji表情的存储。但是修改这个配置太繁琐了，容易出错，emoji-java这个库可以在代码段解决这个问题，解决思路：
  页面有一个表情😁，在经过处理之后可以是😄,将这个字符存入数据库 读取的时候可以将😄这个字符转为😁  例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。
 1、引入依赖 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.vdurmont&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;emoji-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;3.2.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 2、常用API  @RequestMapping(&amp;quot;/add/content&amp;quot;) public ResponseEntity insertContent(@RequestBody Content content) { String title = content.getTitle(); String titles = EmojiParser.parseToAliases(title); content.setTitle(titles); Integer integer = emojiMapper.insertContent(content); if (integer == 1) { return ResponseEntity.ok().build(); } return ResponseEntity.badRequest().build(); } @RequestMapping(&amp;quot;/get/{id}&amp;quot;) public Content getById(@PathVariable(&amp;quot;id&amp;quot;) Integer id) { Content content = emojiMapper." />
-<meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming, Java, Emoji" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2017/03/%E8%A7%A3%E5%86%B3mysql%E5%AD%98%E5%82%A8emoji%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" />
@@ -85,7 +85,11 @@
         
             <span class="logo__mark">></span>
             <span class="logo__text">$ cd /home/</span>
-            <span class="logo__cursor" style=""></span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
         
     </div>
 </a>

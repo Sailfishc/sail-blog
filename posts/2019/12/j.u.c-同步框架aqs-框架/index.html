@@ -16,7 +16,7 @@ http://gee.cs.oswego.edu/ 这个是老李头的主页，里面有他的部分贡
 2 需求 2.1 功能 同步器一般包含两种方法，一种是 acquire，另一种是 release。acquire 操作阻塞调用的线程，直到或除非同步状态允许其继续执行。而 release 操作则是通过某种方式改变同步状态，使得一或多个被 acquire 阻塞的线程继续执行。
 j.u.c 包中并没有对同步器的API做一个统一的定义。因此，有一些类定义了通用的接口（如 Lock），而另外一些则定义了其专有的版本。因此在不同的类中，acquire 和 release 操作的名字和形式会各有不同。例如：Lock.lock，Semaphore.acquire，CountDownLatch.await 和 FutureTask.get，在这个框架里，这些方法都是 acquire 操作。但是，J.U.C 为支持一系列常见的使用选项，在类间都有个一致约定。在有意义的情况下，每一个同步器都支持下面的操作：
  阻塞和非阻塞（例如 tryLock）同步 可选的超时设置，让调用者可以放弃等待 通过中断实现的任务取消，通常是分为两个版本，一个 acquire 可取消，而另一个不可以  同步器的实现根据其状态是否独占而有所不同。独占状态的同步器，在同一时间只有一个线程可以通过阻塞点，而共享状态的同步器可以同时有多个线程在执行。一般锁的实现类往往只维护独占状态，但是，例如计数信号量在数量许可的情况下，允许多个线程同时执行。为了使框架能得到广泛应用，这两种模式都要支持。" />
-<meta name="keywords" content="homepage, blog, science, informatics, development, programming" />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming, juc" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://blog.sailfishc.cn/posts/2019/12/j.u.c-%E5%90%8C%E6%AD%A5%E6%A1%86%E6%9E%B6aqs-%E6%A1%86%E6%9E%B6/" />
@@ -108,7 +108,11 @@ j.u.c 包中并没有对同步器的API做一个统一的定义。因此，有�
         
             <span class="logo__mark">></span>
             <span class="logo__text">$ cd /home/</span>
-            <span class="logo__cursor" style=""></span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
         
     </div>
 </a>
