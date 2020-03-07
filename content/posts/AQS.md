@@ -10,6 +10,8 @@ tags:
 
 本文转载自：biezhi.com  [https://www.cnblogs.com/dennyzhangdd/p/7218510.html](https://www.cnblogs.com/dennyzhangdd/p/7218510.html)
 
+<!--more-->
+
 # 一、论文简介
 
 闲来无事，看看源码，发现了一篇JDK作者的论文《The java.util.concurrent Synchronizer Framework》主要描述了作者对 `AbstractQueuedSynchronizer` 同步器框架的设计和实现。权威性毋庸置疑！自然需要拜读一下，配上中文翻译，希望大家能有所收获。
