@@ -1,5 +1,5 @@
 #https://raw.githubusercontent.com/it-gro/hugo-theme-w3css-basic/master/exampleSite/config.toml
-baseURL = "https://sailfishc.cn/"
+baseURL = "https://sailfishc.github.io/"
 title="橙小张的博客"
 
 defaultContentLanguage = "en"           # Default language to use
