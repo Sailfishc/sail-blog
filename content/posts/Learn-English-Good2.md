@@ -1,5 +1,5 @@
 ---
-title: "Learn English Good2"
+title: "如何学习英语"
 date: 2020-03-07T11:11:53+08:00
 draft: false
 toc: true
