@@ -1,9 +1,10 @@
-[submodule "themes/LoveIt"]
-	path = themes/LoveIt
-	url = https://github.com/dillonzq/LoveIt.git
-[submodule "themes/hello-friend-ng"]
-	path = themes/hello-friend-ng
-	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng.git
-[submodule "themes/themes/github-style"]
-	path = themes/themes/github-style
+[submodule "themes/github-style"]
+	path = themes/github-style
 	url = git@github.com:MeiK2333/github-style.git
+[submodule "public"]
+	path = public
+	url = git@github.com:Sailfishc/sailfishc.github.io
+	branch = master
+[submodule "themes/hugo-theme-hello-friend-ng"]
+	path = themes/hugo-theme-hello-friend-ng.git
+	url = git@github.com:rhazdon/hugo-theme-hello-friend-ng.git
