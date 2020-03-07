@@ -2,6 +2,3 @@
 	path = public
 	url = git@github.com:Sailfishc/sailfishc.github.io
 	branch = master
-[submodule "themes/hugo-theme-hello-friend-ng"]
-	path = themes/hugo-theme-hello-friend-ng.git
-	url = git@github.com:rhazdon/hugo-theme-hello-friend-ng.git
