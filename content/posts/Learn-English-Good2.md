@@ -5,7 +5,7 @@ draft: false
 toc: true
 images:
 tags:
-  - TDD
+  - English
 ---
 
 这段时间自己一直在学习英语，也一直在寻找适合自己的英语学习方法，买了一些Native English  Speaker和Non-Native English  Speaker的课程，总结下来没有什么捷径，就这几点：
