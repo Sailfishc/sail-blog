@@ -34,7 +34,7 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
-disqusShortname = "sailfishc"
+disqusShortname = "sail-blog"
 
 
 [permalinks]
