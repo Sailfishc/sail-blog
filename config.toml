@@ -93,7 +93,7 @@ disqusShortname = "sailfishc"
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
+  defaultTheme = "light"
   # Colors for favicons
   [params.favicon.color]
     mask = "#252627"
@@ -162,8 +162,8 @@ disqusShortname = "sailfishc"
     name       = "Link"
     url        = "link/"
 
-   [[menu.main]]
-       identifier = "algorithm"
-       name       = "Algorithm"
-       url        = "algorithm/"
+  [[menu.main]]
+    identifier = "algorithm"
+    name       = "Algorithm"
+    url        = "algorithm/"
 
