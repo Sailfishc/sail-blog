@@ -87,6 +87,7 @@ disqusShortname = "sail-blog"
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
+  comments = true
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
@@ -108,9 +109,9 @@ disqusShortname = "sail-blog"
 #      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
 #      theme = "github-dark"
 
-  [params.utterances]       # https://utteranc.es/
-    owner = "sailfishc"              # Your GitHub ID
-    repo = "blog-comments"               # The repo to store comments
+#  [params.utterances]       # https://utteranc.es/
+#    owner = "sailfishc"              # Your GitHub ID
+#    repo = "blog-comments"               # The repo to store comments
 
   # Social icons
   [[params.social]]
