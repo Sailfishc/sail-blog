@@ -34,7 +34,7 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
-disqusShortname = "sail-blog"
+#disqusShortname = "sail-blog"
 
 
 [permalinks]
@@ -104,10 +104,10 @@ disqusShortname = "sail-blog"
   [params.logo]
       logoText     = "$ cd /home/"
       logoHomeLink = "/"
-#  [params.utter]
-#      repo = "sailfishc/blog-comments"
-#      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
-#      theme = "github-dark"
+  [params.utter]
+      repo = "sailfishc/blog-comments"
+      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+      theme = "github-dark"
 
 #  [params.utterances]       # https://utteranc.es/
 #    owner = "sailfishc"              # Your GitHub ID
