@@ -105,7 +105,7 @@ disableHugoGeneratorInject = false
       logoText     = "$ cd /home/"
       logoHomeLink = "/"
   [params.utter]
-      repo = "sailfishc/blog-comments"
+#      repo = "sailfishc/blog-comments"
       issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
       theme = "github-dark"
       owner = "sailfishc"              # Your GitHub ID
