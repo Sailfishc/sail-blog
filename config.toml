@@ -104,12 +104,13 @@ disableHugoGeneratorInject = false
   [params.logo]
       logoText     = "$ cd /home/"
       logoHomeLink = "/"
-  [params.utter]
+
+[params.utter]
 #      repo = "sailfishc/blog-comments"
-      issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
-      theme = "github-dark"
-      owner = "sailfishc"              # Your GitHub ID
-      repo = "blog-comments"               # The repo to store comments
+  issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+  theme = "github-dark"
+  owner = "sailfishc"              # Your GitHub ID
+  repo = "blog-comments"               # The repo to store comments
 
 #  [params.utterances]       # https://utteranc.es/
 #    owner = "sailfishc"              # Your GitHub ID
