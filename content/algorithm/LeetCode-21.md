@@ -1,5 +1,5 @@
 ---
-title: "LeetCode 21"
+title: "LeetCode 21. Merge Two Sorted Lists"
 date: 2020-03-26T23:00:40+08:00
 draft: false
 toc: false
