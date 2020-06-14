@@ -17,7 +17,7 @@ tags:
 
 ## 基础流程
 
-![RSS基础流程](sail-blog.oss-cn-beijing.aliyuncs.com/uPic/6xQZHF.jpg)
+![RSS基础流程](static.sailfishc.cn/uPic/6xQZHF.jpg)
 
 - 其中带颜色的是需要自己部署的
 
@@ -91,7 +91,7 @@ networks:
 
 ### 成果啦
 
-![订阅成功](sail-blog.oss-cn-beijing.aliyuncs.com/uPic/41Lcvz.jpg)
+![订阅成功](static.sailfishc.cn/uPic/41Lcvz.jpg)
 
 ### 最后
 
