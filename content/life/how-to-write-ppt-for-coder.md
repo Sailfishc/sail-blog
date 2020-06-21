@@ -25,7 +25,7 @@ tags:
 - 收集素材
 - 填充细节
 
-![乐高积木](sail-blog.oss-cn-beijing.aliyuncs.com/uPic/Fb27vG.jpg)
+![乐高积木](https://sail-blog.oss-cn-beijing.aliyuncs.com/uPic/Fb27vG.jpg)
 
 ### 写PPT的开始就是不写PPT
 
