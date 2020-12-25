@@ -13,6 +13,7 @@ tags:
 
 在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
 
+
 ```
 The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked.
 To stop tracking a file that is currently tracked, use：git rm —cached.
