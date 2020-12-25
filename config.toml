@@ -1,10 +1,10 @@
 #https://raw.githubusercontent.com/it-gro/hugo-theme-w3css-basic/master/exampleSite/config.toml
 baseURL = "https://blog.sailfishc.cn/"
-title="橙小张的博客"
-
 defaultContentLanguage = "en"           # Default language to use
 languageCode  = "en-us"
 theme = "hello-friend-ng"
+title="橙小张的博客"
+paginate     = 15
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
