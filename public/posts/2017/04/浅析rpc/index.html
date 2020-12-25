@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="sailfish ">
+<meta name="description" content="目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。
+  问题一：既然有http 请求，为什么还要用rpc调用？ 问题二：请问rpc协议和http协议的关系和区别？   之后就萌生了写一篇关于RPC的文章。
+ 一、RPC的基本概念 RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。 这篇文章解释的不错：通俗的语言解释什么是 RPC 框架
+RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。
+众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。
+针对对象序列化，有各种方式的性能对比，Github地址:
+通过对比可知：
+ Google的Protostuff性能最好 JSON/XML性能比较差  但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。
+dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：
+@Component public class CityDubboConsumerService { @Reference(version = &amp;quot;1.0.0&amp;quot;) CityDubboService cityDubboService; public void printCity() { String cityName=&amp;quot;xx&amp;quot;; City city = cityDubboService." />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming, Java, RPC, SOA" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/" />
+
+
+    <title>
+        
+            浅析RPC :: 橙小张的博客  — 讨论技术，聊聊生活
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+    <link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+    <link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="浅析RPC">
+<meta itemprop="description" content="浅析RPC">
+<meta itemprop="datePublished" content="2017-04-29T14:37:00+00:00" />
+<meta itemprop="dateModified" content="2017-04-29T14:37:00+00:00" />
+<meta itemprop="wordCount" content="667">
+<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
+
+
+
+<meta itemprop="keywords" content="Java,RPC,SOA," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
+
+<meta name="twitter:title" content="浅析RPC"/>
+<meta name="twitter:description" content="浅析RPC"/>
+
+
+
+
+
+    <meta property="article:section" content="RPC" />
+
+
+
+    <meta property="article:published_time" content="2017-04-29 14:37:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://blog.sailfishc.cn/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/algorithm/">Algorithm</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/life/">Life</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://blog.sailfishc.cn/posts/2017/04/%E6%B5%85%E6%9E%90rpc/">浅析RPC</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <blockquote>
+<p>目前很多应用应该都不是one in all模式了，避免不了发生远程调用，和同事聊了下RPC之后，发现大家对RPC的概念还是比较模糊的，虽然一直在用，但是不太明白其含义，在知乎上搜了下RPC HTTP这俩个关键词，发现还是有很多误解的。</p>
+</blockquote>
+<ul>
+<li>问题一：既然有http 请求，为什么还要用rpc调用？</li>
+<li>问题二：请问rpc协议和http协议的关系和区别？</li>
+</ul>
+<blockquote>
+<p>之后就萌生了写一篇关于RPC的文章。</p>
+</blockquote>
+<h2 id="一rpc的基本概念">一、RPC的基本概念</h2>
+<p>RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。
+RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。
+这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695">通俗的语言解释什么是 RPC 框架</a></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-56600e1178de48f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>RPC 可基于 HTTP 或 TCP 协议，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。会两方面会直接影响 RPC 的性能，一是传输方式，二是序列化。</p>
+<p>众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。就序列化而言，Java 提供了默认的序列化方式，但在高并发的情况下，这种方式将会带来一些性能上的瓶颈，于是市面上出现了一系列优秀的序列化框架，比如：Protobuf、Kryo、Hessian、Jackson 等，它们可以取代 Java 默认的序列化，从而提供更高效的性能。</p>
+<p>针对对象序列化，有各种方式的性能对比，<a href="https://github.com/eishay/jvm-serializers/wiki">Github地址</a>:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/734456-ff9c09c4b7ae2916.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png">
+通过对比可知：</p>
+<ul>
+<li>Google的Protostuff性能最好</li>
+<li>JSON/XML性能比较差</li>
+</ul>
+<p>但是JSON/XML方式在互联网领域应用比较广泛，第三方的解析包也比较容易使用，所以在效率要求不是很高的情况下是一种不错的选择。</p>
+<p>dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使用也是非常简单：</p>
+<pre><code>@Component
+public class CityDubboConsumerService {
+
+    @Reference(version = &quot;1.0.0&quot;)
+    CityDubboService cityDubboService;
+
+    public void printCity() {
+        String cityName=&quot;xx&quot;;
+        City city = cityDubboService.findCityByName(cityName);
+        System.out.println(city.toString());
+    }
+}
+</code></pre><ul>
+<li>在不理解RPC概念的情况下，会认为RPC就只有这种应用，其实开发中经常使用的HTTPClient调用也是属于RPC的一种方式。</li>
+</ul>
+<h2 id="二rpc的使用">二、RPC的使用</h2>
+<h3 id="1基于tcp的远程调用">1、基于TCP的远程调用</h3>
+<ul>
+<li>服务消费者</li>
+</ul>
+<pre><code>public class Consumer {
+
+
+	public static void main(String[] args) throws UnknownHostException, IOException, SecurityException, NoSuchMethodException, ClassNotFoundException{
+
+		//接口名称
+		String interfacename= SayHelloService.class.getName();
+
+		//需要远程执行的方法
+		Method method = SayHelloService.class.getMethod(&quot;sayHello&quot;, java.lang.String.class);
+
+		//需要传递到远端的参数
+		Object[] arguments = {&quot;hello&quot;};
+
+		Socket socket = new Socket(&quot;127.0.0.1&quot;, 1234);
+
+		//将方法名称和参数传递到远端
+		ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
+		output.writeUTF(interfacename); //接口名称
+		output.writeUTF(method.getName());  //方法名称
+		output.writeObject(method.getParameterTypes());
+		output.writeObject(arguments);
+
+		//从远端读取方法执行结果
+		ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+		Object result = input.readObject();
+
+		//使用代理对象来处理，直接返回string类型
+
+		System.out.println(result);
+	}
+}
+</code></pre><ul>
+<li>服务提供者</li>
+</ul>
+<pre><code>public class Provider {
+
+	//所有的服务
+	private static Map&lt;String,Object&gt; services = new HashMap&lt;String,Object&gt;();
+
+	static{
+		services.put(SayHelloService.class.getName(), new SayHelloServiceImpl());
+	}
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException, SecurityException, NoSuchMethodException, IllegalArgumentException, IllegalAccessException, InvocationTargetException{
+
+		ServerSocket server = new ServerSocket(1234);
+		while(true) {
+			Socket socket = server.accept();
+
+			//读取服务信息
+			ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+			String interfacename = input.readUTF(); //接口名称
+			String methodName = input.readUTF();  //方法名称
+			Class&lt;?&gt;[] parameterTypes = (Class&lt;?&gt;[])input.readObject();  //参数类型
+			Object[] arguments = (Object[])input.readObject();  //参数对象
+
+			//执行调用
+			Class serviceinterfaceclass = Class.forName(interfacename);//得到接口的class
+			Object service = services.get(interfacename);//取得服务实现的对象
+			Method method = serviceinterfaceclass.getMethod(methodName, parameterTypes);//获得要调用的方法
+			Object result = method.invoke(service, arguments);
+
+			ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
+			output.writeObject(result);
+		}
+	}
+}
+</code></pre><ul>
+<li>接口</li>
+</ul>
+<pre><code>public interface SayHelloService {
+
+	/**
+	 * 问好的接口
+	 * @param helloArg 参数
+	 * @return
+	 */
+	public String sayHello(String helloArg);
+}
+</code></pre><ul>
+<li>实现类</li>
+</ul>
+<pre><code>public class SayHelloServiceImpl implements SayHelloService {
+
+	@Override
+	public String sayHello(String helloArg) {
+
+		if(helloArg.equals(&quot;hello&quot;)){
+			return &quot;hello&quot;;
+		}else{
+			return &quot;bye bye&quot;;
+		}
+
+	}
+
+}
+</code></pre><h3 id="2基于http的远程调用">2、基于HTTP的远程调用</h3>
+<ul>
+<li>基础服务接口</li>
+</ul>
+<pre><code>public interface BaseService {
+
+	public Object execute(Map&lt;String,Object&gt; args);
+}
+</code></pre><ul>
+<li>JSON结果集</li>
+</ul>
+<pre><code>public class JsonResult {
+
+	//结果状态码
+	private int resultCode;
+	//状态码解释消息
+	private String message;
+	//结果
+	private Object result;
+
+	public int getResultCode() {
+		return resultCode;
+	}
+	public void setResultCode(int resultCode) {
+		this.resultCode = resultCode;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public Object getResult() {
+		return result;
+	}
+	public void setResult(Object result) {
+		this.result = result;
+	}
+}
+</code></pre><ul>
+<li>JSON帮助类</li>
+</ul>
+<pre><code>public class JsonUtil {
+
+	private static final ObjectMapper mapper = new ObjectMapper();
+
+	public static Object jsonToObject(String json, Class cls) {
+
+		try{
+			//允许json串里面的key value不带双引号
+			mapper.configure(org.codehaus.jackson.JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+
+			// 允许制定的object中的属性没有json串中某个key
+			mapper.configure(org.codehaus.jackson.map.DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+			return mapper.readValue(json, cls);
+
+		}catch(Exception e){}
+
+		return null;
+
+	}
+
+	public static String getJson(Object object)  {
+
+		try{
+			String json = null;
+
+			StringWriter sw = new StringWriter();
+			JsonGenerator gen = new JsonFactory().createJsonGenerator(sw);
+			mapper.writeValue(gen, object);
+			gen.close();
+			json = sw.toString();
+			return json;
+
+		}catch(Exception e){}
+
+		return null;
+	}
+}
+</code></pre><pre><code>public class SayHelloService implements BaseService{
+
+	public Object execute(Map&lt;String, Object&gt; args) {
+		//request.getParameterMap() 取出来为array,此处需要注意
+		String[] helloArg = (String[]) args.get(&quot;arg1&quot;);
+
+		if(&quot;hello&quot;.equals(helloArg[0])){
+			return &quot;hello&quot;;
+		}else{
+			return &quot;bye bye&quot;;
+		}
+	}
+
+}
+</code></pre><ul>
+<li>服务消费者</li>
+</ul>
+<pre><code>public class ServiceConsumer extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		this.doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		//参数
+		String service = &quot;com.http.sayhello&quot;;
+		String format = &quot;json&quot;;
+		String arg1 = &quot;hello&quot;;
+
+
+		String url = &quot;http://localhost:8080//testhttprpc/provider.do?&quot;+&quot;service=&quot; + service + &quot;&amp;format=&quot; + format + &quot;&amp;arg1=&quot; + arg1;
+
+		//组装请求
+		HttpClient httpClient = new DefaultHttpClient();
+		HttpGet httpGet = new HttpGet(url);
+
+		//接收响应
+		HttpResponse response = httpClient.execute(httpGet);
+
+		HttpEntity entity = response.getEntity();
+		byte[] bytes = EntityUtils.toByteArray(entity);
+		String jsonresult = new String(bytes, &quot;utf8&quot;);
+
+		JsonResult result = (JsonResult)JsonUtil.jsonToObject(jsonresult, JsonResult.class);
+
+		resp.getWriter().write(result.getResult().toString());
+
+	}
+}
+</code></pre><ul>
+<li>服务提供者</li>
+</ul>
+<pre><code>public class ServiceProvider  extends HttpServlet{
+
+	private Map&lt;String,BaseService&gt; serviceMap ;
+
+
+	@Override
+	public void init() throws ServletException {
+		//服务map初始化
+		serviceMap = new HashMap&lt;String,BaseService&gt;();
+		serviceMap.put(&quot;com.http.sayhello&quot;, new SayHelloService());
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		this.doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+
+		//基本参数
+		String servicename = req.getParameter(&quot;service&quot;);
+		String format = req.getParameter(&quot;format&quot;);
+
+		Map parameters =  req.getParameterMap();
+
+		BaseService service = serviceMap.get(servicename);
+		Object result = service.execute(parameters);
+
+		//生成json结果集
+		JsonResult jsonResult = new JsonResult();
+		jsonResult.setResult(result);
+		jsonResult.setMessage(&quot;success&quot;);
+		jsonResult.setResultCode(200);
+
+		String json = JsonUtil.getJson(jsonResult);
+		resp.getWriter().write(json);
+	}
+}
+</code></pre><h3 id="3url风格">3、URL风格</h3>
+<ul>
+<li>RPC风格的URL</li>
+<li>RESTFUL风格的URL</li>
+</ul>
+<p><strong>RPC风格的URL</strong>
+<code>http://hostname/provider.do?service=com.http.sayhello&amp;format=json&amp;timest amp=2017-04-07-13-22-09&amp;arg1=arg1&amp;arg2=arg2</code></p>
+<ul>
+<li>hostname表示服务提供方的主机名</li>
+<li>service表示远程调用的服务接口名称</li>
+<li>format表示返回参数的格式</li>
+<li>timestamp表示客户端请求的时间戳</li>
+<li>arg1和 arg2表示服务所需要的参数</li>
+<li>备注：淘宝开放平台的API以这种形式的URL提供</li>
+</ul>
+<p><strong>RESTFUL风格的URL</strong></p>
+<pre><code>POST http://hostname/people 创建name为zhangsan的people记录
+GET http://hostname/people/zhangsan 返回name为zhangsan的people记录
+PUT http://hostname/people/zhangsan 提交name为zhangsan的people记录更新 
+DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
+</code></pre><h2 id="三总结">三、总结</h2>
+<blockquote>
+<ul>
+<li>本文内容部分摘自《大型分布式网站架构》</li>
+</ul>
+</blockquote>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/java/">Java</a></span>
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/rpc/">RPC</a></span>
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/soa/">SOA</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://blog.sailfishc.cn/categories/rpc/">RPC</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        667 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2017-04-29 22:37 &#43;0800
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/">
+                <span class="button__icon">←</span>
+                <span class="button__text">设计模式总结</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://blog.sailfishc.cn/posts/2017/04/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%B9%8Brabbitmq%E5%9F%BA%E7%A1%80/">
+                <span class="button__text">消息队列之RabbitMQ基础</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://blog.sailfishc.cn/">sailfish</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-124900585-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>

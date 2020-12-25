@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="sailfish ">
+<meta name="description" content=" 问题简述
+ 在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+ 原因
+ 一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
+ 具体执行
+  如果是单个文件：git rm —cached path/filename 如果是文件夹：git rm -r —cached path   参考文档
+  Git - gitignore Documentation Git - git-rm Documentation  " />
+<meta name="keywords" content="homepage, blog, science, informatics, development, programming, Git, GitIgnore" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/" />
+
+
+    <title>
+        
+            解决添加到GitIgnore的文件没被忽略的问题 :: 橙小张的博客  — 讨论技术，聊聊生活
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blog.sailfishc.cn/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sailfishc.cn/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://blog.sailfishc.cn/favicon-16x16.png">
+    <link rel="manifest" href="https://blog.sailfishc.cn/site.webmanifest">
+    <link rel="mask-icon" href="https://blog.sailfishc.cn/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://blog.sailfishc.cn/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="解决添加到GitIgnore的文件没被忽略的问题">
+<meta itemprop="description" content=" 问题简述
+ 在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+ 原因
+ 一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
+ 具体执行
+  如果是单个文件：git rm —cached path/filename 如果是文件夹：git rm -r —cached path   参考文档
+  Git - gitignore Documentation Git - git-rm Documentation  ">
+<meta itemprop="datePublished" content="2019-10-30T09:56:18+08:00" />
+<meta itemprop="dateModified" content="2019-10-30T09:56:18+08:00" />
+<meta itemprop="wordCount" content="56">
+<meta itemprop="image" content="https://blog.sailfishc.cn/"/>
+
+
+
+<meta itemprop="keywords" content="Git,GitIgnore," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
+
+<meta name="twitter:title" content="解决添加到GitIgnore的文件没被忽略的问题"/>
+<meta name="twitter:description" content=" 问题简述
+ 在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：
+The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked. To stop tracking a file that is currently tracked, use：git rm —cached. 意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用git rm --cached。
+ 原因
+ 一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。
+ 具体执行
+  如果是单个文件：git rm —cached path/filename 如果是文件夹：git rm -r —cached path   参考文档
+  Git - gitignore Documentation Git - git-rm Documentation  "/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2019-10-30 09:56:18 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://blog.sailfishc.cn/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://blog.sailfishc.cn/about/">About</a></li><li><a href="https://blog.sailfishc.cn/algorithm/">Algorithm</a></li><li><a href="https://blog.sailfishc.cn/posts/">Blog</a></li><li><a href="https://blog.sailfishc.cn/life/">Life</a></li><li><a href="https://blog.sailfishc.cn/link/">Link</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/">解决添加到GitIgnore的文件没被忽略的问题</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <blockquote>
+<p>问题简述</p>
+</blockquote>
+<p>在开发中有时候会遇到把某文件添加到Git Ignore文件中，但是在Commit的时候发现这个文件还是可以被Commit，并没有被忽略掉，在查看了Git的官方文档，发现官网文档已经做了如下解释：</p>
+<pre><code>The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked.
+To stop tracking a file that is currently tracked, use：git rm —cached.
+</code></pre><p>意思是：gitignore文件的目的是确保未被Git跟踪的某些文件保持未跟踪状态。要停止跟踪当前跟踪的文件，请使用<code>git rm --cached</code>。</p>
+<blockquote>
+<p>原因</p>
+</blockquote>
+<p>一般来说出现这种问题的原因是使用了IDE，在创建文件的时候IDE自动给add进去了，被Git追踪管理了。</p>
+<blockquote>
+<p>具体执行</p>
+</blockquote>
+<ul>
+<li>如果是单个文件：git rm —cached  path/filename</li>
+<li>如果是文件夹：git rm -r —cached path</li>
+</ul>
+<blockquote>
+<p>参考文档</p>
+</blockquote>
+<ul>
+<li><a href="https://git-scm.com/docs/gitignore">Git - gitignore Documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-rm">Git - git-rm Documentation</a></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/git/">Git</a></span>
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/gitignore/">GitIgnore</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        56 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2019-10-30 09:56 &#43;0800
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://blog.sailfishc.cn/posts/2019/11/%E5%AD%A6%E4%B9%A0%E8%A7%82/">
+                <span class="button__icon">←</span>
+                <span class="button__text">学习观</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+                <span class="button__text">通过Hugo&#43;Github快速搭建博客</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://blog.sailfishc.cn/">sailfish</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-124900585-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>
