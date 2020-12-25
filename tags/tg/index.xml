@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TG on 橙小张的博客</title>
+    <link>https://blog.sailfishc.cn/tags/tg/</link>
+    <description>Recent content in TG on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 14 Jun 2020 21:16:05 +0800</lastBuildDate><atom:link href="https://blog.sailfishc.cn/tags/tg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用Telegram订阅RSS</title>
+      <link>https://blog.sailfishc.cn/posts/2020/06/%E5%88%A9%E7%94%A8telegram%E8%AE%A2%E9%98%85rss/</link>
+      <pubDate>Sun, 14 Jun 2020 21:16:05 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/2020/06/%E5%88%A9%E7%94%A8telegram%E8%AE%A2%E9%98%85rss/</guid>
+      <description>订阅优质的博客资源是学习精进的好方法，RSS是达成这一目的一个好工具。
+ 之前一直在用的是Feedly，但是用着用着Feedly打开的频率越来越低了，后来看到木子在用Telegram做了RSS，我也就比较趋向于这种方式了，这篇文章就不介绍RSS的一些概念了，就直接开始展示工作流以及如何使用吧，奥利给！
+基础流程  其中带颜色的是需要自己部署的   流程分析
+  在TG上新建一个Bot 将Bot加入自己的Channel或者是Group中 部署一个RSS服务 在Bot中输入想要订阅的网站订阅 TG服务器收到消息 RSS服务监听TG服务器消息，当你在TG客户端的Bot中加入了想要订阅的网站后，RSS服务是能得到信息的 RSS服务每5分钟抓取一次目标网站，看是否有更新 如果有更新，则使用TG的OpenAPI给所在的Channel或者Group推送消息  搭建服务 准备Bot  @BotFather，使用/start 输入Bot的name和userName BotFather会返回这个Bot的Token，一般是数字：字母，Token是极其重要的，是和TG的OpenAPI做交互的唯一凭证  将Bot加入Channel或者  将Bot作为Admin加入自己的Channel或者Group   测试Bot，获取Chat信息（不是必要操作），具体可以参考Telegram Bot - how to get a group chat id? - Stack Overflow
+  按照这个格式输入到浏览器：https://api.telegram.org/bot${token}/getUpdates，例如：https://api.telegram.org/bot12036334:A2zvFH8VYZ/getUpdates 还可以按照这个格式以Bot的名义发送消息：https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&amp;amp;text=hello  部署RSS服务  必要条件
+  会使用Docker 有一台科学上网的VPS 有公网IP  在看了下RSS服务之后，有两个还不错的
+ GitHub - fengkx/NodeRSSBot: Another Telegram RSSBot but in Node.</description>
+    </item>
+    
+  </channel>
+</rss>

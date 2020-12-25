@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 28 Feb 2016 17:58:27 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.sailfishc.cn/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 28 Feb 2016 17:58:27 +0000</lastBuildDate><atom:link href="https://blog.sailfishc.cn/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</title>
       <link>https://blog.sailfishc.cn/posts/2016/02/%E4%BD%BF%E7%94%A8-github-%E7%A9%BA%E9%97%B4%E6%90%AD%E5%BB%BA-hexo-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2-%E5%AE%89%E8%A3%85%E7%AF%87%E5%9F%BA%E4%BA%8E-intellij-idea/</link>

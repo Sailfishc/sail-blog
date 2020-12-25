@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>快慢指针 on 橙小张的博客</title>
+    <link>https://blog.sailfishc.cn/tags/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88/</link>
+    <description>Recent content in 快慢指针 on 橙小张的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Mar 2020 13:55:37 +0800</lastBuildDate><atom:link href="https://blog.sailfishc.cn/tags/%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 283. Move Zeroes</title>
+      <link>https://blog.sailfishc.cn/algorithm/leetcode283-movezeros/</link>
+      <pubDate>Thu, 26 Mar 2020 13:55:37 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/algorithm/leetcode283-movezeros/</guid>
+      <description>题目解读 Given an array nums, write a function to move all 0&#39;s to the end of it while maintaining the relative order of the non-zero elements. Example: Input: [0,1,0,3,12] Output: [1,3,12,0,0] Note: 1. You must do this in-place without making a copy of the array. 2. Minimize the total number of operations.  注意点：
+  维持数组的相对顺序，也就是不能改变非0元素的相对顺序 不使用新的数组 最少的操作数（操作数指的是对数组的赋值操作）  思路  这道题难度是easy，思路也比较简单，有点类似快慢指针的做法
+  定义一个索引nonZero（慢指针），定义为在[0, nonZero]的元素都是符合条件的 遍历数组，索引下标为index（快指针） 如果index对应的值不等于0，则将index的值赋值给nonZero索引，将index和nonZero索引向后移动 如果index对应的值等于0，则只移动index的值 直到index遍历结束 这个时候nonZero的之前的元素已经是数组中全部不为0的数了，只需要把(nonZero, 数组长度)的值赋值为0即可  代码 public void moveZeroes(int[] nums) { if (nums == null || nums.</description>
+    </item>
+    
+  </channel>
+</rss>

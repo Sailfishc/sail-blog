@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 07 Jan 2019 21:37:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.sailfishc.cn/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 07 Jan 2019 21:37:00 +0000</lastBuildDate><atom:link href="https://blog.sailfishc.cn/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>那些书本中没告诉你的MyBatis</title>
       <link>https://blog.sailfishc.cn/posts/2019/01/%E9%82%A3%E4%BA%9B%E4%B9%A6%E6%9C%AC%E4%B8%AD%E6%B2%A1%E5%91%8A%E8%AF%89%E4%BD%A0%E7%9A%84mybatis/</link>

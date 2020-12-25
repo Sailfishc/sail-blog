@@ -6,8 +6,620 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 27 Dec 2019 12:03:29 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jun 2020 21:06:09 +0800</lastBuildDate>
         <atom:link href="https://blog.sailfishc.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>基本的Linux命令</title>
+            <link>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</link>
+            <pubDate>Sun, 21 Jun 2020 21:06:09 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</guid>
+            <description> 可能学习Linux最好的方式是自己搭建科学上网的时候去学习吧😑
+ 权限  创建用户：sudo useradd -m -s /bin/bash username 设置密码：sodu passwd username 将用户加入sudo组：sudo usermod -G sudo username 切换用户：su -l username   如果没有sudo组，可以使用
+ 添加sudo组： sudo groupadd sudo 将sudo组加入sudoer：sudo visudo 配置：%sudo ALL=(ALL:ALL) ALL  配置进行免密：%sudo ALL=ALL NOPASSWD:ALL    给用户&amp;amp;用户组设置某个文件&amp;amp;文件夹的权限：sudo chown -R acme:acme /etc/xx/live 设置文件&amp;amp;文件夹的读写权限：chmod -R 750 /etc/letsencrypt/live  包管理  安装包：sudo yum install -y curl 服务管理：  启动服务： sudo systemctl start crond 设置自启动服务（如果服务器挂了重启之后再次启动应用）：sudo systemctl enable crond 重启服务： sudo systemctl restart nginx    目录管理  创建多个文件夹：sudo mkdir -p /etc/xx/live  文本编辑&amp;amp;查看  vi vim nano  服务信息  查看内核版本：uname -a  资料参考  写代码怎能不会这些 Linux 命令？ | 编程和酒  </description>
+            <content type="html"><![CDATA[<blockquote>
+<p>可能学习Linux最好的方式是自己搭建科学上网的时候去学习吧😑</p>
+</blockquote>
+<h2 id="权限">权限</h2>
+<ul>
+<li>创建用户：<code>sudo useradd -m -s /bin/bash username</code></li>
+<li>设置密码：<code>sodu passwd username</code></li>
+<li>将用户加入<code>sudo</code>组：<code>sudo usermod -G sudo username</code></li>
+<li>切换用户：<code>su -l username</code></li>
+</ul>
+<blockquote>
+<p>如果没有sudo组，可以使用</p>
+<ol>
+<li>添加sudo组： <code>sudo groupadd sudo</code></li>
+<li>将sudo组加入<code>sudoer</code>：<code>sudo visudo</code></li>
+<li>配置：<code>%sudo   ALL=(ALL:ALL) ALL </code></li>
+<li>配置进行免密：<code>%sudo ALL=ALL NOPASSWD:ALL</code></li>
+</ol>
+</blockquote>
+<ul>
+<li>给用户&amp;用户组设置某个文件&amp;文件夹的权限：<code>sudo chown -R acme:acme /etc/xx/live</code></li>
+<li>设置文件&amp;文件夹的读写权限：<code>chmod -R 750 /etc/letsencrypt/live</code></li>
+</ul>
+<h2 id="包管理">包管理</h2>
+<ul>
+<li>安装包：<code>sudo yum install -y curl</code></li>
+<li>服务管理：
+<ul>
+<li>启动服务： <code>sudo systemctl start crond</code></li>
+<li>设置自启动服务（如果服务器挂了重启之后再次启动应用）：<code>sudo systemctl enable crond</code></li>
+<li>重启服务： <code>sudo systemctl restart nginx</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="目录管理">目录管理</h2>
+<ul>
+<li>创建多个文件夹：<code>sudo mkdir -p /etc/xx/live</code></li>
+</ul>
+<h2 id="文本编辑查看">文本编辑&amp;查看</h2>
+<ul>
+<li>vi</li>
+<li>vim</li>
+<li>nano</li>
+</ul>
+<h2 id="服务信息">服务信息</h2>
+<ul>
+<li>查看内核版本：<code>uname -a</code></li>
+</ul>
+<h2 id="资料参考">资料参考</h2>
+<ul>
+<li><a href="https://blog.biezhi.me/2017/08/write-code-must-linux-command.html">写代码怎能不会这些 Linux 命令？ | 编程和酒</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>利用Telegram订阅RSS</title>
+            <link>https://blog.sailfishc.cn/posts/2020/06/%E5%88%A9%E7%94%A8telegram%E8%AE%A2%E9%98%85rss/</link>
+            <pubDate>Sun, 14 Jun 2020 21:16:05 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/06/%E5%88%A9%E7%94%A8telegram%E8%AE%A2%E9%98%85rss/</guid>
+            <description>订阅优质的博客资源是学习精进的好方法，RSS是达成这一目的一个好工具。
+ 之前一直在用的是Feedly，但是用着用着Feedly打开的频率越来越低了，后来看到木子在用Telegram做了RSS，我也就比较趋向于这种方式了，这篇文章就不介绍RSS的一些概念了，就直接开始展示工作流以及如何使用吧，奥利给！
+基础流程  其中带颜色的是需要自己部署的   流程分析
+  在TG上新建一个Bot 将Bot加入自己的Channel或者是Group中 部署一个RSS服务 在Bot中输入想要订阅的网站订阅 TG服务器收到消息 RSS服务监听TG服务器消息，当你在TG客户端的Bot中加入了想要订阅的网站后，RSS服务是能得到信息的 RSS服务每5分钟抓取一次目标网站，看是否有更新 如果有更新，则使用TG的OpenAPI给所在的Channel或者Group推送消息  搭建服务 准备Bot  @BotFather，使用/start 输入Bot的name和userName BotFather会返回这个Bot的Token，一般是数字：字母，Token是极其重要的，是和TG的OpenAPI做交互的唯一凭证  将Bot加入Channel或者  将Bot作为Admin加入自己的Channel或者Group   测试Bot，获取Chat信息（不是必要操作），具体可以参考Telegram Bot - how to get a group chat id? - Stack Overflow
+  按照这个格式输入到浏览器：https://api.telegram.org/bot${token}/getUpdates，例如：https://api.telegram.org/bot12036334:A2zvFH8VYZ/getUpdates 还可以按照这个格式以Bot的名义发送消息：https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&amp;amp;text=hello  部署RSS服务  必要条件
+  会使用Docker 有一台科学上网的VPS 有公网IP  在看了下RSS服务之后，有两个还不错的
+ GitHub - fengkx/NodeRSSBot: Another Telegram RSSBot but in Node.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>订阅优质的博客资源是学习精进的好方法，RSS是达成这一目的一个好工具。</p>
+</blockquote>
+<p>之前一直在用的是<code>Feedly</code>，但是用着用着<code>Feedly</code>打开的频率越来越低了，后来看到木子在用<code>Telegram</code>做了RSS，我也就比较趋向于这种方式了，这篇文章就不介绍RSS的一些概念了，就直接开始展示工作流以及如何使用吧，奥利给！</p>
+<h2 id="基础流程">基础流程</h2>
+<p><img src="https://sail-blog.oss-cn-beijing.aliyuncs.com/uPic/6xQZHF.jpg" alt="RSS基础流程"></p>
+<ul>
+<li>其中带颜色的是需要自己部署的</li>
+</ul>
+<blockquote>
+<p>流程分析</p>
+</blockquote>
+<ul>
+<li>在TG上新建一个Bot</li>
+<li>将Bot加入自己的Channel或者是Group中</li>
+<li>部署一个RSS服务</li>
+<li>在Bot中输入想要订阅的网站订阅</li>
+<li>TG服务器收到消息</li>
+<li>RSS服务监听TG服务器消息，当你在TG客户端的Bot中加入了想要订阅的网站后，RSS服务是能得到信息的</li>
+<li>RSS服务每5分钟抓取一次目标网站，看是否有更新</li>
+<li>如果有更新，则使用TG的OpenAPI给所在的Channel或者Group推送消息</li>
+</ul>
+<h2 id="搭建服务">搭建服务</h2>
+<h3 id="准备bot">准备Bot</h3>
+<ul>
+<li>@BotFather，使用<code>/start</code></li>
+<li>输入Bot的name和userName</li>
+<li>BotFather会返回这个Bot的Token，一般是数字：字母，Token是极其重要的，是和TG的OpenAPI做交互的唯一凭证</li>
+</ul>
+<h3 id="将bot加入channel或者">将Bot加入Channel或者</h3>
+<ul>
+<li>将Bot作为Admin加入自己的Channel或者Group</li>
+</ul>
+<blockquote>
+<p>测试Bot，获取Chat信息（不是必要操作），具体可以参考<a href="https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id">Telegram Bot - how to get a group chat id? - Stack Overflow</a></p>
+</blockquote>
+<ul>
+<li>按照这个格式输入到浏览器：<code>https://api.telegram.org/bot${token}/getUpdates</code>，例如：<code>https://api.telegram.org/bot12036334:A2zvFH8VYZ/getUpdates</code></li>
+<li>还可以按照这个格式以Bot的名义发送消息：<code>https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&amp;text=hello</code></li>
+</ul>
+<h3 id="部署rss服务">部署RSS服务</h3>
+<blockquote>
+<p>必要条件</p>
+</blockquote>
+<ul>
+<li>会使用Docker</li>
+<li>有一台科学上网的VPS</li>
+<li>有公网IP</li>
+</ul>
+<p>在看了下RSS服务之后，有两个还不错的</p>
+<ul>
+<li><a href="https://github.com/fengkx/NodeRSSBot">GitHub - fengkx/NodeRSSBot: Another Telegram RSSBot  but in Node.js Telegram RSS 机器人</a></li>
+<li><a href="https://github.com/cbrgm/telegram-robot-rss">GitHub - cbrgm/telegram-robot-rss: A clean and easy to use RSS Newsfeed Bot for fabulous Telegram Messenger App!</a></li>
+</ul>
+<p>因为有同学已经用了NeatRss了，所以就用了第一个，也有现成的Docker-compose脚本，直接用就OK啦，感谢。</p>
+<pre><code>version: '3.1'
+
+services:
+  rssbot:
+    image: fengkx/node_rssbot
+    container_name: node_rssbot
+    restart: always
+    volumes:
+      - ./data:/app/data/
+    ports:
+      - 3306:3306
+    environment:
+      RSSBOT_TOKEN: 123456:ACEYzXbuuaxxxxxxxxxxxxxxtrvmdq8
+    networks:
+      - my-bridge
+
+networks:
+  my-bridge:
+    driver: bridge
+</code></pre><ul>
+<li><code>docker-compose up -d</code></li>
+</ul>
+<h3 id="成果啦">成果啦</h3>
+<p><img src="https://sail-blog.oss-cn-beijing.aliyuncs.com/uPic/41Lcvz.jpg" alt="订阅成功"></p>
+<h3 id="最后">最后</h3>
+<p>RSS的RSS Bot解决了如何抓取订阅的博客或者网站，其中还有一个比较重要的就是有些内容是不支持RSS的，这个时候可以配合<code>RSSHub</code>来使用，利用<code>RSSHub</code>获取到内容的Rss地址，再利用今天介绍的工具将其加入TG链中。</p>
+<ul>
+<li>订阅一时爽，一直订阅一直爽</li>
+</ul>
+<h2 id="参考资料">参考资料</h2>
+<ul>
+<li><a href="https://chanshiyu.com/#/post/108">Telegram 电报机器人</a></li>
+<li><a href="https://chanshiyu.com/#/post/111">Telegram RSS 订阅频道</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>工作四年的一些思考</title>
+            <link>https://blog.sailfishc.cn/posts/2020/03/%E5%B7%A5%E4%BD%9C%E5%9B%9B%E5%B9%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
+            <pubDate>Wed, 25 Mar 2020 14:59:49 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%B7%A5%E4%BD%9C%E5%9B%9B%E5%B9%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
+            <description>写在之前 16年毕业，工作快4年，就职了2家公司，感受过稳定发展，也感受过中型公司无尽的会议和创业公司在寻求业务发展和技术快速实现的矛盾，今天是在公司的最后一天，偷得一日闲，回顾下自己毕业之后这几年工作的一些经历和感悟。
+毕业 第一阶段 二本毕业，基本上毕业就失业，但好在大三的时候自己一个人从兰州跑到北京来学习了一段时间，因为这个事情，从预备党员降级为了团员💔，大四的时候又从兰州到北京，开始找工作，面试蛮不顺利的，差不多面了一周多，面了有5家公司，因为还没毕业，也没有好的学校背景，技术也很一般，只有最后一家公司给了Offer，这是一家做电商的公司，公司的主要业务在线下的门店，线上的交易比较少，所以工作上也没有太多挑战，一块入职的几个同事都是刚毕业的，在公司里，有种还在上学的错觉，大家遇到问题一块讨论，工作强度也不大，有大量的时间去学习，但是对于刚毕业的我来说，可以接触到的资源还是太少，公司也没有技术实力比较强的人指导，自己当时是属于百度+知乎+CSDN+简书派程序员，除了看书就是刷刷视频学习学习，那段时间下来，感觉自己知道的特别多，后来也意识到在深度上差太多，有时候自己知道自己哪里有问题，但是不容易迫使自己去改变，在第一家公司工作了一年多，后来觉得自己在这边的环境下不能再成长太多了，有了萌生换一份工作的想法。
+第二阶段 这次面试其实还是蛮顺利的，只面了京东，易宝支付和链家，拿到了两个Offer，链家面试官挺好的，但是技术还是达不到他们的要求，最终去了易宝支付，在易宝支付开始了新的职业生涯。
+新的工作还是比较有挑战的，在这边主要处理的是资金相关的系统，每天交易流水都比较大，因为负责的系统不是一个快速迭代的系统，已经进入了维护阶段，开发的工作量也不是很大。在这份工作中，自己开始了正式的互联网研发流程（是的，第一家公司的不算正规的研发流程），这时候的我，对于维护的系统上线是很恐慌的状态，我认真的对待自己的代码，也努力的去熟悉以前的代码，深刻的认识着遗留代码的恶臭味，太多的魔法值，不规范的异常处理，关键的流程中没有日志，混杂着不同的远程调用协议，数据库索引不正确的设置，定制化逻辑，对于NULL和””不合理应用，NPE问题，超长的函数，超级大的类，不知道什么意思的配置文件，巨多的定时任务，不完善的UnitTest，经过好几年产品也搞不清楚的业务逻辑，都充斥在这个系统中，当时对于这些，我浑然不知。每次调整代码上线都比较紧张，即便是测试通过了，但是到线上也可能会出现一些莫名其妙的问题，这也就是所谓的泥潭吧，这段时间里，我的技术能力感觉没有提升，唯一提升的就是胆子变大了。
+由于组织架构调整，2017年年底部门独立为一个子公司，我们开始创业了，作为第一批员工，赋予了新的意义，那就是要做成一件事情，因为有了公司期权了，老板想着要上市，干劲十足。
+第三阶段 这份工作经历，从2017年年底到今天差不多2年3个月的时间，深刻的体会到了创业的困难程度，作为一个创业公司，算是比较幸福的，因为有盈利的业务，在第一年没有为钱担心过，但是公司得有新的血液注入，开始做起了新的产品，快速的产品迭代，不断的添加新的功能，做不完的需求，写不完的代码，时间快速的过去了365天，好像，做了一年了，做的产品在市场激起一朵浪花，是的，一朵也没有，第二年总结会上总结第一年的失败是由于没有及时的做市场推广导致的，开始了扩招销售的策略，当然，功能是不可能停止的，开发是不可能停止的，又过去了365天，依然，没有激起浪花，这就是创业的残忍之处，付出了两年青春，事情还是没有做成，早已不说上市走向认识巅峰，重要的是活下来，这期间经过了多次裁员，团队的很多人早已经没有了继续下去的动力，是时候选择离开了。
+第四阶段 这两年写了很多代码，对于需求可以多快好省的完成，但是作为一个有追求的程序员，要抛下诗和远方，去休福报了。
+感悟  前面说了这么多，开始聊聊自己这几年的一些感悟吧！
+ 时间成本  李永乐老师的科普视频中有一个例子：一年120的爱奇艺会员要不要买？
+ 这给问题可以用数学来计算一下：
+ 假如我是一个程序员，一天工作8小时，一个月上班22天（当然这些时间作为程序员都是不可能的），那么你一个月的工时就是：176小时，假设工资一个月为17600，那么时薪就是100元。 假如你每天看两个视频，一个视频广告时间为60s，那么一天是2分钟，一个月就是60分钟  如果不开会员，你就浪费了1个小时的时间来看广告了，你的时薪是100元，一个月的会员费为10元，很明显，你是开一个会员比较划算的。
+这个思考对我影响很大，那就是对自己的时间有一个金钱衡量的方式，自己在做一些事情的时候可以有一个标准，哪些事情是值得做的，哪些是不值得做的。之前做的很多事情都是没有价值的，比如费时间去找一些破解的软件和视频，还不如多花点时间提升自己。
+提升自己的技术深度  他问，“如果用5年的时间学习数据库，你能不能成为这个领域的专家？”
+我说，“应该可以吧”
+他说，“你现在25，5年后也才30，30岁就能成为某个领域的专家，为什么不去做呢？你看看周围有多少30岁的人还一事无成，而那个时候的你已经是数据库专家了。”
+ 这是我看的一篇公众号文章的一部分内容，对我也是有一些启发意义的，我知道自己的问题是喜欢看很多东西，但是没有深入的钻研，所以现在还是一个差不多先生，没有特别精通的一部分内容，多给自己一些时间去做一件事情，也许在一段时间内，你不知道微服务，你不知道Python有多火，但是如果坚持一件事情深度的去钻研，我相信，用不了几年时间，会比身边的人强很多，这个建议给你，也给我。
+有效的学习，而不是为了学习而学习 在朋友圈经常会看到一些内容，刚看完极客时间的一个专栏文章，在朋友圈发了一小部分总结：
+  主从原理：主库通过同步binlog到从库，relaylog去读 从库有延迟可以通过缓存，冗余数据解决 XXX   如果只是这种总结的话， 没什么作用，学习如何学习真的是一门长期探索的事情，不要只会看书做笔记，看视频写笔记，笔记写了很多，但是遇到需要的时候还是不知道如何去做，有一个例子是前两年得到的讲认知的一门课程，教你如何读书，但是你学习了之后还是不会按照他的学习方法去做。
+这里推荐几个学习资源：
+ Learning How to Learn: Powerful mental tools to … - Coursera 费曼学习法 学习金字塔  留出10%的时间去探索 拿出10%的时间用来探索未来，可以去找一些奇淫技巧，找一些提升自己效率的软件，寻求一些可以用来学习的网站，就像Google给员工20%的时间自己创作一样，给自己10%的事情去做一些探索未来的事情。
+算法和英语 先进的技术，优质的资源，英语占了很大一部分，李笑来是一个很典型的例子，早期接触比特币，之后的事情大家都知道了。
+算法能力是大厂的敲门砖，也可以改变自己的思维方式，只强调一点，不要为了刷题而刷题。
+头脑预演  举个亲身例子，很多人都有用线程的经验，可是有多少人知道线程的本质是什么？有多少人在头脑里有一幅画面，显示出多线程程序的各种动态特征？其实很少有人知道。这就是为什么很多人过度的使用线程并发，结果产生各种同步问题，竞争状态（race condition），死锁等现象。某公司的一片多线程代码，号称是“有非常多并发程序经验”的程序员写的。结果没多久我就发现里面其实含有非常微妙的竞争情况，会在非常小的概率随机发作。</description>
+            <content type="html"><![CDATA[<h2 id="写在之前">写在之前</h2>
+<p>16年毕业，工作快4年，就职了2家公司，感受过稳定发展，也感受过中型公司无尽的会议和创业公司在寻求业务发展和技术快速实现的矛盾，今天是在公司的最后一天，偷得一日闲，回顾下自己毕业之后这几年工作的一些经历和感悟。</p>
+<h2 id="毕业">毕业</h2>
+<h3 id="第一阶段">第一阶段</h3>
+<p>二本毕业，基本上毕业就失业，但好在大三的时候自己一个人从兰州跑到北京来学习了一段时间，因为这个事情，从预备党员降级为了团员💔，大四的时候又从兰州到北京，开始找工作，面试蛮不顺利的，差不多面了一周多，面了有5家公司，因为还没毕业，也没有好的学校背景，技术也很一般，只有最后一家公司给了Offer，这是一家做电商的公司，公司的主要业务在线下的门店，线上的交易比较少，所以工作上也没有太多挑战，一块入职的几个同事都是刚毕业的，在公司里，有种还在上学的错觉，大家遇到问题一块讨论，工作强度也不大，有大量的时间去学习，但是对于刚毕业的我来说，可以接触到的资源还是太少，公司也没有技术实力比较强的人指导，自己当时是属于百度+知乎+CSDN+简书派程序员，除了看书就是刷刷视频学习学习，那段时间下来，感觉自己知道的特别多，后来也意识到在深度上差太多，有时候自己知道自己哪里有问题，但是不容易迫使自己去改变，在第一家公司工作了一年多，后来觉得自己在这边的环境下不能再成长太多了，有了萌生换一份工作的想法。</p>
+<h3 id="第二阶段">第二阶段</h3>
+<p>这次面试其实还是蛮顺利的，只面了京东，易宝支付和链家，拿到了两个Offer，链家面试官挺好的，但是技术还是达不到他们的要求，最终去了易宝支付，在易宝支付开始了新的职业生涯。</p>
+<p>新的工作还是比较有挑战的，在这边主要处理的是资金相关的系统，每天交易流水都比较大，因为负责的系统不是一个快速迭代的系统，已经进入了维护阶段，开发的工作量也不是很大。在这份工作中，自己开始了正式的互联网研发流程（是的，第一家公司的不算正规的研发流程），这时候的我，对于维护的系统上线是很恐慌的状态，我认真的对待自己的代码，也努力的去熟悉以前的代码，深刻的认识着遗留代码的恶臭味，太多的魔法值，不规范的异常处理，关键的流程中没有日志，混杂着不同的远程调用协议，数据库索引不正确的设置，定制化逻辑，对于<code>NULL</code>和<code>””</code>不合理应用，NPE问题，超长的函数，超级大的类，不知道什么意思的配置文件，巨多的定时任务，不完善的UnitTest，经过好几年产品也搞不清楚的业务逻辑，都充斥在这个系统中，当时对于这些，我浑然不知。每次调整代码上线都比较紧张，即便是测试通过了，但是到线上也可能会出现一些莫名其妙的问题，这也就是所谓的泥潭吧，这段时间里，我的技术能力感觉没有提升，唯一提升的就是胆子变大了。</p>
+<p>由于组织架构调整，2017年年底部门独立为一个子公司，我们开始创业了，作为第一批员工，赋予了新的意义，那就是要做成一件事情，因为有了公司期权了，老板想着要上市，干劲十足。</p>
+<h3 id="第三阶段">第三阶段</h3>
+<p>这份工作经历，从2017年年底到今天差不多2年3个月的时间，深刻的体会到了创业的困难程度，作为一个创业公司，算是比较幸福的，因为有盈利的业务，在第一年没有为钱担心过，但是公司得有新的血液注入，开始做起了新的产品，快速的产品迭代，不断的添加新的功能，做不完的需求，写不完的代码，时间快速的过去了365天，好像，做了一年了，做的产品在市场激起一朵浪花，是的，一朵也没有，第二年总结会上总结第一年的失败是由于没有及时的做市场推广导致的，开始了扩招销售的策略，当然，功能是不可能停止的，开发是不可能停止的，又过去了365天，依然，没有激起浪花，这就是创业的残忍之处，付出了两年青春，事情还是没有做成，早已不说上市走向认识巅峰，重要的是活下来，这期间经过了多次裁员，团队的很多人早已经没有了继续下去的动力，是时候选择离开了。</p>
+<h3 id="第四阶段">第四阶段</h3>
+<p>这两年写了很多代码，对于需求可以多快好省的完成，但是作为一个有追求的程序员，要抛下诗和远方，去休福报了。</p>
+<h2 id="感悟">感悟</h2>
+<blockquote>
+<p>前面说了这么多，开始聊聊自己这几年的一些感悟吧！</p>
+</blockquote>
+<h3 id="时间成本">时间成本</h3>
+<blockquote>
+<p>李永乐老师的科普视频中有一个例子：一年120的爱奇艺会员要不要买？</p>
+</blockquote>
+<p>这给问题可以用数学来计算一下：</p>
+<ul>
+<li>假如我是一个程序员，一天工作8小时，一个月上班22天（当然这些时间作为程序员都是不可能的），那么你一个月的工时就是：176小时，假设工资一个月为17600，那么时薪就是100元。</li>
+<li>假如你每天看两个视频，一个视频广告时间为60s，那么一天是2分钟，一个月就是60分钟</li>
+</ul>
+<p>如果不开会员，你就浪费了1个小时的时间来看广告了，你的时薪是100元，一个月的会员费为10元，很明显，你是开一个会员比较划算的。</p>
+<p>这个思考对我影响很大，那就是对自己的时间有一个金钱衡量的方式，自己在做一些事情的时候可以有一个标准，哪些事情是值得做的，哪些是不值得做的。之前做的很多事情都是没有价值的，比如费时间去找一些破解的软件和视频，还不如多花点时间提升自己。</p>
+<h3 id="提升自己的技术深度">提升自己的技术深度</h3>
+<blockquote>
+<p>他问，“如果用5年的时间学习数据库，你能不能成为这个领域的专家？”<br>
+我说，“应该可以吧”<br>
+他说，“你现在25，5年后也才30，30岁就能成为某个领域的专家，为什么不去做呢？你看看周围有多少30岁的人还一事无成，而那个时候的你已经是数据库专家了。”</p>
+</blockquote>
+<p>这是我看的一篇公众号文章的一部分内容，对我也是有一些启发意义的，我知道自己的问题是喜欢看很多东西，但是没有深入的钻研，所以现在还是一个差不多先生，没有特别精通的一部分内容，多给自己一些时间去做一件事情，也许在一段时间内，你不知道微服务，你不知道Python有多火，但是如果坚持一件事情深度的去钻研，我相信，用不了几年时间，会比身边的人强很多，这个建议给你，也给我。</p>
+<h3 id="有效的学习而不是为了学习而学习">有效的学习，而不是为了学习而学习</h3>
+<p>在朋友圈经常会看到一些内容，刚看完极客时间的一个专栏文章，在朋友圈发了一小部分总结：</p>
+<blockquote>
+<ol>
+<li>主从原理：主库通过同步binlog到从库，relaylog去读</li>
+<li>从库有延迟可以通过缓存，冗余数据解决</li>
+<li>XXX</li>
+</ol>
+</blockquote>
+<p>如果只是这种总结的话， 没什么作用，学习如何学习真的是一门长期探索的事情，不要只会看书做笔记，看视频写笔记，笔记写了很多，但是遇到需要的时候还是不知道如何去做，有一个例子是前两年得到的讲认知的一门课程，教你如何读书，但是你学习了之后还是不会按照他的学习方法去做。</p>
+<p>这里推荐几个学习资源：</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/learning-how-to-learn">Learning How to Learn: Powerful mental tools to … - Coursera</a></li>
+<li>费曼学习法</li>
+<li>学习金字塔</li>
+</ul>
+<p><img src="https://i.loli.net/2020/03/25/WkiyaB4gpCXxwnl.jpg" alt="学习金字塔"></p>
+<h3 id="留出10的时间去探索">留出10%的时间去探索</h3>
+<p>拿出10%的时间用来探索未来，可以去找一些奇淫技巧，找一些提升自己效率的软件，寻求一些可以用来学习的网站，就像Google给员工20%的时间自己创作一样，给自己10%的事情去做一些探索未来的事情。</p>
+<h3 id="算法和英语">算法和英语</h3>
+<p>先进的技术，优质的资源，英语占了很大一部分，李笑来是一个很典型的例子，早期接触比特币，之后的事情大家都知道了。</p>
+<p>算法能力是大厂的敲门砖，也可以改变自己的思维方式，只强调一点，不要为了刷题而刷题。</p>
+<h3 id="头脑预演">头脑预演</h3>
+<blockquote>
+<p>举个亲身例子，很多人都有用线程的经验，可是有多少人知道线程的本质是什么？有多少人在头脑里有一幅画面，显示出多线程程序的各种动态特征？其实很少有人知道。这就是为什么很多人过度的使用线程并发，结果产生各种同步问题，竞争状态（race condition），死锁等现象。某公司的一片多线程代码，号称是“有非常多并发程序经验”的程序员写的。结果没多久我就发现里面其实含有非常微妙的竞争情况，会在非常小的概率随机发作。</p>
+</blockquote>
+<p>这是王垠在他的博客中写的，我引用下，我想说明的是在做事情的时候提前在自己的大脑或者使用草稿把有可能出现的事情预演一遍，应该注意哪些事情，有可能发生什么事情，这个能力会让自己在做事情的时候有条不紊。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>常用的生产力工具</title>
+            <link>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
+            <pubDate>Wed, 25 Mar 2020 10:28:14 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
+            <description>比较喜欢收集信息，对于APP也会找各种各样的去尝试（不太符合极简风格），从Mac，手机，IPad和Chrome Extension都挺多的，这里的包含了大部分的应用，作为记录。
+ Mac  1Password 7 AdGuard Affinity Designer Affinity Photo AirServer Alfred 3 Anki Bear calibre Charles CheatSheet ClashX CloudMounter Dash Docker Drafts Dropbox Eagle Emacs Evernote feedly Figma Firefox GitKraken Google Chrome HandShaker Hidden Bar IINA iStat Menus iTerm JetBrains Toolbox JustFocus Kap Kawa Kindle MacUpdater Magnet mat Microsoft To Do MindNode Neat Reader NeatDownloadManager Notion OmniGraffle OneDrive PicGo Pliim Postman ScreenFlow Setapp Slack Spotify Station Studio 3T Surge Telegram Lite Typora uPic Visual Studio Code Wireshark zoom.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>比较喜欢收集信息，对于APP也会找各种各样的去尝试（不太符合极简风格），从Mac，手机，IPad和Chrome Extension都挺多的，这里的包含了大部分的应用，作为记录。</p>
+</blockquote>
+<h2 id="mac">Mac</h2>
+<ul>
+<li>1Password 7</li>
+<li>AdGuard</li>
+<li>Affinity Designer</li>
+<li>Affinity Photo</li>
+<li>AirServer</li>
+<li>Alfred 3</li>
+<li>Anki</li>
+<li>Bear</li>
+<li>calibre</li>
+<li>Charles</li>
+<li>CheatSheet</li>
+<li>ClashX</li>
+<li>CloudMounter</li>
+<li>Dash</li>
+<li>Docker</li>
+<li>Drafts</li>
+<li>Dropbox</li>
+<li>Eagle</li>
+<li>Emacs</li>
+<li>Evernote</li>
+<li>feedly</li>
+<li>Figma</li>
+<li>Firefox</li>
+<li>GitKraken</li>
+<li>Google Chrome</li>
+<li>HandShaker</li>
+<li>Hidden Bar</li>
+<li>IINA</li>
+<li>iStat Menus</li>
+<li>iTerm</li>
+<li>JetBrains Toolbox</li>
+<li>JustFocus</li>
+<li>Kap</li>
+<li>Kawa</li>
+<li>Kindle</li>
+<li>MacUpdater</li>
+<li>Magnet</li>
+<li>mat</li>
+<li>Microsoft To Do</li>
+<li>MindNode</li>
+<li>Neat Reader</li>
+<li>NeatDownloadManager</li>
+<li>Notion</li>
+<li>OmniGraffle</li>
+<li>OneDrive</li>
+<li>PicGo</li>
+<li>Pliim</li>
+<li>Postman</li>
+<li>ScreenFlow</li>
+<li>Setapp</li>
+<li>Slack</li>
+<li>Spotify</li>
+<li>Station</li>
+<li>Studio 3T</li>
+<li>Surge</li>
+<li>Telegram Lite</li>
+<li>Typora</li>
+<li>uPic</li>
+<li>Visual Studio Code</li>
+<li>Wireshark</li>
+<li>zoom.us</li>
+<li>印象笔记</li>
+<li>GitFox</li>
+<li>IDEA</li>
+<li>MarginNote</li>
+<li>Clean My MacX</li>
+<li>Downie</li>
+<li>NFTS for Mac</li>
+<li>Marked</li>
+</ul>
+<h2 id="android">Android</h2>
+<ul>
+<li>Eudic</li>
+<li>Youtube</li>
+<li>Telegram</li>
+<li>Twitter</li>
+<li>Dropbox Paper</li>
+<li>Medium</li>
+<li>Bilibili</li>
+<li>O’Reilly</li>
+<li>Quora</li>
+<li>知识星球</li>
+<li>Hacker News</li>
+<li>DuckDuck  Go</li>
+<li>Instagram</li>
+<li>Reddit</li>
+<li>Snapchat</li>
+<li>Feedly</li>
+<li>One Driver</li>
+<li>LeetCode</li>
+<li>Github</li>
+<li>Days</li>
+<li>Anki</li>
+<li>Microsoft TODO</li>
+<li>Pinterest</li>
+<li>Blinkist</li>
+<li>Dropbox</li>
+<li>SkillShare</li>
+<li>Productive</li>
+<li>TimeTrack</li>
+<li>端媒体</li>
+<li>Slack</li>
+<li>Notion</li>
+<li>Solid Explorer</li>
+<li>印象笔记</li>
+<li>Udemy</li>
+<li>Gmail</li>
+<li>Spotify</li>
+<li>Kindle</li>
+<li>Google Calendar</li>
+<li>1Password</li>
+<li>Moon+</li>
+<li>Clash</li>
+<li>Brilliant</li>
+<li>Netflix</li>
+<li>TIDAL</li>
+<li>Wikipedia</li>
+<li>Neat Reader Pro</li>
+<li>Audible</li>
+<li>幕布</li>
+<li>Boosted</li>
+<li>V2er</li>
+<li>Rebtel</li>
+<li>Paypal</li>
+<li>Pandora</li>
+<li>Inkl news</li>
+<li>Coursera</li>
+<li>VoiceTube</li>
+<li>IFTTT</li>
+<li>Google Driver</li>
+<li>AnyTrans</li>
+<li>KnowRaaming</li>
+<li>Product Hunt</li>
+</ul>
+<h2 id="chrome-extension">Chrome Extension</h2>
+<ul>
+<li>online-dictionary-helper</li>
+<li>1Password X</li>
+<li>Notion Web Clipper</li>
+<li>Full Page Screen Capture</li>
+<li>GitHub Hovercard</li>
+<li>Google Translate</li>
+<li>Infinite Dashboard</li>
+<li>Isometric Contributions</li>
+<li>JSONView</li>
+<li>Language Learning with Youtube</li>
+<li>Language Learning with Netflix</li>
+<li>Medium.com Unlimited Reading</li>
+<li>NeatDownloadManager Extension</li>
+<li>Print Friendly &amp; PDF</li>
+<li>RSSHub Radar</li>
+<li>Similar Sites - Discover Related Websites</li>
+<li>Sourcegraph</li>
+<li>Tampermonkey</li>
+<li>Toby for Chrome</li>
+<li>Video Speed Controller</li>
+<li>Vue.js devtools</li>
+<li>猫抓</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>如何学习SICP</title>
+            <link>https://blog.sailfishc.cn/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0sicp/</link>
+            <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0sicp/</guid>
+            <description>这是一篇资源篇，主要是整理了SICP课程的一些资源，包含了Python版的资源和Schema资源，这篇博客主要从几个方面来介绍如何去学习SICP：
+  为什么要学习SICP SICP选择Python版还是Schema版本  为什么要学习SICP 先看下国外一些大神是如何评价SICP的：
+ I’ve only ever seen one great book on the subject of computer programming: Structure and Interpretation of Computer Programs (Abelson and Sussman; MIT Press). If you’re already a great programmer, it will take you an evening to read the first few chapters and you’ll discover a precision vocabulary for discussing what you’ve spent 10 years learning the hard way. If you’re not already a great programmer, I would have thought that these few chapters would save you from having to spend years flailing around in the dark.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>这是一篇资源篇，主要是整理了SICP课程的一些资源，包含了Python版的资源和Schema资源，这篇博客主要从几个方面来介绍如何去学习SICP：</p>
+</blockquote>
+<ul>
+<li>为什么要学习SICP</li>
+<li>SICP选择Python版还是Schema版本</li>
+</ul>
+<h2 id="为什么要学习sicp">为什么要学习SICP</h2>
+<p>先看下国外一些大神是如何评价SICP的：</p>
+<blockquote>
+<p>I’ve only ever seen one great book on the subject of computer programming: Structure and Interpretation of Computer Programs (Abelson and Sussman; MIT Press). If you’re already a great programmer, it will take you an evening to read the first few chapters and you’ll discover a precision vocabulary for discussing what you’ve spent 10 years learning the hard way. If you’re not already a great programmer, I would have thought that these few chapters would save you from having to spend years flailing around in the dark. Unfortunately, there doesn’t seem to be a substitute for practical experience. Sidenote: the authors used to have a review wall outside their offices at MIT. University professors from around the world writing in scientific journals said “finally I understand what all this computer science stuff is about; this is the most brilliant book ever. I’m glad that we’re using it to teach freshmen now.” In the center was a review from <em>Byte</em> magazine: “I didn’t understand any of this book.”<br>
+<a href="http://philip.greenspun.com/wtr/bookshelf.html">Philip Greenspun (The Bookshelf of a well-read Web Nerd)</a></p>
+<p>The best computer science book in the world.<br>
+<a href="https://people.eecs.berkeley.edu/~bh/">Brian Harvey</a></p>
+</blockquote>
+<p>SICP从1985年成为了MIT的入门课程之后被100多个高校陆续接受为本科课程，成为了经典课程，其中SICP的最初版本是Schema，后来被伯克利大学在2012年改为了Python，新加坡一所高校也出了JavaScript版本，SICP包含了这几个模块：</p>
+<ul>
+<li>递归</li>
+<li>抽象</li>
+<li>模块化</li>
+<li>编程语言的设计和实现</li>
+</ul>
+<p>这本书也被王垠强烈推荐，它不是一本How to do 的书籍，而是一本从Why出发的书籍。</p>
+<h2 id="sicp选择python版还是schema版本">SICP选择Python版还是Schema版本</h2>
+<p>虽然说SICP教授的思想和语言无关，但是不同的语言对于学习还是有些有不同的难度，我主要阐述下自己调研的结果，大家可以根据自己的实际情况来选择。</p>
+<h3 id="schema版本">Schema版本</h3>
+<p>Schema版本作为流程最广泛的版本，优点很突出：</p>
+<ul>
+<li>有大量的文本资源</li>
+<li>Schema是SICP作者教授的官方语言，从讲授上来说应该更能表达作者的思想</li>
+<li>有中文翻译</li>
+</ul>
+<blockquote>
+<p>缺点</p>
+</blockquote>
+<ul>
+<li>比较经典的MIT 6.001以及伯克利的CS 61a录制时间都比较久远，清晰度超级差</li>
+<li>需要入门下Schema，以及搭建Schema环境（但是Schema语法比较好学）</li>
+</ul>
+<h3 id="python版本">Python版本</h3>
+<blockquote>
+<p>优点</p>
+</blockquote>
+<ul>
+<li>有比较新的视频课程，清晰度比较好</li>
+</ul>
+<blockquote>
+<p>缺点</p>
+</blockquote>
+<ul>
+<li>可能缺少点Schema对于课程所表达的思想</li>
+</ul>
+<h2 id="参考资源">参考资源</h2>
+<blockquote>
+<p>SICP Python</p>
+</blockquote>
+<ul>
+<li><a href="https://www.bilibili.com/video/av82503560?p=1">CS 61A Summer 2019 (双语字幕,机翻中文)_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></li>
+<li><a href="https://www.bilibili.com/video/av40461951?p=1">UC Berkeley CS 61A 2018 Fall John DeNero （英文字幕）_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></li>
+<li><a href="http://www.composingprograms.com/">Composing Programs</a></li>
+<li><a href="https://cs61a.org/">CS 61A Spring 2020</a></li>
+<li><a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA">CS 61A Departmental</a></li>
+</ul>
+<blockquote>
+<p>SICP Schema</p>
+</blockquote>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4leZ1Ca4f0g&amp;list=PLhMnuBfGeCDNgVzLPxF9o5UNKG1b-LFY9">Functional Programming | UC Berkeley CS 61A, Spring 2010</a></li>
+<li><a href="https://github.com/ossu/computer-science">GitHub - ossu/computer-science: Path to a free self-taught education in Computer Science!</a></li>
+<li><a href="https://news.ycombinator.com/item?id=18890417">If not SICP, then what? Maybe HTDP? | Hacker News</a></li>
+<li><a href="https://news.ycombinator.com/item?id=13918465">Beautiful Online SICP | Hacker News</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL7BcsI5ueSNFPCEisbaoQ0kXIDX9rR5FF">6.001 SICP: Structure and Interpretation of Computer Programs (2004)</a></li>
+<li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/readings/">Readings | Structure and Interpretation of Computer Programs | Electrical Engineering and Computer Science | MIT OpenCourseWare</a></li>
+<li><a href="https://github.com/abrantesasf/sicp-abrantes-study-guide">GitHub - abrantesasf/sicp-abrantes-study-guide: My study guide for SICP</a></li>
+<li><a href="https://xuanji.appspot.com/isicp/">Interactive SICP</a></li>
+<li><a href="https://www.bilibili.com/video/av40460492">UC Berkeley CS 61A 2010 Spring Brian Harvey (英文字幕)_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>如何学习英语</title>
+            <link>https://blog.sailfishc.cn/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD/</link>
+            <pubDate>Sat, 07 Mar 2020 11:11:53 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD/</guid>
+            <description>&lt;p&gt;这段时间自己一直在学习英语，也一直在寻找适合自己的英语学习方法，买了一些Native English  Speaker和Non-Native English  Speaker的课程，总结下来没有什么捷径，就这几点：&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>这段时间自己一直在学习英语，也一直在寻找适合自己的英语学习方法，买了一些Native English  Speaker和Non-Native English  Speaker的课程，总结下来没有什么捷径，就这几点：</p>
+<ul>
+<li>多听</li>
+<li>多看</li>
+<li>多读</li>
+<li>模仿</li>
+<li>使用词典</li>
+</ul>
+<p>然后是基于Reading，Listening，Speaking和Writing的一些策略和素材选择，简单明了的说明下，不解释背后的原理了：</p>
+<ul>
+<li>读和听是输入，写和说是输出，必须先有输入，后有输出</li>
+<li>读是比听更好的输入，但是两种输入都必须要有，读和听时间花费比例应该是3：1比较合适</li>
+<li>从故事出发，不要以学英语为最终目的，学英语的目的是获取信息和知识</li>
+<li>素材最好是自己感兴趣的，在自己获取知识的同时去理解和学习英语，英语学习应该是第二位的</li>
+<li>素材不要太难，衡量标准就是自己阅读或者是听的时候没有严重的阻塞感</li>
+<li>看美剧学英语是可行的，不要选择剧情特别精彩的，尽量选择生活化的美剧，但是不要一集一集看，因为没效果，为了不太影响观看体验，我的方式是一段剧情的结束之后回头去看（一般一个剧情都在几分钟左右）</li>
+<li>不要单独背单词，我们要的不是两种语义的Mapping</li>
+<li>阅读和听以及看都是要基于丰富的上下文的（背景知识）</li>
+<li>美剧观看的顺序应该是
+<ul>
+<li>无字幕</li>
+<li>带英文字母</li>
+<li>中英字母</li>
+<li>无字幕</li>
+</ul>
+</li>
+<li>不需要单独找老师学习发言，词典会教会你这些，需要的只是一个词典和时间</li>
+<li>模仿永远是入门学习最快的方法</li>
+<li>背单词永远要基于背景来记忆，不要单独记忆单词</li>
+</ul>
+<h2 id="工具推荐">工具推荐</h2>
+<p>基于以上的一些方法，我在寻找工具的路上也是永不言弃吧，哈哈，我寻找的工具要满足几个条件：</p>
+<ul>
+<li>对于输入的过程不能阻塞：在阅读的时候遇到生词可以快速的释义</li>
+<li>可以保存单词的原信息：例如单词，音标，英英解释，英汉解释（可选），例句</li>
+<li>最好有我当时阅读的句子</li>
+<li>单词便签：例如4级词汇标识，常用的2000词标识等</li>
+<li>可以导入到Anki中</li>
+<li>下次阅读文章中如果出现自己的生词可以高亮</li>
+</ul>
+<p>在这些条件的衡量下，我寻找到了几个工具，分别是：</p>
+<h3 id="learn-language-with-netflixyoutube">Learn Language With Netflix/Youtube</h3>
+<ul>
+<li>可以通过Netflix和YouTube的视频展示双字幕</li>
+<li>可以标记生词</li>
+<li>高亮生词</li>
+<li>快速释义（有词典）</li>
+<li>可以快速保存生词，并且包含了原句，支持导出（付费功能）Anki模板</li>
+</ul>
+<h3 id="online-dictionary-helper">Online Dictionary Helper</h3>
+<ul>
+<li>有内置词典，查词足够快</li>
+<li>可以很快速的制作Anki模板，并且加入Anki中，利用Anki的记忆属性去记忆单词</li>
+<li>可以字段截取原句，在Anki中复习</li>
+</ul>
+<h3 id="english-buoy">English Buoy</h3>
+<ul>
+<li>可以在Google Play直接免费下载，作者良心</li>
+</ul>
+<h3 id="英语轻松读">英语轻松读</h3>
+<ul>
+<li>支持部分新闻网站和Medium文章导入</li>
+<li>安卓/IOS支持</li>
+<li>支持生词本</li>
+<li>快速查词释义</li>
+</ul>
+<h3 id="anki">Anki</h3>
+<p>Anki神器不多说</p>
+<h2 id="参考资源">参考资源</h2>
+<ul>
+<li><a href="https://languagelearningwithnetflix.com/more_info.html">LLN - More Info</a></li>
+<li><a href="https://www.youtube.com/watch?v=J_EQDtpYSNM&amp;feature=emb_logo">如何学习语言：输入假说（为什么大多数方法没有效果）</a></li>
+<li><a href="https://www.reddit.com/r/languagelearning/comments/66myn1/a_short_guide_to_independent_language_learning/?st=jlmshg74&amp;sh=263cd3fb">A Short Guide to Independent Language Learning (1600 words) : languagelearning</a></li>
+<li><a href="https://github.com/bigzhu/EbuoyDoc">GitHub - bigzhu/EbuoyDoc: 利用 YouTube 字幕轻松提高英语水平方法总结</a></li>
+<li><a href="https://github.com/ninja33/ODH">GitHub - ninja33/ODH: A chrome extension to show online dictionary content.</a></li>
+</ul>]]></content>
+        </item>
         
         <item>
             <title>J.U.C 同步框架（AQS 框架）</title>
@@ -15,32 +627,22 @@
             <pubDate>Fri, 27 Dec 2019 12:03:29 +0800</pubDate>
             
             <guid>https://blog.sailfishc.cn/posts/2019/12/j.u.c-%E5%90%8C%E6%AD%A5%E6%A1%86%E6%9E%B6aqs-%E6%A1%86%E6%9E%B6/</guid>
-            <description>本文转载自：biezhi.com https://www.cnblogs.com/dennyzhangdd/p/7218510.html
-一、论文简介 闲来无事，看看源码，发现了一篇JDK作者的论文《The java.util.concurrent Synchronizer Framework》主要描述了作者对 AbstractQueuedSynchronizer 同步器框架的设计和实现。权威性毋庸置疑！自然需要拜读一下，配上中文翻译，希望大家能有所收获。
-二、原文链接 论文英文版原文链接：http://gee.cs.oswego.edu/dl/papers/aqs.pdf
-http://gee.cs.oswego.edu/ 这个是老李头的主页，里面有他的部分贡献，感兴趣的可以关注一下，老李头确实比较厉害。
-三、中文翻译 摘要 在 J2SE 1.5 的 java.util.concurrent 包（下称 j.u.c 包）中，大部分的同步器（例如锁，屏障等等）都是基于 AbstractQueuedSynchronizer 类（下称 AQS 类），这个简单的框架而构建的。这个框架为同步状态的原子性管理、线程的阻塞和解除阻塞以及排队提供了一种通用的机制。这篇论文主要描述了这个框架基本原理、设计、实现、用法以及性能。
-1. 背景介绍 通过 JCP 的 JSR166 规范，Java 的 1.5 版本引入了 j.u.c 包，这个包提供了一系列支持中等程度并发的类。这些组件是一系列的同步器（抽象数据类型(ADT)）。这些同步器主要维护着以下几个功能：内部同步状态的管理(例如：表示一个锁的状态是获取还是释放)，同步状态的更新和检查操作，且至少有一个方法会导致调用线程在同步状态被获取时阻塞，以及在其他线程改变这个同步状态时解除线程的阻塞。上述的这些的实际例子包括：互斥排它锁的不同形式、读写锁、信号量、屏障、Future、事件指示器以及传送队列等。
-几乎任一同步器都可以用来实现其他形式的同步器。例如，可以用可重入锁实现信号量或者用信号量实现可重入锁。但是，这样做带来的复杂性，开销，不灵活使其至多只能是个二流工程，且缺乏吸引力。如果任何这样的构造方式不能在本质上比其他形式更简洁，那么开发者就不应该随意地选择其中的某个来构建另一个同步器。取而代之，JSR166 建立了一个小框架，AQS 类。这个框架为构造同步器提供一种通用的机制，并且被 j.u.c 包中大部分类使用，同时很多用户也用它来定义自己的同步器。
-在这篇论文的下面部分会讨论这个框架的需求、设计与实现背后的主要思路、示例用法，以及性能指标的一些测量。
-2 需求 2.1 功能 同步器一般包含两种方法，一种是 acquire，另一种是 release。acquire 操作阻塞调用的线程，直到或除非同步状态允许其继续执行。而 release 操作则是通过某种方式改变同步状态，使得一或多个被 acquire 阻塞的线程继续执行。
-j.u.c 包中并没有对同步器的API做一个统一的定义。因此，有一些类定义了通用的接口（如 Lock），而另外一些则定义了其专有的版本。因此在不同的类中，acquire 和 release 操作的名字和形式会各有不同。例如：Lock.lock，Semaphore.acquire，CountDownLatch.await 和 FutureTask.get，在这个框架里，这些方法都是 acquire 操作。但是，J.U.C 为支持一系列常见的使用选项，在类间都有个一致约定。在有意义的情况下，每一个同步器都支持下面的操作：
- 阻塞和非阻塞（例如 tryLock）同步 可选的超时设置，让调用者可以放弃等待 通过中断实现的任务取消，通常是分为两个版本，一个 acquire 可取消，而另一个不可以  同步器的实现根据其状态是否独占而有所不同。独占状态的同步器，在同一时间只有一个线程可以通过阻塞点，而共享状态的同步器可以同时有多个线程在执行。一般锁的实现类往往只维护独占状态，但是，例如计数信号量在数量许可的情况下，允许多个线程同时执行。为了使框架能得到广泛应用，这两种模式都要支持。</description>
-            <content type="html"><![CDATA[<p>本文转载自：biezhi.com  <a href="https://www.cnblogs.com/dennyzhangdd/p/7218510.html"><a href="https://www.cnblogs.com/dennyzhangdd/p/7218510.html">https://www.cnblogs.com/dennyzhangdd/p/7218510.html</a></a></p>
-<h1 id="heading">一、论文简介</h1>
+            <description>&lt;p&gt;本文转载自：biezhi.com  &lt;a href=&#34;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&#34;&gt;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&lt;/a&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>本文转载自：biezhi.com  <a href="https://www.cnblogs.com/dennyzhangdd/p/7218510.html">https://www.cnblogs.com/dennyzhangdd/p/7218510.html</a></p>
+<h1 id="一论文简介">一、论文简介</h1>
 <p>闲来无事，看看源码，发现了一篇JDK作者的论文《The java.util.concurrent Synchronizer Framework》主要描述了作者对 <code>AbstractQueuedSynchronizer</code> 同步器框架的设计和实现。权威性毋庸置疑！自然需要拜读一下，配上中文翻译，希望大家能有所收获。</p>
-<h1 id="heading1">二、原文链接</h1>
-<p>论文英文版原文链接：<a href="http://gee.cs.oswego.edu/dl/papers/aqs.pdf"><a href="http://gee.cs.oswego.edu/dl/papers/aqs.pdf">http://gee.cs.oswego.edu/dl/papers/aqs.pdf</a></a></p>
-<p><a href="http://gee.cs.oswego.edu/"><a href="http://gee.cs.oswego.edu/">http://gee.cs.oswego.edu/</a></a> 这个是老李头的主页，里面有他的部分贡献，感兴趣的可以关注一下，老李头确实比较厉害。</p>
-<h1 id="heading2">三、中文翻译</h1>
-<h2 id="heading3">摘要</h2>
+<h1 id="二原文链接">二、原文链接</h1>
+<p>论文英文版原文链接：<a href="http://gee.cs.oswego.edu/dl/papers/aqs.pdf">http://gee.cs.oswego.edu/dl/papers/aqs.pdf</a></p>
+<p><a href="http://gee.cs.oswego.edu/">http://gee.cs.oswego.edu/</a> 这个是老李头的主页，里面有他的部分贡献，感兴趣的可以关注一下，老李头确实比较厉害。</p>
+<h1 id="三中文翻译">三、中文翻译</h1>
+<h2 id="摘要">摘要</h2>
 <p>在 J2SE 1.5 的 <code>java.util.concurrent</code> 包（下称 j.u.c 包）中，大部分的同步器（例如锁，屏障等等）都是基于 <code>AbstractQueuedSynchronizer</code> 类（下称 AQS 类），这个简单的框架而构建的。这个框架为同步状态的原子性管理、线程的阻塞和解除阻塞以及排队提供了一种通用的机制。这篇论文主要描述了这个框架基本原理、设计、实现、用法以及性能。</p>
-<h2 id="1-">1. 背景介绍</h2>
+<h2 id="1-背景介绍">1. 背景介绍</h2>
 <p>通过 JCP 的 <code>JSR166</code> 规范，Java 的 1.5 版本引入了 j.u.c 包，这个包提供了一系列支持中等程度并发的类。这些组件是一系列的同步器（抽象数据类型(ADT)）。这些同步器主要维护着以下几个功能：内部同步状态的管理(例如：表示一个锁的状态是获取还是释放)，同步状态的更新和检查操作，且至少有一个方法会导致调用线程在同步状态被获取时阻塞，以及在其他线程改变这个同步状态时解除线程的阻塞。上述的这些的实际例子包括：<strong>互斥排它锁的不同形式、读写锁、信号量、屏障、Future、事件指示器以及传送队列等</strong>。</p>
 <p>几乎任一同步器都可以用来实现其他形式的同步器。例如，可以用可重入锁实现信号量或者用信号量实现可重入锁。但是，这样做带来的复杂性，开销，不灵活使其至多只能是个二流工程，且缺乏吸引力。如果任何这样的构造方式不能在本质上比其他形式更简洁，那么开发者就不应该随意地选择其中的某个来构建另一个同步器。取而代之，JSR166 建立了一个小框架，AQS 类。这个框架为构造同步器提供一种通用的机制，并且被 <code>j.u.c</code> 包中大部分类使用，同时很多用户也用它来定义自己的同步器。</p>
 <p>在这篇论文的下面部分会讨论这个框架的需求、设计与实现背后的主要思路、示例用法，以及性能指标的一些测量。</p>
-<h2 id="2-">2 需求</h2>
-<h3 id="21-">2.1 功能</h3>
+<h2 id="2-需求">2 需求</h2>
+<h3 id="21-功能">2.1 功能</h3>
 <p>同步器一般包含两种方法，一种是 <code>acquire</code>，另一种是 <code>release</code>。<code>acquire</code> 操作阻塞调用的线程，直到或除非同步状态允许其继续执行。而 <code>release</code> 操作则是通过某种方式改变同步状态，使得一或多个被 <code>acquire</code> 阻塞的线程继续执行。</p>
 <p>j.u.c 包中并没有对同步器的API做一个统一的定义。因此，有一些类定义了通用的接口（如 Lock），而另外一些则定义了其专有的版本。因此在不同的类中，<code>acquire</code> 和 <code>release</code> 操作的名字和形式会各有不同。例如：<code>Lock.lock</code>，<code>Semaphore.acquire</code>，<code>CountDownLatch.await</code> 和 <code>FutureTask.get</code>，在这个框架里，这些方法都是 <code>acquire</code> 操作。但是，J.U.C 为支持一系列常见的使用选项，在类间都有个一致约定。在有意义的情况下，每一个同步器都支持下面的操作：</p>
 <ul>
@@ -50,12 +652,12 @@ j.u.c 包中并没有对同步器的API做一个统一的定义。因此，有�
 </ul>
 <p>同步器的实现根据其状态是否独占而有所不同。独占状态的同步器，在同一时间只有一个线程可以通过阻塞点，而共享状态的同步器可以同时有多个线程在执行。一般锁的实现类往往只维护独占状态，但是，例如计数信号量在数量许可的情况下，允许多个线程同时执行。为了使框架能得到广泛应用，这两种模式都要支持。</p>
 <p>j.u.c 包里还定义了 <code>Condition</code> 接口，用于支持监控形式的 <code>await/signal</code> 操作，这些操作与独占模式的 <code>Lock</code> 类有关，且 <code>Condition</code> 的实现天生就和与其关联的 <code>Lock</code> 类紧密相关。</p>
-<h3 id="22-">2.2 性能目标</h3>
-<p>Java 内置锁（使用 <code>synchronized</code> 的方法或代码块）的性能问题一直以来都在被人们关注，并且已经有一系列的文章描述其构造（例如引文 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>）。然而，大部分的研究主要关注的是在单核处理器上大部分时候使用于单线程上下文环境中时，如何尽量降低其空间（因为任何的 Java 对象都可以当成是锁）和时间的开销。对于同步器来说这些都不是特别重要：程序员仅在需要的时候才会使用同步器，因此并不需要压缩空间来避免浪费，并且同步器几乎是专门用在多线程设计中（特别是在多核处理器上），在这种环境下，偶尔的竞争是在意料之中的。因此，常规的 JVM 锁优化策略主要是针对零竞争的场景，而其它场景则使用缺乏可预见性的“慢速路径（slow paths）” ，所以常规的JVM锁优化策略并不适用于严重依赖于 J.U.C 包的典型多线程服务端应用。</p>
+<h3 id="22-性能目标">2.2 性能目标</h3>
+<p>Java 内置锁（使用 <code>synchronized</code> 的方法或代码块）的性能问题一直以来都在被人们关注，并且已经有一系列的文章描述其构造（例如引文 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>,<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>）。然而，大部分的研究主要关注的是在单核处理器上大部分时候使用于单线程上下文环境中时，如何尽量降低其空间（因为任何的 Java 对象都可以当成是锁）和时间的开销。对于同步器来说这些都不是特别重要：程序员仅在需要的时候才会使用同步器，因此并不需要压缩空间来避免浪费，并且同步器几乎是专门用在多线程设计中（特别是在多核处理器上），在这种环境下，偶尔的竞争是在意料之中的。因此，常规的 JVM 锁优化策略主要是针对零竞争的场景，而其它场景则使用缺乏可预见性的“慢速路径（slow paths）” ，所以常规的JVM锁优化策略并不适用于严重依赖于 J.U.C 包的典型多线程服务端应用。</p>
 <p>这里主要的性能目标是可伸缩性，即在大部分情况下，即使，或特别在同步器有竞争的情况下，稳定地保证其效率。在理想的情况下，不管有多少线程正试图通过同步点，通过同步点的开销都应该是个常量。在某一线程被允许通过同步点但还没有通过的情况下，使其耗费的总时间最少，这是主要目标之一。然而，这也必须考虑平衡各种资源，包括总 CPU 时间的需求，内存负载以及线程调度的开销。例如：获取自旋锁通常比阻塞锁所需的时间更短，但是通常也会浪费 CPU 时钟周期，并且造成内存竞争，所以使用的并不频繁。</p>
 <p>实现同步器的这些目标包含了两种不同的使用类型。大部分应用程序是最大化其总的吞吐量，容错性，并且最好保证尽量减少饥饿的情况。然而，对于那些控制资源分配的程序来说，更重要是去维持多线程读取的公平性，可以接受较差的总吞吐量。没有任何框架可以代表用户去决定应该选择哪一个方式，因此，应该提供不同的公平策略。</p>
 <p>无论同步器的内部实现是多么的精雕细琢，它还是会在某些应用中产生性能瓶颈。因此，框架必须提供相应的监视工具让用户发现和缓和这些瓶颈。至少需要提供一种方式来确定有多少线程被阻塞了。</p>
-<h2 id="3-">3 设计与实现</h2>
+<h2 id="3-设计与实现">3 设计与实现</h2>
 <p>同步器背后的基本思想非常简单。<code>acquire</code> 操作如下：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>synchronization state does not allow acquire<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     enqueue current thread <span style="color:#66d9ef">if</span> not already queued<span style="color:#f92672">;</span>
@@ -74,25 +676,25 @@ dequeue current thread <span style="color:#66d9ef">if</span> it was queued<span 
 </ul>
 <p>创建一个框架分别实现这三个组件是有可能的。但是，这会让整个框架既难用又没效率。例如：存储在队列节点的信息必须与解除阻塞所需要的信息一致，而暴露出的方法的签名必须依赖于同步状态的特性。</p>
 <p>同步器框架的核心决策是为这三个组件选择一个具体实现，同时在使用方式上又有大量选项可用。这里有意地限制了其适用范围，但是提供了足够的效率，使得实际上没有理由在合适的情况下不用这个框架而去重新建造一个。</p>
-<h3 id="31-">3.1 同步状态</h3>
+<h3 id="31-同步状态">3.1 同步状态</h3>
 <p>AQS 类使用单个 int（32位）来保存同步状态，并暴露出 <code>getState</code>、<code>setState</code> 以及 <code>compareAndSet</code> 操作来读取和更新这个状态。这些方法都依赖于 j.u.c atomic 包的支持，这个包提供了兼容 JSR133 中 <code>volatile</code> 在读和写上的语义，并且通过使用本地的 <code>compare-and-swap</code> 或 <code>load-linked/store-conditional</code> 指令来实现 <code>compareAndSetState</code>，使得仅当同步状态拥有一个期望值的时候，才会被原子地设置成新值。</p>
 <p>将同步状态限制为一个 32 位的整形是出于实践上的考量。虽然 JSR166 也提供了 64 位 long 字段的原子性操作，但这些操作在很多平台上还是使用内部锁的方式来模拟实现的，这会使同步器的性能可能不会很理想。当然，将来可能会有一个类是专门使用 64 位的状态的。然而现在就引入这么一个类到这个包里并不是一个很好的决定（译者注：JDK1.6 中已经包含 <code>java.util.concurrent.locks.AbstractQueuedLongSynchronizer</code> 类，即使用 long 形式维护同步状态的一个 <code>AbstractQueuedSynchronizer</code> 版本）。目前来说，32 位的状态对大多数应用程序都是足够的。在 j.u.c 包中，只有一个同步器类可能需要多于 32 位来维持状态，那就是 <code>CyclicBarrier</code> 类，所以，它用了锁（该包中大多数更高层次的工具亦是如此）。</p>
 <p>基于 AQS 的具体实现类必须根据暴露出的状态相关的方法定义 <code>tryAcquire</code> 和 <code>tryRelease</code> 方法，以控制 <code>acquire</code> 和 <code>release</code> 操作。当同步状态满足时，<code>tryAcquire</code> 方法必须返回 true，而当新的同步状态允许后续 <code>acquire</code> 时，<code>tryRelease</code> 方法也必须返回 true。这些方法都接受一个 int 类型的参数用于传递想要的状态。例如：可重入锁中，当某个线程从条件等待中返回，然后重新获取锁时，为了重新建立循环计数的场景。很多同步器并不需要这样一个参数，因此忽略它即可。</p>
-<h3 id="32-">3.2 阻塞</h3>
+<h3 id="32-阻塞">3.2 阻塞</h3>
 <p>在 JSR166 之前，阻塞线程和解除线程阻塞都是基于 Java 内置监视器，没有基于 Java API 可以用来创建同步器。唯一可以选择的是 <code>Thread.suspend</code> 和 <code>Thread.resume</code>，但是它们都有无法解决的竞态问题，所以也没法用：当一个非阻塞的线程在一个正准备阻塞的线程调用 <code>suspend</code> 前调用了 <code>resume</code>，这个 <code>resume</code> 操作将不会有什么效果。</p>
 <p>j.u.c 包有一个 <code>LockSuport</code> 类，这个类中包含了解决这个问题的方法。方法 <code>LockSupport.park</code> 阻塞当前线程除非/直到有个 <code>LockSupport.unpark</code> 方法被调用（unpark 方法被提前调用也是可以的）。unpark的调用是没有被计数的，因此在一个park调用前多次调用 unpark 方法只会解除一个 park 操作。另外，它们作用于每个线程而不是每个同步器。一个线程在一个新的同步器上调用 park 操作可能会立即返回，因为在此之前可能有 “剩余的” unpark 操作。但是，在缺少一个 unpark 操作时，下一次调用 park 就会阻塞。虽然可以显式地消除这个状态（译者注：就是多余的 unpark 调用），但并不值得这样做。在需要的时候多次调用 park 会更高效。</p>
 <p>这个简单的机制与有些用法在某种程度上是相似的，例如 Solaris-9 的线程库，WIN32 中的“可消费事件”，以及 Linux 中的 NPTL 线程库。因此最常见的运行 Java 的平台上都有相对应的有效实现。（但目前 Solaris 和 Linux 上的 Sun Hotspot JVM 参考实现实际上是使用一个 pthread 的 condvar 来适应目前的运行时设计的）。park 方法同样支持可选的相对或绝对的超时设置，以及与 JVM 的 <code>Thread.interrupt</code> 结合 —— 可通过中断来 unpark 一个线程。</p>
-<h3 id="33-">3.3 队列</h3>
+<h3 id="33-队列">3.3 队列</h3>
 <p>整个框架的关键就是如何管理被阻塞的线程的队列，该队列是严格的 FIFO 队列，因此，框架不支持基于优先级的同步。</p>
-<p>同步队列的最佳选择是自身没有使用底层锁来构造的非阻塞数据结构，目前，业界对此很少有争议。而其中主要有两个选择：一个是 Mellor-Crummey 和 Scott 锁（MCS锁）<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> 的变体，另一个是 Craig，Landin 和Hagersten 锁（CLH锁）<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> 的变体。一直以来，<code>CLH</code> 锁仅被用于自旋锁。但是，在这个框架中，<code>CLH</code> 锁显然比 <code>MCS</code> 锁更合适。因为CLH锁可以更容易地去实现 “取消（cancellation）” 和 “超时” 功能，因此我们选择了 <code>CLH</code> 锁作为实现的基础。但是最终的设计已经与原来的 <code>CLH</code> 锁有较大的出入，因此下文将对此做出解释。</p>
+<p>同步队列的最佳选择是自身没有使用底层锁来构造的非阻塞数据结构，目前，业界对此很少有争议。而其中主要有两个选择：一个是 Mellor-Crummey 和 Scott 锁（MCS锁）<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> 的变体，另一个是 Craig，Landin 和Hagersten 锁（CLH锁）<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> 的变体。一直以来，<code>CLH</code> 锁仅被用于自旋锁。但是，在这个框架中，<code>CLH</code> 锁显然比 <code>MCS</code> 锁更合适。因为CLH锁可以更容易地去实现 “取消（cancellation）” 和 “超时” 功能，因此我们选择了 <code>CLH</code> 锁作为实现的基础。但是最终的设计已经与原来的 <code>CLH</code> 锁有较大的出入，因此下文将对此做出解释。</p>
 <p><code>CLH</code> 队列实际上并不那么像队列，因为它的入队和出队操作都与它的用途（即用作锁）紧密相关。它是一个链表队列，通过两个字段 <code>head</code> 和 <code>tail</code> 来存取，这两个字段是可原子更新的，两者在初始化时都指向了一个空节点。</p>
 <p><img src="http://ifeve.com/wp-content/uploads/2013/01/CLHNode.png" alt=""></p>
 <p>一个新的节点 <code>node</code> 通过一个原子操作入队：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">do</span> <span style="color:#f92672">{</span>
     pred <span style="color:#f92672">=</span> tail<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span> <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span><span style="color:#f92672">!</span>tail<span style="color:#f92672">.</span><span style="color:#a6e22e">compareAndSet</span><span style="color:#f92672">(</span>pred<span style="color:#f92672">,</span> node<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">while</span><span style="color:#f92672">(!</span>tail<span style="color:#f92672">.</span><span style="color:#a6e22e">compareAndSet</span><span style="color:#f92672">(</span>pred<span style="color:#f92672">,</span> node<span style="color:#f92672">));</span>
 </code></pre></div><p>每一个节点的 “释放” 状态都保存在其前驱节点中。因此，自旋锁的 “自旋” 操作就如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>pred<span style="color:#f92672">.</span><span style="color:#a6e22e">status</span> <span style="color:#f92672">!</span><span style="color:#f92672">=</span> RELEASED<span style="color:#f92672">)</span><span style="color:#f92672">;</span> <span style="color:#75715e">// spin
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>pred<span style="color:#f92672">.</span><span style="color:#a6e22e">status</span> <span style="color:#f92672">!=</span> RELEASED<span style="color:#f92672">);</span> <span style="color:#75715e">// spin
 </span></code></pre></div><p>自旋后的出队操作只需将 <code>head</code> 字段指向刚刚得到锁的节点：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">head <span style="color:#f92672">=</span> node<span style="color:#f92672">;</span>
 </code></pre></div><p><code>CLH</code> 锁的优点在于其入队和出队操作是快速、无锁的，以及无障碍的（即使在竞争下，某个线程总会赢得一次插入机会而能继续执行）；且探测是否有线程正在等待也很快（只要测试一下 head 是否与 tail 相等）；同时，“释放” 状态是分散的（译者注：几乎每个节点都保存了这个状态，当前节点保存了其后驱节点的 “释放” 状态，因此它们是分散的，不是集中于一块的。），避免了一些不必要的内存竞争。</p>
@@ -106,12 +708,12 @@ dequeue current thread <span style="color:#66d9ef">if</span> it was queued<span 
 <p>同步框架中使用的 CLH 锁的变体与其他语言中的相比，主要区别可能是同步框架中使用的 CLH 锁需要依赖垃圾回收管理节点的内存，这就避免了一些复杂性和开销。但是，即使依赖 GC 也仍然需要在确定链接字段不再需要时将其置为 null。这往往可以与出队操作一起完成。否则，无用的节点仍然可触及，它们就没法被回收。</p>
 <p>其它一些更深入的微调，包括 CLH 队列首次遇到竞争时才需要的初始空节点的延迟初始化等，都可以在J2SE1.5的版本的源代码文档中找到相应的描述。</p>
 <p>抛开这些细节，基本的 <code>acquire</code> 操作的最终实现的一般形式如下（互斥，非中断，无超时）：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span><span style="color:#f92672">!</span>tryAcquire<span style="color:#f92672">(</span>arg<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span><span style="color:#f92672">(!</span>tryAcquire<span style="color:#f92672">(</span>arg<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
     node <span style="color:#f92672">=</span> create and enqueue <span style="color:#66d9ef">new</span> node<span style="color:#f92672">;</span>
     pred <span style="color:#f92672">=</span> node<span style="color:#960050;background-color:#1e0010">&#39;</span>s effective predecessor<span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>pred is not head node <span style="color:#f92672">|</span><span style="color:#f92672">|</span> <span style="color:#f92672">!</span>tryAcquire<span style="color:#f92672">(</span>arg<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>pred is not head node <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>tryAcquire<span style="color:#f92672">(</span>arg<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>pred<span style="color:#960050;background-color:#1e0010">&#39;</span>s signal bit is set<span style="color:#f92672">)</span>
-            pard<span style="color:#f92672">(</span><span style="color:#f92672">)</span>
+            pard<span style="color:#f92672">()</span>
         <span style="color:#66d9ef">else</span>
             compareAndSet pred<span style="color:#960050;background-color:#1e0010">&#39;</span>s signal bit to <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
         pred <span style="color:#f92672">=</span> node<span style="color:#960050;background-color:#1e0010">&#39;</span>s effective predecessor<span style="color:#f92672">;</span>
@@ -119,15 +721,15 @@ dequeue current thread <span style="color:#66d9ef">if</span> it was queued<span 
     head <span style="color:#f92672">=</span> node<span style="color:#f92672">;</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><p>release操作：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>tryRelease<span style="color:#f92672">(</span>arg<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> head node<span style="color:#960050;background-color:#1e0010">&#39;</span>s signal bit is set<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>tryRelease<span style="color:#f92672">(</span>arg<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> head node<span style="color:#960050;background-color:#1e0010">&#39;</span>s signal bit is set<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     compareAndSet head<span style="color:#960050;background-color:#1e0010">&#39;</span>s bit to <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
     unpark head<span style="color:#960050;background-color:#1e0010">&#39;</span>s successor<span style="color:#f92672">,</span> <span style="color:#66d9ef">if</span> one exist
 <span style="color:#f92672">}</span>
 </code></pre></div><p><code>acquire</code> 操作的主循环次数依赖于具体实现类中 <code>tryAcquire</code> 的实现方式。另一方面，在没有 “取消” 操作的情况下，每一个组件的 <code>acquire</code> 和 <code>release</code> 都是一个 <code>O(1)</code> 的操作，忽略 park 中发生的所有操作系统线程调度。</p>
 <p>支持 “取消” 操作主要是要在 <code>acquire</code> 循环里的 park 返回时检查中断或超时。由超时或中断而被取消等待的线程会设置其节点状态，然后unpark其后继节点。在有 “取消” 的情况下，判断其前驱节点和后继节点以及重置状态可能需要 <code>O(n)</code> 的遍历（n 是队列的长度）。由于 “取消” 操作，该线程再也不会被阻塞，节点的链接和状态字段可以被快速重建。</p>
-<h3 id="34-">3.4 条件队列</h3>
+<h3 id="34-条件队列">3.4 条件队列</h3>
 <p>AQS 框架提供了一个 <code>ConditionObject</code> 类，给维护独占同步的类以及实现 <code>Lock</code> 接口的类使用。一个锁对象可以关联任意数目的条件对象，可以提供典型的管程风格的 <code>await</code>、<code>signal</code> 和 <code>signalAll</code> 操作，包括带有超时的，以及一些检测、监控的方法。</p>
-<p>通过修正一些设计决策，<code>ConditionObject</code> 类有效地将条件（conditions）与其它同步操作结合到了一起。该类只支持 Java 风格的管程访问规则，这些规则中，仅当当前线程持有锁且要操作的条件（condition）属于该锁时，条件操作才是合法的（一些替代操作的讨论参考 <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>）。这样，一个 <code>ConditionObject</code> 关联到一个 <code>ReentrantLock</code> 上就表现的跟内置的管程（通过 <code>Object.wait</code> 等）一样了。两者的不同仅仅在于方法的名称、额外的功能以及用户可以为每个锁声明多个条件。</p>
+<p>通过修正一些设计决策，<code>ConditionObject</code> 类有效地将条件（conditions）与其它同步操作结合到了一起。该类只支持 Java 风格的管程访问规则，这些规则中，仅当当前线程持有锁且要操作的条件（condition）属于该锁时，条件操作才是合法的（一些替代操作的讨论参考 <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>）。这样，一个 <code>ConditionObject</code> 关联到一个 <code>ReentrantLock</code> 上就表现的跟内置的管程（通过 <code>Object.wait</code> 等）一样了。两者的不同仅仅在于方法的名称、额外的功能以及用户可以为每个锁声明多个条件。</p>
 <p><code>ConditionObject</code> 使用了与同步器一样的内部队列节点。但是，是在一个单独的条件队列中维护这些节点的。<code>signal</code> 操作是通过将节点从条件队列转移到锁队列中来实现的，而没有必要在需要唤醒的线程重新获取到锁之前将其唤醒。</p>
 <p>基本的 <code>await</code> 操作如下：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">create and add <span style="color:#66d9ef">new</span> node to conditon queue<span style="color:#f92672">;</span>
@@ -139,28 +741,28 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
 </code></pre></div><p>因为只有在持有锁的时候才能执行这些操作，因此他们可以使用顺序链表队列操作来维护条件队列（在节点中用一个 <code>nextWaiter</code> 字段）。转移操作仅仅把第一个节点从条件队列中的链接解除，然后通过 CLH 插入操作将其插入到锁队列上。</p>
 <p>实现这些操作主要复杂在，因超时或 <code>Thread.interrupt</code> 导致取消了条件等待时，该如何处理。“取消” 和 “唤醒” 几乎同时发生就会有竞态问题，最终的结果遵照内置管程相关的规范。JSR133 修订以后，就要求如果中断发生在 <code>signal</code> 操作之前，<code>await</code> 方法必须在重新获取到锁后，抛出 <code>InterruptedException</code>。但是，如果中断发生在 <code>signal</code> 后，<code>await</code> 必须返回且不抛异常，同时设置线程的中断状态。</p>
 <p>为了维护适当的顺序，队列节点状态变量中的一个位记录了该节点是否已经（或正在）被转移。“唤醒” 和 “取消” 相关的代码都会尝试用 <code>compareAndSet</code> 修改这个状态。如果某次 <code>signal</code> 操作修改失败，就会转移队列中的下一个节点（如果存在的话）。如果某次 “取消” 操作修改失败，就必须中止此次转移，然后等待重新获得锁。后面的情况采用了一个潜在的无限的自旋等待。在节点成功的被插到锁队列之前，被 “取消” 的等待不能重新获得锁，所以必须自旋等待 CLH 队列插入（即 <code>compareAndSet</code> 操作）被 “唤醒” 线程成功执行。这里极少需要自旋，且自旋里使用 <code>Thread.yield</code> 来提示应该调度某一其它线程，理想情况下就是执行 signal 的那个线程。虽然有可能在这里为 “取消” 实现一个帮助策略以帮助插入节点，但这种情况实在太少，找不到合适的理由来增加这些开销。在其它所有的情况下，这个基本的机制都不需要自旋或 <code>yield</code>，因此在单处理器上保持着合理的性能。</p>
-<h2 id="4-">4 用法</h2>
-<p>AQS 类将上述的功能结合到一起，并且作为一种基于 “模版方法模式” <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> 的基类提供给同步器。子类只需定义状态的检查与更新相关的方法，这些方法控制着 <code>acquire</code> 和 <code>release</code> 操作。然而，将 AQS 的子类作为同步器 ADT 并不适合，因为这个类必须提供方法在内部控制 <code>acquire</code> 和 <code>release</code> 的规则，这些都不应该被用户所看到。所有 <code>java.util.concurrent</code> 包中的同步器类都声明了一个私有的继承了 <code>AbstractQueuedSynchronizer</code> 的内部类，并且把所有同步方法都委托给这个内部类。这样各个同步器类的公开方法就可以使用适合自己的名称。</p>
+<h2 id="4-用法">4 用法</h2>
+<p>AQS 类将上述的功能结合到一起，并且作为一种基于 “模版方法模式” <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> 的基类提供给同步器。子类只需定义状态的检查与更新相关的方法，这些方法控制着 <code>acquire</code> 和 <code>release</code> 操作。然而，将 AQS 的子类作为同步器 ADT 并不适合，因为这个类必须提供方法在内部控制 <code>acquire</code> 和 <code>release</code> 的规则，这些都不应该被用户所看到。所有 <code>java.util.concurrent</code> 包中的同步器类都声明了一个私有的继承了 <code>AbstractQueuedSynchronizer</code> 的内部类，并且把所有同步方法都委托给这个内部类。这样各个同步器类的公开方法就可以使用适合自己的名称。</p>
 <p>下面是一个最简单的 <code>Mutex</code> 类的实现，它使用同步状态 0 表示解锁，1 表示锁定。这个类并不需要同步方法中的参数，因此这里在调用的时候使用 0 作为实参，方法实现里将其忽略。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Mutex</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Sync</span> <span style="color:#66d9ef">extends</span> AbstractQueuedSynchronizer <span style="color:#f92672">{</span>
         <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">tryAcquire</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> ignore<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> compareAndSetState<span style="color:#f92672">(</span>0<span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+            <span style="color:#66d9ef">return</span> compareAndSetState<span style="color:#f92672">(</span>0<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
         <span style="color:#f92672">}</span>
         <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">tryRelease</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> ignore<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            setState<span style="color:#f92672">(</span>0<span style="color:#f92672">)</span><span style="color:#f92672">;</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+            setState<span style="color:#f92672">(</span>0<span style="color:#f92672">);</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
         <span style="color:#f92672">}</span>
     <span style="color:#f92672">}</span>
  
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Sync sync <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Sync<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">lock</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span> sync<span style="color:#f92672">.</span><span style="color:#a6e22e">acquire</span><span style="color:#f92672">(</span>0<span style="color:#f92672">)</span><span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">unlock</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span> sync<span style="color:#f92672">.</span><span style="color:#a6e22e">release</span><span style="color:#f92672">(</span>0<span style="color:#f92672">)</span><span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Sync sync <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Sync<span style="color:#f92672">();</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">lock</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> sync<span style="color:#f92672">.</span><span style="color:#a6e22e">acquire</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span> <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">unlock</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span> sync<span style="color:#f92672">.</span><span style="color:#a6e22e">release</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span> <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><p>这个例子的一个更完整的版本，以及其它用法指南，可以在J2SE的文档中找到。还可以有一些变体。如，<code>tryAcquire</code> 可以使用一种 “test-and-test-and-set” 策略，即在改变状态值前先对状态进行校验。</p>
 <p>令人诧异的是，像互斥锁这样性能敏感的东西也打算通过委托和虚方法结合的方式来定义。然而，这正是现代动态编译器一直在重点研究的面向对象设计结构。编译器擅长将这方面的开销优化掉，起码会优化频繁调用同步器的那些代码。</p>
 <p><code>AbstractQueuedSynchronizer</code> 类也提供了一些方法用来协助策略控制。例如，基础的 <code>acquire</code> 方法有可超时和可中断的版本。虽然到目前为止，我们的讨论都集中在像锁这样的独占模式的同步器上，但<code>AbstractQueuedSynchronizer</code> 类也包含另一组方法（如 acquireShared），它们的不同点在于 <code>tryAcquireShared</code> 和 <code>tryReleaseShared</code> 方法能够告知框架（通过它们的返回值）尚能接受更多的请求，最终框架会通过级联的 signal(cascading signals) 唤醒多个线程。</p>
 <p>虽然将同步器序列化（持久化存储或传输）一般来说没有太大意义，但这些类经常会被用于构造其它类，例如线程安全的集合，而这些集合通常是可序列化的。<code>AbstractQueuedSynchronizer</code> 和 <code>ConditionObject</code> 类都提供了方法用于序列化同步状态，但不会序列化潜在的被阻塞的线程，也不会序列化其它内部暂时性的簿记（bookkeeping）变量。即使如此，在反序列化时，大部分同步器类也只仅将同步状态重置为初始值，这与内置锁的隐式策略一致 —— 总是反序列化到一个解锁状态。这相当于一个空操作，但仍必须显式地支持以便final字段能够反序列化。</p>
-<h3 id="41-">4.1 公平调度的控制</h3>
+<h3 id="41-公平调度的控制">4.1 公平调度的控制</h3>
 <p>尽管同步器是基于 FIFO 队列的，但它们并不一定就得是公平的。可以注意到，在基础的 acquire 算法（3.3节）中，<code>tryAcquire</code> 是在入队前被执行的。因此一个新的 <code>acquire</code> 线程能够“窃取”本该属于队列头部第一个线程通过同步器的机会。</p>
 <p>可闯入的 FIFO 策略通常会提供比其它技术更高的总吞吐率。当一个有竞争的锁已经空闲，而下一个准备获取锁的线程又正在解除阻塞的过程中，这时就没有线程可以获取到这个锁，如果使用闯入策略，则可减少这之间的时间间隔。与此同时，这种策略还可避免过分的，无效率的竞争，这种竞争是由于只允许一个（第一个）排队的线程被唤醒然后尝试 <code>acquire</code> 操作导致的。在只要求短时间持有同步器的场景中，创建同步器的开发者可以通过定义 <code>tryAcquire</code> 在控制权返回之前重复调用自己若干次，来进一步凸显闯入的效果。</p>
 <p><img src="http://ifeve.com/wp-content/uploads/2013/01/fifo-300x90.png" alt=""></p>
@@ -169,7 +771,7 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
 <p>一个更快，但非严格公平的变体可以这样做，若队列为空（判断的瞬间），仍然允许 <code>tryAcquire</code> 执行成功。在这种情况下，多个线程同时遇到一个空队列时可能会去竞争以使自己第一个获得锁，这样，通常至少有一个线程是无需入队列的。<code>java.util.concurrent</code> 包中所有支持公平模式的同步器都采用了这种策略。</p>
 <p>尽管公平性设置在实践中很有用，但是它们并没有保障，因为 Java Language Specification 没有提供这样的调度保证。例如：即使是严格公平的同步器，如果一组线程永远不需要阻塞来达到互相等待，那么 JVM 可能会决定纯粹以顺序方式运行它们。在实际中，单处理器上，在抢占式上下文切换之前，这样的线程有可能是各自运行了一段时间。如果这样一个线程正持有某个互斥锁，它将很快会被切换回来，仅是为了释放其持有的锁，然后会继续阻塞，因为它知道有另外一个线程需要这把锁，这更增加了同步器可用但没有线程能来获取之间的间隔。同步器公平性设置在多处理器上的影响可能会更大，因为在这种环境下会产生更多的交错，因此一个线程就会有更多的机会发现锁被另一个线程请求。</p>
 <p>在高竞争下，当保护的是短暂持有锁的代码体时，尽管性能可能会较差，但公平锁仍然能有效地工作。例如，当公平性锁保护的是相对长的代码体和/或有着相对长的锁间(inter-lock)间隔，在这种情况下，闯入只能带来很小的性能优势，但却可能会大大增加无限等待的风险。同步器框架将这些工程决策留给用户来确定。</p>
-<h3 id="42-">4.2 同步器</h3>
+<h3 id="42-同步器">4.2 同步器</h3>
 <p>下面是 <code>java.util.concurrent</code> 包中同步器定义方式的概述：</p>
 <p><code>ReentrantLock</code> 类使用 AQS 同步状态来保存锁（重复）持有的次数。当锁被一个线程获取时，<code>ReentrantLock</code> 也会记录下当前获得锁的线程标识，以便检查是否是重复获取，以及当错误的线程（译者注：如果线程不是锁的持有者，在此线程中执行该锁的 unlock 操作就是非法的）试图进行解锁操作时检测是否存在非法状态异常。<code>ReentrantLock</code> 也使用了 AQS 提供的 <code>ConditionObject</code>，还向外暴露了其它监控和监测相关的方法。<code>ReentrantLock</code> 通过在内部声明两个不同的 <code>AbstractQueuedSynchronizer</code> 实现类（提供公平模式的那个禁用了闯入策略）来实现可选的公平模式，在创建 <code>ReentrantLock</code> 实例的时候根据设置（译者注：即 ReentrantLock 构造方法中的 fair 参数）使用相应的 <code>AbstractQueuedSynchronizer</code> 实现类。</p>
 <p><code>ReentrantReadWriteLock</code> 类使用 AQS 同步状态中的 16 位来保存写锁持有的次数，剩下的 16 位用来保存读锁的持有次数。<code>WriteLock</code> 的构建方式同 <code>ReentrantLock</code>。<code>ReadLock</code> 则通过使用 <code>acquireShared</code> 方法来支持同时允许多个读线程。</p>
@@ -178,7 +780,7 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
 <p><code>FutureTask</code> 类使用 AQS 同步状态来表示某个异步计算任务的运行状态（初始化、运行中、被取消和完成）。设置（译者注：FutureTask 的 set 方法）或取消（译者注：FutureTask 的 cancel 方法）一个 <code>FutureTask</code> 时会调用 AQS 的 release 操作，等待计算结果的线程的阻塞解除是通过 AQS 的 <code>acquire</code> 操作实现的。</p>
 <p><code>SynchronousQueues</code> 类（一种 CSP（Communicating Sequential Processes）形式的传递）使用了内部的等待节点，这些节点可以用于协调生产者和消费者。同时，它使用 AQS 同步状态来控制当某个消费者消费当前一项时，允许一个生产者继续生产，反之亦然。</p>
 <p><code>java.util.concurrent</code> 包的使用者当然也可以为自定义的应用定义自己的同步器。例如，那些曾考虑到过的，但没有采纳进这个包的同步器包括提供WIN32事件各种风格的语义类，二元信号量，集中管理的锁以及基于树的屏障。</p>
-<h2 id="5-">5 性能</h2>
+<h2 id="5-性能">5 性能</h2>
 <p>虽然 AQS 框架除了支持互斥锁外，还支持其它形式的同步方式，但锁的性能是最容易测量和比较的。即使如此，也还存在许多不同的测量方式。这里的实验主要是设计来展示锁的开销和吞吐量。</p>
 <p>在每个测试中，所有线程都重复的更新一个伪随机数，该随机数由 <code>nextRandom(int seed)</code> 方法计算：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">int</span> t <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>seed <span style="color:#f92672">%</span> 127773<span style="color:#f92672">)</span> <span style="color:#f92672">*</span> 16807 <span style="color:#f92672">-</span> <span style="color:#f92672">(</span>seed <span style="color:#f92672">/</span> 127773<span style="color:#f92672">)</span> <span style="color:#f92672">*</span> 2836<span style="color:#f92672">;</span>
@@ -247,7 +849,7 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
 </tbody>
 </table>
 <p><strong>表1 测试的平台</strong></p>
-<h3 id="51-">5.1 开销</h3>
+<h3 id="51-开销">5.1 开销</h3>
 <p>无竞争情况下的开销是通过仅运行一个线程，将概率 <code>S</code> 为 1 时的每次迭代时间减去概率 <code>S</code> 为 0（访问共享内存的概率为 0）时的每次迭代时间得到的（译者注：这里的“概率S”即前文提到的 “概率 S”，概率为 0 时是没有锁操作的，概率为 1 时是每次都有锁操作，因此将概率为1时的耗时减去概率为 0 时的耗时就是整个锁操作的开销。）。表 2 以纳秒为单位显示了非竞争场景下每次锁操作的开销。<code>Mutex</code> 类最接近于框架的基本耗时，可重入锁的额外开销是记录当前所有者线程和错误检查的耗时，对于公平锁来说还包含开始时检查队列是否为空的耗时。</p>
 <p>表格 2 也展示与内置锁的 “快速路径（fast path）” 对比，<code>tryAcquire</code> 的耗时。这里的差异主要反映出了各锁和机器中使用的不同的原子指令以及内存屏障的耗时。在多处理器上，这些指令常常是完全优于所有其它指令的。内置锁和同步器类之间的主要差别，显然是由于 Hotspot 锁在锁定和解锁时都使用了一次<code>compareAndSet</code>，而同步器的 acquire 操作使用了一次 <code>compareAndSet</code> ，但 release 操作用的是一次volatile写（即，多处理器上的一次内存屏障以及所有处理器上的重排序限制）。每个锁的绝对的和相对耗时因机器的不同而不同。</p>
 <table>
@@ -333,7 +935,7 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
 | 8U | 1274 | 157 | 174 | 31084 |
 | 24U | 1983 | 160 | 182 | 32291 |</p>
 <p><strong>表格3 饱和时的单锁开销（单位：纳秒）</strong></p>
-<h3 id="52-">5.2 吞吐量</h3>
+<h3 id="52-吞吐量">5.2 吞吐量</h3>
 <p>大部分同步器都是用于无竞争和极大竞争之间的。这可以用实验在两个方面进行检查，通过修改固定个线程的竞争概率，和/或通过往拥有固定竞争概率的线程集合里增加更多的线程。为了说明这些影响，测试运行在不同的竞争概率和不同的线程数目下，都用的是可重入锁。附图使用了一个 slowdown 度量标准。</p>
 <p><img src="http://ifeve.com/wp-content/uploads/2013/02/formula-300x66.jpg" alt=""></p>
 <p>这里，t是总运行时间，b是一个线程在没有竞争或同步下的基线时间，n 是线程数，p 是处理器数，<code>S</code> 是共享访问的比例（译者注：即前面的竞争概率 S）。计算结果是实际执行时间与理想执行时间（通常是无法得到的）的比率，理想执行时间是通过使用 Amdahl’s 法则计算出来的。理想时间模拟了一次没有同步开销，没有因锁争用而导致线程阻塞的执行过程。即使这样，在很低的竞争下，相比理想时间，有一些测试结果却表现出了很小的速度增长，大概是由于基线和测试之间的优化、流水线等方面有着轻微的差别。</p>
@@ -344,53 +946,40 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
 <p><img src="https://images2015.cnblogs.com/blog/584866/201707/584866-20170721153344933-80322669.jpg" alt=""></p>
 <p><img src="https://images2015.cnblogs.com/blog/584866/201707/584866-20170721153353714-548675583.jpg" alt=""></p>
 <p><img src="https://images2015.cnblogs.com/blog/584866/201707/584866-20170721153402620-2093158242.jpg" alt=""></p>
-<h2 id="6-">6 总结</h2>
+<h2 id="6-总结">6 总结</h2>
 <p>本文撰写之时，<code>java.util.concurrent</code> 包中的同步器框架还太新所以还不能在实践中使用。因此在 J2SE 1.5 最终版本发布之前都很难看到其大范围的使用，并且，它的设计，API 实现以及性能肯定还有无法预料的后果。但是，此时，这个框架明显能胜任其基本的目标，即为创建新的同步器提供一个高效的基础。</p>
-<h2 id="7-">7 致谢</h2>
+<h2 id="7-致谢">7 致谢</h2>
 <p>Thanks to Dave Dice for countless ideas and advice during the development of this framework, to Mark Moir and Michael Scott for urging consideration of CLH queues, to David Holmes for critiquing early versions of the code and API, to Victor Luchangco and Bill Scherer for reviewing previous incarnations of the source code, and to the other members of the JSR166 Expert Group (Joe Bowbeer, Josh Bloch, Brian Goetz, David Holmes, and Tim Peierls) as well as Bill Pugh, for helping with design and specifications and commenting on drafts of this paper. Portions of this work were made possible by a DARPA PCES grant, NSF grant EIA-0080206 (for access to the 24way Sparc) and a Sun Collaborative Research Grant.</p>
-<h1 id="heading4">参考文献</h1>
+<h1 id="参考文献">参考文献</h1>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Agesen, O., D. Detlefs, A. Garthwaite, R. Knippel, Y. S.Ramakrishna, and D. White. An Efficient Meta-lock for Implementing Ubiquitous Synchronization. ACM OOPSLA Proceedings, 1999.<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Agesen, O., D. Detlefs, A. Garthwaite, R. Knippel, Y. S.Ramakrishna, and D. White. An Efficient Meta-lock for Implementing Ubiquitous Synchronization. ACM OOPSLA Proceedings, 1999. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>Andrews, G. Concurrent Programming. Wiley, 1991.<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Bacon, D. Thin Locks: Featherweight Synchronization for Java. ACM PLDI Proceedings, 1998. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Bacon, D. Thin Locks: Featherweight Synchronization for Java. ACM PLDI Proceedings, 1998.<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Mellor-Crummey, J.M., and M. L. Scott. Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors. ACM Trans. on Computer Systems,February 1991 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Buhr, P. M. Fortier, and M. Coffin. Monitor Classification,ACM Computing Surveys, March 1995.<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Craig, T. S. Building FIFO and priority-queueing spin locks from atomic swap. Technical Report TR 93-02-02,Department of Computer Science, University of Washington, Feb. 1993. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Craig, T. S. Building FIFO and priority-queueing spin locks from atomic swap. Technical Report TR 93-02-02,Department of Computer Science, University of Washington, Feb. 1993.<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Magnussen, P., A. Landin, and E. Hagersten. Queue locks on cache coherent multiprocessors. 8th Intl. Parallel Processing Symposium, Cancun, Mexico, Apr. 1994. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>Gamma, E., R. Helm, R. Johnson, and J. Vlissides. Design Patterns, Addison Wesley, 1996.<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>M. L. Scott and W N. Scherer III. Scalable Queue-Based Spin Locks with Timeout. 8th ACM Symp. on Principles and Practice of Parallel Programming, Snowbird, UT, June 2001. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p>Holmes, D. Synchronisation Rings, PhD Thesis, Macquarie University, 1999.<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Buhr, P. M. Fortier, and M. Coffin. Monitor Classification,ACM Computing Surveys, March 1995. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
-<p>Magnussen, P., A. Landin, and E. Hagersten. Queue locks on cache coherent multiprocessors. 8th Intl. Parallel Processing Symposium, Cancun, Mexico, Apr. 1994.<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
-</li>
-<li id="fn:9" role="doc-endnote">
-<p>Mellor-Crummey, J.M., and M. L. Scott. Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors. ACM Trans. on Computer Systems,February 1991<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
-</li>
-<li id="fn:10" role="doc-endnote">
-<p>M. L. Scott and W N. Scherer III. Scalable Queue-Based Spin Locks with Timeout. 8th ACM Symp. on Principles and Practice of Parallel Programming, Snowbird, UT, June 2001.<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
-</li>
-<li id="fn:11" role="doc-endnote">
-<p>Sun Microsystems. Multithreading in the Solaris Operating Environment. White paper available at <a href="http://wwws.sun.com/software/solaris/whitepapers.html">http://wwws.sun.com/software/solaris/whitepapers.html</a> 2002.<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
-</li>
-<li id="fn:12" role="doc-endnote">
-<p>Zhang, H., S. Liang, and L. Bak. Monitor Conversion in a Multithreaded Computer System. United States Patent 6,691,304. 2004.<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+<p>Gamma, E., R. Helm, R. Johnson, and J. Vlissides. Design Patterns, Addison Wesley, 1996. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
-]]></content>
+</section>]]></content>
         </item>
         
         <item>
@@ -399,18 +988,14 @@ re<span style="color:#f92672">-</span>acquire lock<span style="color:#f92672">;<
             <pubDate>Tue, 03 Dec 2019 23:57:32 +0800</pubDate>
             
             <guid>https://blog.sailfishc.cn/posts/2019/12/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8unit-testing%E5%81%A5%E5%A3%AEjava%E4%BB%A3%E7%A0%81/</guid>
-            <description>前言：测试的道理，推荐下王垠的博客，这篇博客不会提高你的测试水平，但是有一些理论和方法上的指导。
- 在之前对于测试一直处于写Test Case的状态，使用JUnit结合Spring Test跑下接口，使用断言或者格式化的JSON结果比对下结果，这样也平安无事的写了一段时间的代码，随着对代码的一些要求，去学习了一些书籍和资料，有了一些总结，开始使用Unit testing来健壮我们的Java代码吧。
-目录  聊聊我为什么要写这篇Unit Test的文章 Unit testing的目的和要解决的问题 Unit testing的基础 Unit testing的设计原则 Unit testing实践中的问题 使用Groovy来编写测试  我为什么要写这篇Unit testing的文章  写好代码应该是一个有追求的程序员对自己的基本要求
- 在初入Java时沉浸在学习各种框架的谜团里，在工作中开始关注自己的代码质量，期间看了《重构》、《重构与模式》，之后接触到了敏捷开发，去了解TDD，就开始实践TDD了，当然，这篇文章不是写TDD（Test Driven Development）的。我也一直在找一本适合我的Test书籍，一直没合适的，期间找到了几本：
- 《程序开发人员测试指南》 《Junit实战》  之后白衣推荐了《有效的单元测试》，立即入了这本书，发现这本书很符合我现在的情况，目前书还没看完，先大致的浏览了一遍，想结合耗哥（左耳朵耗子）在专栏中关于高效学习的模板写这篇文章，这也是写本文的初衷。
-Unit testing的目的和要解决的问题 维基百科定义：Unit testing - Wikipedia
- In computer programming, unit testing is a software testing method by which individual units of source code, sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine whether they are fit for use.</description>
+            <description>&lt;blockquote&gt;
+&lt;p&gt;前言：&lt;a href=&#34;http://www.yinwang.org/blog-cn/2016/09/14/tests&#34;&gt;测试的道理&lt;/a&gt;，推荐下王垠的博客，这篇博客不会提高你的测试水平，但是有一些理论和方法上的指导。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
             <content type="html"><![CDATA[<blockquote>
 <p>前言：<a href="http://www.yinwang.org/blog-cn/2016/09/14/tests">测试的道理</a>，推荐下王垠的博客，这篇博客不会提高你的测试水平，但是有一些理论和方法上的指导。</p>
 </blockquote>
 <p>在之前对于测试一直处于写Test Case的状态，使用JUnit结合Spring Test跑下接口，使用断言或者格式化的JSON结果比对下结果，这样也平安无事的写了一段时间的代码，随着对代码的一些要求，去学习了一些书籍和资料，有了一些总结，开始使用Unit testing来健壮我们的Java代码吧。</p>
-<h2 id="heading">目录</h2>
+<h2 id="目录">目录</h2>
 <ul>
 <li>聊聊我为什么要写这篇Unit Test的文章</li>
 <li>Unit testing的目的和要解决的问题</li>
@@ -419,7 +1004,7 @@ Unit testing的目的和要解决的问题 维基百科定义：Unit testing - W
 <li>Unit testing实践中的问题</li>
 <li>使用Groovy来编写测试</li>
 </ul>
-<h2 id="unit-testing">我为什么要写这篇Unit testing的文章</h2>
+<h2 id="我为什么要写这篇unit-testing的文章">我为什么要写这篇Unit testing的文章</h2>
 <blockquote>
 <p>写好代码应该是一个有追求的程序员对自己的基本要求</p>
 </blockquote>
@@ -429,7 +1014,7 @@ Unit testing的目的和要解决的问题 维基百科定义：Unit testing - W
 <li>《Junit实战》</li>
 </ul>
 <p>之后白衣推荐了《有效的单元测试》，立即入了这本书，发现这本书很符合我现在的情况，目前书还没看完，先大致的浏览了一遍，想结合耗哥（左耳朵耗子）在专栏中关于高效学习的模板写这篇文章，这也是写本文的初衷。</p>
-<h2 id="unit-testing1">Unit testing的目的和要解决的问题</h2>
+<h2 id="unit-testing的目的和要解决的问题">Unit testing的目的和要解决的问题</h2>
 <p>维基百科定义：<a href="https://en.wikipedia.org/wiki/Unit_testing">Unit testing - Wikipedia</a></p>
 <blockquote>
 <p>In computer programming, unit testing is a software testing method by which individual units of source code, sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine whether they are fit for use.[1]</p>
@@ -440,9 +1025,9 @@ Unit testing的目的和要解决的问题 维基百科定义：Unit testing - W
 <li>提高开发效率</li>
 <li>写出更好的代码</li>
 </ul>
-<h2 id="unit-testing2">Unit testing的基础</h2>
+<h2 id="unit-testing的基础">Unit testing的基础</h2>
 <p>为了更好地描述出一些概念，我使用Junit作为Unit testing的工具结合一些案例来说明。</p>
-<h3 id="assert">断言（assert）</h3>
+<h3 id="断言assert">断言（assert）</h3>
 <blockquote>
 <p>有一个函数<code>add</code>,实现一个两个数相加</p>
 </blockquote>
@@ -478,7 +1063,7 @@ public void add() {
 <li>assertThat：断言对象满足条件</li>
 </ul>
 <h3 id="mock">Mock</h3>
-<h2 id="heading1">参考资源</h2>
+<h2 id="参考资源">参考资源</h2>
 <ul>
 <li><a href="http://zhangyi.xyz/handout-tdd-code-kata/">TDD编码实战讲义 | 斑斓</a></li>
 <li><a href="https://gitbook.cn/books/58c2ac77306e988f12697f16/index.html">深度解读测试驱动开发（TDD）</a></li>
@@ -488,8 +1073,7 @@ public void add() {
 <li><a href="https://martinfowler.com/articles/mocksArentStubs.html">Mocks Aren’t Stubs</a></li>
 <li><a href="https://github.com/mockito/mockito/wiki/How-to-write-good-tests">How to write good tests · mockito/mockito Wiki · GitHub</a></li>
 <li><a href="https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html">Mockito - mockito-core 3.1.0 javadoc</a></li>
-</ul>
-]]></content>
+</ul>]]></content>
         </item>
         
         <item>
@@ -499,7 +1083,7 @@ public void add() {
             
             <guid>https://blog.sailfishc.cn/posts/2019/11/%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%85%A8%E7%9A%84redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%BB%8B%E7%BB%8D/</guid>
             <description>目录  分布式锁介绍 分布式锁的应用场景 分布式锁几种实现方式介绍  Redis ZK 数据库   Redis实现分布式锁的实现原理 易宝分布式锁分析 *实现Redis分布式锁的正确操作 实现Redis分布式锁的错误案例 Redis分布式锁的问题 Redisson的原理及Redission的一些讨论 基于Redisson的分布式锁的使用  分布式锁介绍 定义  A distributed lock manager (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides software applications which are distributed across a cluster on multiple machines with a means to synchronize their accesses to shared resources .</description>
-            <content type="html"><![CDATA[<h2 id="heading">目录</h2>
+            <content type="html"><![CDATA[<h2 id="目录">目录</h2>
 <ul>
 <li>分布式锁介绍</li>
 <li>分布式锁的应用场景</li>
@@ -518,8 +1102,8 @@ public void add() {
 <li>Redisson的原理及Redission的一些讨论</li>
 <li>基于Redisson的分布式锁的使用</li>
 </ul>
-<h2 id="heading1">分布式锁介绍</h2>
-<h3 id="heading2">定义</h3>
+<h2 id="分布式锁介绍">分布式锁介绍</h2>
+<h3 id="定义">定义</h3>
 <blockquote>
 <p>A <strong>distributed lock manager</strong> (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides  <a href="https://en.wikipedia.org/wiki/Software_application">software applications</a>  which are  <a href="https://en.wikipedia.org/wiki/Distributed_programming">distributed</a>  across a cluster on multiple machines with a means to synchronize their accesses to  <a href="https://en.wikipedia.org/wiki/Shared_resource">shared resources</a> .</p>
 </blockquote>
@@ -531,14 +1115,14 @@ public void add() {
 <li>文件</li>
 <li>共享内存</li>
 </ul>
-<h3 id="heading3">特性</h3>
+<h3 id="特性">特性</h3>
 <ul>
 <li>互斥性。在任意时刻，只有一个客户端能持有锁。</li>
 <li>不会发生死锁。即使有一个客户端在持有锁的期间崩溃而没有主动解锁，也能保证后续其他客户端能加锁。</li>
 <li>具有容错性。只要大部分的Redis节点正常运行，客户端就可以加锁和解锁。</li>
 <li>解铃还须系铃人。加锁和解锁必须是同一个客户端，客户端自己不能把别人加的锁给解了。</li>
 </ul>
-<h2 id="heading4">分布式锁的应用场景</h2>
+<h2 id="分布式锁的应用场景">分布式锁的应用场景</h2>
 <p>Redis在现在的项目中使用的很多，英国剑桥大学的分布式系统的研究员Martin Kleppmann总结了分布式锁的两个场景：</p>
 <blockquote>
 <ul>
@@ -551,7 +1135,7 @@ public void add() {
 <li>效率：使用锁节省去做不必要的相同的事情，例如发送了相同的两封用户邮件，两台机器做相同事的事情。</li>
 <li>正确性：使用分布式锁防止并发进程弄乱系统的状态，如果分布式锁失效，两个并发的节点操作了相同的数据，导致文件损坏，数据永久丢失，会造成严重的问题。</li>
 </ul>
-<h3 id="heading5">实际应用场景</h3>
+<h3 id="实际应用场景">实际应用场景</h3>
 <blockquote>
 <p>场景一</p>
 </blockquote>
@@ -572,7 +1156,7 @@ public void add() {
 (2)A渠道系统再调用外部厂商C系统。
 (3)A渠道系统将结果返回给B业务系统。
 这3个过程中，(2)过程，外部厂商的调用时是需要计费的。当B业务系统并发量很高时，有100笔相同的三要素校验，由于是相同的三要素，A渠道只要调用一次厂商即可知道结果。那么A渠道系统如何控制不让100笔请求全部去访问外部厂商C系统呢？可以使用分布式锁</p>
-<h2 id="heading6">分布式锁几种实现方式介绍</h2>
+<h2 id="分布式锁几种实现方式介绍">分布式锁几种实现方式介绍</h2>
 <blockquote>
 <p>分布式锁的操作</p>
 </blockquote>
@@ -585,7 +1169,7 @@ public void add() {
 <blockquote>
 <p>为了减少篇幅，下面几种实现方式只考虑lock和unlock的思路。</p>
 </blockquote>
-<h3 id="mysql">MySQL实现分布式锁</h3>
+<h3 id="mysql实现分布式锁">MySQL实现分布式锁</h3>
 <blockquote>
 <p>表结构设计</p>
 </blockquote>
@@ -639,7 +1223,7 @@ public void add() {
 </ul>
 </li>
 </ul>
-<h3 id="zk">ZK实现分布式锁</h3>
+<h3 id="zk实现分布式锁">ZK实现分布式锁</h3>
 <p>Zookeeper不太熟悉，但是从Zookeeper的客户端<strong>Curator</strong>官网中查看到实现分布锁的一段代码：</p>
 <pre><code>InterProcessMutex lock = new InterProcessMutex(client, lockPath);
 if ( lock.acquire(maxWait, waitUnit) ) 
@@ -683,7 +1267,7 @@ if ( lock.acquire(maxWait, waitUnit) )
 </ul>
 </li>
 </ul>
-<h3 id="redis">Redis实现分布式锁</h3>
+<h3 id="redis实现分布式锁">Redis实现分布式锁</h3>
 <blockquote>
 <p>实现</p>
 </blockquote>
@@ -716,8 +1300,8 @@ end
 </ul>
 </li>
 </ul>
-<h2 id="heading7">易宝分布式锁分析</h2>
-<h3 id="heading8">源码分析</h3>
+<h2 id="易宝分布式锁分析">易宝分布式锁分析</h2>
+<h3 id="源码分析">源码分析</h3>
 <ul>
 <li>地址：com.yeepay.utils.lock.impl.RedisLock</li>
 </ul>
@@ -731,7 +1315,7 @@ end
 </ul>
 <p>Value唯一是要解决如果安全性，例如clientA删除了clientB的锁的这种情况，setNX PX要放在一条原子指令中是因为如果先设置了NX，在设置PX指令的时候客户端宕机，会发生死锁（锁释放不了的情况）</p>
 <p>释放锁使用了Lua脚本，原因也是Redis目前不支持比对value的值，然后去删除锁的操作，所以使用了Lua脚本来达到一致性的效果，这类似MySQL中使用存储过程一样。</p>
-<h3 id="heading9">易宝分布式锁的一些问题</h3>
+<h3 id="易宝分布式锁的一些问题">易宝分布式锁的一些问题</h3>
 <blockquote>
 <p>expire seconds 单位不正确，不是second，而是millis</p>
 </blockquote>
@@ -739,7 +1323,7 @@ end
 </code></pre><blockquote>
 <p>lock方法不太全，将lock方法实现为了tryLock的功能</p>
 </blockquote>
-<h3 id="heading10">错误案例</h3>
+<h3 id="错误案例">错误案例</h3>
 <blockquote>
 <p>错误案例一</p>
 </blockquote>
@@ -780,7 +1364,7 @@ end
     return false;
 
 }
-</code></pre><h3 id="redis1">Redis分布式锁的问题分析</h3>
+</code></pre><h3 id="redis分布式锁的问题分析">Redis分布式锁的问题分析</h3>
 <p>既然是分布式系统，那么有几个边界是需要考虑的：</p>
 <ul>
 <li>网络是不可靠的，是有延迟的或者中断的</li>
@@ -804,7 +1388,7 @@ end
 <li>Redis主节点挂了，从节点升级为Master，但是由于Redis主从同步是异步的，有可能Master没有将数据同步到Slave</li>
 <li>clientB获取到了锁，clientA和clientB在同一时间访问了共享资源</li>
 </ul>
-<h3 id="redisson">Redisson的原理及如何实现分布式锁</h3>
+<h3 id="redisson的原理及如何实现分布式锁">Redisson的原理及如何实现分布式锁</h3>
 <p>Redis作者对于分布式锁从三个方面来描述如何有效使用分布式锁所需要的三个最低保证：</p>
 <blockquote>
 <ol>
@@ -844,7 +1428,7 @@ lock.unlock();
 <li>构造至少5个不同的RLock</li>
 <li>对多个RLock对象进行分组并将它们作为一个锁处理</li>
 </ul>
-<h3 id="heading11">一些后续的话</h3>
+<h3 id="一些后续的话">一些后续的话</h3>
 <p>即便是RedLock这么牛逼算法，还是不完善的，使用DDIA作者提出的问题分析下：</p>
 <p><img src="https://raw.githubusercontent.com/Sailfishc/picRepo/master/XhLmcL.png" alt="Redis分布式锁的问题"></p>
 <p>还是之前的一个例子：</p>
@@ -889,7 +1473,7 @@ lock.unlock();
 <li>NTP自动调整:这个可以通过一定的优化，把跳跃时间控制的可控范围内，虽然会跳跃，但是是完全可以接受的。</li>
 </ul>
 <p>最后Martin认为Redis说的也有道理，但是Redis的分布式锁实现方式还是有问题的，这可能也是TradeOff的魅力吧，Martin是学术流派，从他的书和博客中也可以看出他的参考资料偏Paper，Redis作者是实战派，虽然Redis理论上还是有些问题，但是在目前还是使用比较广泛，这可能就是虽然不完美，但是还是要接受她吧。</p>
-<h2 id="heading12">参考资料</h2>
+<h2 id="参考资料">参考资料</h2>
 <ul>
 <li><a href="https://redis.io/topics/distlock">Distributed locks with Redis – Redis</a></li>
 <li><a href="https://github.com/TaXueWWL/redis-distributed-lock">GitHub - TaXueWWL/redis-distributed-lock: redis分布式锁工具包，提供纯Java方式调用，支持传统Spring工程，  为spring boot应用提供了starter，更方便快捷的调用。</a></li>
@@ -931,26 +1515,26 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
  下载Docker for windows安装包： https://www.docker.com/products/docker-desktop 根据安装向导安装 成功后再CMD中输入docker version查看版本，如果有版本信息表示安装成功  Mac平台 Mac版本和Windows桌面版安装类似，找到下载包，静默安装即可：
  下载地址：下载Docker for windows安装包： https://www.docker.com/products/docker-desktop  Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker Documentation  Ubuntu有几种方式安装Docker，我们使用便捷脚本来安装Docker
  在Linux打开Shell 执行：curl -fsSL https://get.docker.com -o get-docker.</description>
-            <content type="html"><![CDATA[<h2 id="docker">Docker简介</h2>
+            <content type="html"><![CDATA[<h2 id="docker简介">Docker简介</h2>
 <p>说到Docker，我们就来谈谈业务应用从旧时代到Docker的发展历程。</p>
-<h3 id="heading">旧时代</h3>
+<h3 id="旧时代">旧时代</h3>
 <p>旧时代是基于Application运转的，一台服务器（无虚拟机时代）部署多个Application，不管是Windows还是Linux其实是无法保证在一台服务器上稳定安全的运行多个应用的，CPU，内存等公共资源的竞争导致应用极为不稳定。</p>
-<h3 id="vm">VM阶段</h3>
+<h3 id="vm阶段">VM阶段</h3>
 <p>VM让世界变得美好了，VM算是划时代意义的技术，但是VM不是完美的，VM会占用宿主机额外的CPU,RAM和存储（VM不够轻量级），启动慢。</p>
-<h3 id="linux">Linux容器</h3>
+<h3 id="linux容器">Linux容器</h3>
 <p>容器技术出现的比较早，只是Docker将Linux容器技术广泛应用了，Docker解决了VM的问题以外，还有如下优点：</p>
 <ul>
 <li>容易上手</li>
 <li>解决了运维中的环境问题及服务调度的痛点</li>
 </ul>
-<h2 id="docker1">Docker安装</h2>
+<h2 id="docker安装">Docker安装</h2>
 <p>Docker提供了桌面安装和服务器安装，对于开发来说，我们可以归类为：</p>
 <ul>
 <li>Windows平台</li>
 <li>Mac平台</li>
 <li>Linux平台：Ubuntu/CentOS</li>
 </ul>
-<h3 id="windows">Windows平台</h3>
+<h3 id="windows平台">Windows平台</h3>
 <p>硬件要求：</p>
 <ul>
 <li>win10 64位</li>
@@ -958,16 +1542,16 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 </ul>
 <p>安装步骤：<a href="https://docs.docker.com/docker-for-windows/install/">Install Docker Desktop on Windows | Docker Documentation</a></p>
 <ul>
-<li>下载Docker for windows安装包： <a href="https://www.docker.com/products/docker-desktop"><a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></a></li>
+<li>下载Docker for windows安装包： <a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></li>
 <li>根据安装向导安装</li>
 <li>成功后再CMD中输入<code>docker version</code>查看版本，如果有版本信息表示安装成功</li>
 </ul>
-<h3 id="mac">Mac平台</h3>
+<h3 id="mac平台">Mac平台</h3>
 <p>Mac版本和Windows桌面版安装类似，找到下载包，静默安装即可：</p>
 <ul>
-<li>下载地址：下载Docker for windows安装包： <a href="https://www.docker.com/products/docker-desktop"><a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></a></li>
+<li>下载地址：下载Docker for windows安装包： <a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></li>
 </ul>
-<h3 id="ubuntu">Ubuntu安装</h3>
+<h3 id="ubuntu安装">Ubuntu安装</h3>
 <ul>
 <li>Ubuntu安装：<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Get Docker Engine - Community for Ubuntu | Docker Documentation</a></li>
 </ul>
@@ -991,9 +1575,9 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li><code>sudo apt-get purge docker-ce</code></li>
 <li><code>sudo rm -rf /var/lib/docker</code></li>
 </ul>
-<h3 id="centos">CentOS安装</h3>
+<h3 id="centos安装">CentOS安装</h3>
 <ul>
-<li>CentOS安装： <a href="https://docs.docker.com/install/linux/docker-ce/centos/"><a href="https://docs.docker.com/install/linux/docker-ce/centos/">https://docs.docker.com/install/linux/docker-ce/centos/</a></a></li>
+<li>CentOS安装： <a href="https://docs.docker.com/install/linux/docker-ce/centos/">https://docs.docker.com/install/linux/docker-ce/centos/</a></li>
 <li>安装方式同Ubuntu</li>
 </ul>
 <p>卸载Docker-ce</p>
@@ -1001,7 +1585,7 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li><code>sudo yum remove docker-ce</code></li>
 <li><code>sudo rm -rf /var/lib/docker</code></li>
 </ul>
-<h2 id="docker2">Docker镜像与容器</h2>
+<h2 id="docker镜像与容器">Docker镜像与容器</h2>
 <p>镜像和容器是Docker的重要概念，在本小节主要会有一下内容：</p>
 <ul>
 <li>镜像和容器简介</li>
@@ -1013,9 +1597,9 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li>删除容器</li>
 <li>命令合集</li>
 </ul>
-<h3 id="heading1">镜像和容器简介</h3>
+<h3 id="镜像和容器简介">镜像和容器简介</h3>
 <p>对于开发来说，简单理解一下镜像：镜像就是Class，容器就是实例对象，一个Class可以有多个实例，每个实例即使内容一致，但是也不是相等的（不同的容器ID和名称）</p>
-<h3 id="heading2">搜索镜像</h3>
+<h3 id="搜索镜像">搜索镜像</h3>
 <p>Docker安装后并没有镜像，需要从仓库中拉取（仓库可以类比Maven仓库，分为本地仓库，私有仓库和中央仓库），使用命令docker  search [image-name]，就可以看到一个redis仓库列表，列表中包含了以下元数据：</p>
 <ul>
 <li>名称</li>
@@ -1025,9 +1609,9 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li>是否自动化</li>
 </ul>
 <p><img src="http://img.sailfishc.cn/20190825204152.png?imageslim" alt="搜索镜像"></p>
-<h3 id="heading3">下载镜像</h3>
+<h3 id="下载镜像">下载镜像</h3>
 <p>在找到需要的镜像后，可以使用<code>docker pull [image-name]</code>来下载镜像</p>
-<h3 id="heading4">运行容器</h3>
+<h3 id="运行容器">运行容器</h3>
 <p>基础运行容器： <code>docker run -it ubuntu:latest /bin/bash</code></p>
 <p>上面的命令是以交互形式运行了一个最后版本的ubuntu系统，默认进入的目录是/bin/bash，其中的一些参数介绍：</p>
 <ul>
@@ -1047,7 +1631,7 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li>—name：命名一个容器名称为my-redis</li>
 <li>—restart：always是一种简单的自我修复策略，表明除非明确停止（例如执行了stop命令），否则会一直尝试重启</li>
 </ul>
-<h3 id="heading5">镜像和容器命令合集</h3>
+<h3 id="镜像和容器命令合集">镜像和容器命令合集</h3>
 <ul>
 <li>搜索镜像：docker search [image-name]</li>
 <li>下载镜像：docker pull [image-name]</li>
@@ -1067,13 +1651,13 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li>删除镜像时如果镜像存在关联的容器，并且容器处于运行或者是停止状态，不允许删除镜像</li>
 </ol>
 </blockquote>
-<h3 id="web">实例：运行一个Web服务器</h3>
+<h3 id="实例运行一个web服务器">实例：运行一个Web服务器</h3>
 <p>启动Nginx容器：<code>docker run --name some-nginx -d -p 8080:80 nginx</code></p>
 <blockquote>
 <p>以后台模式运行了nginx，名字为some-nginx，-p参数留到下一小节讲解，下图是启动后在本机（localhost）访问nginx容器，可以看到已经可以正常访问到nginx服务了。</p>
 </blockquote>
 <p><img src="http://img.sailfishc.cn/20190825211847.png?imageslim" alt="Nginx容器"></p>
-<h2 id="heading6">参考资料</h2>
+<h2 id="参考资料">参考资料</h2>
 <ul>
 <li>深入浅出Docker</li>
 <li>Docker官网</li>
@@ -1093,7 +1677,7 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 我们将这个过程简化去分析下，有3个数：1，2，3，只有一种规则：乘，那么所有的可能性是：
 1 * 1 = 1 1 * 2 = 2 1 * 3 = 3 2 * 1 = 2 2 * 2 = 4 2 * 3 = 6 3 * 1 = 3 3 * 2 = 6 3 * 3 = 9 这个数字是规则是有限的（这也是我们小学数学有可能满分，高中大学很难满分的原因），我们可以使用大脑记忆，出现类似题目可以很快的反馈出结果，但是我们真的学会了吗？没有，因为出现2 * 4的时候就不知道结果了，但是我们通过上面的例子去学习，总结出规律，即使出现其他题目也能解出来的过程就是学习。</description>
             <content type="html"><![CDATA[<p>为学习付费，还是为知识付费，亦或者是为信息付费，在高中时看到一个资料，是一套数学的学习模型，当时心情非常激动，被资料宣传的效果倾倒，觉得有一套这样的学习资料，一定会学有所成，但是最终效果一般，也没考上一个好学校，毕业后坚信<code>Just do IT</code>，选择了IT道路，在IT路上，如何学习也是很重要的一门手艺。</p>
-<h2 id="heading">介绍</h2>
+<h2 id="介绍">介绍</h2>
 <p>本篇文章主要是从网络资源《学习观》中做的一些总结，主要包含两部分内容：</p>
 <ul>
 <li>学习理论
@@ -1116,9 +1700,9 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 </ul>
 </li>
 </ul>
-<h2 id="heading1">学习</h2>
-<h3 id="heading2">理论知识</h3>
-<h4 id="heading3">学习和记忆</h4>
+<h2 id="学习">学习</h2>
+<h3 id="理论知识">理论知识</h3>
+<h4 id="学习和记忆">学习和记忆</h4>
 <p>从上学到工作，一直在学习，也有一些号称终生学习的人，但是好像没人告诉我们什么是学习，或者很少人去思考学习是什么？在上学的时候，听课是学习，做题是学习，考试也是学习，但是这个过程中到底哪些步骤才算是学习呢？学习的结果是学会，那怎么才算是学会呢？抽象的思考下，老师在课堂讲解了A，B，C三个知识点，对应给出了A，B，C三个知识点的题目，你将A，B，C三道题的题目解出来了，说明你学会了A，B，C这三个知识点，但是在考试中出现了你没见过的题目，类似AB，AC，BC，甚至是ABC这种组合的题目，你根据学习的A，B，C的基础知识点没有将题目解出来，这说明你没有学会，那学习究竟是什么呢？</p>
 <p>我们将这个过程简化去分析下，有3个数：1，2，3，只有一种规则：乘，那么所有的可能性是：</p>
 <pre><code>1 * 1 = 1
@@ -1131,7 +1715,7 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 3 * 2 = 6
 3 * 3 = 9
 </code></pre><p>这个数字是规则是有限的（这也是我们小学数学有可能满分，高中大学很难满分的原因），我们可以使用大脑记忆，出现类似题目可以很快的反馈出结果，但是我们真的学会了吗？没有，因为出现<code>2 * 4</code>的时候就不知道结果了，但是我们通过<code>上面的例子</code>去学习，总结出规律，即使出现其他题目也能解出来的过程就是<code>学习</code>。</p>
-<h4 id="heading4">信息和知识</h4>
+<h4 id="信息和知识">信息和知识</h4>
 <p>我们无时无刻不在接受信息，微信消息，别人说的话，那个付费APP推出的专栏课程，这些对于我们来说都是信息，但是并不是知识，那什么是知识呢？回答这个问题，我们先来看什么不是知识：</p>
 <ul>
 <li><del>买了没看的课程</del></li>
@@ -1139,10 +1723,10 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li><del>课堂上没注意听讲的话</del></li>
 </ul>
 <p>看了这几个例子可以有一点体会，就是某个东西他是不是信息不是绝对的，而在于对你来说他当时的某个状态，我对知识的一个定义是：<code>经过了学习之后将信息压缩，提炼出的内容</code>，这里有一些误区，就是比如老师将他的学习经验分享给了你，这个经验传递的是信息，而不是知识，但是这部分信息已经被压缩了，所以也可以叫做知识的描述，只有等你真正学会，对于你来说，才能叫做知识。</p>
-<h4 id="heading5">知识的分类</h4>
+<h4 id="知识的分类">知识的分类</h4>
 <p>知识可以分为思考类和运动类，如何区分思考类和运动类知识呢？一个衡量标准就是是否使用了意识，意识是后天进化的，解决的是推断问题，只能同时运用一个，比如数学，逻辑等，对于语言类（学习英语）和运动类都属于运动类知识，他不靠意识（不然太慢）。</p>
-<h3 id="heading6">学习工具</h3>
-<h4 id="heading7">思维导图</h4>
+<h3 id="学习工具">学习工具</h3>
+<h4 id="思维导图">思维导图</h4>
 <p>思维导图的作用是可以通过一些关键词将思维连接，但是包括我在内很多人都用错了思维导图，常见的学习方法是：</p>
 <ul>
 <li>阅读知识描述</li>
@@ -1154,10 +1738,10 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <p>思维导图的灵魂：思考</p>
 </blockquote>
 <p>思维导图通过一个关键词去思考，他是什么？通过一个关键词去联想更多例子，试图用一个关键词去描述这些例子，进而去分析这些例子的输入和输出，找出内部规律，这个规律是不变的，例子中的输入和输出是可变的，通过这些少量的例子找出不变的规律去解决以后更多的问题，这个过程其实是在压缩信息，思维导图不是为了记住知识描述，导图的作用是为了重塑在这个过程中的大脑连接，最终的导图是为了以后复习，在不知道背景的情况下我的导图对你来说应该是没有用的。</p>
-<h4 id="heading8">费曼学习</h4>
+<h4 id="费曼学习">费曼学习</h4>
 <p>费曼技巧成为终极学习法，费曼技巧包含了学习和解释，学习在之前已经说了，为什么加了一个解释就显得威力巨大，原因是因为在解释的过程中不能将学习过程中的例子完整的叙述出来，要用自己的话将知识再进行浓缩，并且面临新的问题去阐述。</p>
-<h3 id="heading9">学习实战</h3>
-<h4 id="heading10">正确的学习方法</h4>
+<h3 id="学习实战">学习实战</h3>
+<h4 id="正确的学习方法">正确的学习方法</h4>
 <p>在之前明确了什么是学习，可以将学习的过程抽象为编程语言：</p>
 <ul>
 <li>已知的信息：输入</li>
@@ -1197,7 +1781,7 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 </ul>
 </li>
 </ul>
-<h4 id="heading11">如何学习英语</h4>
+<h4 id="如何学习英语">如何学习英语</h4>
 <blockquote>
 <p>运动类知识不能使用意识，也就是不能有中间转义的操作，现在学习的过程都是英文转中文，这种是错误和低效的，运动类知识不能使用思维类的知识，比如不能书中学游泳。<br>
 学英文也要以具体为单位，不要只学习单词，从句子学习<br>
@@ -1217,7 +1801,7 @@ Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广
 <li>读几遍例句，并思考场景</li>
 <li>改几个单词，造一个简单的句子</li>
 </ol>
-<h2 id="heading12">参考文档</h2>
+<h2 id="参考文档">参考文档</h2>
 <ul>
 <li><a href="https://www.youtube.com/channel/UCUrJvRXzVBOYtHBs9fDnJEw">Jango Y - YouTube</a></li>
 <li><a href="https://www.youtube.com/watch?v=Q2oYGjR1_KE">如何才能正确使用思维导图 - YouTube</a></li>
@@ -1274,13 +1858,10 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
             <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
             
             <guid>https://blog.sailfishc.cn/posts/2019/10/%E9%80%9A%E8%BF%87hugo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
-            <description>写在前面
- 程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。
-先罗列下常见的博客网站：
- Hexo WordPress JekyII Ghost Hugo  Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：
- node环境问题较多，本身对Node不熟悉，解决成本高 node_modules过大，网络问题下载依赖过慢 编译为html过程越来越慢  后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：The world’s fastest framework for building websites，总结起来就一句话，那就是快！！！
-快速开始  Quick Start | Hugo  Hugo安装很简单，就以Mac为例快速开始：
- 安装Hugo：brew install Hugo 查看Hugo版本：Hugo version 新建一个网站，名字为quickstart：Hugo new site quickstart 安装主题  进入目录：cd quickstart 使用Git Init创建Git仓库：git init 下载主题，放入theme目录（名字为ananke）：git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 使用主题：echo ‘theme = “ananke”’ &amp;gt;&amp;gt; config.toml   新建MarkDown文章（也可以用现有的放入content/posts目录）：Hugo new posts/my-first-post.md 本地预览：Hugo server -D 打开浏览器：http://localhost:1313 搞定🌹  部署 本地搭建好了网站要部署到外部服务上，常见的方式有三种：</description>
+            <description>&lt;blockquote&gt;
+&lt;p&gt;写在前面&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。&lt;/p&gt;</description>
             <content type="html"><![CDATA[<blockquote>
 <p>写在前面</p>
 </blockquote>
@@ -1300,7 +1881,7 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li>编译为html过程越来越慢</li>
 </ul>
 <p>后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：<code>The world’s fastest framework for building websites</code>，总结起来就一句话，那就是快！！！</p>
-<h2 id="heading">快速开始</h2>
+<h2 id="快速开始">快速开始</h2>
 <ul>
 <li><a href="https://gohugo.io/getting-started/quick-start/">Quick Start | Hugo</a></li>
 </ul>
@@ -1322,7 +1903,7 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li>打开浏览器：<code>http://localhost:1313</code></li>
 <li>搞定🌹</li>
 </ul>
-<h2 id="heading1">部署</h2>
+<h2 id="部署">部署</h2>
 <p>本地搭建好了网站要部署到外部服务上，常见的方式有三种：</p>
 <ul>
 <li>部署Github Pages</li>
@@ -1359,7 +1940,7 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li>将自定义域名加入Render，在Cloudflare配置DNS转发</li>
 <li>搞定🌹</li>
 </ul>
-<h2 id="heading2">一些总结</h2>
+<h2 id="一些总结">一些总结</h2>
 <blockquote>
 <p>中间走了很多弯路，到最后发现官方文档已经有很多成熟的方案，只是自己没认真看，借<code>左耳朵耗子的话</code>：花时间学习基础知识，花时间度文档，只要把基础打扎实，认真读下文档，就会生出很多时间。</p>
 </blockquote>
@@ -1374,8 +1955,7 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub | Hugo</a></li>
 <li><a href="https://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages - Hugo中文文档</a></li>
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Host on Render | Hugo</a></li>
-</ul>
-]]></content>
+</ul>]]></content>
         </item>
         
         <item>
@@ -1532,43 +2112,31 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
             <pubDate>Sun, 13 Jan 2019 17:37:00 +0000</pubDate>
             
             <guid>https://blog.sailfishc.cn/posts/2019/01/2018%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
-            <description>2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。
-工作  2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司
- 虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。
-产品迭代 那些日子，每次上线一个版本之后，大家都去喝酒撸串，尽兴的玩。开发之前骂着产品这么多需求，但是产品上线的时候还是开心的。在公司总结上，我还是觉得团队的战斗力没有比一年前变得更强，只是有部分人的能力变强了，
-研发 得益于之前公司的基础建设，还是有一些基础储备，项目在RPC，ZK，Cache，监控，构建部署，MQ，DB维护上还是没怎么费力，大家更多的还是专注于业务，但是前期没有一个好的架构师来规划项目架构，以及开发人员的认知能力和业务迭代的紧迫性，导致项目还是有很多问题：
- 技术债：虽然很多代码是新写的，但是业务速度和人员水平，还是存在很多技术债 直接搬用了母公司的技术栈，虽然少了很多维护成本，但是技术选型没有选用最新最成熟的解决方案，生产力还是有点欠缺  企业文化 可能由于之前两家公司的关系，对于企业文化来说没什么感觉，就像大学的校训，只是在某些场合有仪式感的说出来，但是在创业公司，企业文化是对产品是有指导作用的，在某些时候，想不出该做什么，老板就要求从企业文化中去创新，一个公司的一些文化还是深深的影响着一些人，他就像人的价值观和人生观一样，应该是牢牢铭记在心中的，这也就是创业公司的迷人之处吧，因为参与程度高，所以会将自己的价值观注入到公司的文化中。
-生活 找到了对的人 啥也不说了，找到了对的人，是今年最大的收获
-养了只狗 名字叫格林，一只拆家的柯基
-技术成长  更多的去思考如何去学习
- 我觉得大部分程序员有三个阶段：
- 普通程序员 工程师 架构师  普通程序员 普通程序员是占有了80%的人，只关注于实现功能
-工程师 去思考程序的可读性，可维护性和健壮性，思考如何高效
-架构师 去挑战不可能的事情，尝试设计更高级的技术，更灵活的系统
-2018年的好书  心理学 整洁架构 极客时间的部分专栏 DDIA 函数式编程思维 修改代码的艺术 有效的单元测试 如何阅读一本书  </description>
+            <description>&lt;p&gt;&lt;img src=&#34;http://image.wufazhuce.com/FkfPZxbajsvcUM7qDmr-sq_yrrH5&#34; alt=&#34;2018&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。&lt;/p&gt;</description>
             <content type="html"><![CDATA[<p><img src="http://image.wufazhuce.com/FkfPZxbajsvcUM7qDmr-sq_yrrH5" alt="2018"></p>
 <p>2019年很多人都开始写自己的2018年的总结，虽然已经13号了，但是还是要总结下自己的2018，回头一想，一年过得还真快，2018年加入了创业公司，一年竟也过去了，在这一年里面，也没有做出什么成绩，但是还是有点收获，也总结分享一下。</p>
-<h2 id="heading">工作</h2>
+<h2 id="工作">工作</h2>
 <blockquote>
 <p>2018年由于一些特殊原因，部门成立了子公司，从零开始，也算是自己第一次加入创业公司</p>
 </blockquote>
 <p>虽然是换了一家公司，但是身边的小伙伴还是那些，所以并没感到有多大的变化，前几个月该怎么做就怎么做，之后渐渐感到了业务上的压力，创业维艰，伴随着的就是加班多了，迭代快了，要参与到业务中去思考产品的方向了，对于自己来说，自己的职责变了一点，感觉从大公司的螺丝钉找到了一些归属感。这一年，有的老同事离职了，也有新同事进来，自己也开始带人了，虽然不多，但也是要去改变一些工作方式了。</p>
-<h3 id="heading1">产品迭代</h3>
+<h3 id="产品迭代">产品迭代</h3>
 <p>那些日子，每次上线一个版本之后，大家都去喝酒撸串，尽兴的玩。开发之前骂着产品这么多需求，但是产品上线的时候还是开心的。在公司总结上，<code>我还是觉得团队的战斗力没有比一年前变得更强，只是有部分人的能力变强了</code>，</p>
-<h3 id="heading2">研发</h3>
+<h3 id="研发">研发</h3>
 <p>得益于之前公司的基础建设，还是有一些基础储备，项目在RPC，ZK，Cache，监控，构建部署，MQ，DB维护上还是没怎么费力，大家更多的还是专注于业务，但是前期没有一个好的架构师来规划项目架构，以及开发人员的认知能力和业务迭代的紧迫性，导致项目还是有很多问题：</p>
 <ul>
 <li>技术债：虽然很多代码是新写的，但是业务速度和人员水平，还是存在很多技术债</li>
 <li>直接搬用了母公司的技术栈，虽然少了很多维护成本，但是技术选型没有选用最新最成熟的解决方案，生产力还是有点欠缺</li>
 </ul>
-<h3 id="heading3">企业文化</h3>
+<h3 id="企业文化">企业文化</h3>
 <p>可能由于之前两家公司的关系，对于企业文化来说没什么感觉，就像大学的校训，只是在某些场合有仪式感的说出来，但是在创业公司，<code>企业文化是对产品是有指导作用的</code>，在某些时候，想不出该做什么，老板就要求从企业文化中去创新，一个公司的一些文化还是深深的影响着一些人，他就像人的价值观和人生观一样，应该是牢牢铭记在心中的，这也就是创业公司的迷人之处吧，因为参与程度高，所以会将自己的价值观注入到公司的文化中。</p>
-<h2 id="heading4">生活</h2>
-<h3 id="heading5">找到了对的人</h3>
+<h2 id="生活">生活</h2>
+<h3 id="找到了对的人">找到了对的人</h3>
 <p>啥也不说了，找到了对的人，是今年最大的收获</p>
-<h3 id="heading6">养了只狗</h3>
+<h3 id="养了只狗">养了只狗</h3>
 <p>名字叫格林，一只拆家的柯基</p>
-<h2 id="heading7">技术成长</h2>
+<h2 id="技术成长">技术成长</h2>
 <blockquote>
 <p>更多的去思考如何去学习</p>
 </blockquote>
@@ -1578,13 +2146,13 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li>工程师</li>
 <li>架构师</li>
 </ul>
-<h3 id="heading8">普通程序员</h3>
+<h3 id="普通程序员">普通程序员</h3>
 <p>普通程序员是占有了80%的人，只关注于实现功能</p>
-<h3 id="heading9">工程师</h3>
+<h3 id="工程师">工程师</h3>
 <p>去思考程序的可读性，可维护性和健壮性，思考如何高效</p>
-<h3 id="heading10">架构师</h3>
+<h3 id="架构师">架构师</h3>
 <p>去挑战不可能的事情，尝试设计更高级的技术，更灵活的系统</p>
-<h3 id="2018">2018年的好书</h3>
+<h3 id="2018年的好书">2018年的好书</h3>
 <ul>
 <li>心理学</li>
 <li>整洁架构</li>
@@ -1594,8 +2162,7 @@ To stop tracking a file that is currently tracked, use：git rm —cached.
 <li>修改代码的艺术</li>
 <li>有效的单元测试</li>
 <li>如何阅读一本书</li>
-</ul>
-]]></content>
+</ul>]]></content>
         </item>
         
         <item>
@@ -1618,7 +2185,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 <blockquote>
 <p>本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容</p>
 </blockquote>
-<h2 id="heading">关键类</h2>
+<h2 id="关键类">关键类</h2>
 <ul>
 <li>SqlSessionFactory</li>
 <li>SqlSessionFactoryBean</li>
@@ -1628,7 +2195,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 <li>SqlSessionTemplate</li>
 <li>MapperScannerConfigurer</li>
 </ul>
-<h2 id="heading1">如何访问数据库</h2>
+<h2 id="如何访问数据库">如何访问数据库</h2>
 <p><code>mysql -uadmin -pxxx -h58.87.87.129 -P32007</code></p>
 <p>当我们需要连接MySQL时，需要用到几个属性：</p>
 <ul>
@@ -1658,7 +2225,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 	private UserMapper userMapper;
 }
 </code></pre><p>那这其中究竟是怎么做到这样简化的呢？</p>
-<h2 id="heading2">实现细节</h2>
+<h2 id="实现细节">实现细节</h2>
 <h3 id="sqlsessionfactorybeansqlsessionfactory">SqlSessionFactoryBean&amp;SqlSessionFactory</h3>
 <p>上面介绍了关键类<code>SqlSession</code>, 那如何创建<code>SqlSession</code>呢？MyBatis使用了工厂方法来创建<code>SqlSession</code>，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：</p>
 <pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;
@@ -1764,7 +2331,7 @@ public User doSomeBusinessStuff(String userId) {
             <guid>https://blog.sailfishc.cn/posts/2017/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</guid>
             <description>一、创建型模式(五种)  工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源） 抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy） 单例模式(Sington)：适用于只需要一个对象的情况（经典实现：Tomcat中StringManager的错误处理机制） 建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能） 原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）  二、结构型模式(七种)  适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系） 装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx） 代理模式(Proxy)：通过添加中间代理的方式限制，过滤，修改被代理类的某些行为（经典实现：Spring AOP核心实现，DataSource中为Connection创建代理对象，改变close方法的行为，使其从开始的关闭连接变成将连接还回连接池） 外观模式(Facade)：通过外观的包装，使应用程序只能看到外观对象，而不会看到具体的细节对象。（经典实现：Tomcat中创建外观类包装StandardContext传给Wrapper，创建外观类包装Wrapper以ServletConfiguration的形式传给Servlet，以此来屏蔽不想让Servlet可见的那些Tomcat容器参数） 桥接模式(Bridge)：将抽象部分与它的实现部分分离，使它们都可以独立地变化（经典实现：JDBC驱动） 组合模式(Composite)：部分与整体，常用于表示树形结构 享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）  三、行为型模式(十一种)  策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口） 模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件） 观察者模式(Observer)：目标方法被调用，通知所有观察者（经典实现：Tomcat生命周期事件监听，Spring BeanPostProcessor实现 ） 迭代子模式(Interator)：提供一种方法顺序访问一个聚合对象中各个元素, 而又不需暴露该对象的内部表示。（经典实现：集合迭代器） 责任链模式(ChainOfResponsibility)：链式依赖，依次调用（经典实现：Tomcat Valve） 命令模式(Commond)：Action定义具体命令，拦截器Invocation回调执行命令（经典实现：Struts2） 备忘录模式(Memento)：建立原始对象副本，用于存储恢复原始对象数据 状态模式(Stage)：通过改变状态，改变行为（经典实现：切换装载着不同配置信息的配置文件对象） 访问者模式(Visitor)：结构与操作解耦。灵活的操作，放入固定的结构中执行（经典实现：在SpringAOP的实现过程中首先会有一个ProxyCreator去创建切入点，通知之类的，然后创建一个抽象工厂将这些参数对象传递给抽象工厂，抽象工厂调用createAopProxy(this)来创建对象，传入不同的抽象工厂创建出不同的实体对象） 中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者 解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐  四、学习资源  调停者模式 解释器模式 访问者模式 状态模式 备忘录模式 命令模式 责任链模式 迭代子模式 观察者模式 模板方法模式 策略模式 不变模式 桥梁模式 门面模式 享元模式 代理模式 装饰模式 合成模式 适配器模式 原型模式 建造模式 单例模式 抽象工厂模式 工厂方法模式 简单工厂模式  五、总结   内容部分引用自http://smallbug-vip.</description>
             <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/734456-32b3fb0c1a41aa71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<h2 id="heading">一、创建型模式(五种)</h2>
+<h2 id="一创建型模式五种">一、创建型模式(五种)</h2>
 <ul>
 <li>工厂方法模式(Factory)：工厂创建对象（经典实现：很多框架初始化时都会创建一个工厂对象，用来加载资源）</li>
 <li>抽象工厂模式(Abstractfactory)：抽象工厂实例创建对象，工厂可修改，灵活度高（经典实现：Struts2插件机制的核心实现就是BeanFactory这个抽象工厂。Spring IOC加载Bean，AOP创建Proxy）</li>
@@ -1772,7 +2339,7 @@ public User doSomeBusinessStuff(String userId) {
 <li>建造者模式(Builder)：一步一步创建一个复杂的对象（经典实现：MyBatis中的SQLSession就是结合了Configure，executor等对象，以此来实现SQLSession的复杂功能）</li>
 <li>原型模式(Prototype)：复制对象，包括深度复制和浅度复制，深度复制重建引用对象，浅度复制不创建（经典实现：java序列化）</li>
 </ul>
-<h2 id="heading1">二、结构型模式(七种)</h2>
+<h2 id="二结构型模式七种">二、结构型模式(七种)</h2>
 <ul>
 <li>适配器模式(Adapter)：通过实现接口，依赖注入，继承等方式为不相关的实体建立关系（经典实现：Tomcat新版本连接器Coyote，就是通过为Connector适配建立了ProtocolHandler与Tomcat组件Connector的关联关系）</li>
 <li>装饰器模式(Decorator)：创建包装对象修饰扩展被包装对象的功能（经典实现：IO家族中BufferedXxx）</li>
@@ -1782,7 +2349,7 @@ public User doSomeBusinessStuff(String userId) {
 <li>组合模式(Composite)：部分与整体，常用于表示树形结构</li>
 <li>享元模式(Flyweight)：维护资源集合（经典实现：数据库连接池，避免重新开启数据库链接的开销）</li>
 </ul>
-<h2 id="heading2">三、行为型模式(十一种)</h2>
+<h2 id="三行为型模式十一种">三、行为型模式(十一种)</h2>
 <ul>
 <li>策略模式(Strategy)：定义多个不同的实现类，这些类实现公共接口，通过调用接口调用不同实例得到不同结果（经典实现：Spring中Bean的定义与注入，Controller，Servcie，repository三层架构中只依赖上一层接口）</li>
 <li>模板方法模式(Template)：父类定义公共方法，不同子类重写父类抽象方法，得到不同结果（经典实现：Tomcat生命周期中的init，SpringIOC上层类加载具体子类指定的配置文件）</li>
@@ -1796,7 +2363,7 @@ public User doSomeBusinessStuff(String userId) {
 <li>中介者模式(Mediator)：MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者</li>
 <li>解释器模式(Iterpreter)：定义分别定义 + - * / 非终结符，组合不同的非终结符定义不同的表达式，维护繁琐</li>
 </ul>
-<h2 id="heading3">四、学习资源</h2>
+<h2 id="四学习资源">四、学习资源</h2>
 <ul>
 <li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/20/2554024.html">调停者模式</a></li>
 <li><a href="http://www.cnblogs.com/java-my-life/archive/2012/06/19/2552617.html">解释器模式</a></li>
@@ -1824,7 +2391,7 @@ public User doSomeBusinessStuff(String userId) {
 <li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/25/2416227.html">工厂方法模式</a></li>
 <li><a href="http://www.cnblogs.com/java-my-life/archive/2012/03/22/2412308.html">简单工厂模式</a></li>
 </ul>
-<h2 id="heading4">五、总结</h2>
+<h2 id="五总结">五、总结</h2>
 <blockquote>
 <ul>
 <li>内容部分引用自http://smallbug-vip.iteye.com/blog/2276470</li>
@@ -1886,7 +2453,7 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 <blockquote>
 <p>之后就萌生了写一篇关于RPC的文章。</p>
 </blockquote>
-<h2 id="rpc">一、RPC的基本概念</h2>
+<h2 id="一rpc的基本概念">一、RPC的基本概念</h2>
 <p>RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。
 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。
 这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695">通俗的语言解释什么是 RPC 框架</a></p>
@@ -1917,8 +2484,8 @@ public class CityDubboConsumerService {
 </code></pre><ul>
 <li>在不理解RPC概念的情况下，会认为RPC就只有这种应用，其实开发中经常使用的HTTPClient调用也是属于RPC的一种方式。</li>
 </ul>
-<h2 id="rpc1">二、RPC的使用</h2>
-<h3 id="1tcp">1、基于TCP的远程调用</h3>
+<h2 id="二rpc的使用">二、RPC的使用</h2>
+<h3 id="1基于tcp的远程调用">1、基于TCP的远程调用</h3>
 <ul>
 <li>服务消费者</li>
 </ul>
@@ -2019,7 +2586,7 @@ public class CityDubboConsumerService {
 	}
 
 }
-</code></pre><h3 id="2http">2、基于HTTP的远程调用</h3>
+</code></pre><h3 id="2基于http的远程调用">2、基于HTTP的远程调用</h3>
 <ul>
 <li>基础服务接口</li>
 </ul>
@@ -2199,7 +2766,7 @@ public class CityDubboConsumerService {
 		resp.getWriter().write(json);
 	}
 }
-</code></pre><h3 id="3url">3、URL风格</h3>
+</code></pre><h3 id="3url风格">3、URL风格</h3>
 <ul>
 <li>RPC风格的URL</li>
 <li>RESTFUL风格的URL</li>
@@ -2219,7 +2786,7 @@ public class CityDubboConsumerService {
 GET http://hostname/people/zhangsan 返回name为zhangsan的people记录
 PUT http://hostname/people/zhangsan 提交name为zhangsan的people记录更新 
 DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
-</code></pre><h2 id="heading">三、总结</h2>
+</code></pre><h2 id="三总结">三、总结</h2>
 <blockquote>
 <ul>
 <li>本文内容部分摘自《大型分布式网站架构》</li>
@@ -2241,24 +2808,24 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
             <content type="html"><![CDATA[<blockquote>
 <p>MQ在工作中用途还是比较多的，RabbitMQ又是比较容易上手并且在企业中用的比较多的一种消息服务，本篇文章借鉴于ginobefun的文章和ConanLi的文章，一方面是加深理解，一方面也是补充自己在MQ的不足。</p>
 </blockquote>
-<h2 id="amqp">一、AMQP基础</h2>
+<h2 id="一amqp基础">一、AMQP基础</h2>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-845cc2702f14ced5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h2 id="rabbitmq">二、RabbitMQ</h2>
-<h3 id="heading">基础概念</h3>
+<h2 id="二rabbitmq">二、RabbitMQ</h2>
+<h3 id="基础概念">基础概念</h3>
 <ul>
 <li>生产者、消费者</li>
 <li>队列</li>
 <li>交换器</li>
 <li>绑定</li>
 </ul>
-<h3 id="heading1">生产者、消费者</h3>
+<h3 id="生产者消费者">生产者、消费者</h3>
 <ul>
 <li>生产者（producer）创建消息，然后发送到代理服务器（RabbitMQ）</li>
 <li>消费者（consumer）连接到代理服务器上，并订阅到队列（queue）上；当消费者接收到消息时，它只得到消息的一部分：有效载荷（标签并没有随有效载荷一同传递）</li>
 <li>信道（channel）建立在”真实的”TCP连接内的虚拟连接；不论是发布信息、订阅队列或是接收消息，都是通过信道完成的；不使用TCP连接主要是因为对于操作系统而言建立和销毁TCP会话非常昂贵的开销；在一条TCP连接上创建多少条信道是没有限制的</li>
 <li>消息包含两部分：有效载荷（payload）和标签（label）；有效载荷就是你想要传输的数据（可以是任何格式的任何内容）；标签描述了有效载荷，并且RabbitMQ用它来决定谁将获得消息的拷贝（之后举例说明）</li>
 </ul>
-<h3 id="queue">队列(queue)</h3>
+<h3 id="队列queue">队列(queue)</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-f86bac7c48c13760.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <ul>
 <li>Queue（队列）是RabbitMQ的内部对象，用于存储消息</li>
@@ -2278,7 +2845,7 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
 <li>autoDelete：设置为true时最后一个消费者取消订阅将自动移除队列；</li>
 <li>arguments：参数</li>
 </ul>
-<h3 id="heading2">交换器&amp;绑定</h3>
+<h3 id="交换器绑定">交换器&amp;绑定</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-21d9bdcc89b8e154.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>RabbitMQ的消息不是直接从生产者发送到队列的，而是要经过交换器然后才可以到达队列：</p>
 <ul>
@@ -2316,7 +2883,7 @@ DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
 </ul>
 <h3 id="4header">4、header</h3>
 <p>headers类型的Exchange不依赖于routingKey与bindingKey的匹配规则来路由消息，而是根据发送的消息内容中的headers属性进行匹配。在绑定Queue与Exchange时指定一组键值对；当消息发送到Exchange时，RabbitMQ会取到该消息的headers（也是一个键值对的形式），对比其中的键值对是否完全匹配Queue与Exchange绑定时指定的键值对；如果完全匹配则消息会路由到该Queue，否则不会路由到该Queue。</p>
-<h2 id="springbootrabbitmq">三、SpringBoot+RabbitMQ实战</h2>
+<h2 id="三springbootrabbitmq实战">三、SpringBoot+RabbitMQ实战</h2>
 <p>** Docker环境下安装RabbitMQ**</p>
 <pre><code># 下载rabbitmq的docker镜像和managerment的镜像
 docker pull rabbitmq:management
@@ -2346,9 +2913,9 @@ rabbitmq:management
 <blockquote>
 <p>介于代码粘贴进来比较多，提供项目<a href="https://github.com/Sailfishc/learn-rabbitmq">GitHub</a>地址，本文提取代码片段进行讲解</p>
 </blockquote>
-<h3 id="heading3">项目结构</h3>
+<h3 id="项目结构">项目结构</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-8a6f1499f3aa21ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="heading4">关键参数</h3>
+<h3 id="关键参数">关键参数</h3>
 <ul>
 <li>@RabbitListener(queues = &ldquo;xxx&rdquo;)</li>
 <li>RabbitTemplate</li>
@@ -2356,7 +2923,7 @@ rabbitmq:management
 <li>Binding</li>
 <li>Queue</li>
 </ul>
-<h3 id="heading5">代码段讲解</h3>
+<h3 id="代码段讲解">代码段讲解</h3>
 <ul>
 <li>创建队列</li>
 </ul>
@@ -2392,7 +2959,7 @@ rabbitmq:management
     public Binding bindingExchangeFanoutC(Queue fanoutCQueue, FanoutExchange fanoutExchange) {
         return BindingBuilder.bind(fanoutCQueue).to(fanoutExchange);
     }
-</code></pre><h2 id="heading6">四、总结</h2>
+</code></pre><h2 id="四总结">四、总结</h2>
 <p>本片文章主要讲解了以下RabbitMQ的一些基础概念和使用SpringBoot和RabbitMQ整合的几个案例，也是笔者结合博客和官网写的一片总结，总结的也比较基础，没有包括一些高级的内容，例如事务，最终一致性，重复消息和顺序消息的处理等等。</p>
 ]]></content>
         </item>
@@ -2462,7 +3029,7 @@ rabbitmq:management
 <li><a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">字符编码笔记</a></li>
 </ul>
 <p>总的就一句话，UTF-8是Unicode的一种实现。</p>
-<h2 id="emoji">一、如何解决Emoji存储问题</h2>
+<h2 id="一如何解决emoji存储问题">一、如何解决Emoji存储问题</h2>
 <ul>
 <li><a href="https://github.com/Sailfishc/emoji-demo">Github地址解决方案</a></li>
 </ul>
@@ -2472,13 +3039,13 @@ rabbitmq:management
 <li>读取的时候可以将😄这个字符转为😁</li>
 </ul>
 <p>例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。</p>
-<h3 id="1">1、引入依赖</h3>
+<h3 id="1引入依赖">1、引入依赖</h3>
 <pre><code>&lt;dependency&gt;
      &lt;groupId&gt;com.vdurmont&lt;/groupId&gt;
      &lt;artifactId&gt;emoji-java&lt;/artifactId&gt;
     &lt;version&gt;3.2.0&lt;/version&gt;
 &lt;/dependency&gt;
-</code></pre><h3 id="2api">2、常用API</h3>
+</code></pre><h3 id="2常用api">2、常用API</h3>
 <pre><code>    @RequestMapping(&quot;/add/content&quot;)
     public ResponseEntity insertContent(@RequestBody Content content) {
         String title = content.getTitle();
@@ -2508,7 +3075,7 @@ rabbitmq:management
 <li>EmojiParser.parseToAliases(string); 将表情符号转为字符</li>
 <li>EmojiParser.parseToUnicode(string); 将字符转为表情符号</li>
 </ul>
-<h3 id="3">3、案例</h3>
+<h3 id="3案例">3、案例</h3>
 <ul>
 <li>存储图片</li>
 </ul>
@@ -2538,7 +3105,7 @@ rabbitmq:management
             <content type="html"><![CDATA[<blockquote>
 <p>Elasticsearch5.x的安装：在ELK升级到5.0之后，有些特性发生了变化，例如全部使用JDK8，插件变化和环境校验等。</p>
 </blockquote>
-<h3 id="elasticsearch">一、安装Elasticsearch</h3>
+<h3 id="一安装elasticsearch">一、安装Elasticsearch</h3>
 <ul>
 <li>在官网下载tar包，<a href="https://www.elastic.co/downloads/elasticsearch">下载地址</a></li>
 <li>下载之后解压</li>
@@ -2606,7 +3173,7 @@ lucene_version: &quot;6.4.1&quot;
 },
 tagline: &quot;You Know, for Search&quot;
 }
-</code></pre><h3 id="head">二、安装Head插件</h3>
+</code></pre><h3 id="二安装head插件">二、安装Head插件</h3>
 <blockquote>
 <p>Head插件是我们常用的插件，但是在ELK5.0以后按照之前的插件安装方式不能使用了，看了head官网之后，要单独启动一个服务才可以。</p>
 </blockquote>
@@ -2623,7 +3190,7 @@ grunt server
 <li>Git</li>
 <li><a href="https://nodejs.org/en/download/">Node官网</a></li>
 </ul>
-<h4 id="1head">1、Head插件安装</h4>
+<h4 id="1head插件安装">1、Head插件安装</h4>
 <ul>
 <li>下载并安装对应的Node安装包</li>
 <li>安装Git环境</li>
@@ -2692,7 +3259,7 @@ Jenkins大概就这么工作：
  备注：Passphrase这里不用填值，这是自动生成的。 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接 http://www.linuxidc.com/Linux/2014-10/108080.htm
  配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了 1、构建  备注：这里的Root Pom指的是根目录下的Pom文件</description>
             <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/734456-9d9aa000a2176fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h2 id="heading">一、前言</h2>
+<h2 id="一前言">一、前言</h2>
 <p>公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-727fcd1dd174863b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>Jenkins大概就这么工作：</p>
@@ -2701,7 +3268,7 @@ Jenkins大概就这么工作：
 <li>然后使用Maven/Ant/Gradle等构件工具进行Build</li>
 <li>构建成功之后会进行部署（deploy）</li>
 </ul>
-<h2 id="heading1">二、安装</h2>
+<h2 id="二安装">二、安装</h2>
 <ul>
 <li><a href="https://jenkins.io/index.html">Jenkins官网</a></li>
 <li>下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）</li>
@@ -2729,17 +3296,17 @@ Jenkins大概就这么工作：
 <li>插件列表（太多不一一列出）</li>
 </ul>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-ba5e79a14fc8f11f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h2 id="heading2">三、配置</h2>
+<h2 id="三配置">三、配置</h2>
 <blockquote>
 <p>此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装</p>
 </blockquote>
-<h3 id="1">1、系统配置</h3>
+<h3 id="1系统配置">1、系统配置</h3>
 <p>在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-6b6ad974687749b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-e6630d187141a908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-c442bc89ef0430d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置</p>
-<h2 id="heading3">三、新建项目</h2>
+<h2 id="三新建项目">三、新建项目</h2>
 <p>这里我们选择创建Maven项目：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-f1f3c101baba2e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权</p>
@@ -2749,11 +3316,11 @@ Jenkins大概就这么工作：
 <blockquote>
 <p>备注：Passphrase这里不用填值，这是自动生成的。
 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接
-<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm"><a href="http://www.linuxidc.com/Linux/2014-10/108080.htm">http://www.linuxidc.com/Linux/2014-10/108080.htm</a></a></p>
+<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm">http://www.linuxidc.com/Linux/2014-10/108080.htm</a></p>
 </blockquote>
 <p>配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了
 <img src="http://upload-images.jianshu.io/upload_images/734456-9aca3e863f2438bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="11">1、构建</h3>
+<h3 id="1构建">1、构建</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-f8aad83a9637aca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <blockquote>
 <p>备注：这里的Root Pom指的是根目录下的Pom文件</p>
@@ -2762,10 +3329,10 @@ Jenkins大概就这么工作：
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-5d60696a8822d328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>如果为图二结构，Root Pom为：project_A/pom.xml</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-1fc8d3ad36650808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="2">2、授权服务器</h3>
+<h3 id="2授权服务器">2、授权服务器</h3>
 <p>打开jenkins首页，点击系统管理&ndash;系统设置，下拉找到找到publish over ssh,进行以下设置（请确保前面的步骤中publish over ssh插件已经安装成功，如果没有发现，那就是还没有安装成功，请返回去安装）。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-91e845ed76874d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="3jar">3、部署Jar包</h3>
+<h3 id="3部署jar包">3、部署Jar包</h3>
 <p>进入上面的已经创建好的jenkinsWeb项目，点击配置，下拉找到Post Steps进行配置。</p>
 <p>１、点击</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-a4f2907d49e74db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png">
@@ -2810,7 +3377,7 @@ nohup ${JAVA_HOME}/bin/java -jar search-1.0-SNAPSHOT.jar &gt; /dev/null &amp;
 echo &quot;启动成功...&quot;
 </code></pre><p>这样就可以将jar包打到远程服务器了</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-7bee1d38208a4082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="4wartomcat">4、部署War包容器（tomcat）中</h3>
+<h3 id="4部署war包容器tomcat中">4、部署War包容器（tomcat）中</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-c0f207c324028f18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>如果容器是tomcat，就需要在tomcat配置相应的用户名和密码：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-63057a4157bef0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
@@ -2853,7 +3420,7 @@ echo &quot;启动成功...&quot;
 <li>工具</li>
 <li>学习方法</li>
 </ul>
-<h2 id="heading">一、工具</h2>
+<h2 id="一工具">一、工具</h2>
 <p>还是从番茄工作法开始了，再看了其他的学习法之后觉得还是回归到番茄工作法，原因就是简单，并且理论上是可行的，我一直坚定的认为只有理论正确，行动才不会走弯路。</p>
 <ul>
 <li>我的番茄工作流程</li>
@@ -2873,7 +3440,7 @@ echo &quot;启动成功...&quot;
 <blockquote>
 <p>备注：Excel是一个额外的动作，主要是为了知道自己每天做了什么，在番茄钟运行的过程中很可能因为外部原因或者内部原因导致中断，如果中断了就如实的记录下来。</p>
 </blockquote>
-<h2 id="heading1">二、学习方法</h2>
+<h2 id="二学习方法">二、学习方法</h2>
 <p>这里的学习方法不是指某个具体学科的学习方法，而是对知识的一个统一轮廓，就是一个大的概念，不是那种21天精通Java等等，也就是一个理论加实践的过程，很多时候最基础的就是最好的，学习方法其实在上学的时候老师就会经常说，就是：预习+认真听讲+复习，在1W小时训练的基础上很大一部分就是重复，但是是要有目的的重复。</p>
 <ul>
 <li>我的理论基础</li>
@@ -2955,7 +3522,7 @@ echo &quot;启动成功...&quot;
 <p>从认真开始学习Java到从事Java工作到现在，已经有一年时间了，在之前的学习过程中大多是通过视频进行学习的，没有工作上的经验，也就没有深入思考，刚开始想的就是会用就好，但是在工作之后发现，除了会用，还得要去思考，当然，在工作中需要学习的东西太多太多了，目前的关键就是找到适合自己的学习方法，培养起来快速学习的能力，在此之前，就是一段迷茫期，也算是在迷茫中进行探索，也走了很多弯路，得出一句话，经典的未必适合自己，别人的成功经验也不是自己的。
 在JavaEE这条路上，之前我是这么认识的，首先应该学习Java基础，然后开始学习JavaWeb，在JavaWeb学习中避免不了要学习三大框架，当然，数据库知识也是要有的，以及一定的前端知识，这样就可以做出一个网站了。但是随着工作经验的增加，对于做产品这件事情也有了和之前不一样的理解，首先是对这种大而全的概念已经没有了，认识到了一个更加广阔的世界之后，就会发现自己能力的渺小，你就更加的认识了自己，会衡量自己能不能做，这算是一个优点，但也会是自己能力的瓶颈，具体我就不举例子，Java可以做很多事情，从片面的B/S结构到目前理解的B/S结构，一年的时间真的可以改变一个人很多。
 感觉有点跑题了，说回来，还是怎么学习：</p>
-<h3 id="1">1、你得对你所在行业的知识框架要有一个基本的了解</h3>
+<h3 id="1你得对你所在行业的知识框架要有一个基本的了解">1、你得对你所在行业的知识框架要有一个基本的了解</h3>
 <blockquote>
 <p>比如我所在的JavaEE的学习路线：</p>
 </blockquote>
@@ -2997,7 +3564,7 @@ echo &quot;启动成功...&quot;
 <li>Maven</li>
 </ul>
 <p>这些工具的基本操作学习用不了多久，但是会给你带动很高的效率，在这之后，就是真正开始自己学习的过程，这才是提高的过程，你得根据自己的实际情况开始自己学习，不再依赖于视频教程，更多的是来源于书籍和自己实际项目的思考，首先要将业务需求转化为自己的代码实现，这是最关键的，其次是思考，怎么写更好，这是一个模仿+思考的过程，你要了解系统的整体结构是什么，用到了哪些技术，日志是怎么处理的，异常是怎么处理的，最关键的是要有自己的代码风格。</p>
-<h3 id="2">2、一次项目交接的思考</h3>
+<h3 id="2一次项目交接的思考">2、一次项目交接的思考</h3>
 <p>前几天有个同事要离职了，他的项目需要进行交接，我最近工作量比较少，就由我进行交接，这几天我觉得是我好几个月来成长最快的几天，我和他单独交流，因为项目是新建的一个项目，项目中业务信息不多，所以好理解，两天时间，基本上就可以上手了，之后的一天里我就一直和他在聊系统的设计思路和编码风格以及如何提高自己的编码水平。
 很多人在做项目的时候思考的是如何做出来，也包括我，但是没有思考怎么做更好，他说他在做这个项目中删除了很多代码，想了好几套方法去解决，最终是保留了一套觉得自己好的，在这里，它借鉴了两个框架的设计思路，他没有深入了解过一个框架，但是大体了解一些，通过在写项目的过程中它看了些框架的源码，借鉴了一些它的思路，慢慢的也就有了一个从需求很不明确，没有的项目到现在也算是一个产品的项目，这其中花费了自己很大的心思。
 我一直觉得自己的代码写的很烂，也一直想提高，但是苦于不知道如何提高，听了他的这些话，我就在想，目前我有基本的编码基础，我应该怎样提高，做项目？目前没有太多的时间去完整的做一个项目，最好的开端就是借鉴，从一个开源框架中借鉴它的思路，学习它的设计模式，编码风格，对工具类的封装，对功能的实现，这就像是你刚来公司的时候，要学习公司项目一样，但是这种开源框架会比较大，也比较难，不会像公司项目那样相对容易的让你去学习，但是坚持下去，总会有改变。</p>
@@ -3013,11 +3580,11 @@ echo &quot;启动成功...&quot;
             <description>部署前介绍  这篇博客引自code.youmeek.com  Hexo 是什么  Hexo 的中文官网：http://hexo.io/zh-cn/ 作者 Tommy Chen：https://zespia.tw/ 在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。 而官网自己是这样说的：   Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
  为什么要用 Hexo  我：因为其他博客框架太烂了 Tommy Chen：https://zespia.tw/blog/2012/10/11/hexo-debut/  适合人群  有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品） 只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）  文章要求  如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。  本文环境  系统：  Windows 10（64 位）   软件：  git：2.7.0.2-64-bit IntelliJ IDEA：15.0.4 node.js：v5.7.0-64-bit Stable   账号：  Github：https://github.</description>
             <content type="html"><![CDATA[<!-- raw HTML omitted -->
-<h2 id="heading">部署前介绍</h2>
+<h2 id="部署前介绍">部署前介绍</h2>
 <ul>
 <li>这篇博客引自code.youmeek.com</li>
 </ul>
-<h3 id="hexo-">Hexo 是什么</h3>
+<h3 id="hexo-是什么">Hexo 是什么</h3>
 <ul>
 <li>Hexo 的中文官网：<a href="http://hexo.io/zh-cn/">http://hexo.io/zh-cn/</a></li>
 <li>作者 Tommy Chen：<a href="https://zespia.tw/">https://zespia.tw/</a></li>
@@ -3027,21 +3594,21 @@ echo &quot;启动成功...&quot;
 <blockquote>
 <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 </blockquote>
-<h3 id="-hexo">为什么要用 Hexo</h3>
+<h3 id="为什么要用-hexo">为什么要用 Hexo</h3>
 <ul>
 <li>我：因为其他博客框架太烂了</li>
 <li>Tommy Chen：<a href="https://zespia.tw/blog/2012/10/11/hexo-debut/">https://zespia.tw/blog/2012/10/11/hexo-debut/</a></li>
 </ul>
-<h3 id="heading1">适合人群</h3>
+<h3 id="适合人群">适合人群</h3>
 <ul>
 <li>有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品）</li>
 <li>只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）</li>
 </ul>
-<h3 id="heading2">文章要求</h3>
+<h3 id="文章要求">文章要求</h3>
 <ul>
 <li>如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。</li>
 </ul>
-<h3 id="heading3">本文环境</h3>
+<h3 id="本文环境">本文环境</h3>
 <ul>
 <li>系统：
 <ul>
@@ -3062,7 +3629,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="heading4">搭建所需软件</h3>
+<h3 id="搭建所需软件">搭建所需软件</h3>
 <ul>
 <li>各个软件官网：
 <ul>
@@ -3077,7 +3644,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="heading5">文章前提</h3>
+<h3 id="文章前提">文章前提</h3>
 <ul>
 <li>如果你对上面要求的软件一个都不了解的话，建议你先看如下内容（只是让你们先了解下，当时别照着文章内容做）：
 <ul>
@@ -3093,13 +3660,13 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="heading6">域名绑定</h3>
+<h3 id="域名绑定">域名绑定</h3>
 <ul>
 <li>如果你一开始就打算要绑定域名，则下面教程中所有可以填写域名的地方你都填写上你要绑定的域名，如果你没独立域名，那就使用 Github 默认给你的：XXXXXX.github.io 域名即可。</li>
 </ul>
 <hr>
-<h2 id="heading7">部署开始</h2>
-<h3 id="git-">git 安装</h3>
+<h2 id="部署开始">部署开始</h2>
+<h3 id="git-安装">git 安装</h3>
 <ul>
 <li>双击运行 <strong>Git-2.7.0.2-64-bit.exe</strong>，接下来一律下一步，不需要多余的选择，假设你安装的目录位置跟我一样：C:\Program Files\Git</li>
 <li>打开 Git Bash（路径：C:\Program Files\Git\git-bash.exe），输入：<code>git --version</code>
@@ -3109,7 +3676,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="nodejs-">Node.js 安装</h3>
+<h3 id="nodejs-安装">Node.js 安装</h3>
 <ul>
 <li>双击运行 <strong>node-v5.7.0-x64.msi</strong>，接下来一律下一步，不需要多余的选择。</li>
 <li>安装完之后，打开 Git Bash，输入：<code>npm -v</code>
@@ -3119,15 +3686,15 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="nodejs-1">Node.js 源设置</h3>
+<h3 id="nodejs-源设置">Node.js 源设置</h3>
 <ul>
 <li>在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：<a href="http://registry.npmjs.org">http://registry.npmjs.org</a>，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：<a href="http://npm.taobao.org/">http://npm.taobao.org/</a></li>
 <li>在 Git Bash 中我们执行下面这一句（这是一整句的）：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias cnpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">npm --registry=https://registry.npm.taobao.org \
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias cnpm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;npm --registry=https://registry.npm.taobao.org \
 </span><span style="color:#e6db74">--cache=</span>$HOME<span style="color:#e6db74">/.npm/.cache/cnpm \
 </span><span style="color:#e6db74">--disturl=https://npm.taobao.org/dist \
-</span><span style="color:#e6db74">--userconfig=</span>$HOME<span style="color:#e6db74">/.cnpmrc</span><span style="color:#e6db74">&#34;</span>
+</span><span style="color:#e6db74">--userconfig=</span>$HOME<span style="color:#e6db74">/.cnpmrc&#34;</span>
 </code></pre></div><ul>
 <li>现在验证下是否可以使用淘宝的 cnpm 命令：<code>cnpm info express</code>
 <ul>
@@ -3137,7 +3704,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="-hexo-">安装 Hexo 框架</h3>
+<h3 id="安装-hexo-框架">安装 Hexo 框架</h3>
 <ul>
 <li>安装 Hexo（注意，现在是 cnpm 开头了，不是 npm 了）：<code>cnpm install -g hexo-cli</code>
 <ul>
@@ -3146,7 +3713,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="-hexo-1">创建 Hexo 项目</h3>
+<h3 id="创建-hexo-项目">创建 Hexo 项目</h3>
 <ul>
 <li>现在假设我要创建一个名为 hexo 的项目，项目目录就放在：E:\git_work_space 目录下，所以我们在 E:\git_work_space 目录下创建一个 hexo 目录。现在这个项目的全路径是：E:\git_work_space\hexo</li>
 <li>打开 Git Bash：
@@ -3169,7 +3736,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="heading8">选用其他主题</h3>
+<h3 id="选用其他主题">选用其他主题</h3>
 <ul>
 <li>由于默认主题太大众了，所以现在我们换个主题。</li>
 <li>你可以去这里找主题：
@@ -3214,7 +3781,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="-github-pages--ssh-">创建 Github pages 并 SSH 授权</h3>
+<h3 id="创建-github-pages-并-ssh-授权">创建 Github pages 并 SSH 授权</h3>
 <ul>
 <li>现在假设你已经有一个 Gtihub 账号，你还需要一个特别的仓库，特别在仓库名就是你的 Github 账号登录名，比如我的用户名是：judasn，那我要创建的仓库名字完整滴填写是：judasn.github.io，具体效果如下图。
 <ul>
@@ -3247,7 +3814,7 @@ echo &quot;启动成功...&quot;
 </ul>
 </li>
 </ul>
-<h3 id="-github-">把本地的博客内容同步到 Github 上</h3>
+<h3 id="把本地的博客内容同步到-github-上">把本地的博客内容同步到 Github 上</h3>
 <ul>
 <li>要把本地的静态博客同步到 Github，我们还需要先安装两个跟部署相关的 hexo 插件：
 <ul>
@@ -3392,7 +3959,7 @@ deploy:
 </ul>
 </li>
 </ul>
-<h3 id="heading9">绑定域名</h3>
+<h3 id="绑定域名">绑定域名</h3>
 <ul>
 <li>绑定域名不排除会遇到很多网络问题或是七七八八，所以这里先提供先官网的一些说明：
 <ul>
@@ -3432,7 +3999,7 @@ deploy:
 </ul>
 </li>
 </ul>
-<h3 id="-intellij-idea-">整合 IntelliJ IDEA 提高效率</h3>
+<h3 id="整合-intellij-idea-提高效率">整合 IntelliJ IDEA 提高效率</h3>
 <ul>
 <li>为了提交写作效率，我个人建议使用 IntelliJ IDEA 作为 Markdown 编辑工具
 <ul>
@@ -3471,7 +4038,7 @@ date: 2016-02-28 17:58:27
 categories: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA<span style="color:#f92672">]</span>
 tags: <span style="color:#f92672">[</span>Hexo,IntelliJ IDEA,Git,Github,Node.js<span style="color:#f92672">]</span>
 ---
-</code></pre></div><h2 id="heading10">结束语</h2>
+</code></pre></div><h2 id="结束语">结束语</h2>
 <ul>
 <li>我希望从这一篇你也可以再一次了解到 IntelliJ IDEA 的美丽之处。</li>
 <li>最后，欢迎再次来到 IntelliJ IDEA 的世界！</li>

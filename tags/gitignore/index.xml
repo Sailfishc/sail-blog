@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 30 Oct 2019 09:56:18 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.sailfishc.cn/tags/gitignore/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 30 Oct 2019 09:56:18 +0800</lastBuildDate><atom:link href="https://blog.sailfishc.cn/tags/gitignore/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>解决添加到GitIgnore的文件没被忽略的问题</title>
       <link>https://blog.sailfishc.cn/posts/2019/10/%E8%A7%A3%E5%86%B3%E6%B7%BB%E5%8A%A0%E5%88%B0gitignore%E7%9A%84%E6%96%87%E4%BB%B6%E6%B2%A1%E8%A2%AB%E5%BF%BD%E7%95%A5%E7%9A%84%E9%97%AE%E9%A2%98/</link>
