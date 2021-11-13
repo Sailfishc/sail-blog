@@ -1,5 +1,5 @@
 #https://raw.githubusercontent.com/it-gro/hugo-theme-w3css-basic/master/exampleSite/config.toml
-baseURL = "https://blog.sailfishc.cn/"
+baseURL = "https://blog.sailfishc.com/"
 defaultContentLanguage = "en"           # Default language to use
 languageCode  = "en-us"
 theme = "hello-friend-ng"
