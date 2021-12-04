@@ -3,7 +3,7 @@ baseURL = "https://blog.sailfishc.com/"
 defaultContentLanguage = "en"           # Default language to use
 languageCode  = "en-us"
 theme = "hello-friend-ng"
-title="橙小张的博客"
+title="六分选手"
 paginate     = 15
 
 PygmentsCodeFences = true
