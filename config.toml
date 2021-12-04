@@ -145,7 +145,7 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-     title = "橙小张的博客"
+     title = "六分选手"
      subtitle = "讨论技术，聊聊生活"
 #     weight = 1
      copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
